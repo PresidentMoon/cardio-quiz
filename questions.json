@@ -1,5 +1,115 @@
 {
- "version": 1,
+ "version": 2,
+ "units": [
+  {
+   "id": "h1",
+   "topic": "heart",
+   "name": "심장의 위치·구조·판막",
+   "pages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "h2",
+   "topic": "heart",
+   "name": "심장 혈류·관상순환",
+   "pages": [
+    12,
+    15
+   ]
+  },
+  {
+   "id": "h3",
+   "topic": "heart",
+   "name": "심장근육과 전기생리",
+   "pages": [
+    16,
+    22
+   ]
+  },
+  {
+   "id": "h4",
+   "topic": "heart",
+   "name": "심전도와 심장박동장애",
+   "pages": [
+    23,
+    25
+   ]
+  },
+  {
+   "id": "h5",
+   "topic": "heart",
+   "name": "심음과 심장주기",
+   "pages": [
+    26,
+    35
+   ]
+  },
+  {
+   "id": "h6",
+   "topic": "heart",
+   "name": "심장박출량과 조절",
+   "pages": [
+    36,
+    43
+   ]
+  },
+  {
+   "id": "v1",
+   "topic": "vessel",
+   "name": "혈관벽과 혈관의 종류",
+   "pages": [
+    1,
+    14
+   ]
+  },
+  {
+   "id": "v2",
+   "topic": "vessel",
+   "name": "순환경로·혈압·말초저항",
+   "pages": [
+    15,
+    22
+   ]
+  },
+  {
+   "id": "v3",
+   "topic": "vessel",
+   "name": "혈압 조절(신경·호르몬·RAAS)",
+   "pages": [
+    23,
+    30
+   ]
+  },
+  {
+   "id": "v4",
+   "topic": "vessel",
+   "name": "모세혈관과 체액 이동",
+   "pages": [
+    31,
+    38
+   ]
+  },
+  {
+   "id": "v5",
+   "topic": "vessel",
+   "name": "온몸동맥과 맥박지점",
+   "pages": [
+    39,
+    51
+   ]
+  },
+  {
+   "id": "v6",
+   "topic": "vessel",
+   "name": "온몸정맥",
+   "pages": [
+    52,
+    65
+   ]
+  }
+ ],
  "questions": [
   {
    "id": "h-mc-1",
@@ -18,7 +128,8 @@
     "doc": "heart",
     "page": 2
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-2",
@@ -37,7 +148,8 @@
     "doc": "heart",
     "page": 2
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-3",
@@ -56,7 +168,8 @@
     "doc": "heart",
     "page": 2
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-4",
@@ -75,7 +188,8 @@
     "doc": "heart",
     "page": 3
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-5",
@@ -94,7 +208,8 @@
     "doc": "heart",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-6",
@@ -113,7 +228,8 @@
     "doc": "heart",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-7",
@@ -132,7 +248,8 @@
     "doc": "heart",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-8",
@@ -151,7 +268,8 @@
     "doc": "heart",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-9",
@@ -170,7 +288,8 @@
     "doc": "heart",
     "page": 7
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-10",
@@ -189,7 +308,8 @@
     "doc": "heart",
     "page": 8
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-11",
@@ -208,7 +328,8 @@
     "doc": "heart",
     "page": 10
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-12",
@@ -227,7 +348,8 @@
     "doc": "heart",
     "page": 10
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-13",
@@ -246,7 +368,8 @@
     "doc": "heart",
     "page": 9
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "h-mc-14",
@@ -265,7 +388,8 @@
     "doc": "heart",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "h-mc-15",
@@ -284,7 +408,8 @@
     "doc": "heart",
     "page": 13
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "h-mc-16",
@@ -303,7 +428,8 @@
     "doc": "heart",
     "page": 13
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "h-mc-17",
@@ -322,7 +448,8 @@
     "doc": "heart",
     "page": 14
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "h-mc-18",
@@ -341,7 +468,8 @@
     "doc": "heart",
     "page": 14
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "h-mc-19",
@@ -360,7 +488,8 @@
     "doc": "heart",
     "page": 15
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "h-mc-20",
@@ -379,7 +508,8 @@
     "doc": "heart",
     "page": 17
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-21",
@@ -398,7 +528,8 @@
     "doc": "heart",
     "page": 17
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-22",
@@ -417,7 +548,8 @@
     "doc": "heart",
     "page": 17
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-23",
@@ -436,7 +568,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-24",
@@ -455,7 +588,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-25",
@@ -486,7 +620,8 @@
     "틈새이음이가장적은부분",
     "신호를약100ms늦춘다",
     "0.05m/s로느려진다"
-   ]
+   ],
+   "unit": "h3"
   },
   {
    "id": "h-mc-26",
@@ -505,7 +640,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-27",
@@ -524,7 +660,8 @@
     "doc": "heart",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-28",
@@ -543,7 +680,8 @@
     "doc": "heart",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-29",
@@ -562,7 +700,8 @@
     "doc": "heart",
     "page": 21
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-30",
@@ -581,7 +720,8 @@
     "doc": "heart",
     "page": 22
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "h-mc-31",
@@ -600,7 +740,8 @@
     "doc": "heart",
     "page": 24
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h4"
   },
   {
    "id": "h-mc-32",
@@ -619,7 +760,8 @@
     "doc": "heart",
     "page": 31
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-33",
@@ -638,7 +780,8 @@
     "doc": "heart",
     "page": 27
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-34",
@@ -657,7 +800,8 @@
     "doc": "heart",
     "page": 29
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-35",
@@ -688,7 +832,8 @@
     "대동맥판막협착",
     "좁아진막을통과하는혈류",
     "강한심잡음(S1~S2사이)"
-   ]
+   ],
+   "unit": "h5"
   },
   {
    "id": "h-mc-36",
@@ -707,7 +852,8 @@
     "doc": "heart",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-37",
@@ -726,7 +872,8 @@
     "doc": "heart",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-38",
@@ -745,7 +892,8 @@
     "doc": "heart",
     "page": 31
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-39",
@@ -764,7 +912,8 @@
     "doc": "heart",
     "page": 33
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "h-mc-40",
@@ -783,7 +932,8 @@
     "doc": "heart",
     "page": 36
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-41",
@@ -802,7 +952,8 @@
     "doc": "heart",
     "page": 36
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-42",
@@ -821,7 +972,8 @@
     "doc": "heart",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-43",
@@ -840,7 +992,8 @@
     "doc": "heart",
     "page": 39
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-44",
@@ -859,7 +1012,8 @@
     "doc": "heart",
     "page": 39
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-45",
@@ -878,7 +1032,8 @@
     "doc": "heart",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-46",
@@ -897,7 +1052,8 @@
     "doc": "heart",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-47",
@@ -916,7 +1072,8 @@
     "doc": "heart",
     "page": 42
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-48",
@@ -935,7 +1092,8 @@
     "doc": "heart",
     "page": 42
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "h-mc-49",
@@ -954,7 +1112,8 @@
     "doc": "heart",
     "page": 11
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "v-mc-1",
@@ -973,7 +1132,8 @@
     "doc": "vessel",
     "page": 3
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-2",
@@ -992,7 +1152,8 @@
     "doc": "vessel",
     "page": 4
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-3",
@@ -1011,7 +1172,8 @@
     "doc": "vessel",
     "page": 4
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-4",
@@ -1030,7 +1192,8 @@
     "doc": "vessel",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-5",
@@ -1049,7 +1212,8 @@
     "doc": "vessel",
     "page": 6
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-6",
@@ -1068,7 +1232,8 @@
     "doc": "vessel",
     "page": 7
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-7",
@@ -1087,7 +1252,8 @@
     "doc": "vessel",
     "page": 9
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-8",
@@ -1106,7 +1272,8 @@
     "doc": "vessel",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-9",
@@ -1125,7 +1292,8 @@
     "doc": "vessel",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-10",
@@ -1144,7 +1312,8 @@
     "doc": "vessel",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-11",
@@ -1163,7 +1332,8 @@
     "doc": "vessel",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "v-mc-12",
@@ -1182,7 +1352,8 @@
     "doc": "vessel",
     "page": 15
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-13",
@@ -1201,7 +1372,8 @@
     "doc": "vessel",
     "page": 16
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-14",
@@ -1220,7 +1392,8 @@
     "doc": "vessel",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-15",
@@ -1239,7 +1412,8 @@
     "doc": "vessel",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-16",
@@ -1258,7 +1432,8 @@
     "doc": "vessel",
     "page": 16
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-17",
@@ -1277,7 +1452,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-18",
@@ -1296,7 +1472,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-19",
@@ -1315,7 +1492,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-20",
@@ -1334,7 +1512,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-21",
@@ -1353,7 +1532,8 @@
     "doc": "vessel",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-22",
@@ -1372,7 +1552,8 @@
     "doc": "vessel",
     "page": 21
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-23",
@@ -1391,7 +1572,8 @@
     "doc": "vessel",
     "page": 21
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-24",
@@ -1410,7 +1592,8 @@
     "doc": "vessel",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "v-mc-25",
@@ -1429,7 +1612,8 @@
     "doc": "vessel",
     "page": 23
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-26",
@@ -1448,7 +1632,8 @@
     "doc": "vessel",
     "page": 25
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-27",
@@ -1467,7 +1652,8 @@
     "doc": "vessel",
     "page": 25
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-28",
@@ -1486,7 +1672,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-29",
@@ -1505,7 +1692,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-30",
@@ -1524,7 +1712,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-31",
@@ -1543,7 +1732,8 @@
     "doc": "vessel",
     "page": 27
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-32",
@@ -1562,7 +1752,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-33",
@@ -1581,7 +1772,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-34",
@@ -1600,7 +1792,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-35",
@@ -1619,7 +1812,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-36",
@@ -1638,7 +1832,8 @@
     "doc": "vessel",
     "page": 29
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "v-mc-37",
@@ -1657,7 +1852,8 @@
     "doc": "vessel",
     "page": 31
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "v-mc-38",
@@ -1676,7 +1872,8 @@
     "doc": "vessel",
     "page": 33
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "v-mc-39",
@@ -1695,7 +1892,8 @@
     "doc": "vessel",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "v-mc-40",
@@ -1714,7 +1912,8 @@
     "doc": "vessel",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "v-mc-41",
@@ -1733,7 +1932,8 @@
     "doc": "vessel",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-42",
@@ -1752,7 +1952,8 @@
     "doc": "vessel",
     "page": 42
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-43",
@@ -1771,7 +1972,8 @@
     "doc": "vessel",
     "page": 42
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-44",
@@ -1790,7 +1992,8 @@
     "doc": "vessel",
     "page": 39
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-45",
@@ -1809,7 +2012,8 @@
     "doc": "vessel",
     "page": 44
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-46",
@@ -1828,7 +2032,8 @@
     "doc": "vessel",
     "page": 45
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-47",
@@ -1847,7 +2052,8 @@
     "doc": "vessel",
     "page": 47
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-48",
@@ -1866,7 +2072,8 @@
     "doc": "vessel",
     "page": 47
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "v-mc-49",
@@ -1885,7 +2092,8 @@
     "doc": "vessel",
     "page": 53
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v6"
   },
   {
    "id": "v-mc-50",
@@ -1904,7 +2112,8 @@
     "doc": "vessel",
     "page": 54
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v6"
   },
   {
    "id": "v-mc-51",
@@ -1923,7 +2132,8 @@
     "doc": "vessel",
     "page": 56
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v6"
   },
   {
    "id": "v-mc-52",
@@ -1942,7 +2152,8 @@
     "doc": "vessel",
     "page": 22
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "s-1",
@@ -1960,7 +2171,8 @@
     "doc": "heart",
     "page": 2
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "s-2",
@@ -1978,7 +2190,8 @@
     "doc": "heart",
     "page": 8
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "s-3",
@@ -1996,7 +2209,8 @@
     "doc": "heart",
     "page": 10
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "s-4",
@@ -2014,7 +2228,8 @@
     "doc": "heart",
     "page": 14
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "s-5",
@@ -2031,7 +2246,8 @@
     "doc": "heart",
     "page": 13
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "s-6",
@@ -2050,7 +2266,8 @@
     "doc": "heart",
     "page": 13
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "s-7",
@@ -2068,7 +2285,8 @@
     "doc": "heart",
     "page": 14
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "s-8",
@@ -2086,7 +2304,8 @@
     "doc": "heart",
     "page": 17
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "s-9",
@@ -2106,7 +2325,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "s-10",
@@ -2124,7 +2344,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "s-11",
@@ -2143,7 +2364,8 @@
     "doc": "heart",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "s-12",
@@ -2161,7 +2383,8 @@
     "doc": "heart",
     "page": 21
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "s-13",
@@ -2180,7 +2403,8 @@
     "doc": "heart",
     "page": 27
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "s-14",
@@ -2197,7 +2421,8 @@
     "doc": "heart",
     "page": 29
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "s-15",
@@ -2212,7 +2437,8 @@
     "doc": "heart",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "s-16",
@@ -2234,7 +2460,8 @@
     "doc": "heart",
     "page": 36
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "s-17",
@@ -2254,7 +2481,8 @@
     "doc": "heart",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "s-18",
@@ -2270,7 +2498,8 @@
     "doc": "heart",
     "page": 39
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "s-19",
@@ -2289,7 +2518,8 @@
     "doc": "heart",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "s-20",
@@ -2304,7 +2534,8 @@
     "doc": "vessel",
     "page": 3
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "s-21",
@@ -2322,7 +2553,8 @@
     "doc": "vessel",
     "page": 9
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "s-22",
@@ -2339,7 +2571,8 @@
     "doc": "vessel",
     "page": 9
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "s-23",
@@ -2356,7 +2589,8 @@
     "doc": "vessel",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "s-24",
@@ -2371,7 +2605,8 @@
     "doc": "vessel",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "s-25",
@@ -2387,7 +2622,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "s-26",
@@ -2404,7 +2640,8 @@
     "doc": "vessel",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "s-27",
@@ -2421,7 +2658,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "s-28",
@@ -2439,7 +2677,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "s-29",
@@ -2456,7 +2695,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "s-30",
@@ -2472,7 +2712,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "s-31",
@@ -2488,7 +2729,8 @@
     "doc": "vessel",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "s-32",
@@ -2506,7 +2748,8 @@
     "doc": "vessel",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "s-33",
@@ -2523,7 +2766,8 @@
     "doc": "vessel",
     "page": 42
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "s-34",
@@ -2540,7 +2784,8 @@
     "doc": "vessel",
     "page": 45
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "s-35",
@@ -2557,7 +2802,8 @@
     "doc": "vessel",
     "page": 22
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "s-36",
@@ -2574,7 +2820,8 @@
     "doc": "vessel",
     "page": 39
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "e-1",
@@ -2586,7 +2833,8 @@
     "doc": "heart",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "e-2",
@@ -2598,7 +2846,8 @@
     "doc": "heart",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "e-3",
@@ -2610,7 +2859,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "e-4",
@@ -2622,7 +2872,8 @@
     "doc": "heart",
     "page": 17
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "e-5",
@@ -2634,7 +2885,8 @@
     "doc": "heart",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "e-6",
@@ -2646,7 +2898,8 @@
     "doc": "heart",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "e-7",
@@ -2658,7 +2911,8 @@
     "doc": "vessel",
     "page": 3
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "e-8",
@@ -2670,7 +2924,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "e-9",
@@ -2682,7 +2937,8 @@
     "doc": "vessel",
     "page": 21
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "e-10",
@@ -2694,7 +2950,8 @@
     "doc": "vessel",
     "page": 28
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "e-11",
@@ -2706,7 +2963,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "e-12",
@@ -2718,7 +2976,8 @@
     "doc": "vessel",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "e-13",
@@ -2730,7 +2989,8 @@
     "doc": "vessel",
     "page": 7
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "ox-1",
@@ -2743,7 +3003,8 @@
     "doc": "heart",
     "page": 2
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "ox-2",
@@ -2756,7 +3017,8 @@
     "doc": "heart",
     "page": 2
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "ox-3",
@@ -2769,7 +3031,8 @@
     "doc": "heart",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "ox-4",
@@ -2782,7 +3045,8 @@
     "doc": "heart",
     "page": 10
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h1"
   },
   {
    "id": "ox-5",
@@ -2795,7 +3059,8 @@
     "doc": "heart",
     "page": 15
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "ox-6",
@@ -2808,7 +3073,8 @@
     "doc": "heart",
     "page": 14
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h2"
   },
   {
    "id": "ox-7",
@@ -2821,7 +3087,8 @@
     "doc": "heart",
     "page": 19
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "ox-8",
@@ -2834,7 +3101,8 @@
     "doc": "heart",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "ox-9",
@@ -2847,7 +3115,8 @@
     "doc": "heart",
     "page": 22
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h3"
   },
   {
    "id": "ox-10",
@@ -2860,7 +3129,8 @@
     "doc": "heart",
     "page": 27
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h5"
   },
   {
    "id": "ox-11",
@@ -2873,7 +3143,8 @@
     "doc": "heart",
     "page": 39
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "ox-12",
@@ -2886,7 +3157,8 @@
     "doc": "heart",
     "page": 42
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "ox-13",
@@ -2899,7 +3171,8 @@
     "doc": "heart",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "h6"
   },
   {
    "id": "ox-14",
@@ -2912,7 +3185,8 @@
     "doc": "vessel",
     "page": 5
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "ox-15",
@@ -2925,7 +3199,8 @@
     "doc": "vessel",
     "page": 12
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v1"
   },
   {
    "id": "ox-16",
@@ -2938,7 +3213,8 @@
     "doc": "vessel",
     "page": 18
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "ox-17",
@@ -2951,7 +3227,8 @@
     "doc": "vessel",
     "page": 26
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "ox-18",
@@ -2964,7 +3241,8 @@
     "doc": "vessel",
     "page": 30
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
   },
   {
    "id": "ox-19",
@@ -2977,7 +3255,8 @@
     "doc": "vessel",
     "page": 38
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v4"
   },
   {
    "id": "ox-20",
@@ -2990,7 +3269,8 @@
     "doc": "vessel",
     "page": 20
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "ox-21",
@@ -3003,7 +3283,8 @@
     "doc": "vessel",
     "page": 22
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "ox-22",
@@ -3016,7 +3297,8 @@
     "doc": "vessel",
     "page": 41
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v5"
   },
   {
    "id": "ox-23",
@@ -3029,7 +3311,8 @@
     "doc": "vessel",
     "page": 21
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v2"
   },
   {
    "id": "ox-24",
@@ -3042,7 +3325,5916 @@
     "doc": "vessel",
     "page": 25
    },
-   "origin": "seed"
+   "origin": "seed",
+   "unit": "v3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "강의자료에 제시된 성인 심장의 길이로 옳은 것은?",
+   "options": [
+    "약 6cm",
+    "약 9cm",
+    "약 13cm",
+    "약 20cm"
+   ],
+   "answer": 2,
+   "explain": "심장 크기는 넓이 약 9cm, 길이 약 13cm, 두께 약 6cm이다.",
+   "detail": {
+    "why": "심장 크기는 넓이 약 9cm, 길이 약 13cm, 두께 약 6cm이다.",
+    "wrong": "6cm는 두께, 9cm는 넓이다. 숫자 세 개가 섞여 나오기 쉽다.",
+    "page_note": "2쪽 크기 항목",
+    "tip": "두께 6 < 넓이 9 < 길이 13, 작은 순서대로 두·넓·길."
+   },
+   "highlight": [
+    "넓이약9cm,길이약13cm,두께약6cm"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "id": "h-gen-0001",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심장은 복장뼈(흉골)의 바깥쪽, 두 폐 사이에 있다.",
+   "answer": false,
+   "explain": "심장은 복장뼈 '안쪽'에 있고 두 폐 사이의 가슴세로칸에 있다.",
+   "detail": {
+    "why": "심장은 복장뼈 '안쪽'에 있고 두 폐 사이의 가슴세로칸에 있다.",
+    "wrong": "'바깥쪽'이 틀린 부분이다.",
+    "page_note": "2쪽 첫 줄",
+    "tip": "복장뼈 안쪽 + 두 폐 사이 = 가슴세로칸."
+   },
+   "highlight": [
+    "복장뼈(흉골,sternum)안쪽에있고"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "id": "h-gen-0002",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "short",
+   "q": "큰 혈관이 부착되어 있는 심장의 넓은 윗부분을 무엇이라 하는가?",
+   "accept": [
+    "심장바닥",
+    "심저",
+    "base"
+   ],
+   "answer_text": "심장바닥(심저, base)",
+   "detail": {
+    "why": "넓은 윗부분으로 큰 혈관이 부착되는 곳이 심장바닥이다. 반대로 횡격막 바로 위 뾰족한 곳이 심장꼭대기(apex).",
+    "page_note": "2쪽",
+    "tip": "바닥(base)이 위, 꼭대기(apex)가 아래라는 반대 느낌을 기억."
+   },
+   "highlight": [
+    "심장바닥(심저,base):넓은윗부분으로큰혈관"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "id": "h-gen-0003",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "온몸순환은 심장벽을 포함한 모든 신체기관에 혈액을 공급한다.",
+   "answer": true,
+   "explain": "온몸순환은 폐의 나머지 부분과 심장벽을 포함한 모든 신체기관에 혈액을 공급하는 순환이다.",
+   "detail": {
+    "why": "온몸순환은 폐의 나머지 부분과 심장벽을 포함한 모든 신체기관에 혈액을 공급하는 순환이다.",
+    "page_note": "3쪽 온몸순환 정의",
+    "tip": "심장벽도 온몸순환으로 영양을 받는다(관상순환)."
+   },
+   "highlight": [
+    "폐의나머지부분과심장벽을포함한모든신체기관에혈액을공급하는순환"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 3
+   },
+   "id": "h-gen-0004",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "장막심장막(serous pericardium)을 구성하는 두 층으로 옳은 것은?",
+   "options": [
+    "섬유심장막과 벽측심장막",
+    "벽측심장막과 내장쪽심장막",
+    "내장쪽심장막과 심장속막",
+    "섬유심장막과 심장속막"
+   ],
+   "answer": 1,
+   "explain": "장막심장막은 벽측심장막(섬유심장막 안쪽면에 융합)과 내장쪽심장막(=심장바깥막)으로 이루어진다.",
+   "detail": {
+    "why": "장막심장막은 벽측심장막(섬유심장막 안쪽면에 융합)과 내장쪽심장막(=심장바깥막)으로 이루어진다.",
+    "wrong": "섬유심장막은 장막심장막 바깥의 별도 층이고, 심장속막은 심장벽 가장 안쪽 층이다.",
+    "page_note": "5쪽 심장막 구조",
+    "tip": "바깥부터: 섬유심장막 → 벽측 → (심장막안) → 내장쪽=심장바깥막 → 근육층 → 심장속막."
+   },
+   "highlight": [
+    "벽측심장막(parietalpericardium)",
+    "내장쪽심장막(visceralpericardium)"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "id": "h-gen-0005",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "벽측심장막은 섬유심장막의 안쪽면에 융합되어 있다.",
+   "answer": true,
+   "explain": "강의자료 그대로: 벽측심장막은 섬유심장막의 안쪽면에 융합.",
+   "detail": {
+    "why": "강의자료 그대로: 벽측심장막은 섬유심장막의 안쪽면에 융합.",
+    "page_note": "5쪽",
+    "tip": "벽측(parietal) = 벽 쪽 = 바깥 섬유막에 붙음."
+   },
+   "highlight": [
+    "섬유심장막의안쪽면에융합"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "id": "h-gen-0006",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "short",
+   "q": "심장의 내벽을 이루고 판막 표면을 덮는 층의 영어 이름은?",
+   "accept": [
+    "endocardium",
+    "심장속막",
+    "심내막"
+   ],
+   "answer_text": "endocardium (심장속막, 심내막)",
+   "detail": {
+    "why": "심장속막(endocardium)은 내벽을 이루고, 판막 표면을 덮고, 혈관의 내피와 연속된다.",
+    "page_note": "5쪽 마지막 항목",
+    "tip": "endo = 안, epi = 바깥."
+   },
+   "highlight": [
+    "심장속막(심내막,endocardium)"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "id": "h-gen-0007",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장막안(심낭강)에 있는 심장막액은 어디에서 만들어지는가?",
+   "options": [
+    "섬유심장막",
+    "장막층에서 삼출",
+    "심장속막",
+    "관상동맥"
+   ],
+   "answer": 1,
+   "explain": "심장막안에는 장막층에서 삼출되는 소량(5~30mL)의 심장막액이 있다.",
+   "detail": {
+    "why": "심장막안에는 장막층에서 삼출되는 소량(5~30mL)의 심장막액이 있다.",
+    "wrong": "섬유심장막은 부착 역할, 심장속막은 내벽이다.",
+    "page_note": "5쪽 심장막안 항목",
+    "tip": "장막(serous) = 장액(serous fluid)을 내는 막."
+   },
+   "highlight": [
+    "장막층에서삼출되"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "id": "h-gen-0008",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "아래대정맥(IVC)은 가로막 위쪽에 있는 대부분의 정맥혈을 받는다.",
+   "answer": false,
+   "explain": "가로막 위쪽 정맥혈은 위대정맥(SVC), 아래쪽은 아래대정맥(IVC)이 받는다.",
+   "detail": {
+    "why": "가로막 위쪽 정맥혈은 위대정맥(SVC), 아래쪽은 아래대정맥(IVC)이 받는다.",
+    "wrong": "위/아래가 바뀌었다.",
+    "page_note": "7쪽",
+    "tip": "Superior = 위(가로막 위), Inferior = 아래."
+   },
+   "highlight": [
+    "IVC:가로막의아래쪽에있는대부분의정맥혈"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 7
+   },
+   "id": "h-gen-0009",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심실 내벽에서 '심장근육조직의 불규칙한 돌출에 의해 생긴 융기된 표면'을 이루는 구조는?",
+   "options": [
+    "힘줄끈",
+    "근육기둥(trabeculae carneae)",
+    "타원오목",
+    "심방귀"
+   ],
+   "answer": 1,
+   "explain": "심실 안쪽 벽의 불규칙한 근육 융기가 근육기둥(trabeculae carneae)이다(9쪽 그림 라벨).",
+   "detail": {
+    "why": "심실 안쪽 벽의 불규칙한 근육 융기가 근육기둥(trabeculae carneae)이다(9쪽 그림 라벨).",
+    "wrong": "힘줄끈은 판막과 꼭지근을 잇는 끈, 타원오목은 심방사이막의 흔적, 심방귀는 심방의 주머니다.",
+    "page_note": "8쪽 설명 + 9쪽 그림 라벨",
+    "tip": "trabecula = 작은 기둥 → 근육'기둥'."
+   },
+   "highlight": [
+    "심장근육조직의불규칙한돌출에의해생긴융기된표면"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 8
+   },
+   "id": "h-gen-0010",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "오른심실과 왼심실 사이를 나누는 벽은?",
+   "options": [
+    "심방사이막",
+    "심실사이중격(interventricular septum)",
+    "가로막",
+    "섬유심장막"
+   ],
+   "answer": 1,
+   "explain": "9쪽 심장 절단면 그림에서 두 심실 사이 벽은 심실사이중격이다.",
+   "detail": {
+    "why": "9쪽 심장 절단면 그림에서 두 심실 사이 벽은 심실사이중격이다.",
+    "wrong": "심방사이막은 두 심방 사이, 가로막은 가슴과 배 사이다.",
+    "page_note": "9쪽 그림 오른쪽 라벨",
+    "tip": "방실다발이 '심실사이벽'을 지나 신호를 전달한다(20쪽)와 연결."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 9
+   },
+   "id": "h-gen-0011",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "9쪽 그림에서 심방에 붙은 귀 모양의 주머니 구조를 무엇이라 하는가?",
+   "options": [
+    "꼭지근",
+    "심방귀(auricle)",
+    "근육기둥",
+    "관상정맥동"
+   ],
+   "answer": 1,
+   "explain": "그림 라벨에 오른심방의 심방귀, 왼심방의 심방귀(auricle)가 표시되어 있다.",
+   "detail": {
+    "why": "그림 라벨에 오른심방의 심방귀, 왼심방의 심방귀(auricle)가 표시되어 있다.",
+    "wrong": "나머지는 심실 안이나 심장 뒷면 구조다.",
+    "page_note": "9쪽 그림",
+    "tip": "auricle = 귀."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 9
+   },
+   "id": "h-gen-0012",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "방실판막의 기능으로 옳은 것은?",
+   "options": [
+    "심실이 이완할 때 동맥 혈액의 역류를 막는다",
+    "심실이 수축할 때 혈액이 심방으로 역류하지 않도록 한다",
+    "관상동맥으로 혈액을 보낸다",
+    "심방 수축을 일으킨다"
+   ],
+   "answer": 1,
+   "explain": "방실판막은 심방과 심실 사이에서 심실 수축 시 심방으로의 역류를 막는다.",
+   "detail": {
+    "why": "방실판막은 심방과 심실 사이에서 심실 수축 시 심방으로의 역류를 막는다.",
+    "wrong": "이완기 동맥 역류를 막는 것은 반달판막이다.",
+    "page_note": "10쪽 방실판막 항목",
+    "tip": "방실판 = 심실 수축 때 닫힘(S1), 반달판 = 심실 이완 때 닫힘(S2)."
+   },
+   "highlight": [
+    "심실이수축할때심방으로역류하지않도록한다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "id": "h-gen-0013",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심실이 수축하면 꼭지근이 힘줄끈을 잡아당겨 방실판막이 뒤집히는 것을 방지한다.",
+   "answer": true,
+   "explain": "강의자료 문장 그대로다.",
+   "detail": {
+    "why": "강의자료 문장 그대로다.",
+    "page_note": "10쪽",
+    "tip": "꼭지근(근육) → 힘줄끈(끈) → 방실판막(문)."
+   },
+   "highlight": [
+    "힘줄끈(건삭,chordaetendineae)을잡아당겨방실판막이뒤집히는것을"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "id": "h-gen-0014",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "판막결손의 주요 두 가지 유형으로 옳은 것은?",
+   "options": [
+    "기능부전(insufficiency)과 협착(stenosis)",
+    "세동과 차단",
+    "비대와 확장",
+    "파열과 천공"
+   ],
+   "answer": 0,
+   "explain": "판막결손의 주요 유형은 기능부전(완전히 닫히지 않아 역류)과 협착(판막이 좁아짐)이다.",
+   "detail": {
+    "why": "판막결손의 주요 유형은 기능부전(완전히 닫히지 않아 역류)과 협착(판막이 좁아짐)이다.",
+    "wrong": "세동·차단은 심장박동장애(25쪽) 용어다.",
+    "page_note": "11쪽 '임상에서 적용하기' 판막심장병 박스 형광펜 부분",
+    "tip": "기능부전 = 안 닫힘, 협착 = 안 열림."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 11
+   },
+   "id": "h-gen-0015",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "협착된 판막은 Ca2+ 침착물이 첨판에 쌓여 첨판을 딱딱하고 유연하지 않게 만든다.",
+   "answer": true,
+   "explain": "판막심장병 박스: 협착 판막은 Ca2+ 침착물로 첨판이 딱딱해지고, 그 결과 심장은 더 세게 펌프해야 한다.",
+   "detail": {
+    "why": "판막심장병 박스: 협착 판막은 Ca2+ 침착물로 첨판이 딱딱해지고, 그 결과 심장은 더 세게 펌프해야 한다.",
+    "page_note": "11쪽 박스 중간",
+    "tip": "협착 = 석회화로 굳은 문."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 11
+   },
+   "id": "h-gen-0016",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "판막심장병의 두 유형(기능부전, 협착)에서 공통으로 들릴 수 있는 것은?",
+   "options": [
+    "S3",
+    "heart murmur(심장잡음)",
+    "S4",
+    "맥박결손"
+   ],
+   "answer": 1,
+   "explain": "판막심장병의 두 유형 모두 청진 시 '휘익'하는 심장잡음이 들릴 수 있다.",
+   "detail": {
+    "why": "판막심장병의 두 유형 모두 청진 시 '휘익'하는 심장잡음이 들릴 수 있다.",
+    "wrong": "S3·S4는 추가 심음으로 별개 개념이다.",
+    "page_note": "11쪽 박스 아래쪽",
+    "tip": "판막 이상 → 혈류 와류 → 잡음."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 11
+   },
+   "id": "h-gen-0017",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "강의자료에서 판막심장병의 가장 흔한 예로 든 판막은?",
+   "options": [
+    "삼첨판막과 허파동맥판막",
+    "승모판막과 대동맥판막",
+    "삼첨판막과 대동맥판막",
+    "허파동맥판막과 승모판막"
+   ],
+   "answer": 1,
+   "explain": "네 개의 판막 중 승모판과 대동맥판막이 판막성심장병의 가장 흔한 예다.",
+   "detail": {
+    "why": "네 개의 판막 중 승모판과 대동맥판막이 판막성심장병의 가장 흔한 예다.",
+    "wrong": "왼쪽 심장(압력이 높은 쪽) 판막이 흔하다고 연결하면 쉽다.",
+    "page_note": "11쪽 박스 마지막 줄",
+    "tip": "왼쪽 = 압력 높음 = 고장 잘 남."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 11
+   },
+   "id": "h-gen-0018",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "허파정맥(폐정맥)을 통해 산소가 풍부한 혈액이 들어오는 심장의 방은?",
+   "options": [
+    "오른심방",
+    "오른심실",
+    "왼심방",
+    "왼심실"
+   ],
+   "answer": 2,
+   "explain": "폐에서 산소를 받은 혈액은 허파정맥을 통해 왼심방으로 들어온다.",
+   "detail": {
+    "why": "폐에서 산소를 받은 혈액은 허파정맥을 통해 왼심방으로 들어온다.",
+    "wrong": "오른심방은 대정맥 혈액을 받는다.",
+    "page_note": "12쪽 혈류 그림 ⑤단계",
+    "tip": "폐 → 허파정맥 → 왼심방 → 승모판 → 왼심실."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0019",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "허파동맥줄기(pulmonary trunk)로 혈액을 내보내는 방은?",
+   "options": [
+    "오른심방",
+    "오른심실",
+    "왼심방",
+    "왼심실"
+   ],
+   "answer": 1,
+   "explain": "오른심실이 수축하면 허파동맥판막을 지나 허파동맥줄기로 혈액이 나간다.",
+   "detail": {
+    "why": "오른심실이 수축하면 허파동맥판막을 지나 허파동맥줄기로 혈액이 나간다.",
+    "wrong": "왼심실은 대동맥으로 내보낸다.",
+    "page_note": "12쪽 혈류 그림 ④단계",
+    "tip": "오른쪽 = 폐로, 왼쪽 = 온몸으로."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0020",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "대동맥판막은 왼심실과 대동맥 사이에 있다.",
+   "answer": true,
+   "explain": "12쪽 그림: 왼심실 → 대동맥판막 → 대동맥.",
+   "detail": {
+    "why": "12쪽 그림: 왼심실 → 대동맥판막 → 대동맥.",
+    "page_note": "12쪽 그림 아래쪽 단계",
+    "tip": "판막 이름 = 그 판막 뒤의 혈관 이름."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0021",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "휘돌이동맥(circumflex artery, LCX)은 어느 동맥의 가지인가?",
+   "options": [
+    "오른심장동맥",
+    "왼심장동맥",
+    "대동맥활",
+    "허파동맥"
+   ],
+   "answer": 1,
+   "explain": "왼심장동맥은 앞심실사이동맥(LAD)과 휘돌이동맥(LCX)으로 갈라진다.",
+   "detail": {
+    "why": "왼심장동맥은 앞심실사이동맥(LAD)과 휘돌이동맥(LCX)으로 갈라진다.",
+    "wrong": "오른심장동맥의 가지는 모서리동맥과 뒤심실사이동맥이다.",
+    "page_note": "13쪽 왼심장동맥 항목",
+    "tip": "왼쪽: LAD + LCX / 오른쪽: 모서리 + 뒤심실사이."
+   },
+   "highlight": [
+    "circumflexartery(휘돌이동맥,회선동맥,LCX)"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "id": "h-gen-0022",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "모서리동맥(marginal artery)은 왼심장동맥의 가지이다.",
+   "answer": false,
+   "explain": "모서리동맥은 오른심장동맥(RCA)의 가지다.",
+   "detail": {
+    "why": "모서리동맥은 오른심장동맥(RCA)의 가지다.",
+    "wrong": "LAD·LCX만 왼쪽 가지.",
+    "page_note": "13쪽",
+    "tip": "오른쪽 가지 두 개: 모서리, 뒤심실사이."
+   },
+   "highlight": [
+    "marginalartery(모서리동맥)"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "id": "h-gen-0023",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "오른심방과 오른심실 혈액의 일부를 받아오는 심장정맥은?",
+   "options": [
+    "큰심장정맥",
+    "작은심장정맥",
+    "중간심장정맥",
+    "관상정맥동"
+   ],
+   "answer": 1,
+   "explain": "작은심장정맥은 오른심방과 오른심실 혈액의 일부를 받는다.",
+   "detail": {
+    "why": "작은심장정맥은 오른심방과 오른심실 혈액의 일부를 받는다.",
+    "wrong": "큰 = 왼심방+양쪽 심실 많은 부분, 중간 = 뒤 왼심실 대부분.",
+    "page_note": "14쪽",
+    "tip": "작은 = 오른쪽 일부만(작게), 큰 = 넓게."
+   },
+   "highlight": [
+    "오른심방과오른심실의혈액의일부를받아온다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 14
+   },
+   "id": "h-gen-0024",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "뒤 왼심실 혈액의 대부분을 받아오는 심장정맥은?",
+   "options": [
+    "큰심장정맥",
+    "작은심장정맥",
+    "중간심장정맥",
+    "앞심장정맥"
+   ],
+   "answer": 2,
+   "explain": "중간심장정맥(middle cardiac vein)이 뒤 왼심실 혈액 대부분을 받는다.",
+   "detail": {
+    "why": "중간심장정맥(middle cardiac vein)이 뒤 왼심실 혈액 대부분을 받는다.",
+    "page_note": "14쪽",
+    "tip": "중간 = 뒤쪽 가운데."
+   },
+   "highlight": [
+    "뒤왼심실혈액의대부분을받아온다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 14
+   },
+   "id": "h-gen-0025",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "관상정맥동(coronary sinus)은 심장 앞면에 위치한다.",
+   "answer": false,
+   "explain": "관상정맥동은 심장 '뒷면'의 오른심방에 있다.",
+   "detail": {
+    "why": "관상정맥동은 심장 '뒷면'의 오른심방에 있다.",
+    "page_note": "14쪽 마지막 줄",
+    "tip": "정맥 모임 = 뒷면."
+   },
+   "highlight": [
+    "심장뒷면의오른심방에있는coronarysinus"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 14
+   },
+   "id": "h-gen-0026",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "좌우 관상동맥이 갈라져 나오는 혈관은?",
+   "options": [
+    "허파동맥줄기",
+    "대동맥",
+    "위대정맥",
+    "관상정맥동"
+   ],
+   "answer": 1,
+   "explain": "대동맥에서 좌우 관상동맥이 갈라져 나온다.",
+   "detail": {
+    "why": "대동맥에서 좌우 관상동맥이 갈라져 나온다.",
+    "page_note": "15쪽 첫 줄",
+    "tip": "대동맥판막 바로 위에서 시작한다고 연결하면 이완기 유입이 이해된다."
+   },
+   "highlight": [
+    "대동맥에서좌우관상동맥이갈라져나온다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 15
+   },
+   "id": "h-gen-0027",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심실이 이완하면 대동맥의 혈액이 소량 역류해 첨판을 채우고 관상동맥으로 들어간다.",
+   "answer": true,
+   "explain": "그래서 관상동맥 혈류는 이완 시 정점에 달한다.",
+   "detail": {
+    "why": "그래서 관상동맥 혈류는 이완 시 정점에 달한다.",
+    "page_note": "15쪽 두 번째 줄",
+    "tip": "수축할 땐 근육이 혈관을 눌러서, 이완할 때 잘 흐른다."
+   },
+   "highlight": [
+    "소량의혈액이대동맥에서역류해첨판을채우고관상동맥으로유입된다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 15
+   },
+   "id": "h-gen-0028",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장근육세포의 크기로 강의자료에 제시된 것은?",
+   "options": [
+    "길이 50~100μm, 지름 10~20μm",
+    "길이 1~2mm, 지름 50μm",
+    "길이 5μm, 지름 1μm",
+    "길이 1cm, 지름 100μm"
+   ],
+   "answer": 0,
+   "explain": "심장근육세포는 짧고 굵다: 길이 50~100μm, 지름 10~20μm.",
+   "detail": {
+    "why": "심장근육세포는 짧고 굵다: 길이 50~100μm, 지름 10~20μm.",
+    "page_note": "17쪽",
+    "tip": "짧고 굵다 = 길이 두 자리, 지름 두 자리 μm."
+   },
+   "highlight": [
+    "길이50-100μm,지름은10-20μm"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "id": "h-gen-0029",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심장근육세포의 핵은 당원(글리코겐) 덩어리에 둘러싸여 있다.",
+   "answer": true,
+   "explain": "하나의 핵이 중앙에 있고 당원 덩어리에 둘러싸여 있다.",
+   "detail": {
+    "why": "하나의 핵이 중앙에 있고 당원 덩어리에 둘러싸여 있다.",
+    "page_note": "17쪽",
+    "tip": "핵 1개, 중앙, 글리코겐."
+   },
+   "highlight": [
+    "당원(글리코겐)덩어리에둘러싸여있다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "id": "h-gen-0030",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장근육세포에서 사립체가 차지하는 비율은?",
+   "options": [
+    "약 2%",
+    "약 10%",
+    "약 25%",
+    "약 60%"
+   ],
+   "answer": 2,
+   "explain": "사립체가 거대하며 세포의 약 25%를 차지한다.",
+   "detail": {
+    "why": "사립체가 거대하며 세포의 약 25%를 차지한다.",
+    "page_note": "17쪽 아래쪽",
+    "tip": "1/4이 발전소."
+   },
+   "highlight": [
+    "세포의약25%를차지한다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "id": "h-gen-0031",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "강의자료에 따르면 심장근육세포가 매일 생성하고 소비하는 ATP의 양은?",
+   "options": [
+    "약 5g",
+    "약 50g",
+    "약 5kg",
+    "약 50kg"
+   ],
+   "answer": 2,
+   "explain": "매일 5kg의 ATP를 생성하고 소비한다.",
+   "detail": {
+    "why": "매일 5kg의 ATP를 생성하고 소비한다.",
+    "page_note": "17쪽 아래쪽 괄호",
+    "tip": "사립체 25% → ATP 5kg, 숫자 5가 공통."
+   },
+   "highlight": [
+    "매일5kg의ATP를생성하고소비"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "id": "h-gen-0032",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "부착반점(desmosome)은 이온이 세포 사이를 흐르게 해 전기 흥분을 빠르게 전파한다.",
+   "answer": false,
+   "explain": "그건 틈새이음(gap junction)의 역할이다. 부착반점은 수축 시 세포가 떨어지지 않게 하는 기계적 연결.",
+   "detail": {
+    "why": "그건 틈새이음(gap junction)의 역할이다. 부착반점은 수축 시 세포가 떨어지지 않게 하는 기계적 연결.",
+    "page_note": "17쪽 사이원반 항목",
+    "tip": "부착반점 = 기계(붙잡기), 틈새이음 = 전기(통로)."
+   },
+   "highlight": [
+    "기계적연결:부착반점(desmosome)",
+    "전기적틈새이음(gapjunction)"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "id": "h-gen-0033",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "사이원반은 세포와 세포가 접촉하는 표면적이 넓다.",
+   "answer": true,
+   "explain": "강의자료: 사이원반은 세포 간 접촉 표면적이 넓다.",
+   "detail": {
+    "why": "강의자료: 사이원반은 세포 간 접촉 표면적이 넓다.",
+    "page_note": "17쪽"
+   },
+   "highlight": [
+    "세포와세포가접촉하는표면적이넓다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "id": "h-gen-0034",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "자율박동(autorhythmic)의 의미로 옳은 것은?",
+   "options": [
+    "신경계 자극이 있어야만 박동한다",
+    "신경계의 자극 없이 자신만의 율동으로 박동한다",
+    "호르몬에 의해서만 박동한다",
+    "뼈대근육처럼 수의적으로 수축한다"
+   ],
+   "answer": 1,
+   "explain": "자율박동: 신경계의 자극 없이 자신만의 율동으로 박동.",
+   "detail": {
+    "why": "자율박동: 신경계의 자극 없이 자신만의 율동으로 박동.",
+    "wrong": "신경·호르몬은 속도를 '조절'할 뿐 박동을 시작시키지 않는다.",
+    "page_note": "19쪽 첫 항목",
+    "tip": "auto = 스스로."
+   },
+   "highlight": [
+    "신경계의자극없이자신만의율동으로박동"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "id": "h-gen-0035",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "박동조율기 세포는 수축 능력이 뛰어난 변형된 심장근육세포이다.",
+   "answer": false,
+   "explain": "박동조율기 세포는 수축능력을 '잃고' 규칙적 탈분극에 특화된 변형 심장근육세포다.",
+   "detail": {
+    "why": "박동조율기 세포는 수축능력을 '잃고' 규칙적 탈분극에 특화된 변형 심장근육세포다.",
+    "page_note": "19쪽 두 번째 항목",
+    "tip": "수축 대신 박자 담당."
+   },
+   "highlight": [
+    "수축능력을잃고규칙적인간격으로저절로탈분극"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "id": "h-gen-0036",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "굴심방결절은 약 몇 초마다 탈분극하는가?",
+   "options": [
+    "0.1초",
+    "0.4초",
+    "0.8초",
+    "2초"
+   ],
+   "answer": 2,
+   "explain": "0.8초마다 탈분극해서 1분에 약 60~100회 박동을 유발한다.",
+   "detail": {
+    "why": "0.8초마다 탈분극해서 1분에 약 60~100회 박동을 유발한다.",
+    "page_note": "19쪽 ① 항목",
+    "tip": "60초 ÷ 0.8초 = 75회 → 60~100 범위."
+   },
+   "highlight": [
+    "0.8초마다탈분극해서"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "id": "h-gen-0037",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "방실결절의 위치로 옳은 것은?",
+   "options": [
+    "SVC 개구부 옆 오른심방",
+    "삼첨판막 바로 위쪽 중앙",
+    "왼심방 뒷벽",
+    "심첨부"
+   ],
+   "answer": 1,
+   "explain": "방실결절은 삼첨판막 바로 위쪽 중앙에 있다(자료 표기는 '삼천판막').",
+   "detail": {
+    "why": "방실결절은 삼첨판막 바로 위쪽 중앙에 있다(자료 표기는 '삼천판막').",
+    "wrong": "SVC 개구부 옆은 굴심방결절 위치.",
+    "page_note": "19쪽 ② 항목 첫 줄",
+    "tip": "SA = SVC 옆, AV = 삼첨판 위."
+   },
+   "highlight": [
+    "바로위쪽중앙에위치해있다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "id": "h-gen-0038",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "방실결절에 도달한 신호의 전도 속도는?",
+   "options": [
+    "0.05m/s",
+    "0.5m/s",
+    "5m/s",
+    "50m/s"
+   ],
+   "answer": 0,
+   "explain": "방실결절에 다다른 신호는 0.05m/s로 느려진다(약 40~60회/분).",
+   "detail": {
+    "why": "방실결절에 다다른 신호는 0.05m/s로 느려진다(약 40~60회/분).",
+    "page_note": "19쪽 ② 항목",
+    "tip": "느리다 = 0.05."
+   },
+   "highlight": [
+    "0.05m/s로느려진다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "id": "h-gen-0039",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심실사이벽을 지나며 전기 신호를 전달하는, 변형된 심장근육세포로 이루어진 끈은?",
+   "options": [
+    "굴심방결절",
+    "방실결절",
+    "방실다발(방실속)",
+    "심장속막밑가지"
+   ],
+   "answer": 2,
+   "explain": "방실다발(AV bundle)은 심실사이벽을 지나는 전기 신호를 전달한다.",
+   "detail": {
+    "why": "방실다발(AV bundle)은 심실사이벽을 지나는 전기 신호를 전달한다.",
+    "page_note": "20쪽 ③ 항목",
+    "tip": "결절(SA·AV) → 다발 → 다발가지 → 푸르키네."
+   },
+   "highlight": [
+    "심실사이벽을지나는전기신"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 20
+   },
+   "id": "h-gen-0040",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "푸르키네섬유는 방실다발의 갈래에서 시작해 심실 심장근육 전체로 덩굴처럼 갈라져 나간다.",
+   "answer": true,
+   "explain": "강의자료 ④ 항목 내용 그대로다.",
+   "detail": {
+    "why": "강의자료 ④ 항목 내용 그대로다.",
+    "page_note": "20쪽 ④"
+   },
+   "highlight": [
+    "방실다발의갈래에서시작되는큰세포들의무리"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 20
+   },
+   "id": "h-gen-0041",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "18쪽 그림에서 방실다발 다음으로 신호가 전달되는 구조는?",
+   "options": [
+    "굴심방결절",
+    "오른다발가지와 왼다발가지",
+    "심방전도섬유",
+    "관상동맥"
+   ],
+   "answer": 1,
+   "explain": "방실결절 지연 후 활동전위는 방실다발로 전도된 뒤 오른다발가지와 왼다발가지로 흐른다.",
+   "detail": {
+    "why": "방실결절 지연 후 활동전위는 방실다발로 전도된 뒤 오른다발가지와 왼다발가지로 흐른다.",
+    "page_note": "18쪽 그림 ② 설명",
+    "tip": "다발 → 좌우 가지 → 푸르키네."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 18
+   },
+   "id": "h-gen-0042",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "수축세포의 정점지속기가 초기 탈분극기보다 훨씬 오래 지속될 수 있는 이유는?",
+   "options": [
+    "Na+ 통로가 빨리 닫혀서",
+    "Ca2+ 통로가 느리게 닫혀서",
+    "K+가 들어와서",
+    "Cl-가 빠져나가서"
+   ],
+   "answer": 1,
+   "explain": "Ca2+ 통로는 느리게 닫히므로 정점지속기가 초기 탈분극기보다 훨씬 오래 지속된다.",
+   "detail": {
+    "why": "Ca2+ 통로는 느리게 닫히므로 정점지속기가 초기 탈분극기보다 훨씬 오래 지속된다.",
+    "page_note": "21쪽 마지막 문장",
+    "tip": "Ca 느리게 열림 + 느리게 닫힘 = 길고 평평한 고원."
+   },
+   "highlight": [
+    "Ca2+통로는느리게닫히므로"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 21
+   },
+   "id": "h-gen-0043",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "정점지속기에 Ca2+가 들어오는 동안 K+가 빠져나가므로 막전위의 실제 변화는 매우 적다.",
+   "answer": true,
+   "explain": "그래서 '평평한' 정점지속기가 된다.",
+   "detail": {
+    "why": "그래서 '평평한' 정점지속기가 된다.",
+    "page_note": "21쪽 가운데",
+    "tip": "들어오는 +(Ca) ≈ 나가는 +(K) → 평평."
+   },
+   "highlight": [
+    "K+가다른통로를통해빠져나오"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 21
+   },
+   "id": "h-gen-0044",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "굴심방결절 세포에서 활동전위가 발생하는 과정으로 옳은 것은?",
+   "options": [
+    "외부 신경자극이 와야 탈분극한다",
+    "세포막 투과성이 높아 Na+가 계속 유입되고 역치에 이르면 활동전위가 생긴다",
+    "K+가 계속 유입되어 탈분극한다",
+    "Ca2+가 빠져나가며 탈분극한다"
+   ],
+   "answer": 1,
+   "explain": "세포막 투과성이 높아 Na 이온이 계속 유입되고, 역치 전압까지 높아질 때 활동전위가 발생한다.",
+   "detail": {
+    "why": "세포막 투과성이 높아 Na 이온이 계속 유입되고, 역치 전압까지 높아질 때 활동전위가 발생한다.",
+    "page_note": "22쪽",
+    "tip": "안정막전위 없음 → 스르륵 올라감 → 역치 → 발화."
+   },
+   "highlight": [
+    "세포막투과성이높아서Na이온이계속유입되고"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 22
+   },
+   "id": "h-gen-0045",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심전도(ECG)의 정의로 옳은 것은?",
+   "options": [
+    "심장 판막 소리를 기록한 것",
+    "결절세포와 심장근육세포가 만드는 모든 활동전위를 간략히 기록한 것",
+    "관상동맥 혈류를 기록한 것",
+    "심장 한 개 세포의 막전위를 기록한 것"
+   ],
+   "answer": 1,
+   "explain": "ECG는 결절세포와 심장근육세포에 의해 생성되는 모든 활동전위를 간략히 기록한 것이다.",
+   "detail": {
+    "why": "ECG는 결절세포와 심장근육세포에 의해 생성되는 모든 활동전위를 간략히 기록한 것이다.",
+    "wrong": "판막 소리는 심음(청진), 한 세포 기록은 활동전위 그래프다.",
+    "page_note": "23쪽",
+    "tip": "ECG = 전체 합."
+   },
+   "highlight": [
+    "결절세포와심장근육세포에의해생성되는모든활동전위를간략히기록한것"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 23
+   },
+   "id": "h-gen-0046",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심전도의 T파가 나타내는 것은?",
+   "options": [
+    "심방 탈분극",
+    "심실 탈분극",
+    "심실 재분극",
+    "심방 수축 시작"
+   ],
+   "answer": 2,
+   "explain": "24쪽 그림: P = 심방 탈분극, QRS = 심실 탈분극, T = 심실 재분극.",
+   "detail": {
+    "why": "24쪽 그림: P = 심방 탈분극, QRS = 심실 탈분극, T = 심실 재분극.",
+    "page_note": "24쪽 그림 ⑤~⑥",
+    "tip": "P(심방) → QRS(심실 시작) → T(심실 회복)."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 24
+   },
+   "id": "h-gen-0047",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심전도의 P파는 심방의 탈분극을 나타낸다.",
+   "answer": true,
+   "explain": "24쪽 그림 ①: 심방의 탈분극이 시작되며 P파가 나타난다.",
+   "detail": {
+    "why": "24쪽 그림 ①: 심방의 탈분극이 시작되며 P파가 나타난다.",
+    "page_note": "24쪽 그림 ①",
+    "tip": "P = 시작(Primary), 심방."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 24
+   },
+   "id": "h-gen-0048",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장박동장애(dysrhythmias)의 세 가지 기본 유형이 아닌 것은?",
+   "options": [
+    "심장박동수 장애",
+    "전도경로장애",
+    "잔떨림(fibrillation)",
+    "판막 협착"
+   ],
+   "answer": 3,
+   "explain": "세 가지 기본 유형은 심장박동수 장애, 전도경로장애, 잔떨림이다.",
+   "detail": {
+    "why": "세 가지 기본 유형은 심장박동수 장애, 전도경로장애, 잔떨림이다.",
+    "wrong": "판막 협착은 판막심장병(11쪽)이다.",
+    "page_note": "25쪽 '임상에서 적용하기' 박스",
+    "tip": "수(數)·길(경로)·떨림 세 가지."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0049",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "느린맥(bradycardia)의 기준으로 옳은 것은?",
+   "options": [
+    "분당 40회 이하",
+    "분당 60회 이하",
+    "분당 80회 이하",
+    "분당 100회 이상"
+   ],
+   "answer": 1,
+   "explain": "Bradycardia는 분당 60회 이하, tachycardia는 분당 100회 이상이다.",
+   "detail": {
+    "why": "Bradycardia는 분당 60회 이하, tachycardia는 분당 100회 이상이다.",
+    "page_note": "25쪽 박스 1번",
+    "tip": "정상 SA 60~100의 바깥이 각각 느린맥·빠른맥."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0050",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "빠른맥(tachycardia)의 기준으로 옳은 것은?",
+   "options": [
+    "분당 60회 이상",
+    "분당 80회 이상",
+    "분당 100회 이상",
+    "분당 150회 이상"
+   ],
+   "answer": 2,
+   "explain": "Tachycardia(빠른맥, 빈맥)는 분당 100회 이상이다.",
+   "detail": {
+    "why": "Tachycardia(빠른맥, 빈맥)는 분당 100회 이상이다.",
+    "page_note": "25쪽 박스 1번"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0051",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "굴빠른맥(sinus tachycardia)은 불규칙하고 빠른 리듬이다.",
+   "answer": false,
+   "explain": "굴빠른맥은 '규칙적이고' 빠른 리듬이다.",
+   "detail": {
+    "why": "굴빠른맥은 '규칙적이고' 빠른 리듬이다.",
+    "page_note": "25쪽 박스 1번 마지막 줄",
+    "tip": "굴(SA)에서 나온 리듬이라 규칙적."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0052",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "방실결절에서 심장차단이 생겼을 때 심전도의 특징은?",
+   "options": [
+    "P-R 간격이 정상보다 길어진다",
+    "P파가 사라진다",
+    "T파가 뒤집힌다",
+    "QRS가 짧아진다"
+   ],
+   "answer": 0,
+   "explain": "자극이 방실결절을 통해 심실로 퍼지는 데 걸리는 시간이 늘어 P-R 간격이 길어진다.",
+   "detail": {
+    "why": "자극이 방실결절을 통해 심실로 퍼지는 데 걸리는 시간이 늘어 P-R 간격이 길어진다.",
+    "page_note": "25쪽 박스 2번",
+    "tip": "방실결절 = 지연 장소 → 막히면 더 지연 → P-R↑."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0053",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장차단에서 '여분의 P파'가 보인다는 것은 무엇을 의미하는가?",
+   "options": [
+    "심방세동이 생겼다",
+    "굴심방결절의 일부 활동전위가 방실결절을 통해 전혀 전도되지 않는다",
+    "심실이 두 번 수축했다",
+    "관상동맥이 막혔다"
+   ],
+   "answer": 1,
+   "explain": "여분의 P파 = 심방은 탈분극했지만 그 신호 일부가 심실로 넘어가지 못했다는 뜻.",
+   "detail": {
+    "why": "여분의 P파 = 심방은 탈분극했지만 그 신호 일부가 심실로 넘어가지 못했다는 뜻.",
+    "page_note": "25쪽 박스 2번",
+    "tip": "P는 있는데 QRS가 없다 = 중간(AV)에서 막힘."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0054",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "오른다발가지와 왼다발가지를 따라 나타나는 차단은 일반적으로 QRS군을 넓힌다.",
+   "answer": true,
+   "explain": "강의자료 박스 2번 마지막 문장.",
+   "detail": {
+    "why": "강의자료 박스 2번 마지막 문장.",
+    "page_note": "25쪽 박스 2번",
+    "tip": "다발가지 = 심실 쪽 → 심실 탈분극(QRS)이 늘어짐."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0055",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "즉각적인 제세동(defibrillation)이 필요하고 ECG에서 무질서한 파형으로 나타나는 것은?",
+   "options": [
+    "굴빠른맥",
+    "심방세동",
+    "심실세동",
+    "느린맥"
+   ],
+   "answer": 2,
+   "explain": "심실세동은 생명을 위협하며 즉각 제세동하지 않으면 위험하다.",
+   "detail": {
+    "why": "심실세동은 생명을 위협하며 즉각 제세동하지 않으면 위험하다.",
+    "wrong": "심방세동은 심방 수축이 심실 충만에 필수가 아니라서 즉시 생명을 위협하지는 않는다.",
+    "page_note": "25쪽 박스 3번",
+    "tip": "심'실'세동 = 실제로 위험."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0056",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심방세동(atrial fibrillation)은 즉시 생명을 위협하는 부정맥이다.",
+   "answer": false,
+   "explain": "심방 수축은 심실을 채우는 데 필수가 아니어서 심방세동은 생명을 위협하지는 않는다.",
+   "detail": {
+    "why": "심방 수축은 심실을 채우는 데 필수가 아니어서 심방세동은 생명을 위협하지는 않는다.",
+    "page_note": "25쪽 박스 3번",
+    "tip": "심실충만의 80%는 수동(30쪽)이라는 것과 연결."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0057",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "short",
+   "q": "심실세동의 치료로 강의자료에 제시된 것은?",
+   "accept": [
+    "제세동",
+    "defibrillation",
+    "제세동기"
+   ],
+   "answer_text": "제세동(defibrillation)",
+   "detail": {
+    "why": "심실세동은 즉각적인 제세동으로 치료하지 않으면 위험하다.",
+    "page_note": "25쪽 박스 3번"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0058",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장잡음(heart murmur)이 생기는 원인으로 강의자료에 제시된 것은?",
+   "options": [
+    "판막이 닫히는 정상 소리",
+    "심장을 흐르는 혈류에 와류(turbulence)가 발생",
+    "심장막액이 늘어남",
+    "관상동맥 수축"
+   ],
+   "answer": 1,
+   "explain": "심장잡음은 심장을 흐르는 혈류에 와류가 생겨 발생한다. 보통 결함 있는 판막 때문이지만 심방사이막·심실사이막 결함으로도 생긴다.",
+   "detail": {
+    "why": "심장잡음은 심장을 흐르는 혈류에 와류가 생겨 발생한다. 보통 결함 있는 판막 때문이지만 심방사이막·심실사이막 결함으로도 생긴다.",
+    "page_note": "28쪽 박스 첫 문단",
+    "tip": "잡음 = 소용돌이."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 28
+   },
+   "id": "h-gen-0059",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "아동에게서 종종 발견되는 심장잡음은 반드시 결함을 의미한다.",
+   "answer": false,
+   "explain": "아동에게서 종종 발견되는 심장잡음은 반드시 결함을 의미하지는 않는다.",
+   "detail": {
+    "why": "아동에게서 종종 발견되는 심장잡음은 반드시 결함을 의미하지는 않는다.",
+    "page_note": "28쪽 박스 첫 문단 끝"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 28
+   },
+   "id": "h-gen-0060",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "S3가 들리는 시점으로 옳은 것은?",
+   "options": [
+    "S1 바로 전",
+    "S2 바로 뒤, 혈류가 심실로 흐르기 시작할 때",
+    "S1과 S2 사이 중간",
+    "심방 수축 직후"
+   ],
+   "answer": 1,
+   "explain": "S3는 S2 바로 뒤에 혈류가 심실로 흐르기 시작하면 바로 발생할 수 있다.",
+   "detail": {
+    "why": "S3는 S2 바로 뒤에 혈류가 심실로 흐르기 시작하면 바로 발생할 수 있다.",
+    "wrong": "S1 바로 전은 S4다.",
+    "page_note": "28쪽 박스 둘째 문단",
+    "tip": "S1-S2-S3 … S4-S1 : 3은 2 뒤, 4는 1 앞."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 28
+   },
+   "id": "h-gen-0061",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "S4가 들리는 시점으로 옳은 것은?",
+   "options": [
+    "S1 바로 전, 심방에서 심실로 혈액이 거의 다 빠져나갔을 때",
+    "S2 바로 뒤",
+    "S1과 S2 사이",
+    "등용적성이완기"
+   ],
+   "answer": 0,
+   "explain": "S4는 S1 바로 전 심방에서 심실로 혈액이 빠져나가는 것을 거의 마쳤을 때 들린다.",
+   "detail": {
+    "why": "S4는 S1 바로 전 심방에서 심실로 혈액이 빠져나가는 것을 거의 마쳤을 때 들린다.",
+    "page_note": "28쪽 박스 둘째 문단"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 28
+   },
+   "id": "h-gen-0062",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "S3와 S4는 병리현상을 의미할 수도 있지만 건강한 심장에서도 들릴 수 있다.",
+   "answer": true,
+   "explain": "강의자료 박스 마지막 문장.",
+   "detail": {
+    "why": "강의자료 박스 마지막 문장.",
+    "page_note": "28쪽 박스 끝"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 28
+   },
+   "id": "h-gen-0063",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "이첨판막 폐쇄부전에서 들리는 심잡음의 특징은?",
+   "options": [
+    "S1~S2 사이, 대동맥판막협착보다 약함",
+    "S1~S2 사이, 가장 강함",
+    "S1~S2를 제외한 기간",
+    "S2 직후만"
+   ],
+   "answer": 0,
+   "explain": "LV 혈액 일부가 LA로 역류하며 생기는 약한 잡음, S1~S2 사이, 대동맥판막협착보다 약하다.",
+   "detail": {
+    "why": "LV 혈액 일부가 LA로 역류하며 생기는 약한 잡음, S1~S2 사이, 대동맥판막협착보다 약하다.",
+    "wrong": "가장 강한 S1~S2 잡음은 대동맥판막협착, S1~S2 제외 기간은 대동맥판막 폐쇄부전.",
+    "page_note": "29쪽 가운데",
+    "tip": "이첨판 폐쇄부전 = 수축기 역류 = 약하게 S1~S2."
+   },
+   "highlight": [
+    "이첨판막폐쇄부전(mitralvalveinsufficiency)",
+    "대동맥판막협착보다는약함"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 29
+   },
+   "id": "h-gen-0064",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "대동맥판막 폐쇄부전의 심잡음이 들리는 기간은?",
+   "options": [
+    "S1~S2 사이",
+    "S1~S2를 제외한 기간(등적성 심실이완기부터 다음 수축 시작 전까지)",
+    "S1 직전만",
+    "S2 직후만"
+   ],
+   "answer": 1,
+   "explain": "대동맥판막 폐쇄부전 잡음은 등적성 심실이완기부터 심실수축이 다시 시작되는 지점에서 들린다(S1~S2를 제외한 기간).",
+   "detail": {
+    "why": "대동맥판막 폐쇄부전 잡음은 등적성 심실이완기부터 심실수축이 다시 시작되는 지점에서 들린다(S1~S2를 제외한 기간).",
+    "page_note": "29쪽 마지막",
+    "tip": "대동맥판이 안 닫힘 → 닫혀야 할 이완기에 역류 소리."
+   },
+   "highlight": [
+    "S1~S2를제외한기간"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 29
+   },
+   "id": "h-gen-0065",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "card",
+   "q": "S1, S2, S3, S4 심음과 세 가지 판막 잡음(대동맥판막협착, 이첨판막 폐쇄부전, 대동맥판막 폐쇄부전)을 시기와 특징으로 정리하시오.",
+   "answer_text": "S1: 방실판막 닫힘(lub), S2보다 길고 크지만 주파수 낮음\nS2: 반달판막 닫힘(dub)\nS3: S2 직후 심실로 혈액 유입 시 심실벽 진동, 보통 소아·청소년기에만\nS4: 심방음, S1 직전, 낮고 약함, 정상 심장에선 듣기 힘듦\n대동맥판막협착: 심실유출기, 강한 잡음, S1~S2 사이\n이첨판막 폐쇄부전: LV→LA 역류, 약한 잡음, S1~S2 사이\n대동맥판막 폐쇄부전: S1~S2를 제외한 기간",
+   "detail": {
+    "page_note": "27~29쪽",
+    "tip": "협착 = 박출 시 소리, 폐쇄부전 = 닫혀야 할 때 소리."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 29
+   },
+   "id": "h-gen-0066",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심실충만기에 왼심실과 오른심실의 압력은 심방보다 높다.",
+   "answer": false,
+   "explain": "심실이 차는 동안 심실 압력은 심방 및 허파동맥줄기·대동맥보다 '낮다'. 그래야 혈액이 들어온다.",
+   "detail": {
+    "why": "심실이 차는 동안 심실 압력은 심방 및 허파동맥줄기·대동맥보다 '낮다'. 그래야 혈액이 들어온다.",
+    "page_note": "30쪽 ①",
+    "tip": "혈액은 압력 높은 곳 → 낮은 곳."
+   },
+   "highlight": [
+    "왼심실과오른심실의압력"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 30
+   },
+   "id": "h-gen-0067",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심실충만기 후반에 심실의 혈액 충만이 느려지는 이유는?",
+   "options": [
+    "심방이 수축을 멈춰서",
+    "압력 차이가 점점 작아져서",
+    "반달판막이 열려서",
+    "방실판막이 닫혀서"
+   ],
+   "answer": 1,
+   "explain": "혈액이 심실로 빠져나가며 압력 차이가 점점 작아지면서 충만이 느려진다.",
+   "detail": {
+    "why": "혈액이 심실로 빠져나가며 압력 차이가 점점 작아지면서 충만이 느려진다.",
+    "page_note": "30쪽 ① 셋째 줄",
+    "tip": "차이가 줄면 흐름도 준다."
+   },
+   "highlight": [
+    "압력차이가점점작"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 30
+   },
+   "id": "h-gen-0068",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심방수축기의 역할은?",
+   "options": [
+    "심실 혈액을 대동맥으로 박출한다",
+    "심방에 남은 혈액을 심실로 짜낸다",
+    "방실판막을 닫는다",
+    "반달판막을 연다"
+   ],
+   "answer": 1,
+   "explain": "심방이 수축하여 남은 혈액을 심실로 짜낸다. 그 끝에 각 심실에는 약 120mL(EDV).",
+   "detail": {
+    "why": "심방이 수축하여 남은 혈액을 심실로 짜낸다. 그 끝에 각 심실에는 약 120mL(EDV).",
+    "page_note": "30쪽 ①",
+    "tip": "80% 수동 + 나머지 심방수축 = EDV 120."
+   },
+   "highlight": [
+    "심방이수축하여남"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 30
+   },
+   "id": "h-gen-0069",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "등용적성수축기에는 심실 압력이 충분히 높아 반달판막이 열린다.",
+   "answer": false,
+   "explain": "이 시기엔 압력이 아직 반달판막을 열 만큼 높지 않아 두 판막 모두 닫혀 있다.",
+   "detail": {
+    "why": "이 시기엔 압력이 아직 반달판막을 열 만큼 높지 않아 두 판막 모두 닫혀 있다.",
+    "page_note": "31쪽 마지막 항목",
+    "tip": "'등용적' = 용적 그대로 = 모든 문 닫힘."
+   },
+   "highlight": [
+    "아직충분히높지않으므로"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 31
+   },
+   "id": "h-gen-0070",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심실박출기에 반달판막이 열리는 조건은?",
+   "options": [
+    "심실 압력이 심방보다 낮아질 때",
+    "심실 압력이 허파동맥줄기와 대동맥보다 높아질 때",
+    "관상동맥 압력이 높아질 때",
+    "심방이 수축할 때"
+   ],
+   "answer": 1,
+   "explain": "심실 압력이 허파동맥줄기와 대동맥보다 높아지면 반달판막을 위로 밀어 연다.",
+   "detail": {
+    "why": "심실 압력이 허파동맥줄기와 대동맥보다 높아지면 반달판막을 위로 밀어 연다.",
+    "page_note": "32쪽 ③ 첫 항목",
+    "tip": "판막은 압력 차로만 열리고 닫힌다."
+   },
+   "highlight": [
+    "심실의압력이허파동맥줄기와대동맥보다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "id": "h-gen-0071",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "short",
+   "q": "심실박출 후 심실에 남은 혈액의 양(수축기말용적)의 영문 약어는?",
+   "accept": [
+    "esv",
+    "end-systolic volume",
+    "endsystolicvolume"
+   ],
+   "answer_text": "ESV (end-systolic volume, 수축기말용적)",
+   "detail": {
+    "why": "심실박출기에 각 심실이 약 70mL를 펌프한 뒤 남은 혈액이 ESV다.",
+    "page_note": "32쪽 마지막",
+    "tip": "EDV(확장기말, 꽉 참) − ESV(수축기말, 남음) = SV."
+   },
+   "highlight": [
+    "ESV(end-systolic"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "id": "h-gen-0072",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심실박출기 시작에는 심실로부터 혈액이 빠른 속도로 빠져나간다.",
+   "answer": true,
+   "explain": "강의자료 ③ 둘째 항목.",
+   "detail": {
+    "why": "강의자료 ③ 둘째 항목.",
+    "page_note": "32쪽"
+   },
+   "highlight": [
+    "빠른속도로빠져나간다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "id": "h-gen-0073",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "등용적성이완기에는 심실 압력이 여전히 심방보다 약간 높아 방실판막이 닫혀 있다.",
+   "answer": true,
+   "explain": "반달판막은 닫히고(S2), 방실판막도 아직 닫혀 있어 용적이 잠시 그대로다.",
+   "detail": {
+    "why": "반달판막은 닫히고(S2), 방실판막도 아직 닫혀 있어 용적이 잠시 그대로다.",
+    "page_note": "33쪽 ④"
+   },
+   "highlight": [
+    "심실의압력은여전히심방보다약간높아"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 33
+   },
+   "id": "h-gen-0074",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "34쪽 그래프에서 오른심실의 최대압력은 왼심실의 최대압력보다 훨씬 낮다.",
+   "answer": true,
+   "explain": "그래프에서 왼심실 최대압은 120mmHg 가까이, 오른심실(허파동맥줄기) 최대압은 그보다 훨씬 낮다.",
+   "detail": {
+    "why": "그래프에서 왼심실 최대압은 120mmHg 가까이, 오른심실(허파동맥줄기) 최대압은 그보다 훨씬 낮다.",
+    "page_note": "34쪽 그림 17.16 (a)와 (b)",
+    "tip": "폐로 보내는 오른쪽은 낮은 압력으로 충분."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 34
+   },
+   "id": "h-gen-0075",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "EDV가 130mL, ESV가 60mL일 때 일회박출량은?",
+   "options": [
+    "60mL",
+    "70mL",
+    "130mL",
+    "190mL"
+   ],
+   "answer": 1,
+   "explain": "SV = EDV − ESV = 130 − 60 = 70mL.",
+   "detail": {
+    "why": "SV = EDV − ESV = 130 − 60 = 70mL.",
+    "wrong": "더하면 안 된다.",
+    "page_note": "36쪽 공식"
+   },
+   "highlight": [
+    "일회박출량=EDV(end-diastolicvolume)-ESV"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "id": "h-gen-0076",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심박수 80회/분, 일회박출량 60mL일 때 심장박출량은?",
+   "options": [
+    "1.4L/분",
+    "4.8L/분",
+    "6L/분",
+    "8L/분"
+   ],
+   "answer": 1,
+   "explain": "CO = HR × SV = 80 × 60 = 4,800mL/분 = 4.8L/분.",
+   "detail": {
+    "why": "CO = HR × SV = 80 × 60 = 4,800mL/분 = 4.8L/분.",
+    "page_note": "36쪽",
+    "tip": "단위: mL × 회/분 = mL/분 → ÷1000 = L/분."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "id": "h-gen-0077",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장박출량 5L/분, 심박수 100회/분이면 일회박출량은?",
+   "options": [
+    "20mL",
+    "50mL",
+    "100mL",
+    "500mL"
+   ],
+   "answer": 1,
+   "explain": "SV = CO ÷ HR = 5,000 ÷ 100 = 50mL.",
+   "detail": {
+    "why": "SV = CO ÷ HR = 5,000 ÷ 100 = 50mL.",
+    "page_note": "36쪽 공식 응용"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "id": "h-gen-0078",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "후부하(afterload)를 증가시키는 예로 37쪽 그림에 제시된 것은?",
+   "options": [
+    "정맥혈 귀환 증가",
+    "고혈압과 판막협착",
+    "교감신경 자극",
+    "체온 상승"
+   ],
+   "answer": 1,
+   "explain": "그림에서 후부하(−) 아래에 고혈압(hypertension), 판막협착(valvular stenosis)이 표시되어 있다.",
+   "detail": {
+    "why": "그림에서 후부하(−) 아래에 고혈압(hypertension), 판막협착(valvular stenosis)이 표시되어 있다.",
+    "wrong": "정맥혈 귀환은 전부하를 늘린다.",
+    "page_note": "37쪽 그림",
+    "tip": "후부하 = 박출 저항 = 마이너스."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 37
+   },
+   "id": "h-gen-0079",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "37쪽 그림에서 전부하와 수축력은 일회박출량에 (+), 후부하는 (−)로 작용한다.",
+   "answer": true,
+   "explain": "그림 기호 그대로다.",
+   "detail": {
+    "why": "그림 기호 그대로다.",
+    "page_note": "37쪽 그림"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 37
+   },
+   "id": "h-gen-0080",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "전부하(preload)의 정의로 옳은 것은?",
+   "options": [
+    "심실이 동맥으로 박출할 때 극복해야 하는 힘",
+    "심장근육세포의 폄 정도",
+    "심장의 내부적 펌프 능력",
+    "분당 심박수"
+   ],
+   "answer": 1,
+   "explain": "전부하 = 심장근육세포의 폄 정도, 심실의 EDV에 따라 달라진다.",
+   "detail": {
+    "why": "전부하 = 심장근육세포의 폄 정도, 심실의 EDV에 따라 달라진다.",
+    "wrong": "1번은 후부하, 3번은 수축력이다.",
+    "page_note": "38쪽",
+    "tip": "전(前) = 박출 전에 늘어난 정도."
+   },
+   "highlight": [
+    "심장근육세포의폄정도"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "id": "h-gen-0081",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "프랭크-스탈링 법칙에 따르면 심장은 늘어날수록 한계 없이 수축력이 계속 강해진다.",
+   "answer": false,
+   "explain": "'어느 시점까지는' 많이 신전될수록 수축력이 강해진다.",
+   "detail": {
+    "why": "'어느 시점까지는' 많이 신전될수록 수축력이 강해진다.",
+    "wrong": "'한계 없이'가 틀렸다.",
+    "page_note": "38쪽 마지막 줄",
+    "tip": "고무줄도 너무 늘리면 끊어진다."
+   },
+   "highlight": [
+    "어느시점까지는심장이많이신전될수록수축력이더강해진"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "id": "h-gen-0082",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "수축력(contractility)의 정의로 옳은 것은?",
+   "options": [
+    "심장근육세포의 폄 정도",
+    "내부적인 펌프 능력 또는 장력을 조절하는 능력",
+    "동맥압",
+    "분당 박동 수"
+   ],
+   "answer": 1,
+   "explain": "수축력 = 내부적인 펌프 능력 또는 일반적인 tension(장력)을 조절하는 능력.",
+   "detail": {
+    "why": "수축력 = 내부적인 펌프 능력 또는 일반적인 tension(장력)을 조절하는 능력.",
+    "page_note": "39쪽 Contractility"
+   },
+   "highlight": [
+    "내부적인펌프능력"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 39
+   },
+   "id": "h-gen-0083",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "후부하를 결정하는 것은?",
+   "options": [
+    "심실의 EDV",
+    "허파순환과 온몸순환의 동맥압",
+    "심방 압력",
+    "관상동맥 혈류"
+   ],
+   "answer": 1,
+   "explain": "후부하는 허파순환과 온몸순환의 동맥압에 의해 결정된다.",
+   "detail": {
+    "why": "후부하는 허파순환과 온몸순환의 동맥압에 의해 결정된다.",
+    "wrong": "EDV는 전부하.",
+    "page_note": "39쪽 Afterload"
+   },
+   "highlight": [
+    "허파순환과온몸순환의동맥압에의해결정된다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 39
+   },
+   "id": "h-gen-0084",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "정상 상태에서 심장박동수를 결정하는 것은?",
+   "options": [
+    "방실결절의 전도 속도",
+    "굴심방결절이 활동전위를 생성하는 속도",
+    "푸르키네섬유 길이",
+    "혈액량"
+   ],
+   "answer": 1,
+   "explain": "정상 상태에서 SA node가 활동전위를 생성하는 속도가 심장박동수를 결정한다.",
+   "detail": {
+    "why": "정상 상태에서 SA node가 활동전위를 생성하는 속도가 심장박동수를 결정한다.",
+    "page_note": "40쪽",
+    "tip": "박동조율기 = 박자 결정."
+   },
+   "highlight": [
+    "을생성하는속도가심장박동수를결정한다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 40
+   },
+   "id": "h-gen-0085",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "굴심방결절의 탈분극 속도에 영향을 미치는 요인으로 강의자료에 제시되지 않은 것은?",
+   "options": [
+    "교감신경 자극",
+    "부교감신경 자극",
+    "체온",
+    "혈액 점도"
+   ],
+   "answer": 3,
+   "explain": "강의자료의 요인: 교감신경 자극, 부교감신경 자극, 특정 호르몬, 체온.",
+   "detail": {
+    "why": "강의자료의 요인: 교감신경 자극, 부교감신경 자극, 특정 호르몬, 체온.",
+    "wrong": "혈액 점도는 말초저항 요인(혈관 18쪽).",
+    "page_note": "40쪽"
+   },
+   "highlight": [
+    "교감신경자극,부교감신경자극,특정호르몬,"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 40
+   },
+   "id": "h-gen-0086",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "교감신경이 심장 수축력을 높이는 기전으로 옳은 것은?",
+   "options": [
+    "Ca2+ 통로를 통해 더 많은 Ca2+가 심장근육세포로 들어가게 한다",
+    "K+ 유입을 늘린다",
+    "아세틸콜린을 방출한다",
+    "방실결절 전도를 늦춘다"
+   ],
+   "answer": 0,
+   "explain": "교감신경은 Ca2+ 통로를 통해 더 많은 Ca2+가 들어가게 해 수축력을 증가시킨다.",
+   "detail": {
+    "why": "교감신경은 Ca2+ 통로를 통해 더 많은 Ca2+가 들어가게 해 수축력을 증가시킨다.",
+    "wrong": "아세틸콜린·방실결절 지연은 부교감.",
+    "page_note": "41쪽",
+    "tip": "Ca2+ ↑ = 수축 ↑ (정점지속기와 연결)."
+   },
+   "highlight": [
+    "더많은Ca2+가심장근육세포로들어가도록한다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 41
+   },
+   "id": "h-gen-0087",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "short",
+   "q": "교감신경이 심장에서 방출하는 신경전달물질은?",
+   "accept": [
+    "노르에피네프린",
+    "norepinephrine",
+    "노에피네프린"
+   ],
+   "answer_text": "노르에피네프린(norepinephrine)",
+   "detail": {
+    "why": "교감신경과 노르에피네프린은 SA node 흥분 속도를 빠르게 하고 수축력을 높인다.",
+    "page_note": "41쪽",
+    "tip": "교감 = 노르에피, 부교감 = 아세틸콜린."
+   },
+   "highlight": [
+    "norepinephrine(노르에피네프린)"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 41
+   },
+   "id": "h-gen-0088",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "갑상선호르몬은 내분비계통에 의한 심장 조절 요소로 제시되어 있다.",
+   "answer": true,
+   "explain": "내분비계통 심장 조절: 에피네프린·노르에피네프린, 갑상선호르몬, 알도스테론·ADH, ANP.",
+   "detail": {
+    "why": "내분비계통 심장 조절: 에피네프린·노르에피네프린, 갑상선호르몬, 알도스테론·ADH, ANP.",
+    "page_note": "42쪽 ②"
+   },
+   "highlight": [
+    "갑상선호르몬"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 42
+   },
+   "id": "h-gen-0089",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장박출량에 영향을 주는 '다른 요인'으로 강의자료에 제시된 것은?",
+   "options": [
+    "세포바깥액의 특정 전해질 농도, 체온, 나이",
+    "혈관 길이, 혈액 점도",
+    "폐활량",
+    "관상동맥 직경"
+   ],
+   "answer": 0,
+   "explain": "③ 다른 요인: ECF(세포바깥액)의 특정 전해질 농도, 체온, 나이 등.",
+   "detail": {
+    "why": "③ 다른 요인: ECF(세포바깥액)의 특정 전해질 농도, 체온, 나이 등.",
+    "page_note": "42쪽 ③"
+   },
+   "highlight": [
+    "세포바깥액,세포외액)의특정전해질농도,체온,나이"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 42
+   },
+   "id": "h-gen-0090",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "43쪽 그림에서 심장박출량을 감소시키는 경우가 아닌 것은?",
+   "options": [
+    "콩팥으로부터 수분정체를 감소시키는 호르몬",
+    "부교감신경계통 활동 증가",
+    "체온 감소",
+    "교감신경계통 활동 증가"
+   ],
+   "answer": 3,
+   "explain": "교감신경 활동 증가는 심장박동수와 수축력을 올려 심장박출량을 증가시킨다.",
+   "detail": {
+    "why": "교감신경 활동 증가는 심장박동수와 수축력을 올려 심장박출량을 증가시킨다.",
+    "wrong": "나머지 셋은 그림 위쪽(감소 경로)에 있다.",
+    "page_note": "43쪽 그림 17.19"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 43
+   },
+   "id": "h-gen-0091",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "43쪽 그림에 따르면 콩팥으로부터 수분정체를 일으키는 호르몬은 전부하를 늘려 심장박출량을 증가시킨다.",
+   "answer": true,
+   "explain": "수분정체 → 혈액량↑ → 전부하↑ → 일회박출량↑ → 심장박출량↑.",
+   "detail": {
+    "why": "수분정체 → 혈액량↑ → 전부하↑ → 일회박출량↑ → 심장박출량↑.",
+    "page_note": "43쪽 그림 아래쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 43
+   },
+   "id": "h-gen-0092",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "card",
+   "q": "심장박동장애의 세 가지 기본 유형을 쓰고 각각 설명하시오.",
+   "answer_text": "① 심장박동수 장애: 느린맥(분당 60회 이하), 빠른맥(분당 100회 이상), 굴빠른맥은 규칙적이고 빠른 리듬\n② 전도경로장애(심장차단): 주로 방실결절에서 → P-R 간격 길어짐, 여분의 P파(일부 신호가 심실로 전도 안 됨). 다발가지 차단은 QRS군을 넓힘\n③ 잔떨림: 심방세동은 생명을 위협하지 않음(심방 수축은 심실 충만에 필수 아님), 심실세동은 생명 위협·즉각 제세동 필요·ECG 무질서한 파형",
+   "detail": {
+    "page_note": "25쪽 '임상에서 적용하기'",
+    "tip": "수·길·떨림."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0093",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "card",
+   "q": "대정맥에서 대동맥까지 심장을 통과하는 혈류 경로를 판막을 포함해 순서대로 쓰시오.",
+   "answer_text": "위·아래대정맥 → 오른심방 → 삼첨판막 → 오른심실 → 허파동맥판막 → 허파동맥줄기 → 폐(기체교환) → 허파정맥 → 왼심방 → 승모판막(이첨판막) → 왼심실 → 대동맥판막 → 대동맥",
+   "detail": {
+    "page_note": "12쪽 혈류 그림",
+    "tip": "오른쪽은 삼첨, 왼쪽은 이첨. 판막 이름은 뒤에 나오는 혈관 이름."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0094",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "card",
+   "q": "심장의 관상순환(동맥 가지와 정맥)을 정리하시오.",
+   "answer_text": "대동맥에서 좌우 관상동맥이 갈라짐. 이완 시 혈류 정점\n오른심장동맥: 모서리동맥, 뒤심실사이동맥\n왼심장동맥: 앞심실사이동맥(LAD), 휘돌이동맥(LCX)\n큰심장정맥: 왼심방과 양쪽 심실 많은 부분\n작은심장정맥: 오른심방·오른심실 일부\n중간심장정맥: 뒤 왼심실 대부분\n대부분 심장 뒷면 오른심방의 관상정맥동으로 모임",
+   "detail": {
+    "page_note": "13~15쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "id": "h-gen-0095",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈관 속막(내막)의 기능이 아닌 것은?",
+   "options": [
+    "혈액이 흐를 때 마찰과 난류를 최소화",
+    "선택적 투과장벽 역할",
+    "혈구와 혈소판이 혈관벽에 달라붙지 못하게 하는 화학물질 분비",
+    "혈관을 이웃 조직에 고정"
+   ],
+   "answer": 3,
+   "explain": "혈관을 이웃 조직에 고정하는 것은 바깥막(외막)이다.",
+   "detail": {
+    "why": "혈관을 이웃 조직에 고정하는 것은 바깥막(외막)이다.",
+    "wrong": "나머지 셋은 모두 속막 내피의 기능.",
+    "page_note": "3쪽 속막 항목, 4쪽 바깥막",
+    "tip": "속막 = 혈액과 맞닿는 면의 일, 바깥막 = 고정."
+   },
+   "highlight": [
+    "부드러운표면은혈액이흐를때마찰과난류를최소화한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 3
+   },
+   "id": "v-gen-0001",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "혈관 내피는 혈관의 확장·수축을 자극하는 화학물질과 응고인자를 분비한다.",
+   "answer": true,
+   "explain": "속막 내피는 산화질소 등 혈류 조절 화학물질과 응고인자를 분비한다.",
+   "detail": {
+    "why": "속막 내피는 산화질소 등 혈류 조절 화학물질과 응고인자를 분비한다.",
+    "page_note": "3쪽 마지막 항목"
+   },
+   "highlight": [
+    "응고인자를분비한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 3
+   },
+   "id": "v-gen-0002",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈관 중간막(중막)을 구성하는 것으로 옳은 것은?",
+   "options": [
+    "단층편평상피",
+    "민무늬근육, 아교질(콜라겐), 탄력조직",
+    "성긴 결합조직만",
+    "뼈대근육"
+   ],
+   "answer": 1,
+   "explain": "중간막은 대체로 가장 두꺼우며 민무늬근육, 아교질, 탄력조직으로 이루어진다.",
+   "detail": {
+    "why": "중간막은 대체로 가장 두꺼우며 민무늬근육, 아교질, 탄력조직으로 이루어진다.",
+    "wrong": "단층편평상피는 속막 내피, 성긴결합조직은 바깥막.",
+    "page_note": "4쪽 2) 중간막",
+    "tip": "속=상피 / 중=근육 / 바깥=결합조직."
+   },
+   "highlight": [
+    "민무늬근육,아교질(콜라겐),탄력조직으로이루"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 4
+   },
+   "id": "v-gen-0003",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "중간막은 혈관이 혈압 때문에 파열하지 않도록 한다.",
+   "answer": true,
+   "explain": "중간막은 혈관을 수축·확장하며 혈압 때문에 파열하지 않도록 한다.",
+   "detail": {
+    "why": "중간막은 혈관을 수축·확장하며 혈압 때문에 파열하지 않도록 한다.",
+    "page_note": "4쪽"
+   },
+   "highlight": [
+    "혈관이혈압때문에파열하지않도록한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 4
+   },
+   "id": "v-gen-0004",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "중간막은 교감신경계통 자극에 의해 수축 또는 확장된다.",
+   "answer": true,
+   "explain": "교감신경 자극으로 직경이 변해 혈압과 혈류의 양을 결정한다.",
+   "detail": {
+    "why": "교감신경 자극으로 직경이 변해 혈압과 혈류의 양을 결정한다.",
+    "page_note": "4쪽"
+   },
+   "highlight": [
+    "자극에의해수축또는확장된다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 4
+   },
+   "id": "v-gen-0005",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "short",
+   "q": "동맥에서 정맥보다 훨씬 광범위하게 발달한 두 탄력판의 이름은? (하나만 써도 정답)",
+   "accept": [
+    "속탄력판",
+    "바깥탄력판",
+    "internal elastic lamina",
+    "external elastic lamina",
+    "internalelasticlaminae",
+    "externalelasticlaminae"
+   ],
+   "answer_text": "속탄력판(internal elastic laminae)과 바깥탄력판(external elastic laminae)",
+   "detail": {
+    "why": "동맥압이 정맥압보다 높다는 것을 반영한다.",
+    "page_note": "5쪽"
+   },
+   "highlight": [
+    "internalelasticlaminae(속탄력판)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 5
+   },
+   "id": "v-gen-0006",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "전도동맥(탄력동맥)의 지름은 최대 얼마에 달할 수 있는가?",
+   "options": [
+    "약 1mm",
+    "약 1cm",
+    "약 2.5cm",
+    "약 10cm"
+   ],
+   "answer": 2,
+   "explain": "전도동맥은 지름이 2.5cm에 달할 수 있다.",
+   "detail": {
+    "why": "전도동맥은 지름이 2.5cm에 달할 수 있다.",
+    "page_note": "6쪽",
+    "tip": "대동맥 굵기 ≈ 2.5cm."
+   },
+   "highlight": [
+    "지름이2.5cm에달할수있다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 6
+   },
+   "id": "v-gen-0007",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "short",
+   "q": "전도동맥(conducting artery)의 다른 이름 두 가지 중 하나를 쓰시오.",
+   "accept": [
+    "탄력동맥",
+    "큰동맥",
+    "elastic artery",
+    "large artery"
+   ],
+   "answer_text": "탄력동맥(elastic artery), 큰동맥(large artery)",
+   "detail": {
+    "why": "광범위한 탄력층이 있어 수축기에 늘어나고 이완기에 되돌아온다.",
+    "page_note": "6쪽 첫 줄",
+    "tip": "전도·탄력·큰 = 대동맥급."
+   },
+   "highlight": [
+    "탄력동맥(elasticartery),큰동맥(largeartery)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 6
+   },
+   "id": "v-gen-0008",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "short",
+   "q": "분배동맥(distributing artery)의 다른 이름 두 가지 중 하나를 쓰시오.",
+   "accept": [
+    "근육동맥",
+    "중간동맥",
+    "muscular artery",
+    "medium artery"
+   ],
+   "answer_text": "근육동맥(muscular artery), 중간동맥(medium artery)",
+   "detail": {
+    "why": "중간막에 민무늬근육이 많고 국소혈류를 조절한다.",
+    "page_note": "7쪽 첫 줄",
+    "tip": "분배·근육·중간."
+   },
+   "highlight": [
+    "근육동맥(muscularartery),중간동맥"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 7
+   },
+   "id": "v-gen-0009",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "분배동맥은 막힐 가능성이 높다.",
+   "answer": true,
+   "explain": "강의자료: 분배동맥은 국소혈류를 조절하며 막힐 가능성이 높다.",
+   "detail": {
+    "why": "강의자료: 분배동맥은 국소혈류를 조절하며 막힐 가능성이 높다.",
+    "page_note": "7쪽",
+    "tip": "죽상동맥경화증이 근육형 동맥을 침범(8쪽)과 연결."
+   },
+   "highlight": [
+    "막힐가능성이높다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 7
+   },
+   "id": "v-gen-0010",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "절개나 수술 시 이름이 있어 추적할 수 있는 동맥은?",
+   "options": [
+    "모든 저항동맥",
+    "모든 전도동맥과 대부분의 분배동맥",
+    "모세혈관",
+    "모든 세동맥"
+   ],
+   "answer": 1,
+   "explain": "모든 전도동맥과 대부분의 분배동맥은 이름이 있다. 저항동맥은 너무 많아 이름을 붙일 수 없다.",
+   "detail": {
+    "why": "모든 전도동맥과 대부분의 분배동맥은 이름이 있다. 저항동맥은 너무 많아 이름을 붙일 수 없다.",
+    "page_note": "7쪽 * 항목, 9쪽"
+   },
+   "highlight": [
+    "모든전도동맥과대부분의분배동맥은이름이있으며"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 7
+   },
+   "id": "v-gen-0011",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "죽상동맥경화증(atherosclerosis)이 주로 영향을 주는 동맥은?",
+   "options": [
+    "모세혈관",
+    "근육형 동맥",
+    "세정맥",
+    "허파정맥"
+   ],
+   "answer": 1,
+   "explain": "죽상동맥경화증은 근육형 동맥에 영향을 주는 질환이다.",
+   "detail": {
+    "why": "죽상동맥경화증은 근육형 동맥에 영향을 주는 질환이다.",
+    "page_note": "8쪽 '임상에서 적용하기'",
+    "tip": "근육형 = 분배동맥 = 막히기 쉬움."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0012",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "죽상경화판(플라그)이 잘 형성되는 위치는?",
+   "options": [
+    "혈류 속도와 방향이 급격히 변하는 지점(분기점, 굽은 곳)",
+    "혈류가 가장 느린 모세혈관",
+    "정맥판막 주변",
+    "대정맥 입구"
+   ],
+   "answer": 0,
+   "explain": "혈액의 속도와 방향이 급격히 변하는 지점, 분기점 또는 혈관이 굽어지는 위치에서 잘 형성된다.",
+   "detail": {
+    "why": "혈액의 속도와 방향이 급격히 변하는 지점, 분기점 또는 혈관이 굽어지는 위치에서 잘 형성된다.",
+    "page_note": "8쪽 박스 둘째 문단",
+    "tip": "갈라지고 꺾이는 곳 = 내피가 다치기 쉬운 곳."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0013",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "플라그가 만들어지는 출발점은?",
+   "options": [
+    "적혈구 증가",
+    "혈관내피의 손상",
+    "정맥판막 손상",
+    "림프관 막힘"
+   ],
+   "answer": 1,
+   "explain": "플라그는 혈관내피의 손상으로 만들어진다.",
+   "detail": {
+    "why": "플라그는 혈관내피의 손상으로 만들어진다.",
+    "page_note": "8쪽 박스 둘째 문단"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0014",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "강의자료에서 혈관내피를 손상시키는 요인으로 제시되지 않은 것은?",
+   "options": [
+    "고혈압",
+    "흡연",
+    "고혈당",
+    "저체온"
+   ],
+   "answer": 3,
+   "explain": "내피 손상 요인: 혈압, 특정 유형의 콜레스테롤, 감염, 흡연, 고혈당, 호모시스테인.",
+   "detail": {
+    "why": "내피 손상 요인: 혈압, 특정 유형의 콜레스테롤, 감염, 흡연, 고혈당, 호모시스테인.",
+    "page_note": "8쪽 박스 둘째 문단"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0015",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "플라그 내용물이 혈액에 노출되어 혈관 내 응고가 생기면 일어날 수 있는 것은?",
+   "options": [
+    "심근경색, 뇌졸중",
+    "정맥류",
+    "치질",
+    "빈혈"
+   ],
+   "answer": 0,
+   "explain": "혈관 내 응고가 혈류를 완전히 차단해 심근경색(심장발작)과 뇌졸중을 일으킨다.",
+   "detail": {
+    "why": "혈관 내 응고가 혈류를 완전히 차단해 심근경색(심장발작)과 뇌졸중을 일으킨다.",
+    "page_note": "8쪽 박스 셋째 문단"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0016",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "죽상동맥경화증 환자 대부분은 초기에 증상이 뚜렷하게 나타난다.",
+   "answer": false,
+   "explain": "대부분 조기에 증상이 나타나지 않아 실제 유병률을 단정하기 어렵다.",
+   "detail": {
+    "why": "대부분 조기에 증상이 나타나지 않아 실제 유병률을 단정하기 어렵다.",
+    "page_note": "8쪽 박스 넷째 문단",
+    "tip": "조용히 진행되는 병."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0017",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "저항동맥(작은동맥)의 구조로 옳은 것은?",
+   "options": [
+    "두꺼운 탄력층",
+    "얇은 바깥막과 1~3개의 민무늬근육층",
+    "내피와 바닥막만",
+    "정맥판막"
+   ],
+   "answer": 1,
+   "explain": "저항동맥은 얇은 바깥막과 1~3개의 민무늬근육층으로 되어 있다.",
+   "detail": {
+    "why": "저항동맥은 얇은 바깥막과 1~3개의 민무늬근육층으로 되어 있다.",
+    "wrong": "내피+바닥막만 있는 건 모세혈관.",
+    "page_note": "9쪽"
+   },
+   "highlight": [
+    "얇은바깥막과1~3개의민무늬근육층"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 9
+   },
+   "id": "v-gen-0018",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관계로 직접 혈액을 공급하는 혈관은?",
+   "options": [
+    "대동맥",
+    "metarteriole(메타세동맥)",
+    "세정맥",
+    "중간정맥"
+   ],
+   "answer": 1,
+   "explain": "Metarteriole은 모세혈관계로 직접 혈액을 공급한다.",
+   "detail": {
+    "why": "Metarteriole은 모세혈관계로 직접 혈액을 공급한다.",
+    "page_note": "9쪽"
+   },
+   "highlight": [
+    "Metarteriole:모세혈관계로직접혈액을공급"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 9
+   },
+   "id": "v-gen-0019",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관바탕은 하나의 세동맥에서 시작되는 몇 개의 혈관으로 이루어지는가?",
+   "options": [
+    "2~5개",
+    "10~100개",
+    "1,000개 이상",
+    "수백만 개"
+   ],
+   "answer": 1,
+   "explain": "하나의 세동맥에서 시작되는 10~100개의 혈관이 그물 형태로 배열된다.",
+   "detail": {
+    "why": "하나의 세동맥에서 시작되는 10~100개의 혈관이 그물 형태로 배열된다.",
+    "page_note": "10쪽"
+   },
+   "highlight": [
+    "하나의세동맥에서시작되는"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 10
+   },
+   "id": "v-gen-0020",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "모세혈관바탕을 흐르는 혈류는 조직의 대사 수요에 맞춰 조절된다.",
+   "answer": true,
+   "explain": "예: 운동할 때 뼈대근육의 모세혈관바탕 vs 장의 모세혈관바탕.",
+   "detail": {
+    "why": "예: 운동할 때 뼈대근육의 모세혈관바탕 vs 장의 모세혈관바탕.",
+    "page_note": "10쪽"
+   },
+   "highlight": [
+    "조직의대사수요에맞춰조절된다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 10
+   },
+   "id": "v-gen-0021",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관앞조임근이 닫히면 혈액은 어디로 흐르는가?",
+   "options": [
+    "모세혈관 그물 전체",
+    "중심혈관(thoroughfare channel)을 통해 세정맥으로",
+    "림프관으로",
+    "동맥으로 역류"
+   ],
+   "answer": 1,
+   "explain": "조임근이 닫히면 혈액이 모세혈관 그물을 우회해 중심혈관을 통해 세정맥으로 간다.",
+   "detail": {
+    "why": "조임근이 닫히면 혈액이 모세혈관 그물을 우회해 중심혈관을 통해 세정맥으로 간다.",
+    "page_note": "11쪽 그림 (b)",
+    "tip": "닫히면 '지름길'."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 11
+   },
+   "id": "v-gen-0022",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "정맥은 동맥보다 수가 훨씬 많고 속공간(lumen)의 직경도 더 크다.",
+   "answer": true,
+   "explain": "강의자료 12쪽 첫 줄.",
+   "detail": {
+    "why": "강의자료 12쪽 첫 줄.",
+    "page_note": "12쪽"
+   },
+   "highlight": [
+    "동맥보다수가훨씬더많으며"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "id": "v-gen-0023",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "세정맥(venule)의 지름은?",
+   "options": [
+    "최대 1mm",
+    "최대 10mm",
+    "10mm 초과",
+    "약 2.5cm"
+   ],
+   "answer": 0,
+   "explain": "세정맥은 지름 최대 1mm, 중간정맥 최대 10mm, 큰정맥은 10mm 초과.",
+   "detail": {
+    "why": "세정맥은 지름 최대 1mm, 중간정맥 최대 10mm, 큰정맥은 10mm 초과.",
+    "page_note": "12쪽",
+    "tip": "세 1 / 중 10 / 큰 10↑."
+   },
+   "highlight": [
+    "지름은최대1mm"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "id": "v-gen-0024",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "중간정맥의 지름은?",
+   "options": [
+    "최대 1mm",
+    "최대 10mm",
+    "10mm 초과",
+    "5~9μm"
+   ],
+   "answer": 1,
+   "explain": "중간정맥은 지름 최대 10mm이며 중간막과 바깥막이 두꺼운 편이다.",
+   "detail": {
+    "why": "중간정맥은 지름 최대 10mm이며 중간막과 바깥막이 두꺼운 편이다.",
+    "page_note": "12쪽"
+   },
+   "highlight": [
+    "지름이최대10mm"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "id": "v-gen-0025",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "정맥은 압력 변화를 견디기 위해 근육과 탄력조직이 많이 필요하다.",
+   "answer": false,
+   "explain": "정맥은 심장에서 멀어 혈압이 훨씬 낮으므로 근육이나 탄력조직이 많이 필요하지 않다.",
+   "detail": {
+    "why": "정맥은 심장에서 멀어 혈압이 훨씬 낮으므로 근육이나 탄력조직이 많이 필요하지 않다.",
+    "page_note": "12쪽"
+   },
+   "highlight": [
+    "압력의변화를견딜근육이나탄력조직이필요하지않다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "id": "v-gen-0026",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "13쪽 그림에서 전체 혈액 중 정맥·세정맥·정맥굴에 있는 비율은?",
+   "options": [
+    "7%",
+    "13%",
+    "9%",
+    "64%"
+   ],
+   "answer": 3,
+   "explain": "정맥·세정맥·정맥굴 64%, 동맥 13%, 폐순환 9%, 심장 7%, 세동맥과 모세혈관 7%.",
+   "detail": {
+    "why": "정맥·세정맥·정맥굴 64%, 동맥 13%, 폐순환 9%, 심장 7%, 세동맥과 모세혈관 7%.",
+    "page_note": "13쪽 오른쪽 그림",
+    "tip": "정맥 = 혈액 저장소(12쪽 최대 70%)."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 13
+   },
+   "id": "v-gen-0027",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "13쪽 그림에서 동맥이 담고 있는 혈액 비율은?",
+   "options": [
+    "7%",
+    "9%",
+    "13%",
+    "64%"
+   ],
+   "answer": 2,
+   "explain": "동맥 13%.",
+   "detail": {
+    "why": "동맥 13%.",
+    "page_note": "13쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 13
+   },
+   "id": "v-gen-0028",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.1에서 세동맥의 직경 범위는?",
+   "options": [
+    "2.5~1.0cm",
+    "1.0cm~0.3mm",
+    "0.3mm~10μm",
+    "100μm~1.5cm"
+   ],
+   "answer": 2,
+   "explain": "탄력형 동맥 2.5~1.0cm, 근육형 동맥 1.0cm~0.3mm, 세동맥 0.3mm~10μm, 세정맥 8~100μm, 정맥 100μm~1.5cm.",
+   "detail": {
+    "why": "탄력형 동맥 2.5~1.0cm, 근육형 동맥 1.0cm~0.3mm, 세동맥 0.3mm~10μm, 세정맥 8~100μm, 정맥 100μm~1.5cm.",
+    "page_note": "14쪽 표 18.1"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0029",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.1에서 '모세혈관계 배출'을 기능으로 가진 혈관은?",
+   "options": [
+    "탄력형 동맥",
+    "근육형 동맥",
+    "세동맥",
+    "세정맥"
+   ],
+   "answer": 3,
+   "explain": "세정맥의 기능은 모세혈관계 배출이다.",
+   "detail": {
+    "why": "세정맥의 기능은 모세혈관계 배출이다.",
+    "wrong": "세동맥은 조직으로 흐르는 혈류 조절·모세혈관계 공급.",
+    "page_note": "14쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0030",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "표 18.1에서 탄력형 동맥의 기능은 높은 혈압으로 기관에 혈액을 공급하는 것이다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (14쪽 표 참고)",
+   "detail": {
+    "page_note": "14쪽 표",
+    "why": "정답은 'O'이다. (14쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0031",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "가장 흔한 온몸혈류의 양상은?",
+   "options": [
+    "모세혈관바탕 두 개를 거친다",
+    "혈액이 심장을 떠나 모세혈관바탕 하나를 거친 후 정맥으로 돌아온다",
+    "동맥에서 정맥으로 직접 간다",
+    "림프관을 거친다"
+   ],
+   "answer": 1,
+   "explain": "가장 흔한 양상: 모세혈관바탕 하나 → 정맥.",
+   "detail": {
+    "why": "가장 흔한 양상: 모세혈관바탕 하나 → 정맥.",
+    "wrong": "두 개를 거치는 것은 문맥계.",
+    "page_note": "15쪽"
+   },
+   "highlight": [
+    "모세혈관바탕하나를거친후정맥을통해돌아오는것"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 15
+   },
+   "id": "v-gen-0032",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "문맥계의 예로 강의자료에 제시된 것은?",
+   "options": [
+    "시상하부-뇌하수체앞엽, 장-간",
+    "콩팥-방광",
+    "폐-심장",
+    "뇌-척수"
+   ],
+   "answer": 0,
+   "explain": "시상하부와 뇌하수체앞엽 사이의 문맥계, 장-간의 관계.",
+   "detail": {
+    "why": "시상하부와 뇌하수체앞엽 사이의 문맥계, 장-간의 관계.",
+    "page_note": "15쪽"
+   },
+   "highlight": [
+    "시상하부와뇌하수체앞엽사이에있는문맥계,장-간의관계"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 15
+   },
+   "id": "v-gen-0033",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "short",
+   "q": "혈관끼리 연결되는 것을 무엇이라 하는가? (영어 또는 우리말)",
+   "accept": [
+    "문합",
+    "연결",
+    "anastomosis"
+   ],
+   "answer_text": "연결(문합, anastomosis)",
+   "detail": {
+    "why": "동정맥연결(동정맥문합), 정맥연결, 동맥연결이 있다.",
+    "page_note": "15쪽 아래"
+   },
+   "highlight": [
+    "연결(문합,anastomosis)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 15
+   },
+   "id": "v-gen-0034",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'뇌하수체는 넓적다리근육보다 관류는 많지만 혈류는 적을 수 있다'는 예가 보여주는 것은?",
+   "options": [
+    "혈류는 단위 질량당 값이다",
+    "관류는 조직 질량당 혈류라서 작은 조직은 관류가 클 수 있다",
+    "혈류와 관류는 같다",
+    "혈압과 관류는 같다"
+   ],
+   "answer": 1,
+   "explain": "관류 = 일정 질량의 조직당 혈류(mL/min/g). 작은 뇌하수체는 총 혈류는 적어도 g당 관류는 많을 수 있다.",
+   "detail": {
+    "why": "관류 = 일정 질량의 조직당 혈류(mL/min/g). 작은 뇌하수체는 총 혈류는 적어도 g당 관류는 많을 수 있다.",
+    "page_note": "16쪽 예시",
+    "tip": "혈류 = 총량, 관류 = g당."
+   },
+   "highlight": [
+    "뇌하수체는넓적다리근육과비교할때관류는많지만혈류는적을수있다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "id": "v-gen-0035",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "수축기 혈압의 정의로 옳은 것은?",
+   "options": [
+    "심실확장기 동안 동맥혈압의 최소치",
+    "심실수축기 동안 이른 동맥혈압의 최고치",
+    "수축기와 확장기 혈압의 차이",
+    "정맥압의 최고치"
+   ],
+   "answer": 1,
+   "explain": "수축기혈압 = 심실수축기 동안 이른 동맥혈압의 최고치.",
+   "detail": {
+    "why": "수축기혈압 = 심실수축기 동안 이른 동맥혈압의 최고치.",
+    "page_note": "16쪽"
+   },
+   "highlight": [
+    "심실수축기동안이른동맥혈압의최고치"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "id": "v-gen-0036",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "확장기혈압은 이완기혈압이라고도 한다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (16쪽 참고)",
+   "detail": {
+    "page_note": "16쪽",
+    "why": "정답은 'O'이다. (16쪽 참고)"
+   },
+   "highlight": [
+    "(=이완기혈압)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "id": "v-gen-0037",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "short",
+   "q": "혈압(blood pressure)의 정의를 쓰시오.",
+   "accept": [
+    "혈액이혈관벽에가하는힘",
+    "혈관벽에가하는힘"
+   ],
+   "answer_text": "혈액이 혈관벽에 가하는 힘",
+   "detail": {
+    "page_note": "16쪽"
+   },
+   "highlight": [
+    "혈액이혈관벽에가하는힘"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "id": "v-gen-0038",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "17쪽 그림 18.4에서 혈액량을 결정하는 요인으로 제시된 것은?",
+   "options": [
+    "혈관 반지름과 길이",
+    "수분손실과 수분흡수",
+    "일회박출량과 심박수",
+    "혈액 점도"
+   ],
+   "answer": 1,
+   "explain": "그림: 수분손실(소변)·수분흡수 → 혈액량, 반지름·점도·길이·막힘 → 말초저항, 일회박출량·심박수 → 심장박출량.",
+   "detail": {
+    "why": "그림: 수분손실(소변)·수분흡수 → 혈액량, 반지름·점도·길이·막힘 → 말초저항, 일회박출량·심박수 → 심장박출량.",
+    "page_note": "17쪽 그림",
+    "tip": "혈압 = 저항 + 박출량 + 혈액량."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 17
+   },
+   "id": "v-gen-0039",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "말초저항의 정의로 옳은 것은?",
+   "options": [
+    "혈액이 혈관벽에 가하는 힘",
+    "심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘",
+    "심실이 박출할 때 극복하는 힘",
+    "정맥압"
+   ],
+   "answer": 1,
+   "explain": "말초저항 = 심장을 나와 온몸의 혈관으로 들어가는 혈류의 흐름을 거스르는 힘.",
+   "detail": {
+    "why": "말초저항 = 심장을 나와 온몸의 혈관으로 들어가는 혈류의 흐름을 거스르는 힘.",
+    "wrong": "3번은 후부하(심장 39쪽).",
+    "page_note": "18쪽 첫 줄"
+   },
+   "highlight": [
+    "혈류의흐름을거스르는힘"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "id": "v-gen-0040",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "압력과 혈류는 거리(혈관 길이)에 비례한다.",
+   "answer": false,
+   "explain": "압력과 혈류는 거리에 반비례한다(멀어질수록 낮아진다).",
+   "detail": {
+    "why": "압력과 혈류는 거리에 반비례한다(멀어질수록 낮아진다).",
+    "page_note": "18쪽 혈관의 길이"
+   },
+   "highlight": [
+    "압력과혈류는거리에반비례한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "id": "v-gen-0041",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈관 반지름이 1/2로 줄면 혈류는?",
+   "options": [
+    "1/2",
+    "1/4",
+    "1/8",
+    "1/16"
+   ],
+   "answer": 3,
+   "explain": "혈류는 반지름의 네제곱에 비례: (1/2)^4 = 1/16.",
+   "detail": {
+    "why": "혈류는 반지름의 네제곱에 비례: (1/2)^4 = 1/16.",
+    "page_note": "18쪽"
+   },
+   "highlight": [
+    "혈류는반지름의네제곱에비례한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "id": "v-gen-0042",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "강의자료에 제시된 혈관 내 막힘(폐쇄)을 일으키는 질병의 예는?",
+   "options": [
+    "tumor, atherosclerosis",
+    "빈혈, 백혈병",
+    "천식, 폐렴",
+    "당뇨, 갑상선항진"
+   ],
+   "answer": 0,
+   "explain": "특정 질병으로 생기는 혈관 내 막힘: 종양(tumor), 죽상경화(atherosclerosis).",
+   "detail": {
+    "why": "특정 질병으로 생기는 혈관 내 막힘: 종양(tumor), 죽상경화(atherosclerosis).",
+    "page_note": "18쪽 마지막 줄"
+   },
+   "highlight": [
+    "tumor,atherosclerosis"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "id": "v-gen-0043",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "심박출량을 감소시키는 것으로 강의자료에 제시된 것은?",
+   "options": [
+    "교감신경 자극",
+    "부교감신경계통 자극과 교감신경 반응을 차단하는 약물",
+    "혈액량 증가",
+    "알도스테론"
+   ],
+   "answer": 1,
+   "explain": "심박출량은 부교감신경 자극과 교감신경 반응을 차단하는 약물에 의해 감소한다.",
+   "detail": {
+    "why": "심박출량은 부교감신경 자극과 교감신경 반응을 차단하는 약물에 의해 감소한다.",
+    "page_note": "19쪽 첫 항목"
+   },
+   "highlight": [
+    "교감신경반응)를차단하는약물에의해감소한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 19
+   },
+   "id": "v-gen-0044",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "혈액의 작은 증가는 혈관의 탄력성에 의해 상쇄된다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (19쪽 혈액량 참고)",
+   "detail": {
+    "page_note": "19쪽 혈액량",
+    "why": "정답은 'O'이다. (19쪽 혈액량 참고)"
+   },
+   "highlight": [
+    "혈액의작은증가는혈관의탄력성에의해상쇄된다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 19
+   },
+   "id": "v-gen-0045",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "노화로 동맥과 정맥의 순응도가 증가한다.",
+   "answer": false,
+   "explain": "노화로 순응도가 '감소'해 혈액량의 작은 변화에도 혈압이 변할 수 있다.",
+   "detail": {
+    "why": "노화로 순응도가 '감소'해 혈액량의 작은 변화에도 혈압이 변할 수 있다.",
+    "page_note": "19쪽 마지막"
+   },
+   "highlight": [
+    "동맥과정맥의순응도가감소되고"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 19
+   },
+   "id": "v-gen-0046",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "정맥이 늘어나 혈액량 증가를 더 수용하지 못할 때 여분의 혈액은?",
+   "options": [
+    "림프로 간다",
+    "동맥으로 이동한다",
+    "소변으로 즉시 배출된다",
+    "모세혈관에 저장된다"
+   ],
+   "answer": 1,
+   "explain": "여분의 혈액은 동맥으로 이동하고, 동맥은 순응도가 낮아 혈압이 높아진다.",
+   "detail": {
+    "why": "여분의 혈액은 동맥으로 이동하고, 동맥은 순응도가 낮아 혈압이 높아진다.",
+    "page_note": "19쪽"
+   },
+   "highlight": [
+    "여분의혈액은동맥으로이동한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 19
+   },
+   "id": "v-gen-0047",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 140/90mmHg일 때 맥박압은?",
+   "options": [
+    "40",
+    "50",
+    "90",
+    "230"
+   ],
+   "answer": 1,
+   "explain": "맥박압 = SBP − DBP = 140 − 90 = 50.",
+   "detail": {
+    "why": "맥박압 = SBP − DBP = 140 − 90 = 50.",
+    "page_note": "20쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0048",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 110/80mmHg일 때 평균동맥압은?",
+   "options": [
+    "85",
+    "90",
+    "95",
+    "100"
+   ],
+   "answer": 1,
+   "explain": "MAP = 80 + (110−80)/3 = 80 + 10 = 90.",
+   "detail": {
+    "why": "MAP = 80 + (110−80)/3 = 80 + 10 = 90.",
+    "page_note": "20쪽 공식"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0049",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 150/90mmHg일 때 평균동맥압은?",
+   "options": [
+    "100",
+    "105",
+    "110",
+    "120"
+   ],
+   "answer": 2,
+   "explain": "MAP = 90 + (150−90)/3 = 90 + 20 = 110.",
+   "detail": {
+    "why": "MAP = 90 + (150−90)/3 = 90 + 20 = 110.",
+    "page_note": "20쪽 공식"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0050",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.2에서 모세혈관의 압력 범위는?",
+   "options": [
+    "120/80mmHg",
+    "80~35mmHg",
+    "35~15mmHg",
+    "5~0mmHg"
+   ],
+   "answer": 2,
+   "explain": "동맥 120/80, 세동맥 80~35, 모세혈관 35~15, 세정맥 15~5, 정맥 5~0mmHg.",
+   "detail": {
+    "why": "동맥 120/80, 세동맥 80~35, 모세혈관 35~15, 세정맥 15~5, 정맥 5~0mmHg.",
+    "page_note": "20쪽 표 18.2",
+    "tip": "모세혈관 35→15 = 순여과압 계산의 정수압(38쪽)!"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0051",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.2에서 허파동맥의 압력은?",
+   "options": [
+    "5mmHg",
+    "15mmHg",
+    "35mmHg",
+    "120mmHg"
+   ],
+   "answer": 1,
+   "explain": "허파동맥 15mmHg, 허파정맥 5mmHg. 폐순환은 온몸순환보다 압력이 훨씬 낮다.",
+   "detail": {
+    "why": "허파동맥 15mmHg, 허파정맥 5mmHg. 폐순환은 온몸순환보다 압력이 훨씬 낮다.",
+    "page_note": "20쪽 표 18.2"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0052",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.2에서 세동맥의 압력 범위는?",
+   "options": [
+    "120~80mmHg",
+    "80~35mmHg",
+    "35~15mmHg",
+    "15~5mmHg"
+   ],
+   "answer": 1,
+   "explain": "세동맥 80~35mmHg — 여기서 압력이 급격히 떨어진다.",
+   "detail": {
+    "why": "세동맥 80~35mmHg — 여기서 압력이 급격히 떨어진다.",
+    "page_note": "20쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0053",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "정맥벽의 민무늬근육을 수축시켜 정맥혈 귀환을 돕는 것은?",
+   "options": [
+    "부교감신경계통",
+    "교감신경계통",
+    "뼈대근육 펌프",
+    "호흡펌프"
+   ],
+   "answer": 1,
+   "explain": "정맥벽의 민무늬근육이 교감신경계통 자극으로 수축한다.",
+   "detail": {
+    "why": "정맥벽의 민무늬근육이 교감신경계통 자극으로 수축한다.",
+    "page_note": "21쪽 ②"
+   },
+   "highlight": [
+    "교감신경계통의자극으로수축"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 21
+   },
+   "id": "v-gen-0054",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "호기(expiration) 시 호흡펌프에서 일어나는 일은?",
+   "options": [
+    "배골반안 압력 상승, 가슴정맥 확장",
+    "가슴정맥 압축, 배정맥 확장",
+    "모든 정맥 수축",
+    "정맥판막 개방"
+   ],
+   "answer": 1,
+   "explain": "호기: 가슴정맥이 압축되고 배정맥이 확장. 흡기는 그 반대.",
+   "detail": {
+    "why": "호기: 가슴정맥이 압축되고 배정맥이 확장. 흡기는 그 반대.",
+    "page_note": "21쪽 ④"
+   },
+   "highlight": [
+    "가슴정맥이압축되고배정맥이확장"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 21
+   },
+   "id": "v-gen-0055",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "정맥류(varicose veins)의 위험 소인으로 강의자료에 제시되지 않은 것은?",
+   "options": [
+    "임신",
+    "장기간 지속적인 직립상태",
+    "복부비만",
+    "저혈당"
+   ],
+   "answer": 3,
+   "explain": "정맥류 소인: 임신, 장기간 직립, 복부비만, 유전적 소인.",
+   "detail": {
+    "why": "정맥류 소인: 임신, 장기간 직립, 복부비만, 유전적 소인.",
+    "page_note": "22쪽 '임상에서 적용하기'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 22
+   },
+   "id": "v-gen-0056",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "정맥류의 일반적인 증상으로 옳은 것은?",
+   "options": [
+    "정맥이 확장되고 팽창하거나 가끔 경화됨",
+    "정맥이 수축해 가늘어짐",
+    "동맥이 늘어남",
+    "모세혈관이 막힘"
+   ],
+   "answer": 0,
+   "explain": "정맥류: 확장되고 팽창하거나 가끔 경화된 정맥.",
+   "detail": {
+    "why": "정맥류: 확장되고 팽창하거나 가끔 경화된 정맥.",
+    "page_note": "22쪽 박스 첫 줄"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 22
+   },
+   "id": "v-gen-0057",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "배변이나 출산 중 배 안 압력이 높으면 항문정맥으로부터의 정맥혈액 복귀가 감소해 치질이 생길 수 있다.",
+   "answer": true,
+   "explain": "항문 주위 정맥은 주변 조직의 지지를 받지 못해 높은 압력으로 확장·팽창한다.",
+   "detail": {
+    "why": "항문 주위 정맥은 주변 조직의 지지를 받지 못해 높은 압력으로 확장·팽창한다.",
+    "page_note": "22쪽 박스 둘째 문단"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 22
+   },
+   "id": "v-gen-0058",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 조절의 단기적 기전을 담당하는 것은?",
+   "options": [
+    "신경계와 내분비계의 특정 호르몬",
+    "비뇨계(신장)만",
+    "뼈대근육 펌프",
+    "림프계"
+   ],
+   "answer": 0,
+   "explain": "단기: 신경계와 내분비계 특정 호르몬 / 장기: 내분비계와 비뇨계(신장).",
+   "detail": {
+    "why": "단기: 신경계와 내분비계 특정 호르몬 / 장기: 내분비계와 비뇨계(신장).",
+    "page_note": "23쪽",
+    "tip": "단기 = 신경(빠름), 장기 = 신장(느림)."
+   },
+   "highlight": [
+    "단기적기전:신경계와내분비계의특정호르몬"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 23
+   },
+   "id": "v-gen-0059",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 조절의 장기적 기전을 담당하는 것은?",
+   "options": [
+    "신경계",
+    "내분비계와 비뇨계(신장)",
+    "압력수용기",
+    "호흡펌프"
+   ],
+   "answer": 1,
+   "explain": "장기적 기전: 내분비계와 비뇨계(신장).",
+   "detail": {
+    "why": "장기적 기전: 내분비계와 비뇨계(신장).",
+    "page_note": "23쪽"
+   },
+   "highlight": [
+    "장기적기전:내분비계와비뇨계(신장)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 23
+   },
+   "id": "v-gen-0060",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "인체 요구를 충족시키려면 혈류는 항상 충분한 압력기울기(압력차)를 유지해야 한다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (23쪽 첫 항목 참고)",
+   "detail": {
+    "page_note": "23쪽 첫 항목",
+    "why": "정답은 'O'이다. (23쪽 첫 항목 참고)"
+   },
+   "highlight": [
+    "충분한pressuregradient"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 23
+   },
+   "id": "v-gen-0061",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "교감신경계통이 일으키는 두 가지 즉각적 변화로 옳은 것은?",
+   "options": [
+    "심박수·수축력 증가로 심장박출량 증가, 세동맥 수축으로 말초저항 증가",
+    "심박수 감소, 혈관 확장",
+    "소변량 증가, 혈액량 감소",
+    "정맥 확장, 동맥 확장"
+   ],
+   "answer": 0,
+   "explain": "(1) 심박수·수축력↑ → 심장박출량↑ (2) 모든 혈관 특히 세동맥 수축 → 말초저항↑.",
+   "detail": {
+    "why": "(1) 심박수·수축력↑ → 심장박출량↑ (2) 모든 혈관 특히 세동맥 수축 → 말초저항↑.",
+    "page_note": "25쪽 교감신경계통"
+   },
+   "highlight": [
+    "Heartrate(심장박동수)와contractility(수축력)를증가하여심장박출량을증가"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 25
+   },
+   "id": "v-gen-0062",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "교감신경이 특히 수축시켜 말초저항을 높이는 혈관은?",
+   "options": [
+    "대동맥",
+    "세동맥(arteriole)",
+    "모세혈관",
+    "대정맥"
+   ],
+   "answer": 1,
+   "explain": "모든 유형의 혈관, 특히 세동맥을 수축하여 말초저항을 증가시킨다.",
+   "detail": {
+    "why": "모든 유형의 혈관, 특히 세동맥을 수축하여 말초저항을 증가시킨다.",
+    "page_note": "25쪽 (2)",
+    "tip": "세동맥 = 저항혈관."
+   },
+   "highlight": [
+    "특히arteriole(세동맥)을수축하여"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 25
+   },
+   "id": "v-gen-0063",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "부교감신경이 아세틸콜린을 방출하는 일차적 대상은?",
+   "options": [
+    "혈관 민무늬근육",
+    "심장박동조율기세포(특히 굴심방결절·방실결절)와 심장근육세포",
+    "부신속질",
+    "콩팥"
+   ],
+   "answer": 1,
+   "explain": "미주신경을 통해 박동조율기세포(특히 SA·AV node)와 심장근육세포로 아세틸콜린을 방출해 심박수를 감소시킨다.",
+   "detail": {
+    "why": "미주신경을 통해 박동조율기세포(특히 SA·AV node)와 심장근육세포로 아세틸콜린을 방출해 심박수를 감소시킨다.",
+    "page_note": "25쪽 부교감신경계통"
+   },
+   "highlight": [
+    "굴심방결절과방실결절"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 25
+   },
+   "id": "v-gen-0064",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "저산소혈증일 때 화학반사의 반응은?",
+   "options": [
+    "폐 혈액 관류와 가스교환 증가",
+    "심박수 감소",
+    "혈관 확장",
+    "호흡 억제"
+   ],
+   "answer": 0,
+   "explain": "화학수용기와 숨뇌가 반응해 폐에서 혈액 관류와 가스교환을 증가시킨다.",
+   "detail": {
+    "why": "화학수용기와 숨뇌가 반응해 폐에서 혈액 관류와 가스교환을 증가시킨다.",
+    "page_note": "26쪽 화학반사 예시"
+   },
+   "highlight": [
+    "폐에서혈액의관류와가스교환을증가시킨다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "id": "v-gen-0065",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "압력수용기는 혈압 정보를 소뇌로 전달한다.",
+   "answer": false,
+   "explain": "압력수용기는 뇌줄기의 숨뇌(연수)로 신호를 전달한다.",
+   "detail": {
+    "why": "압력수용기는 뇌줄기의 숨뇌(연수)로 신호를 전달한다.",
+    "page_note": "26쪽"
+   },
+   "highlight": [
+    "뇌줄기의숨뇌(연수,medullaoblongata)로신호를전달한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "id": "v-gen-0066",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "27쪽 그림에서 목동맥 압력수용기의 신호를 숨뇌로 전달하는 신경은?",
+   "options": [
+    "미주신경(X)",
+    "혀인두신경(CN IX)",
+    "얼굴신경(VII)",
+    "가로막신경"
+   ],
+   "answer": 1,
+   "explain": "그림에 Glossopharyngeal nerve(CN IX, 혀인두신경)이 압력수용기 신호를 숨뇌로 전달하는 것으로 표시된다.",
+   "detail": {
+    "why": "그림에 Glossopharyngeal nerve(CN IX, 혀인두신경)이 압력수용기 신호를 숨뇌로 전달하는 것으로 표시된다.",
+    "wrong": "미주신경은 숨뇌에서 심장으로 가는 부교감 경로.",
+    "page_note": "27쪽 그림",
+    "tip": "들어오는 길 IX, 나가는 길 X."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 27
+   },
+   "id": "v-gen-0067",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압이 정상보다 감소했을 때 압력수용기의 반응은?",
+   "options": [
+    "활동전위 빈도 증가",
+    "활동전위 빈도 감소",
+    "변화 없음",
+    "부교감 활동 증가"
+   ],
+   "answer": 1,
+   "explain": "압력 감소를 감지하면 활동전위 속도를 낮춘다 → 숨뇌는 교감↑·부교감↓.",
+   "detail": {
+    "why": "압력 감소를 감지하면 활동전위 속도를 낮춘다 → 숨뇌는 교감↑·부교감↓.",
+    "page_note": "28쪽 그림 (b)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 28
+   },
+   "id": "v-gen-0068",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "내분비계통은 신경계통보다 혈압 변화에 더 빠르게 반응한다.",
+   "answer": false,
+   "explain": "내분비계통은 혈압 변화에 반응하는 속도가 신경계통보다 느리다.",
+   "detail": {
+    "why": "내분비계통은 혈압 변화에 반응하는 속도가 신경계통보다 느리다.",
+    "page_note": "29쪽 첫 줄"
+   },
+   "highlight": [
+    "반응하는속도가신경계통보다느리다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 29
+   },
+   "id": "v-gen-0069",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "심장박출량을 조절하는 호르몬으로 강의자료에 제시된 것은?",
+   "options": [
+    "에피네프린, 노르에피네프린, 갑상샘호르몬",
+    "인슐린, 글루카곤",
+    "에스트로겐, 프로게스테론",
+    "성장호르몬"
+   ],
+   "answer": 0,
+   "explain": "심장박출량 조절 호르몬: 에피네프린, 노르에피네프린, thyroid hormone(갑상샘호르몬).",
+   "detail": {
+    "why": "심장박출량 조절 호르몬: 에피네프린, 노르에피네프린, thyroid hormone(갑상샘호르몬).",
+    "page_note": "29쪽"
+   },
+   "highlight": [
+    "에피네프린,노르에피네프린,thyroidhormone"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 29
+   },
+   "id": "v-gen-0070",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "RAAS에서 안지오텐시노겐을 만드는 기관은?",
+   "options": [
+    "콩팥",
+    "폐",
+    "간",
+    "부신"
+   ],
+   "answer": 2,
+   "explain": "간: 안지오텐시노겐 → (콩팥 레닌) → 안지오텐신 I → (폐 ACE) → 안지오텐신 II → 부신 알도스테론.",
+   "detail": {
+    "why": "간: 안지오텐시노겐 → (콩팥 레닌) → 안지오텐신 I → (폐 ACE) → 안지오텐신 II → 부신 알도스테론.",
+    "page_note": "30쪽 그림",
+    "tip": "간-콩팥-폐-부신-콩팥 순서."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "id": "v-gen-0071",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "레닌은 안지오텐신 I을 안지오텐신 II로 바꾼다.",
+   "answer": false,
+   "explain": "레닌은 안지오텐시노겐 → 안지오텐신 I. I → II는 폐의 ACE.",
+   "detail": {
+    "why": "레닌은 안지오텐시노겐 → 안지오텐신 I. I → II는 폐의 ACE.",
+    "page_note": "30쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "id": "v-gen-0072",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "안지오텐신 II의 작용 두 가지는?",
+   "options": [
+    "혈관수축, 부신에서 알도스테론 분비 자극",
+    "혈관확장, 이뇨",
+    "심박수 감소, 혈관확장",
+    "레닌 분비, ACE 생성"
+   ],
+   "answer": 0,
+   "explain": "안지오텐신 II → 혈관수축(Vasoconstriction) + 부신 → 알도스테론 → 콩팥 NaCl·H2O 재흡수.",
+   "detail": {
+    "why": "안지오텐신 II → 혈관수축(Vasoconstriction) + 부신 → 알도스테론 → 콩팥 NaCl·H2O 재흡수.",
+    "page_note": "30쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "id": "v-gen-0073",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "인체 모세혈관의 수로 추정되는 것은?",
+   "options": [
+    "약 100만 개",
+    "약 1,000만 개",
+    "약 10억 개",
+    "약 1조 개"
+   ],
+   "answer": 2,
+   "explain": "모세혈관은 약 10억 개로 추정된다.",
+   "detail": {
+    "why": "모세혈관은 약 10억 개로 추정된다.",
+    "page_note": "31쪽"
+   },
+   "highlight": [
+    "약10억개로추정된다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 31
+   },
+   "id": "v-gen-0074",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관 벽의 두께는?",
+   "options": [
+    "0.2~0.4μm",
+    "5~9μm",
+    "1mm",
+    "2.5cm"
+   ],
+   "answer": 0,
+   "explain": "벽 두께 0.2~0.4μm, 지름 약 5~9μm(적혈구 지름 약 7.5μm).",
+   "detail": {
+    "why": "벽 두께 0.2~0.4μm, 지름 약 5~9μm(적혈구 지름 약 7.5μm).",
+    "wrong": "5~9μm는 지름.",
+    "page_note": "31쪽"
+   },
+   "highlight": [
+    "벽은0.2-0.4μm로얇고"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 31
+   },
+   "id": "v-gen-0075",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "강의자료에 제시된 적혈구의 지름은?",
+   "options": [
+    "약 2μm",
+    "약 7.5μm",
+    "약 20μm",
+    "약 100μm"
+   ],
+   "answer": 1,
+   "explain": "적혈구 지름 약 7.5μm — 모세혈관 지름(5~9μm)과 비슷해 한 줄로 지나간다.",
+   "detail": {
+    "why": "적혈구 지름 약 7.5μm — 모세혈관 지름(5~9μm)과 비슷해 한 줄로 지나간다.",
+    "page_note": "31쪽"
+   },
+   "highlight": [
+    "적혈구의지름이약7.5μm"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 31
+   },
+   "id": "v-gen-0076",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "연속모세혈관이 있는 위치로 표 18.3에 제시된 것은?",
+   "options": [
+    "간, 골수, 지라",
+    "콩팥, 내분비샘, 작은창자",
+    "피부, 대부분의 신경·결합조직, 근육조직",
+    "림프기관"
+   ],
+   "answer": 2,
+   "explain": "연속: 피부·대부분의 신경과 결합조직·근육조직 / 창: 콩팥·내분비샘·작은창자 / 굴: 간·림프기관·골수·지라.",
+   "detail": {
+    "why": "연속: 피부·대부분의 신경과 결합조직·근육조직 / 창: 콩팥·내분비샘·작은창자 / 굴: 간·림프기관·골수·지라.",
+    "page_note": "32쪽 표 18.3"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0077",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "굴모세혈관이 있는 위치가 아닌 것은?",
+   "options": [
+    "간",
+    "골수",
+    "지라",
+    "피부"
+   ],
+   "answer": 3,
+   "explain": "굴모세혈관: 간, 림프기관, 골수, 지라. 피부는 연속모세혈관.",
+   "detail": {
+    "why": "굴모세혈관: 간, 림프기관, 골수, 지라. 피부는 연속모세혈관.",
+    "page_note": "32쪽 표 18.3",
+    "tip": "굴 = 간·골·지·림."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0078",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "창모세혈관이 있는 위치로 표 18.3에 제시된 것은?",
+   "options": [
+    "콩팥, 내분비샘, 작은창자",
+    "피부, 근육",
+    "간, 지라",
+    "뇌, 척수"
+   ],
+   "answer": 0,
+   "explain": "창모세혈관: 콩팥, 내분비샘, 작은창자(33쪽 췌장소도도).",
+   "detail": {
+    "why": "창모세혈관: 콩팥, 내분비샘, 작은창자(33쪽 췌장소도도).",
+    "page_note": "32쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0079",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "세 가지 모세혈관 중 누출이 가장 많은 것은 굴모세혈관이다.",
+   "answer": true,
+   "explain": "굴모세혈관: 내피 불규칙, 바닥막 불규칙, 매우 큰 구멍 → 세포 같은 큰 물질도 통과.",
+   "detail": {
+    "why": "굴모세혈관: 내피 불규칙, 바닥막 불규칙, 매우 큰 구멍 → 세포 같은 큰 물질도 통과.",
+    "page_note": "32쪽 표 기능",
+    "tip": "연속 < 창 < 굴."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0080",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "치밀이음부(tight junction)로 결합된 내피세포를 가진 모세혈관은?",
+   "options": [
+    "연속모세혈관",
+    "창모세혈관",
+    "굴모세혈관",
+    "모든 모세혈관"
+   ],
+   "answer": 0,
+   "explain": "연속모세혈관: 치밀이음부로 결합된 내피세포, 최소한으로 누출.",
+   "detail": {
+    "why": "연속모세혈관: 치밀이음부로 결합된 내피세포, 최소한으로 누출.",
+    "page_note": "32쪽 표 구조"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0081",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "short",
+   "q": "간, 골수, 지라에 있는 모세혈관의 유형은?",
+   "accept": [
+    "굴모세혈관",
+    "동양모세혈관",
+    "sinusoid",
+    "sinusoidalcapillary"
+   ],
+   "answer_text": "굴모세혈관(sinusoid)",
+   "detail": {
+    "why": "내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많다.",
+    "page_note": "32쪽 표 18.3"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0082",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "창모세혈관의 세포 틈새 너비는?",
+   "options": [
+    "4nm",
+    "20nm",
+    "100nm",
+    "7.5μm"
+   ],
+   "answer": 0,
+   "explain": "세포 틈새는 4nm이지만 여과구멍이 20~100nm라 훨씬 큰 분자가 통과한다.",
+   "detail": {
+    "why": "세포 틈새는 4nm이지만 여과구멍이 20~100nm라 훨씬 큰 분자가 통과한다.",
+    "page_note": "33쪽"
+   },
+   "highlight": [
+    "세포틈새는너비가4nm"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 33
+   },
+   "id": "v-gen-0083",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "34쪽 그림 18.11의 모세혈관 교환 기전이 아닌 것은?",
+   "options": [
+    "틈새와 창을 통한 확산과 여과",
+    "내피세포를 통한 세포통과(세포외유출과 세포내섭취)",
+    "내피세포 막을 통한 확산",
+    "적혈구를 통한 능동수송"
+   ],
+   "answer": 3,
+   "explain": "그림의 세 경로: 틈새·창을 통한 확산과 여과, 내피세포를 통한 세포통과, 내피세포 막을 통한 확산.",
+   "detail": {
+    "why": "그림의 세 경로: 틈새·창을 통한 확산과 여과, 내피세포를 통한 세포통과, 내피세포 막을 통한 확산.",
+    "page_note": "34쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 34
+   },
+   "id": "v-gen-0084",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관과 사이질액 사이 체액 이동이 이루어지는 방식은?",
+   "options": [
+    "능동수송",
+    "여과(filtration)",
+    "식세포작용",
+    "삼투만"
+   ],
+   "answer": 1,
+   "explain": "모세혈관과 사이질액(간질액) 사이 체액 이동은 여과를 통해 이루어진다.",
+   "detail": {
+    "why": "모세혈관과 사이질액(간질액) 사이 체액 이동은 여과를 통해 이루어진다.",
+    "page_note": "35쪽"
+   },
+   "highlight": [
+    "filtration(여과)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 35
+   },
+   "id": "v-gen-0085",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "삼투압(osmotic pressure)의 정의로 옳은 것은?",
+   "options": [
+    "액체가 용기 벽을 밀어내는 힘",
+    "낮은 용질 농도 용액에서 높은 용질 농도 쪽으로 용매가 이동하는 힘",
+    "혈액이 혈관벽에 가하는 힘",
+    "심실이 박출하는 힘"
+   ],
+   "answer": 1,
+   "explain": "삼투압: 낮은 용질 농도 → 높은 용질 농도로 용매 이동. 1번은 정수압.",
+   "detail": {
+    "why": "삼투압: 낮은 용질 농도 → 높은 용질 농도로 용매 이동. 1번은 정수압.",
+    "page_note": "36쪽"
+   },
+   "highlight": [
+    "낮은용질의농도를갖는용액에서더높은용질의농도로용매가이동"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 36
+   },
+   "id": "v-gen-0086",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "37쪽 그림에서 사이질액의 정수압(HP)은?",
+   "options": [
+    "0mmHg",
+    "3mmHg",
+    "15mmHg",
+    "35mmHg"
+   ],
+   "answer": 0,
+   "explain": "사이질액 HP = 0mmHg, 사이질액 OP = 3mmHg.",
+   "detail": {
+    "why": "사이질액 HP = 0mmHg, 사이질액 OP = 3mmHg.",
+    "page_note": "37쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 37
+   },
+   "id": "v-gen-0087",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "정수압이 삼투압보다 높으면 물은 모세혈관에서 빠져나간다.",
+   "answer": true,
+   "explain": "37쪽 그림 (c): 정수압 > 삼투압 → 물이 여과에 의해 모세혈관에서 나간다.",
+   "detail": {
+    "why": "37쪽 그림 (c): 정수압 > 삼투압 → 물이 여과에 의해 모세혈관에서 나간다.",
+    "page_note": "37쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 37
+   },
+   "id": "v-gen-0088",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관 안의 삼투압을 주로 만드는 용질로 그림에 표시된 것은?",
+   "options": [
+    "포도당",
+    "알부민",
+    "나트륨",
+    "요소"
+   ],
+   "answer": 1,
+   "explain": "그림 (b): Solutes(albumin)이 모세혈관 삼투압을 만든다.",
+   "detail": {
+    "why": "그림 (b): Solutes(albumin)이 모세혈관 삼투압을 만든다.",
+    "page_note": "37쪽 그림 (b)",
+    "tip": "알부민 = 물을 붙잡는 단백질."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 37
+   },
+   "id": "v-gen-0089",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "강의자료에 제시된 몸에서 가장 큰 동맥은?",
+   "options": [
+    "온목동맥",
+    "대동맥",
+    "넙다리동맥",
+    "빗장밑동맥"
+   ],
+   "answer": 1,
+   "explain": "몸의 가장 큰 동맥은 aorta(대동맥)이며 4부분으로 구분된다.",
+   "detail": {
+    "why": "몸의 가장 큰 동맥은 aorta(대동맥)이며 4부분으로 구분된다.",
+    "page_note": "39쪽"
+   },
+   "highlight": [
+    "몸의가장큰동맥은aorta(대동맥)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 39
+   },
+   "id": "v-gen-0090",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "머리와 목 위 모든 동맥 중 가장 광범위하게 분포하는 것은?",
+   "options": [
+    "온목동맥",
+    "바깥목동맥",
+    "속목동맥",
+    "척추동맥"
+   ],
+   "answer": 0,
+   "explain": "온목동맥(총경동맥)이 머리와 목 위에서 가장 광범위하게 분포한다.",
+   "detail": {
+    "why": "온목동맥(총경동맥)이 머리와 목 위에서 가장 광범위하게 분포한다.",
+    "page_note": "41쪽"
+   },
+   "highlight": [
+    "머리와목위모든동맥중가장광범위하게분포한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 41
+   },
+   "id": "v-gen-0091",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "바깥목동맥이 혈액을 공급하는 곳으로 옳지 않은 것은?",
+   "options": [
+    "갑상샘",
+    "혀",
+    "대뇌의 80%",
+    "얼굴 피부·근육"
+   ],
+   "answer": 2,
+   "explain": "대뇌 80%와 눈확은 속목동맥.",
+   "detail": {
+    "why": "대뇌 80%와 눈확은 속목동맥.",
+    "page_note": "41쪽",
+    "tip": "바깥 = 겉(얼굴·목), 속 = 안(뇌·눈)."
+   },
+   "highlight": [
+    "갑상샘,후두,혀,치아,두피,얼굴피부/근육"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 41
+   },
+   "id": "v-gen-0092",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "가슴과 가슴기관에 혈액을 공급하는 혈관의 기원은?",
+   "options": [
+    "빗장밑동맥과 내림가슴대동맥의 가지",
+    "온목동맥",
+    "복강동맥",
+    "허파정맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '빗장밑동맥과 내림가슴대동맥의 가지'이다. (43쪽 참고)",
+   "detail": {
+    "page_note": "43쪽",
+    "why": "정답은 '빗장밑동맥과 내림가슴대동맥의 가지'이다. (43쪽 참고)"
+   },
+   "highlight": [
+    "빗장밑동맥과descendingthoracicaorta"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 43
+   },
+   "id": "v-gen-0093",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "아래가로막동맥의 역할은?",
+   "options": [
+    "위가로막동맥과 함께 가로막에 혈액 공급",
+    "콩팥에 혈액 공급",
+    "위에 혈액 공급",
+    "다리에 혈액 공급"
+   ],
+   "answer": 0,
+   "explain": "정답은 '위가로막동맥과 함께 가로막에 혈액 공급'이다. (44쪽 참고)",
+   "detail": {
+    "page_note": "44쪽",
+    "why": "정답은 '위가로막동맥과 함께 가로막에 혈액 공급'이다. (44쪽 참고)"
+   },
+   "highlight": [
+    "위가로막동맥과함께가로막에혈액을공급"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 44
+   },
+   "id": "v-gen-0094",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "위팔동맥(brachial artery)에서 갈라지는 두 동맥은?",
+   "options": [
+    "노동맥과 자동맥",
+    "겨드랑동맥과 빗장밑동맥",
+    "앞정강동맥과 뒤정강동맥",
+    "온목동맥과 척추동맥"
+   ],
+   "answer": 0,
+   "explain": "위팔동맥의 종말가지 = 노동맥(바깥쪽 아래팔), 자동맥(안쪽 아래팔).",
+   "detail": {
+    "why": "위팔동맥의 종말가지 = 노동맥(바깥쪽 아래팔), 자동맥(안쪽 아래팔).",
+    "page_note": "46쪽 그림, 49쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 46
+   },
+   "id": "v-gen-0095",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "샅고랑인대 아래를 지나 다리로 내려가는 동맥은?",
+   "options": [
+    "속엉덩동맥",
+    "바깥엉덩동맥",
+    "오금동맥",
+    "뒤정강동맥"
+   ],
+   "answer": 1,
+   "explain": "바깥엉덩동맥은 샅고랑인대(서혜인대) 아래를 지나 다리로 내려가 넙다리동맥이 된다.",
+   "detail": {
+    "why": "바깥엉덩동맥은 샅고랑인대(서혜인대) 아래를 지나 다리로 내려가 넙다리동맥이 된다.",
+    "page_note": "47쪽"
+   },
+   "highlight": [
+    "Inguinalligament(샅고랑인"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 47
+   },
+   "id": "v-gen-0096",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "앞정강동맥이 혈액을 공급하는 곳은?",
+   "options": [
+    "종아리 뒤쪽",
+    "종아리 앞부위 구조물",
+    "무릎관절",
+    "넙다리"
+   ],
+   "answer": 1,
+   "explain": "정답은 '종아리 앞부위 구조물'이다. (47쪽 참고)",
+   "detail": {
+    "page_note": "47쪽",
+    "why": "정답은 '종아리 앞부위 구조물'이다. (47쪽 참고)"
+   },
+   "highlight": [
+    "종아리앞부위의구조물에혈액을공급한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 47
+   },
+   "id": "v-gen-0097",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "뒤정강동맥에 대한 설명으로 옳은 것은?",
+   "options": [
+    "바깥엉덩동맥의 연속",
+    "오금동맥에서 갈라져 종아리 뒤 근육 사이를 따라 주행",
+    "넙다리동맥의 첫 가지",
+    "발등동맥이 됨"
+   ],
+   "answer": 1,
+   "explain": "뒤정강동맥: 오금동맥에서 갈라져 종아리 뒤쪽과 옆에 혈액을 공급.",
+   "detail": {
+    "why": "뒤정강동맥: 오금동맥에서 갈라져 종아리 뒤쪽과 옆에 혈액을 공급.",
+    "wrong": "발등동맥은 앞정강동맥의 연속.",
+    "page_note": "47쪽"
+   },
+   "highlight": [
+    "오금동맥에서갈라져나와"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 47
+   },
+   "id": "v-gen-0098",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "대동맥활에서 첫 번째로 나오는 가지는?",
+   "options": [
+    "왼온목동맥",
+    "왼빗장밑동맥",
+    "팔머리동맥",
+    "오른온목동맥"
+   ],
+   "answer": 2,
+   "explain": "대동맥활 가지 순서: ① 팔머리동맥 ② 왼온목동맥 ③ 왼빗장밑동맥.",
+   "detail": {
+    "why": "대동맥활 가지 순서: ① 팔머리동맥 ② 왼온목동맥 ③ 왼빗장밑동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "팔-온-빗: 팔머리, 왼온목, 왼빗장밑."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0099",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "팔머리동맥이 혈액을 공급하는 곳은?",
+   "options": [
+    "상반신 오른쪽",
+    "상반신 왼쪽",
+    "하반신",
+    "뇌만"
+   ],
+   "answer": 0,
+   "explain": "팔머리동맥: 대동맥활 첫 번째 가지, 가슴세로칸 오른쪽, 상반신 오른쪽에 공급.",
+   "detail": {
+    "why": "팔머리동맥: 대동맥활 첫 번째 가지, 가슴세로칸 오른쪽, 상반신 오른쪽에 공급.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "팔머리동맥은 오른쪽에만 있다."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0100",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "오른온목동맥이 나오는 곳은?",
+   "options": [
+    "대동맥활",
+    "팔머리동맥",
+    "오른빗장밑동맥",
+    "속목동맥"
+   ],
+   "answer": 1,
+   "explain": "온목동맥: 오른쪽은 팔머리동맥, 왼쪽은 대동맥활에서 두 번째로 나온다.",
+   "detail": {
+    "why": "온목동맥: 오른쪽은 팔머리동맥, 왼쪽은 대동맥활에서 두 번째로 나온다.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "오른쪽 = 팔머리에서, 왼쪽 = 대동맥활에서 직접."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0101",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "빗장밑동맥은 오른쪽은 팔머리동맥, 왼쪽은 대동맥활에서 세 번째로 나오는 가지다.",
+   "answer": true,
+   "explain": "표 18.4 그대로. 공급: 가슴, 팔.",
+   "detail": {
+    "why": "표 18.4 그대로. 공급: 가슴, 팔.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0102",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "척추동맥에 대한 설명으로 옳은 것은?",
+   "options": [
+    "온목동맥의 깊은 가지",
+    "빗장밑동맥의 가지로 뇌에서 좌우가 융합되어 뇌바닥동맥을 형성",
+    "복강동맥의 가지",
+    "대동맥활의 네 번째 가지"
+   ],
+   "answer": 1,
+   "explain": "척추동맥: 빗장밑동맥의 가지, 목뼈 가로구멍을 지나 큰구멍으로 들어가 좌우가 융합해 뇌바닥동맥 형성.",
+   "detail": {
+    "why": "척추동맥: 빗장밑동맥의 가지, 목뼈 가로구멍을 지나 큰구멍으로 들어가 좌우가 융합해 뇌바닥동맥 형성.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0103",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "속목동맥이 혈액을 공급하는 조직은?",
+   "options": [
+    "목, 얼굴, 머리 표면",
+    "뇌, 눈확",
+    "가슴, 팔",
+    "배안"
+   ],
+   "answer": 1,
+   "explain": "속목동맥: 온목동맥의 깊은 가지, 목동맥관을 통해 뇌로, 뇌·눈확 공급.",
+   "detail": {
+    "why": "속목동맥: 온목동맥의 깊은 가지, 목동맥관을 통해 뇌로, 뇌·눈확 공급.",
+    "wrong": "1번은 바깥목동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0104",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "복강동맥(celiac trunk)은 내림배대동맥에서 몇 번째로 나오는 가지인가?",
+   "options": [
+    "첫 번째",
+    "두 번째",
+    "네 번째",
+    "마지막"
+   ],
+   "answer": 1,
+   "explain": "복강동맥: 커다란 짝이 없는 동맥, 내림배대동맥에서 나오는 두 번째 가지, 배안 조직 공급.",
+   "detail": {
+    "why": "복강동맥: 커다란 짝이 없는 동맥, 내림배대동맥에서 나오는 두 번째 가지, 배안 조직 공급.",
+    "wrong": "위창자간막동맥이 네 번째, 아래창자간막동맥이 종말가지.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "복강 2, 위창자간막 4, 콩팥 5·6, 아래창자간막 끝."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0105",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "복강동맥에서 나오는 세 가지 동맥이 아닌 것은?",
+   "options": [
+    "온간동맥",
+    "왼위동맥",
+    "지라동맥",
+    "위창자간막동맥"
+   ],
+   "answer": 3,
+   "explain": "복강동맥 → 온간동맥, 왼위동맥, 지라동맥. 위창자간막동맥은 내림배대동맥에서 따로 나온다.",
+   "detail": {
+    "why": "복강동맥 → 온간동맥, 왼위동맥, 지라동맥. 위창자간막동맥은 내림배대동맥에서 따로 나온다.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "복강 = 간·위·지라."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0106",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "온간동맥(common hepatic artery)이 혈액을 공급하는 곳이 아닌 것은?",
+   "options": [
+    "간",
+    "위",
+    "샘창자",
+    "지라"
+   ],
+   "answer": 3,
+   "explain": "온간동맥 공급: 간, 위, 샘창자, 이자. 지라는 지라동맥.",
+   "detail": {
+    "why": "온간동맥 공급: 간, 위, 샘창자, 이자. 지라는 지라동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0107",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "지라동맥(splenic artery)에 대한 설명으로 옳은 것은?",
+   "options": [
+    "복강동맥의 세 번째 가지, 지라·위·이자 공급",
+    "대동맥활의 가지",
+    "위창자간막동맥의 가지",
+    "콩팥동맥의 가지"
+   ],
+   "answer": 0,
+   "explain": "정답은 '복강동맥의 세 번째 가지, 지라·위·이자 공급'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "why": "정답은 '복강동맥의 세 번째 가지, 지라·위·이자 공급'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0108",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "위창자간막동맥이 혈액을 공급하는 곳은?",
+   "options": [
+    "작은창자의 대부분과 큰창자의 일부",
+    "큰창자 나머지",
+    "간",
+    "콩팥"
+   ],
+   "answer": 0,
+   "explain": "위창자간막동맥: 내림배대동맥의 네 번째 가지, 작은창자 대부분과 큰창자 일부.",
+   "detail": {
+    "why": "위창자간막동맥: 내림배대동맥의 네 번째 가지, 작은창자 대부분과 큰창자 일부.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0109",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "콩팥동맥은 내림배대동맥에서 대략 몇 번째 가지인가?",
+   "options": [
+    "첫 번째",
+    "두 번째",
+    "다섯 번째, 여섯 번째",
+    "종말가지"
+   ],
+   "answer": 2,
+   "explain": "정답은 '다섯 번째, 여섯 번째'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "why": "정답은 '다섯 번째, 여섯 번째'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0110",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "겨드랑동맥(axillary artery)은 무엇의 연속인가?",
+   "options": [
+    "위팔동맥",
+    "빗장밑동맥",
+    "온목동맥",
+    "노동맥"
+   ],
+   "answer": 1,
+   "explain": "빗장밑동맥 → 겨드랑동맥 → 위팔동맥 → 노동맥·자동맥.",
+   "detail": {
+    "why": "빗장밑동맥 → 겨드랑동맥 → 위팔동맥 → 노동맥·자동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "빗-겨-위팔-노·자."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0111",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "위팔동맥은 무엇의 연속인가?",
+   "options": [
+    "빗장밑동맥",
+    "겨드랑동맥",
+    "자동맥",
+    "팔머리동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '겨드랑동맥'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "why": "정답은 '겨드랑동맥'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0112",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "노동맥(radial artery)의 위치는?",
+   "options": [
+    "안쪽 아래팔",
+    "바깥쪽 아래팔",
+    "겨드랑",
+    "위팔"
+   ],
+   "answer": 1,
+   "explain": "노동맥 = 바깥쪽 아래팔, 자동맥 = 안쪽 아래팔. 둘 다 아래팔과 손 공급.",
+   "detail": {
+    "why": "노동맥 = 바깥쪽 아래팔, 자동맥 = 안쪽 아래팔. 둘 다 아래팔과 손 공급.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "엄지 쪽 = 노."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0113",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "온엉덩동맥(common iliac arteries)에 대한 설명으로 옳은 것은?",
+   "options": [
+    "내림배대동맥의 종말가지, 골반과 다리 조직 공급",
+    "복강동맥의 가지",
+    "넙다리동맥의 연속",
+    "앞배벽만 공급"
+   ],
+   "answer": 0,
+   "explain": "정답은 '내림배대동맥의 종말가지, 골반과 다리 조직 공급'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "why": "정답은 '내림배대동맥의 종말가지, 골반과 다리 조직 공급'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0114",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "바깥엉덩동맥이 혈액을 공급하는 조직으로 표 18.4에 제시된 것은?",
+   "options": [
+    "골반 조직",
+    "앞배벽",
+    "무릎관절",
+    "발바닥"
+   ],
+   "answer": 1,
+   "explain": "바깥엉덩동맥: 온엉덩동맥의 종말가지, 앞쪽 골반, 앞배벽 공급(이후 넙다리동맥으로 이어짐).",
+   "detail": {
+    "why": "바깥엉덩동맥: 온엉덩동맥의 종말가지, 앞쪽 골반, 앞배벽 공급(이후 넙다리동맥으로 이어짐).",
+    "wrong": "골반 조직은 속엉덩동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0115",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "넙다리동맥은 무엇의 연속인가?",
+   "options": [
+    "속엉덩동맥",
+    "바깥엉덩동맥",
+    "오금동맥",
+    "온엉덩동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '바깥엉덩동맥'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "tip": "바깥엉덩 → 넙다리 → 오금 → 앞·뒤정강.",
+    "why": "정답은 '바깥엉덩동맥'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0116",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "발등동맥(dorsalis pedis artery)은 무엇의 연속인가?",
+   "options": [
+    "뒤정강동맥",
+    "앞정강동맥",
+    "오금동맥",
+    "넙다리동맥"
+   ],
+   "answer": 1,
+   "explain": "발등동맥: 앞정강동맥의 연속, 발목관절과 발 공급.",
+   "detail": {
+    "why": "발등동맥: 앞정강동맥의 연속, 발목관절과 발 공급.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0117",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "뒤정강동맥이 혈액을 공급하는 조직은?",
+   "options": [
+    "앞다리, 발 앞쪽",
+    "뒷다리, 발바닥",
+    "무릎관절, 뒷넙다리",
+    "앞배벽"
+   ],
+   "answer": 1,
+   "explain": "정답은 '뒷다리, 발바닥'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'",
+    "why": "정답은 '뒷다리, 발바닥'이다. (48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴' 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0118",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "오금동맥이 혈액을 공급하는 조직은?",
+   "options": [
+    "무릎관절, 뒷다리, 뒷넙다리",
+    "발바닥",
+    "골반",
+    "앞배벽"
+   ],
+   "answer": 0,
+   "explain": "오금동맥: 넙다리동맥의 뒤쪽 연속, 다리오금에 위치.",
+   "detail": {
+    "why": "오금동맥: 넙다리동맥의 뒤쪽 연속, 다리오금에 위치.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0119",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "대동맥은 인체에 있는 모든 조직에 혈액을 공급한다.",
+   "answer": true,
+   "explain": "표 18.4 첫 줄.",
+   "detail": {
+    "why": "표 18.4 첫 줄.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0120",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "속목동맥은 목, 얼굴, 머리 표면에 혈액을 공급한다.",
+   "answer": false,
+   "explain": "목·얼굴·머리 표면은 바깥목동맥. 속목동맥은 뇌와 눈확.",
+   "detail": {
+    "why": "목·얼굴·머리 표면은 바깥목동맥. 속목동맥은 뇌와 눈확.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0121",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "복강동맥과 그 가지(온간동맥, 왼위동맥, 지라동맥)의 공급 조직을 정리하시오.",
+   "answer_text": "복강동맥: 내림배대동맥 두 번째 가지, 짝 없음, 배안 조직\n온간동맥: 간, 위, 샘창자, 이자\n왼위동맥: 위\n지라동맥: 복강동맥 세 번째 가지, 지라·위·이자",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0122",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "대동맥에서 발까지 다리로 가는 동맥 경로를 순서대로 쓰시오.",
+   "answer_text": "내림배대동맥 → 온엉덩동맥 → 바깥엉덩동맥(샅고랑인대 아래) → 넙다리동맥(깊은넙다리동맥 분지) → 오금동맥(무릎 뒤) → 앞정강동맥 → 발등동맥 / 뒤정강동맥(뒷다리·발바닥)",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0123",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "빗장밑동맥에서 손까지 팔의 동맥 경로를 쓰시오.",
+   "answer_text": "빗장밑동맥 → 겨드랑동맥 → 위팔동맥 → 노동맥(바깥쪽 아래팔) / 자동맥(안쪽 아래팔) → 손바닥동맥활",
+   "detail": {
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 — 교수님 필기 '시험에 나옴'"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0124",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "50쪽 맥박지점 그림에 표시되지 않은 것은?",
+   "options": [
+    "관자동맥 맥박",
+    "노동맥 맥박",
+    "오금동맥 맥박",
+    "콩팥동맥 맥박"
+   ],
+   "answer": 3,
+   "explain": "맥박지점: 관자, 목동맥, 위팔, 노, 자, 넙다리, 오금, 발등, 뒤정강동맥.",
+   "detail": {
+    "why": "맥박지점: 관자, 목동맥, 위팔, 노, 자, 넙다리, 오금, 발등, 뒤정강동맥.",
+    "page_note": "50쪽 그림 18.22"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 50
+   },
+   "id": "v-gen-0125",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "무릎 뒤에서 맥박을 촉지하는 동맥은?",
+   "options": [
+    "넙다리동맥",
+    "오금동맥",
+    "뒤정강동맥",
+    "발등동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '오금동맥'이다. (50쪽 참고)",
+   "detail": {
+    "page_note": "50쪽",
+    "why": "정답은 '오금동맥'이다. (50쪽 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 50
+   },
+   "id": "v-gen-0126",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "안쪽 복사뼈 뒤쪽에서 맥박을 촉지하는 동맥은?",
+   "options": [
+    "발등동맥",
+    "뒤정강동맥",
+    "앞정강동맥",
+    "오금동맥"
+   ],
+   "answer": 1,
+   "explain": "뒤정강동맥 맥박(posterior tibial pulse). 표 18.4: 내측복사 주위 표면에 보이는 뒷다리.",
+   "detail": {
+    "why": "뒤정강동맥 맥박(posterior tibial pulse). 표 18.4: 내측복사 주위 표면에 보이는 뒷다리.",
+    "page_note": "50쪽, 49쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 50
+   },
+   "id": "v-gen-0127",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "경막정맥굴의 정의로 옳은 것은?",
+   "options": [
+    "경막층 사이의 혈액으로 찬 정맥 통로",
+    "뇌척수액이 만들어지는 곳",
+    "목의 얕은 정맥",
+    "동맥과 정맥의 연결"
+   ],
+   "answer": 0,
+   "explain": "경막정맥굴 = 경막층 사이의 혈액으로 찬 정맥 통로. 표 18.5: CSF와 혈액을 받는 뇌 정맥통로.",
+   "detail": {
+    "why": "경막정맥굴 = 경막층 사이의 혈액으로 찬 정맥 통로. 표 18.5: CSF와 혈액을 받는 뇌 정맥통로.",
+    "page_note": "53쪽"
+   },
+   "highlight": [
+    "경막층사이의혈액으로찬정맥통로이다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 53
+   },
+   "id": "v-gen-0128",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "가로정맥굴의 혈액이 뇌머리뼈를 나가는 구멍은?",
+   "options": [
+    "큰구멍",
+    "목정맥구멍(경정맥공)",
+    "목동맥관",
+    "가로구멍"
+   ],
+   "answer": 1,
+   "explain": "가로정맥굴은 다른 모든 경막정맥굴의 혈액을 받아 귀 바로 뒤의 목정맥구멍을 통해 나간다.",
+   "detail": {
+    "why": "가로정맥굴은 다른 모든 경막정맥굴의 혈액을 받아 귀 바로 뒤의 목정맥구멍을 통해 나간다.",
+    "page_note": "53쪽"
+   },
+   "highlight": [
+    "목정맥구멍(경정맥공,jugularforamen)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 53
+   },
+   "id": "v-gen-0129",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "위대정맥을 형성하기 위해 합쳐지는 정맥은?",
+   "options": [
+    "팔머리정맥",
+    "온엉덩정맥",
+    "간정맥",
+    "콩팥정맥"
+   ],
+   "answer": 0,
+   "explain": "팔머리정맥: 위대정맥 형성을 위해 합침, 가로막 위쪽 대부분 구조물 배액.",
+   "detail": {
+    "why": "팔머리정맥: 위대정맥 형성을 위해 합침, 가로막 위쪽 대부분 구조물 배액.",
+    "page_note": "59쪽 표 18.5"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0130",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "아래대정맥을 형성하기 위해 합쳐지는 정맥은?",
+   "options": [
+    "팔머리정맥",
+    "온엉덩정맥",
+    "빗장밑정맥",
+    "홀정맥"
+   ],
+   "answer": 1,
+   "explain": "온엉덩정맥이 합쳐 아래대정맥을 형성한다(골반·다리 배액).",
+   "detail": {
+    "why": "온엉덩정맥이 합쳐 아래대정맥을 형성한다(골반·다리 배액).",
+    "page_note": "59쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0131",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "팔머리정맥을 형성하기 위해 합쳐지는 두 정맥은?",
+   "options": [
+    "속목정맥과 빗장밑정맥",
+    "바깥목정맥과 척추정맥",
+    "속엉덩정맥과 바깥엉덩정맥",
+    "노정맥과 자정맥"
+   ],
+   "answer": 0,
+   "explain": "속목정맥 + 빗장밑정맥 → 팔머리정맥.",
+   "detail": {
+    "why": "속목정맥 + 빗장밑정맥 → 팔머리정맥.",
+    "wrong": "3번은 온엉덩정맥, 4번은 위팔정맥.",
+    "page_note": "59쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0132",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "바깥목정맥이 들어가는 정맥은?",
+   "options": [
+    "위대정맥",
+    "속목정맥",
+    "빗장뼈정맥(빗장밑정맥)",
+    "팔머리정맥"
+   ],
+   "answer": 2,
+   "explain": "바깥목정맥: 빗장뼈정맥으로 나감, 얕은 목, 얼굴 표면·목 배액.",
+   "detail": {
+    "why": "바깥목정맥: 빗장뼈정맥으로 나감, 얕은 목, 얼굴 표면·목 배액.",
+    "page_note": "59쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0133",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "반홀정맥과 덧반홀정맥은 어디로 나가는가?",
+   "options": [
+    "홀정맥",
+    "간문맥",
+    "아래대정맥",
+    "속목정맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '홀정맥'이다. (59쪽 표 참고)",
+   "detail": {
+    "page_note": "59쪽 표",
+    "why": "정답은 '홀정맥'이다. (59쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0134",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "지라정맥(splenic veins)이 들어가는 곳은?",
+   "options": [
+    "아래대정맥",
+    "간문맥",
+    "콩팥정맥",
+    "홀정맥"
+   ],
+   "answer": 1,
+   "explain": "지라정맥, 위정맥, 위·아래창자간막정맥은 모두 간문맥으로 간다.",
+   "detail": {
+    "why": "지라정맥, 위정맥, 위·아래창자간막정맥은 모두 간문맥으로 간다.",
+    "page_note": "59~60쪽 표",
+    "tip": "소화기관·지라 → 간문맥 → 간."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0135",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "간정맥(hepatic veins)에 대한 설명으로 옳은 것은?",
+   "options": [
+    "간문맥으로 들어간다",
+    "아래대정맥으로 나가며 간동맥혈과 간문맥 정맥혈을 배액한다",
+    "위대정맥으로 나간다",
+    "소화기관 혈액을 받는다"
+   ],
+   "answer": 1,
+   "explain": "정답은 '아래대정맥으로 나가며 간동맥혈과 간문맥 정맥혈을 배액한다'이다. (60쪽 표 참고)",
+   "detail": {
+    "wrong": "3번 아님, 4번은 간문맥 설명.",
+    "page_note": "60쪽 표",
+    "tip": "간문맥 = 간으로 '들어가는', 간정맥 = 간에서 '나가는'.",
+    "why": "정답은 '아래대정맥으로 나가며 간동맥혈과 간문맥 정맥혈을 배액한다'이다. (60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0136",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "위팔정맥(brachial veins)이 형성되는 방법은?",
+   "options": [
+    "노정맥과 자정맥이 합쳐짐",
+    "노쪽피부정맥과 자쪽피부정맥이 합쳐짐",
+    "겨드랑정맥이 갈라짐",
+    "빗장밑정맥의 연속"
+   ],
+   "answer": 0,
+   "explain": "정답은 '노정맥과 자정맥이 합쳐짐'이다. (60쪽 표 참고)",
+   "detail": {
+    "page_note": "60쪽 표",
+    "why": "정답은 '노정맥과 자정맥이 합쳐짐'이다. (60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0137",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "오금정맥이 형성되는 방법은?",
+   "options": [
+    "넙다리정맥이 갈라짐",
+    "앞·뒤정강정맥이 합쳐짐",
+    "큰두렁정맥의 연속",
+    "온엉덩정맥의 가지"
+   ],
+   "answer": 1,
+   "explain": "앞뒤정강정맥 → 오금정맥 → 넙다리정맥(오금정맥의 연속).",
+   "detail": {
+    "why": "앞뒤정강정맥 → 오금정맥 → 넙다리정맥(오금정맥의 연속).",
+    "page_note": "60쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0138",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "큰두렁정맥(great saphenous veins)의 특징은?",
+   "options": [
+    "다리의 얕은 정맥, 다리 안쪽",
+    "다리의 깊은 정맥",
+    "팔의 얕은 정맥",
+    "간으로 들어가는 정맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '다리의 얕은 정맥, 다리 안쪽'이다. (60쪽 표, 58쪽 그림 참고)",
+   "detail": {
+    "page_note": "60쪽 표, 58쪽 그림",
+    "why": "정답은 '다리의 얕은 정맥, 다리 안쪽'이다. (60쪽 표, 58쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0139",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "노쪽피부정맥(cephalic veins)이 나가는 곳은?",
+   "options": [
+    "위팔정맥",
+    "겨드랑정맥",
+    "자정맥",
+    "빗장밑정맥"
+   ],
+   "answer": 1,
+   "explain": "노쪽피부정맥: 얕은 아래팔정맥, 겨드랑정맥으로 나감. 자쪽피부정맥은 위팔정맥과 합쳐 겨드랑정맥 형성.",
+   "detail": {
+    "why": "노쪽피부정맥: 얕은 아래팔정맥, 겨드랑정맥으로 나감. 자쪽피부정맥은 위팔정맥과 합쳐 겨드랑정맥 형성.",
+    "page_note": "60쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0140",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "간문맥은 소화기관과 지라에서 혈액을 받는다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (60쪽 표 참고)",
+   "detail": {
+    "page_note": "60쪽 표",
+    "why": "정답은 'O'이다. (60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0141",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "경막동(dural sinuses)은 CSF와 혈액을 받는 뇌 정맥통로이다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (59쪽 표 참고)",
+   "detail": {
+    "page_note": "59쪽 표",
+    "why": "정답은 'O'이다. (59쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0142",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "홀정맥(azygos veins)이 배액하는 곳이 아닌 것은?",
+   "options": [
+    "오른 뒤 가슴과 배벽",
+    "식도",
+    "허파",
+    "콩팥"
+   ],
+   "answer": 3,
+   "explain": "홀정맥: 뒤 가슴벽 오른쪽, 오른 뒤 가슴과 배벽·식도·허파 배액.",
+   "detail": {
+    "why": "홀정맥: 뒤 가슴벽 오른쪽, 오른 뒤 가슴과 배벽·식도·허파 배액.",
+    "page_note": "59쪽 표, 54쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0143",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "간문맥계가 '문맥계통'인 이유는?",
+   "options": [
+    "정맥이 다시 모세혈관을 이루기 때문",
+    "동맥과 정맥이 직접 연결되기 때문",
+    "판막이 없기 때문",
+    "림프가 들어오기 때문"
+   ],
+   "answer": 0,
+   "explain": "간문맥은 간 안에서 또다시 모세혈관을 형성한다 — 정맥이 다시 모세혈관을 이루는 순환.",
+   "detail": {
+    "why": "간문맥은 간 안에서 또다시 모세혈관을 형성한다 — 정맥이 다시 모세혈관을 이루는 순환.",
+    "page_note": "56쪽"
+   },
+   "highlight": [
+    "정맥이다시모세혈관을이루는특별한형태의순환"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 56
+   },
+   "id": "v-gen-0144",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "모세혈관 세 가지 유형의 구조, 위치, 기능을 비교하시오.",
+   "answer_text": "연속모세혈관: 치밀이음부로 결합된 내피 / 피부, 대부분의 신경·결합조직, 근육조직 / 최소 누출\n창모세혈관: 내피에 창(구멍), 세포틈새 4nm·여과구멍 20~100nm / 콩팥, 내분비샘, 작은창자(췌장소도) / 적당히 누출\n굴모세혈관: 내피·바닥막 불규칙, 매우 큰 구멍 / 간, 림프기관, 골수, 지라 / 가장 많이 누출(세포까지)",
+   "detail": {
+    "page_note": "32~33쪽",
+    "tip": "연속 < 창 < 굴."
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0145",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "죽상동맥경화증의 원인, 잘 생기는 위치, 결과, 치료 방향을 쓰시오.",
+   "answer_text": "원인: 근육형 동맥 내피 손상(혈압, 특정 콜레스테롤, 감염, 흡연, 고혈당, 호모시스테인) → 지질·콜레스테롤·칼슘염·세포파편 침착 → 죽상경화판\n위치: 혈액 속도·방향이 급변하는 곳(분기점, 굽은 곳)\n결과: 플라그 내용물 노출 → 응고 → 심근경색, 뇌졸중\n특징: 세계 인구 10%, 대부분 초기 무증상\n치료: 내피 손상 요인 줄이기(식이, 신체활동, 콜레스테롤 저하제, 혈당, 금연, 혈압관리), 심하면 침습적 시술",
+   "detail": {
+    "page_note": "8쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0146",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "혈압을 결정하는 세 가지 요인과 각각을 결정하는 요소를 쓰시오.",
+   "answer_text": "① 말초저항: 혈관 반지름(가장 중요, 4제곱), 혈액 점도(적혈구·알부민), 혈관 길이, 혈관 막힘\n② 심장박출량: 일회박출량 × 심장박동수\n③ 혈액량: 수분손실(소변), 수분섭취",
+   "detail": {
+    "page_note": "16~18쪽, 17쪽 그림 18.4"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 17
+   },
+   "id": "v-gen-0147",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "표 18.2의 순환별 혈압(허파동맥, 허파정맥, 동맥, 세동맥, 모세혈관, 세정맥, 정맥)을 쓰시오.",
+   "answer_text": "허파동맥 15mmHg, 허파정맥 5mmHg\n동맥 120(수축)/80(확장)mmHg\n세동맥 80~35mmHg\n모세혈관 35~15mmHg\n세정맥 15~5mmHg\n정맥 5~0mmHg",
+   "detail": {
+    "page_note": "20쪽 표 18.2"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0148",
+   "origin": "claude",
+   "unit": "v2"
   }
  ]
 }

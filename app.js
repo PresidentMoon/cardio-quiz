@@ -11,7 +11,7 @@ const MEDIA = {
   worst:  'worst.mp4',                    // 챕터를 많이 못 끝냈을 때 (30% 미만)
   levelup:'best.mp4',                     // 레벨업할 때
   normal: ['normal.jpg'],                 // 평범하게 끝냈을 때 (50~69%)
-  good:   ['good1.jpg','good2.jpg','good3.jpg','good4.jpg','good.jpg'],                       // 잘할 때
+  good:   ['good1.jpg','good2.jpg','good3.jpg','good4.jpg','good5.jpg','good6.jpg','good7.jpg','good8.jpg','good9.jpg','good10.jpg','good11.jpg','good.jpg'],                       // 잘할 때
   bad:    ['bad1.jpg','bad2.jpg','bad3.jpg','bad4.jpg','bad5.jpg','bad6.jpg','bad7.jpg','bad8.jpg','cheer.jpg'] // 막힐 때
 };
 const ALL_MEDIA = [MEDIA.best, MEDIA.worst, ...MEDIA.normal, ...MEDIA.good, ...MEDIA.bad];
@@ -24,7 +24,10 @@ const CHEER = {
     ['역시 내 여자친구', '심장 박동보다 정답 속도가 빨라'],
     ['천재 아니야?', '퀴즈 준비 끝난 거 같은데'],
     ['멋있다 진짜', '조금만 더 하면 시험 걱정 끝'],
-    ['오늘 컨디션 최고네', '맞히는 거 보는 내가 다 뿌듯해']
+    ['오늘 컨디션 최고네', '맞히는 거 보는 내가 다 뿌듯해'],
+    ['앙 기모딱따구리!', '이 기세 그대로 가자'],
+    ['아 쪼은데!', '계속 이렇게만 맞혀'],
+    ['혜선아 사랑해! 진심으로 화이팅!!', '오늘도 너무 잘하고 있어']
   ],
   cheer: [
     ['괜찮아, 원래 여기 헷갈려', '틀린 건 오답 복습에 모아둘게'],
@@ -35,8 +38,8 @@ const CHEER = {
   ],
   // 챕터(한 판) 끝날 때: [기준 정답률, 사진 종류, 제목, 문구들]
   result: [
-    [0.9, 'best',   '최고! 챕터 클리어', ['이건 진짜 천재다','완벽 그 자체, 오늘은 푹 쉬어','퀴즈 날 그냥 이대로만 해']],
-    [0.7, 'good',   '잘했어!',           ['오늘도 잘했어, 진짜 대단해','이 정도면 퀴즈 걱정 없겠다','조금만 더 하면 만점이야']],
+    [0.9, 'best',   '최고! 챕터 클리어', ['이건 진짜 천재다','완벽 그 자체, 오늘은 푹 쉬어','퀴즈 날 그냥 이대로만 해','혜선아 사랑해! 진심으로 화이팅!!']],
+    [0.7, 'good',   '잘했어!',           ['오늘도 잘했어, 진짜 대단해','이 정도면 퀴즈 걱정 없겠다','조금만 더 하면 만점이야','앙 기모딱따구리!','아 쪼은데!','혜선아 사랑해! 진심으로 화이팅!!']],
     [0.5, 'normal', '수고했어!',         ['딱 절반 넘었다, 이제 올라갈 일만 남았어','틀린 것만 한 번 더 보면 금방 늘어']],
     [0.3, 'bad',    '수고했어!',         ['푼 만큼 다 남는 거야','틀린 건 오답 복습에서 다시 만나자','오늘 한 것만으로도 충분히 잘했어']],
     [0,   'worst',  '오늘은 여기까지!',   ['이 영상 보고 웃고 다시 하자','괜찮아, 원래 처음엔 다 이래','쉬었다가 오답 복습부터 같이 하자']]
@@ -45,6 +48,7 @@ const CHEER = {
 const pickOne = a => a[Math.floor(Math.random()*a.length)];
 
 let BANK = [];
+let UNITS = [];
 let save = loadSave();
 let run = null;           // 현재 게임 상태
 let current = null;       // 현재 문제
@@ -80,7 +84,27 @@ function renderHome(){
   $('#wrongcount').textContent = `틀린 문제 ${wrongIds().length}개`;
   const c = t => BANK.filter(q=>q.type===t).length;
   $('#bankinfo').textContent = BANK.length ? `문제은행 ${BANK.length}문제 (객관식 ${c('mc')} · OX ${c('ox')} · 단답 ${c('short')} · 서술 ${c('card')})` : '';
+  renderUnits();
+  const ex = (save.exams||[])[0];
+  $('#examlast').textContent = ex ? `최근 ${ex.score}/${ex.n} (${Math.round(ex.score/ex.n*100)}%)` : '아직 응시 기록 없음';
   pdfStatus();
+}
+function unitName(id){ const u = UNITS.find(u=>u.id===id); return u ? u.name : ''; }
+function renderUnits(){
+  const box = $('#units'); if (!box) return; box.innerHTML = '';
+  ['heart','vessel'].forEach(t=>{
+    box.appendChild(el('p','unitgroup', t==='heart' ? '3주차 심장' : '5–6주차 혈관'));
+    UNITS.filter(u=>u.topic===t).forEach(u=>{
+      const qs = BANK.filter(q=>q.unit===u.id && q.type!=='card');
+      const got = qs.filter(q=>(save.stats[q.id]||{}).right>0).length;
+      const b = el('button','unit '+t);
+      const name = el('span','uname', u.name); name.appendChild(el('small',null,`${u.pages[0]}~${u.pages[1]}쪽 · ${qs.length}문제 · 맞혀본 문제 ${got}`));
+      const bar = el('span','ubar'); const fill = el('i'); fill.style.width = (qs.length ? got/qs.length*100 : 0)+'%'; bar.appendChild(fill);
+      b.appendChild(name); b.appendChild(bar);
+      b.onclick = ()=>startMode('unit:'+u.id);
+      box.appendChild(b);
+    });
+  });
 }
 function wrongIds(){ return Object.entries(save.stats).filter(([id,s])=>s.wrong>0 && s.lastWrong && BANK.some(q=>q.id===id)).map(([id])=>id); }
 
@@ -98,6 +122,7 @@ function pick(pool, n){
 function startMode(mode){
   let pool = BANK.filter(q=>q.type!=='card'), n = 10, lives = null, timer = null;
   if (mode==='heart' || mode==='vessel') pool = pool.filter(q=>q.topic===mode);
+  if (mode.startsWith('unit:')){ const u = mode.slice(5); pool = pool.filter(q=>q.unit===u); }
   if (mode==='time'){ pool = pool.filter(q=>q.type==='mc'||q.type==='ox'); n = 0; timer = 60; }
   if (mode==='survive'){ n = 0; lives = 3; }
   if (mode==='wrong'){ const w = new Set(wrongIds()); pool = BANK.filter(q=>w.has(q.id)); n = 0; if(!pool.length){ alert('아직 틀린 문제가 없어요. 문제를 먼저 풀어보세요.'); return; } }
@@ -126,7 +151,7 @@ function nextQ(){
   $('#feedback').classList.remove('show');
   const card = $('#qcard');
   card.className = 'qcard ' + current.topic;
-  $('#qmeta').textContent = `${DOC_NAME[current.topic]} · ${TYPE_NAME[current.type]}`;
+  $('#qmeta').textContent = `${DOC_NAME[current.topic]} · ${unitName(current.unit) ? unitName(current.unit)+' · ' : ''}${TYPE_NAME[current.type]}`;
   $('#qtext').textContent = current.q;
   const body = $('#qbody'); body.innerHTML = '';
   if (current.type==='mc'){
@@ -402,7 +427,7 @@ async function drawHighlights(page, vp, ctx){
 }
 
 /* ---------- 이벤트 ---------- */
-document.querySelectorAll('.mode').forEach(b=>b.onclick=()=>startMode(b.dataset.mode));
+document.querySelectorAll('.mode[data-mode]').forEach(b=>b.onclick=()=>startMode(b.dataset.mode));
 $('#quit').onclick = ()=>{ if(run && run.answered) endRun(); else { if(run) clearInterval(run.tick); show('home'); renderHome(); } };
 $('#next').onclick = ()=>{ if (run.lives===0) return endRun(); run.i++; $('#combo').textContent = run.combo>=2 ? `${run.combo}연속 정답 중` : ''; nextQ(); };
 $('#showPdf').onclick = ()=>openViewer(current);
@@ -444,8 +469,158 @@ document.querySelectorAll('#pdfsetup input[type=file]').forEach(inp=>inp.onchang
 });
 let resizeT; window.addEventListener('resize', ()=>{ clearTimeout(resizeT); resizeT=setTimeout(()=>{ if($('#viewer').classList.contains('open')) renderPage(); },200); });
 
+/* ---------- 실전 테스트 ---------- */
+const exOpt = {range:'all', n:20, time:0};
+let EX = null;
+function shuffle(a){ a = a.slice(); for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function buildExam(){
+  const pool = BANK.filter(q=>q.type!=='card' && (exOpt.range==='all' || q.topic===exOpt.range));
+  const units = [...new Set(pool.map(q=>q.unit))];
+  const n = Math.min(exOpt.n, pool.length);
+  // 단원 크기에 비례해서 고르게 배분
+  const alloc = units.map(u=>({u, k: Math.floor(n * pool.filter(q=>q.unit===u).length / pool.length)}));
+  let left = n - alloc.reduce((a,b)=>a+b.k,0);
+  shuffle(alloc).forEach(a=>{ if (left>0){ a.k++; left--; } });
+  let picked = [];
+  alloc.forEach(({u,k})=>{ picked.push(...shuffle(pool.filter(q=>q.unit===u)).slice(0,k)); });
+  picked = shuffle(picked);
+  // 객관식 보기 순서도 섞기 (정답 위치 외우기 방지)
+  return picked.map(q=>{
+    if (q.type!=='mc') return {q, opts:null, ans:q.answer, pick:null};
+    const order = shuffle(q.options.map((_,i)=>i));
+    return {q, opts: order.map(i=>q.options[i]), ans: order.indexOf(q.answer), pick:null};
+  });
+}
+function openExamSetup(){
+  show('examsetup');
+  const h = $('#eshistory'); h.innerHTML = '';
+  const list = save.exams || [];
+  if (list.length){
+    const box = el('div','history'); box.appendChild(el('h3','sec','지난 기록'));
+    list.slice(0,8).forEach(e=>{ const r = el('div','urow'); r.appendChild(el('span',null,`${e.date} · ${e.range==='all'?'전체':e.range==='heart'?'심장':'혈관'}`)); r.appendChild(el('b',null,`${e.score}/${e.n} (${Math.round(e.score/e.n*100)}%)`)); box.appendChild(r); });
+    h.appendChild(box);
+  }
+}
+function startExam(){
+  const items = buildExam();
+  if (!items.length){ alert('문제를 불러오지 못했어요.'); return; }
+  if (EX) clearInterval(EX.tick);
+  EX = {items, i:0, left: exOpt.time ? items.length*60 : null, done:false};
+  show('exam');
+  if (EX.left){ EX.tick = setInterval(()=>{ if ($('#viewer').classList.contains('open')) return; EX.left--; exHud(); if (EX.left<=0){ clearInterval(EX.tick); alert('시간이 다 됐어요. 지금까지 푼 것으로 채점할게요.'); gradeExam(); } }, 1000); }
+  renderExamQ();
+}
+const answered = x => x.pick!==null && x.pick!=='';
+function exHud(){
+  const a = EX.items.filter(answered).length;
+  $('#exprog').style.width = (a/EX.items.length*100)+'%';
+  const t = EX.left!=null ? ` · ${Math.floor(EX.left/60)}:${String(EX.left%60).padStart(2,'0')}` : '';
+  $('#exinfo').textContent = `${a}/${EX.items.length}${t}`;
+  const g = $('#exgrid'); g.innerHTML='';
+  EX.items.forEach((x,k)=>{ const b = el('button', (answered(x)?'done ':'') + (k===EX.i?'cur':''), String(k+1)); b.onclick=()=>{ EX.i=k; renderExamQ(); }; g.appendChild(b); });
+}
+function renderExamQ(){
+  const x = EX.items[EX.i], q = x.q;
+  $('#excard').className = 'qcard ' + q.topic;
+  $('#exmeta').textContent = `${EX.i+1}번 · ${unitName(q.unit)} · ${TYPE_NAME[q.type]}`;
+  $('#extext').textContent = q.q;
+  const body = $('#exbody'); body.innerHTML='';
+  if (q.type==='mc' || q.type==='ox'){
+    const labels = q.type==='mc' ? x.opts.map((o,k)=>`${NUM[k]} ${o}`) : ['O','X'];
+    const vals = q.type==='mc' ? x.opts.map((_,k)=>k) : [true,false];
+    const box = el('div', q.type==='ox' ? 'opts ox' : 'opts');
+    labels.forEach((t,k)=>{ const b = el('button','opt'+(x.pick===vals[k]?' picked':''), t); b.onclick=()=>{ x.pick = vals[k]; renderExamQ(); }; box.appendChild(b); });
+    body.appendChild(box);
+  } else {
+    const inp = el('input'); inp.type='text'; inp.placeholder='답 입력'; inp.value = x.pick || ''; inp.setAttribute('aria-label','답 입력');
+    inp.oninput = ()=>{ x.pick = inp.value; exHud(); };
+    inp.addEventListener('keydown', e=>{ if(e.key==='Enter' && EX.i<EX.items.length-1){ EX.i++; renderExamQ(); } });
+    const w = el('div','short'); w.appendChild(inp); body.appendChild(w);
+  }
+  $('#exprev').disabled = EX.i===0;
+  $('#exnext').disabled = EX.i===EX.items.length-1;
+  $('#exnext').textContent = EX.i===EX.items.length-1 ? '마지막 문제' : '다음';
+  exHud();
+}
+function isRight(x){
+  if (!answered(x)) return false;
+  if (x.q.type==='short'){ const n = norm(x.pick); return x.q.accept.some(a=>{ const m=norm(a); return m===n || (m.length>3 && n.includes(m)); }); }
+  return x.pick === x.ans;
+}
+function gradeExam(){
+  if (!EX || EX.done) return;
+  EX.done = true; clearInterval(EX.tick);
+  let score = 0; touchDay();
+  EX.items.forEach(x=>{
+    x.ok = isRight(x); if (x.ok) score++;
+    const s = save.stats[x.q.id] || (save.stats[x.q.id] = {right:0, wrong:0, lastWrong:false});
+    if (x.ok){ s.right++; s.lastWrong=false; } else { s.wrong++; s.lastWrong=true; }
+    save.today++;
+  });
+  const gain = score*10; save.xp += gain;
+  save.exams = [{date: new Date().toLocaleDateString('ko-KR',{month:'numeric',day:'numeric'}), n: EX.items.length, score, range: exOpt.range}, ...(save.exams||[])].slice(0,20);
+  persist();
+  show('examresult');
+  const n = EX.items.length, ratio = score/n;
+  $('#erscore').textContent = score; $('#ertotal').textContent = ` / ${n}`;
+  $('#ersub').textContent = `정답률 ${Math.round(ratio*100)}% · +${gain} XP`;
+  const [, kind, title, caps] = CHEER.result.find(t=>ratio >= t[0]);
+  $('#ertitle').textContent = title;
+  putMedia($('#ermedia'), kind==='best' ? MEDIA.best : kind==='worst' ? MEDIA.worst : pickOne(MEDIA[kind]));
+  $('#ercap').textContent = pickOne(caps);
+  const ub = $('#erunits'); ub.innerHTML='';
+  [...new Set(EX.items.map(x=>x.q.unit))].sort().forEach(u=>{
+    const xs = EX.items.filter(x=>x.q.unit===u), ok = xs.filter(x=>x.ok).length;
+    const r = el('div','urow'); r.appendChild(el('span',null,unitName(u)));
+    const bar = el('span','ubar'); const f = el('i'); f.style.width=(ok/xs.length*100)+'%'; bar.appendChild(f); r.appendChild(bar);
+    r.appendChild(el('b',null,`${ok}/${xs.length}`)); ub.appendChild(r);
+  });
+  EX.wrongOnly = false; $('#erfilter').textContent = '틀린 것만 보기';
+  renderReview();
+}
+function ansText(x, v){
+  if (v===null || v==='') return '(안 풀었음)';
+  if (x.q.type==='mc') return `${NUM[v]} ${x.opts[v]}`;
+  if (x.q.type==='ox') return v ? 'O' : 'X';
+  return v;
+}
+function renderReview(){
+  const box = $('#erlist'); box.innerHTML='';
+  EX.items.forEach((x,k)=>{
+    if (EX.wrongOnly && x.ok) return;
+    const d = el('div','review'+(x.ok?'':' no'));
+    d.appendChild(el('p','rq',`${k+1}. ${x.q.q}`));
+    const mine = el('p','ra'); mine.appendChild(el('b',null,'내 답: ')); mine.appendChild(document.createTextNode(ansText(x, x.pick))); d.appendChild(mine);
+    if (!x.ok){ const c = el('p','ra'); c.appendChild(el('b',null,'정답: ')); c.appendChild(document.createTextNode(x.q.type==='short' ? x.q.answer_text : ansText(x, x.ans))); d.appendChild(c); }
+    if (x.q.explain) d.appendChild(el('p','rexp', x.q.explain));
+    const dn = detailNode(x.q);
+    if (dn){ const t = el('button','linkbtn','자세한 해설'); t.style.padding='6px 12px 0 0'; dn.style.display='none'; t.onclick=()=>{ dn.style.display = dn.style.display==='none'?'block':'none'; }; d.appendChild(t); d.appendChild(dn); }
+    if (x.q.source && x.q.source.page){ const b = el('button','linkbtn',`강의자료 ${x.q.source.page}쪽`); b.style.padding='6px 0 0'; b.onclick=()=>openViewer(x.q); d.appendChild(b); }
+    box.appendChild(d);
+  });
+  if (!box.children.length) box.appendChild(el('p','muted','다 맞혔어요. 다시 볼 문제가 없어요!'));
+}
+document.querySelectorAll('.chips').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  g.querySelectorAll('button').forEach(x=>x.classList.toggle('on', x===b));
+  const k = g.dataset.key; exOpt[k] = k==='range' ? b.dataset.v : +b.dataset.v;
+}));
+$('#openExam').onclick = openExamSetup;
+$('#esback').onclick = ()=>{ show('home'); renderHome(); };
+$('#esstart').onclick = startExam;
+$('#exprev').onclick = ()=>{ if (EX.i>0){ EX.i--; renderExamQ(); } };
+$('#exnext').onclick = ()=>{ if (EX.i<EX.items.length-1){ EX.i++; renderExamQ(); } };
+$('#exsubmit').onclick = ()=>{
+  const empty = EX.items.filter(x=>!answered(x)).length;
+  if (empty && !confirm(`아직 안 푼 문제가 ${empty}개 있어요. 그래도 제출할까요?`)) return;
+  gradeExam();
+};
+$('#exquit').onclick = ()=>{ if (confirm('실전 테스트를 그만둘까요? 기록은 남지 않아요.')){ clearInterval(EX.tick); EX=null; show('home'); renderHome(); } };
+$('#erfilter').onclick = ()=>{ EX.wrongOnly = !EX.wrongOnly; $('#erfilter').textContent = EX.wrongOnly ? '전체 보기' : '틀린 것만 보기'; renderReview(); };
+$('#erhome').onclick = ()=>{ stopMedia($('#ermedia')); show('home'); renderHome(); };
+$('#eragain').onclick = ()=>{ stopMedia($('#ermedia')); openExamSetup(); };
+
 /* ---------- 시작 ---------- */
 fetch('questions.json', {cache:'no-cache'})
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d=>{ BANK = d.questions; renderHome(); })
+  .then(d=>{ BANK = d.questions; UNITS = d.units || []; renderHome(); })
   .catch(()=>{ $('#bankinfo').textContent = '문제를 불러오지 못했어요. 사이트 주소(https://…github.io/…)로 접속했는지 확인해 주세요.'; renderHome(); });

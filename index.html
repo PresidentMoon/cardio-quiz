@@ -31,6 +31,7 @@
 
   <div class="modes">
     <button class="mode big" data-mode="quick">빠른 10문제<small>심장 + 혈관 섞어서</small></button>
+    <button class="mode exam" id="openExam">실전 테스트<small>시험처럼 끝까지 풀고 마지막에 채점 · <span id="examlast">아직 응시 기록 없음</span></small></button>
     <button class="mode heart" data-mode="heart">심장만 10문제</button>
     <button class="mode vessel" data-mode="vessel">혈관만 10문제</button>
     <button class="mode" data-mode="time">60초 타임어택<small>객관식·OX만, 최대한 많이</small></button>
@@ -39,6 +40,10 @@
     <button class="mode" data-mode="cards">서술형 카드<small>모범답안 넘겨보기</small></button>
     <button class="mode album" id="openAlbum">추억 앨범<small>모은 사진 <span id="albumbtn">0</span></small></button>
   </div>
+
+  <h2 class="sec">단원별 학습</h2>
+  <p class="muted small">단원을 누르면 그 단원에서만 10문제가 나와요. 막대는 그 단원에서 맞혀본 문제 비율이에요.</p>
+  <div class="units" id="units"></div>
 
   <button class="linkbtn" id="openPdfSetup">강의자료 PDF 불러오기</button>
   <p class="muted small" id="pdfstatus"></p>
@@ -78,6 +83,53 @@
     <button class="btn" id="popclose">계속하기</button>
   </div>
 </div>
+
+<!-- 실전 테스트 설정 -->
+<section id="examsetup" class="screen">
+  <div class="hud"><button class="iconbtn" id="esback" aria-label="뒤로">✕</button><b>실전 테스트</b><span></span></div>
+  <p class="muted">실제 퀴즈처럼 중간에 정답을 보여주지 않고, 다 풀고 제출하면 한꺼번에 채점해요. 단원이 고르게 섞여서 나와요.</p>
+  <div class="opt-group"><b>범위</b><div class="chips" data-key="range"><button data-v="all" class="on">전체</button><button data-v="heart">심장</button><button data-v="vessel">혈관</button></div></div>
+  <div class="opt-group"><b>문항 수</b><div class="chips" data-key="n"><button data-v="20" class="on">20문제</button><button data-v="30">30문제</button><button data-v="40">40문제</button></div></div>
+  <div class="opt-group"><b>시간 제한</b><div class="chips" data-key="time"><button data-v="0" class="on">없음</button><button data-v="1">문제당 1분</button></div></div>
+  <button class="btn" id="esstart" style="width:100%;margin-top:8px">시작하기</button>
+  <div id="eshistory"></div>
+</section>
+
+<!-- 실전 테스트 풀기 -->
+<section id="exam" class="screen">
+  <div class="hud">
+    <button class="iconbtn" id="exquit" aria-label="그만두기">✕</button>
+    <div class="prog"><div id="exprog"></div></div>
+    <div id="exinfo"></div>
+  </div>
+  <div class="exgrid" id="exgrid" aria-label="문제 번호"></div>
+  <div class="qcard" id="excard">
+    <div class="qmeta" id="exmeta"></div>
+    <p class="qtext" id="extext"></p>
+    <div id="exbody"></div>
+  </div>
+  <div class="fb-actions" style="margin-top:12px">
+    <button class="btn ghost" id="exprev">이전</button>
+    <button class="btn" id="exnext">다음</button>
+  </div>
+  <button class="btn submit" id="exsubmit">제출하고 채점하기</button>
+</section>
+
+<!-- 실전 테스트 결과 -->
+<section id="examresult" class="screen">
+  <h2 id="ertitle">채점 결과</h2>
+  <p class="bignum"><span id="erscore">0</span><small id="ertotal"></small></p>
+  <p class="muted" id="ersub"></p>
+  <figure class="rphoto"><div class="media" id="ermedia"></div><figcaption id="ercap"></figcaption></figure>
+  <h3 class="sec">단원별 결과</h3>
+  <div id="erunits"></div>
+  <div class="row" style="align-items:center;margin:18px 0 8px"><h3 class="sec" style="margin:0;flex:1">문제 다시 보기</h3><button class="linkbtn" id="erfilter" style="padding:0">틀린 것만 보기</button></div>
+  <div id="erlist"></div>
+  <div class="fb-actions" style="margin-top:14px">
+    <button class="btn ghost" id="erhome">홈으로</button>
+    <button class="btn" id="eragain">다시 응시</button>
+  </div>
+</section>
 
 <!-- 결과 -->
 <section id="result" class="screen">
