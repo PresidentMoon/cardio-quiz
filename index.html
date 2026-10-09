@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16233A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>심혈관 퀴즈</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 홈 -->
+<section id="home" class="screen active">
+  <div class="home-top">
+    <h1>심혈관 퀴즈</h1>
+    <p class="muted">기초간호과학I · 심장, 혈관 강의자료</p>
+  </div>
+  <svg class="pulse" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 36 H120 l8 8 l12 -40 l12 50 l8 -18 H210 q16 -16 32 0 H400"/></svg>
+  <div class="stats">
+    <div><span id="lvl">1</span><small>레벨</small></div>
+    <div><span id="streak">0</span><small>연속 학습일</small></div>
+    <div><span id="today">0</span><small>오늘 푼 문제</small></div>
+  </div>
+  <div class="xpbar" aria-label="경험치"><div id="xpfill"></div></div>
+  <p class="muted small" id="xptext"></p>
+
+  <div class="modes">
+    <button class="mode big" data-mode="quick">빠른 10문제<small>심장 + 혈관 섞어서</small></button>
+    <button class="mode heart" data-mode="heart">심장만 10문제</button>
+    <button class="mode vessel" data-mode="vessel">혈관만 10문제</button>
+    <button class="mode" data-mode="time">60초 타임어택<small>객관식·OX만, 최대한 많이</small></button>
+    <button class="mode" data-mode="survive">하트 챌린지<small>하트 3개로 어디까지 갈 수 있을까</small></button>
+    <button class="mode" data-mode="wrong">오답 복습<small id="wrongcount">틀린 문제 0개</small></button>
+    <button class="mode" data-mode="cards">서술형 카드<small>모범답안 넘겨보기</small></button>
+  </div>
+
+  <button class="linkbtn" id="openPdfSetup">강의자료 PDF 불러오기</button>
+  <p class="muted small" id="pdfstatus"></p>
+  <p class="muted small" id="bankinfo"></p>
+</section>
+
+<!-- 문제 풀기 -->
+<section id="play" class="screen">
+  <div class="hud">
+    <button class="iconbtn" id="quit" aria-label="그만하기">✕</button>
+    <div class="prog"><div id="progfill"></div></div>
+    <div id="hudright"></div>
+  </div>
+  <div id="combo" class="combo" aria-live="polite"></div>
+  <div class="qcard" id="qcard">
+    <div class="qmeta" id="qmeta"></div>
+    <p class="qtext" id="qtext"></p>
+    <div id="qbody"></div>
+  </div>
+  <div class="feedback" id="feedback">
+    <p class="verdict" id="verdict"></p>
+    <p class="explain" id="explain"></p>
+    <div id="detailwrap"></div>
+    <div class="fb-actions">
+      <button class="btn ghost" id="showPdf">강의자료 보기</button>
+      <button class="btn" id="next">다음</button>
+    </div>
+  </div>
+</section>
+
+<!-- 사진 팝업 -->
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popmsg">
+  <div class="popcard">
+    <img id="popimg" alt="">
+    <p class="popmsg" id="popmsg"></p>
+    <p class="popsub" id="popsub"></p>
+    <button class="btn" id="popclose">계속하기</button>
+  </div>
+</div>
+
+<!-- 결과 -->
+<section id="result" class="screen">
+  <h2 id="rtitle">끝!</h2>
+  <p class="bignum"><span id="rscore">0</span><small id="rtotal"></small></p>
+  <p class="muted" id="rxp"></p>
+  <figure class="rphoto" id="rphoto"><img id="rimg" alt=""><figcaption id="rcap"></figcaption></figure>
+  <div id="rwrong"></div>
+  <div class="fb-actions">
+    <button class="btn ghost" id="rhome">홈으로</button>
+    <button class="btn" id="ragain">한 번 더</button>
+  </div>
+</section>
+
+<!-- PDF 뷰어 -->
+<div class="sheet" id="viewer" role="dialog" aria-modal="true" aria-label="강의자료 보기">
+  <div class="sheet-top">
+    <button class="iconbtn" id="vclose" aria-label="닫기">✕</button>
+    <span id="vtitle"></span>
+    <span class="vzoom"><button class="iconbtn" id="zout" aria-label="축소">−</button><button class="iconbtn" id="zin" aria-label="확대">+</button></span>
+  </div>
+  <details class="vexplain" id="vexplain"><summary>해설 보기 · 노란색 = 이 문제 관련 부분, ★ = 출처 쪽</summary><p id="vexptext"></p><div id="vdetail"></div></details>
+  <div class="canvaswrap" id="canvaswrap"><canvas id="pdfcanvas"></canvas><p class="muted center" id="vmsg"></p></div>
+  <div class="sheet-bottom">
+    <button class="btn ghost" id="vprev">◀ 이전 쪽</button>
+    <span id="vpage"></span>
+    <button class="btn ghost" id="vnext">다음 쪽 ▶</button>
+  </div>
+</div>
+
+<!-- PDF 불러오기 -->
+<div class="sheet" id="pdfsetup" role="dialog" aria-modal="true" aria-label="강의자료 불러오기">
+  <div class="sheet-top"><button class="iconbtn" id="sclose" aria-label="닫기">✕</button><span>강의자료 PDF 불러오기</span><span></span></div>
+  <div class="setup-body">
+    <p>수업 PDF를 이 기기에 한 번만 불러오면, 문제를 풀다가 해당 페이지를 바로 볼 수 있어요. 파일은 이 브라우저 안에만 저장되고 어디에도 업로드되지 않아요.</p>
+    <label class="filebox"><span>3주차 심장 PDF</span><input type="file" accept="application/pdf" data-doc="heart"><em id="st-heart">없음</em></label>
+    <label class="filebox"><span>5–6주차 혈관 PDF</span><input type="file" accept="application/pdf" data-doc="vessel"><em id="st-vessel">없음</em></label>
+    <p class="muted small">페이지 번호는 교수님이 런어스에 올린 원본 파일 기준이에요. 다른 버전의 파일이면 페이지가 어긋날 수 있어요.</p>
+    <button class="linkbtn" id="clearPdf">저장된 PDF 지우기</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

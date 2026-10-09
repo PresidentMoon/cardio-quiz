@@ -1,0 +1,9 @@
+{
+  "name": "심혈관 퀴즈",
+  "short_name": "심혈관퀴즈",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F7F9FB",
+  "theme_color": "#16233A",
+  "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+}
