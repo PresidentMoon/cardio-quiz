@@ -103,13 +103,24 @@ button{font:inherit;color:inherit}
 .pop.open{display:flex}
 .popcard{background:var(--card);border-radius:18px;padding:14px 14px 16px;width:100%;max-width:340px;text-align:center;animation:rise .35s ease-out}
 @keyframes rise{from{transform:translateY(24px) scale(.96);opacity:0}to{transform:none;opacity:1}}
-.popcard img{width:100%;max-height:52vh;object-fit:cover;object-position:center 30%;border-radius:12px;display:block}
+.media{position:relative}
+.media img,.media video{width:100%;max-height:52vh;object-fit:cover;object-position:center 30%;border-radius:12px;display:block;background:#000}
+.soundbtn{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.6);color:#fff;border:none;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
 .popmsg{font-family:"Gowun Batang",serif;font-size:22px;font-weight:700;margin:12px 0 2px;line-height:1.35}
 .popsub{color:var(--muted);margin:0 0 14px;font-size:15px}
 .popcard .btn{width:100%}
 .rphoto{margin:14px 0 0;text-align:center}
-.rphoto img{width:62%;max-width:240px;border-radius:14px;display:block;margin:0 auto}
+.rphoto .media{width:66%;max-width:260px;margin:0 auto}
+.rphoto .media img,.rphoto .media video{max-height:46vh;border-radius:14px}
 .rphoto figcaption{margin-top:8px;font-weight:500}
+
+/* 앨범 */
+.mode.album{grid-column:1/-1;border-left:5px solid var(--gold)}
+.agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.acell{position:relative;aspect-ratio:3/4;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);padding:0;cursor:pointer}
+.acell img,.acell video{width:100%;height:100%;object-fit:cover;display:block}
+.acell.locked{display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--muted);cursor:default;background:repeating-linear-gradient(45deg,var(--card),var(--card) 8px,var(--line) 8px,var(--line) 9px)}
+.acell .play{position:absolute;inset:auto 6px 6px auto;background:rgba(0,0,0,.6);color:#fff;border-radius:999px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px}
 
 /* 시트 */
 .sheet{display:none;position:fixed;inset:0;background:var(--paper);z-index:20;flex-direction:column;

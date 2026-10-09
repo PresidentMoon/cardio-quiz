@@ -5,10 +5,17 @@ const DOC_NAME = { heart: '3주차 심장', vessel: '5–6주차 혈관' };
 const TYPE_NAME = { mc: '객관식', ox: 'OX', short: '단답형', card: '서술형' };
 const NUM = ['①','②','③','④','⑤'];
 
-/* ---------- 응원 사진 설정 (문구는 자유롭게 고쳐도 돼요) ---------- */
+/* ---------- 응원 사진·영상 설정 (파일 이름과 문구는 자유롭게 고쳐도 돼요) ---------- */
+const MEDIA = {
+  best:   'best.mp4',                     // 챕터를 최고로 잘 끝냈을 때 (90% 이상)
+  worst:  'worst.mp4',                    // 챕터를 많이 못 끝냈을 때 (30% 미만)
+  levelup:'best.mp4',                     // 레벨업할 때
+  normal: ['normal.jpg'],                 // 평범하게 끝냈을 때 (50~69%)
+  good:   ['good1.jpg','good2.jpg','good3.jpg','good4.jpg','good.jpg'],                       // 잘할 때
+  bad:    ['bad1.jpg','bad2.jpg','bad3.jpg','bad4.jpg','bad5.jpg','bad6.jpg','bad7.jpg','bad8.jpg','cheer.jpg'] // 막힐 때
+};
+const ALL_MEDIA = [MEDIA.best, MEDIA.worst, ...MEDIA.normal, ...MEDIA.good, ...MEDIA.bad];
 const CHEER = {
-  goodImg: 'good.jpg',      // 잘 풀 때
-  cheerImg: 'cheer.jpg',    // 막힐 때
   goodAt: [3, 6, 10, 15, 20],      // 이만큼 연속으로 맞히면 사진 (20 이후엔 5개마다)
   cheerAfterWrong: 2,              // 연달아 이만큼 틀리면 사진
   gap: 4,                          // 사진끼리 최소 이만큼 문제 간격
@@ -25,6 +32,14 @@ const CHEER = {
     ['천천히 해도 돼', '지금 틀린 게 시험에선 맞는 거야'],
     ['토닥토닥', '하나씩 외우면 금방 늘어'],
     ['힘내라 힘!', '잠깐 쉬었다 해도 괜찮아']
+  ],
+  // 챕터(한 판) 끝날 때: [기준 정답률, 사진 종류, 제목, 문구들]
+  result: [
+    [0.9, 'best',   '최고! 챕터 클리어', ['이건 진짜 천재다','완벽 그 자체, 오늘은 푹 쉬어','퀴즈 날 그냥 이대로만 해']],
+    [0.7, 'good',   '잘했어!',           ['오늘도 잘했어, 진짜 대단해','이 정도면 퀴즈 걱정 없겠다','조금만 더 하면 만점이야']],
+    [0.5, 'normal', '수고했어!',         ['딱 절반 넘었다, 이제 올라갈 일만 남았어','틀린 것만 한 번 더 보면 금방 늘어']],
+    [0.3, 'bad',    '수고했어!',         ['푼 만큼 다 남는 거야','틀린 건 오답 복습에서 다시 만나자','오늘 한 것만으로도 충분히 잘했어']],
+    [0,   'worst',  '오늘은 여기까지!',   ['이 영상 보고 웃고 다시 하자','괜찮아, 원래 처음엔 다 이래','쉬었다가 오답 복습부터 같이 하자']]
   ]
 };
 const pickOne = a => a[Math.floor(Math.random()*a.length)];
@@ -61,6 +76,7 @@ function renderHome(){
   $('#today').textContent = save.todayDay === dayStr(new Date()) ? save.today : 0;
   $('#xpfill').style.width = ((save.xp-a)/(b-a)*100) + '%';
   $('#xptext').textContent = `XP ${save.xp} · 다음 레벨까지 ${b-save.xp}`;
+  $('#albumbtn').textContent = `${(save.album||[]).filter(m=>ALL_MEDIA.includes(m)).length} / ${ALL_MEDIA.length}`;
   $('#wrongcount').textContent = `틀린 문제 ${wrongIds().length}개`;
   const c = t => BANK.filter(q=>q.type===t).length;
   $('#bankinfo').textContent = BANK.length ? `문제은행 ${BANK.length}문제 (객관식 ${c('mc')} · OX ${c('ox')} · 단답 ${c('short')} · 서술 ${c('card')})` : '';
@@ -177,7 +193,9 @@ function finish(ok, head, gaveUp){
   run.wrongStreak = ok ? 0 : (run.wrongStreak||0) + 1;
   if (ok){
     run.score++; run.combo++; run.best=Math.max(run.best,run.combo);
-    const gain = 10 + Math.min(run.combo-1, 5)*2; run.xp += gain; save.xp += gain;
+    const gain = 10 + Math.min(run.combo-1, 5)*2; run.xp += gain;
+    const before = level(save.xp); save.xp += gain;
+    if (level(save.xp) > before) run.levelUp = level(save.xp);
     if (run.combo>=2){ const c=$('#combo'); c.textContent=`${run.combo}연속 정답 · +${gain}XP`; c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); }
     else $('#combo').textContent = `+${gain}XP`;
     buzz(30);
@@ -211,7 +229,13 @@ function finish(ok, head, gaveUp){
   setTimeout(()=>$('#feedback').scrollIntoView({behavior:'smooth', block:'nearest'}), 60);
   if (!ok && gaveUp && p) openViewer(current);   // 모르겠으면 자료부터 바로 보여주기
 }
+function pickMedia(list){
+  const pool = list.length > 1 ? list.filter(m=>m!==run.lastMedia) : list;
+  const m = pickOne(pool); run.lastMedia = m; return m;
+}
 function maybePhoto(ok, gaveUp){
+  if (run.levelUp){ const lv = run.levelUp; run.levelUp = null; run.lastPhoto = run.answered;
+    setTimeout(()=>showMedia(MEDIA.levelup, `레벨 ${lv} 달성!`, '레벨업 보상 영상 도착 · 추억 앨범에도 저장됐어', '계속 달리기'), 650); return; }
   const since = run.answered - (run.lastPhoto ?? -99);
   if (since < CHEER.gap) return;
   let kind = null;
@@ -221,15 +245,37 @@ function maybePhoto(ok, gaveUp){
   run.lastPhoto = run.answered;
   if (kind === 'cheer') run.wrongStreak = 0;
   const [msg, sub] = pickOne(CHEER[kind]);
-  setTimeout(()=>showPhoto(kind, msg, kind==='good' ? `${run.combo}연속 정답 · ${sub}` : sub), 650);
+  const src = pickMedia(kind==='good' ? MEDIA.good : MEDIA.bad);
+  setTimeout(()=>showMedia(src, msg, kind==='good' ? `${run.combo}연속 정답 · ${sub}` : sub, kind==='good' ? '계속 달리기' : '다시 해볼게'), 650);
 }
-function showPhoto(kind, msg, sub){
-  $('#popimg').src = kind==='good' ? CHEER.goodImg : CHEER.cheerImg;
+/* 사진이든 영상이든 같은 자리에 넣기. 영상은 소리 켜고 재생을 시도하고, 막히면 무음 재생 + 소리 버튼 */
+function putMedia(box, src){
+  box.querySelectorAll('video').forEach(v=>v.pause());
+  box.innerHTML = '';
+  if (/\.(mp4|webm|mov)$/i.test(src)){
+    const v = document.createElement('video');
+    v.src = src; v.playsInline = true; v.setAttribute('playsinline',''); v.loop = true; v.preload = 'auto';
+    box.appendChild(v);
+    const snd = el('button','soundbtn','🔇 소리 켜기'); snd.style.display='none';
+    snd.onclick = e=>{ e.stopPropagation(); v.muted = false; v.play(); snd.style.display='none'; };
+    box.appendChild(snd);
+    v.muted = false;
+    v.play().catch(()=>{ v.muted = true; v.play().catch(()=>{}); snd.style.display=''; });
+  } else {
+    const i = document.createElement('img'); i.src = src; i.alt = ''; box.appendChild(i);
+  }
+  collect(src);
+}
+function stopMedia(box){ box.querySelectorAll('video').forEach(v=>v.pause()); }
+function collect(src){ save.album = save.album || []; if (!save.album.includes(src)){ save.album.push(src); persist(); } }
+function showMedia(src, msg, sub, btn){
+  putMedia($('#popmedia'), src);
   $('#popmsg').textContent = msg; $('#popsub').textContent = sub;
-  $('#popclose').textContent = kind==='good' ? '계속 달리기' : '다시 해볼게';
+  $('#popclose').textContent = btn || '계속하기';
   $('#pop').classList.add('open');
-  if (kind==='good') buzz([30,60,30]);
+  buzz([30,60,30]);
 }
+function closePop(){ stopMedia($('#popmedia')); $('#pop').classList.remove('open'); }
 const DETAIL_LABEL = [['concept','핵심 개념'],['why','왜 이게 정답일까'],['wrong','헷갈리는 포인트'],['page_note','강의자료 이 쪽에서 볼 것'],['tip','외우는 팁']];
 function detailNode(q){
   const d = q.detail; if (!d) return null;
@@ -244,13 +290,13 @@ function endRun(){
   run.ended = true; clearInterval(run.tick);
   show('result');
   const ratio = run.answered ? run.score / run.answered : 0;
-  const goodRun = ratio >= 0.7;
-  const t = run.mode==='time' ? '타임어택 끝!' : run.mode==='survive' ? '챌린지 끝!' : '수고했어!';
-  $('#rtitle').textContent = t;
-  $('#rimg').src = goodRun ? CHEER.goodImg : CHEER.cheerImg;
-  $('#rcap').textContent = !run.answered ? '다음엔 같이 풀어보자' : goodRun
-    ? pickOne(['오늘도 잘했어, 진짜 대단해','이 정도면 퀴즈 걱정 없겠다','최고야, 푹 쉬어도 돼'])
-    : pickOne(['푼 만큼 다 남는 거야','틀린 건 오답 복습에서 다시 만나자','오늘 한 것만으로도 충분히 잘했어']);
+  // 너무 적게 풀고 끝내면(5문제 미만) 평범 사진
+  const tier = run.answered < 5 ? CHEER.result[2] : CHEER.result.find(t=>ratio >= t[0]);
+  const [, kind, title, caps] = tier;
+  $('#rtitle').textContent = title;
+  const src = kind==='best' ? MEDIA.best : kind==='worst' ? MEDIA.worst : pickMedia(MEDIA[kind]);
+  putMedia($('#rmedia'), src);
+  $('#rcap').textContent = !run.answered ? '다음엔 같이 풀어보자' : pickOne(caps);
   $('#rscore').textContent = run.score;
   $('#rtotal').textContent = ` / ${run.answered}`;
   $('#rxp').textContent = `+${run.xp} XP · 최고 ${run.best}연속 정답`;
@@ -360,15 +406,31 @@ document.querySelectorAll('.mode').forEach(b=>b.onclick=()=>startMode(b.dataset.
 $('#quit').onclick = ()=>{ if(run && run.answered) endRun(); else { if(run) clearInterval(run.tick); show('home'); renderHome(); } };
 $('#next').onclick = ()=>{ if (run.lives===0) return endRun(); run.i++; $('#combo').textContent = run.combo>=2 ? `${run.combo}연속 정답 중` : ''; nextQ(); };
 $('#showPdf').onclick = ()=>openViewer(current);
-$('#rhome').onclick = ()=>{ show('home'); renderHome(); };
-$('#ragain').onclick = ()=>startMode(run.mode);
+$('#rhome').onclick = ()=>{ stopMedia($('#rmedia')); show('home'); renderHome(); };
+$('#ragain').onclick = ()=>{ stopMedia($('#rmedia')); startMode(run.mode); };
 $('#vclose').onclick = ()=>$('#viewer').classList.remove('open');
 $('#vprev').onclick = ()=>{ view.page--; renderPage(); };
 $('#vnext').onclick = ()=>{ view.page++; renderPage(); };
 $('#zin').onclick = ()=>{ view.zoom=Math.min(3,view.zoom+0.5); renderPage(); };
 $('#zout').onclick = ()=>{ view.zoom=Math.max(1,view.zoom-0.5); renderPage(); };
-$('#popclose').onclick = ()=>$('#pop').classList.remove('open');
-$('#pop').onclick = e=>{ if(e.target.id==='pop') $('#pop').classList.remove('open'); };
+$('#popclose').onclick = closePop;
+$('#pop').onclick = e=>{ if(e.target.id==='pop') closePop(); };
+$('#openAlbum').onclick = ()=>{
+  const g = $('#albumgrid'); g.innerHTML = '';
+  const have = new Set(save.album||[]);
+  ALL_MEDIA.forEach(src=>{
+    const cell = el('button','acell');
+    if (have.has(src)){
+      if (/\.mp4$/i.test(src)){ const v=document.createElement('video'); v.src=src+'#t=0.5'; v.muted=true; v.playsInline=true; v.preload='metadata'; cell.appendChild(v); cell.appendChild(el('span','play','▶')); }
+      else { const i=document.createElement('img'); i.src=src; i.loading='lazy'; i.alt=''; cell.appendChild(i); }
+      cell.onclick = ()=>showMedia(src, '추억 앨범', '', '닫기');
+    } else { cell.classList.add('locked'); cell.appendChild(el('span',null,'?')); cell.setAttribute('aria-label','아직 못 모은 사진'); }
+    g.appendChild(cell);
+  });
+  $('#albumcount').textContent = `${ALL_MEDIA.filter(m=>have.has(m)).length} / ${ALL_MEDIA.length} 모음`;
+  $('#album').classList.add('open');
+};
+$('#aclose').onclick = ()=>$('#album').classList.remove('open');
 $('#openPdfSetup').onclick = ()=>$('#pdfsetup').classList.add('open');
 $('#sclose').onclick = ()=>$('#pdfsetup').classList.remove('open');
 $('#clearPdf').onclick = async ()=>{ await idbClear(); for(const k in pdfCache) delete pdfCache[k]; pdfStatus(); };
