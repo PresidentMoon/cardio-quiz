@@ -7,8 +7,8 @@ const NUM = ['①','②','③','④','⑤'];
 
 /* ---------- 응원 사진 설정 (문구는 자유롭게 고쳐도 돼요) ---------- */
 const CHEER = {
-  goodImg: 'assets/good.jpg',      // 잘 풀 때
-  cheerImg: 'assets/cheer.jpg',    // 막힐 때
+  goodImg: 'good.jpg',      // 잘 풀 때
+  cheerImg: 'cheer.jpg',    // 막힐 때
   goodAt: [3, 6, 10, 15, 20],      // 이만큼 연속으로 맞히면 사진 (20 이후엔 5개마다)
   cheerAfterWrong: 2,              // 연달아 이만큼 틀리면 사진
   gap: 4,                          // 사진끼리 최소 이만큼 문제 간격
@@ -383,7 +383,7 @@ document.querySelectorAll('#pdfsetup input[type=file]').forEach(inp=>inp.onchang
 let resizeT; window.addEventListener('resize', ()=>{ clearTimeout(resizeT); resizeT=setTimeout(()=>{ if($('#viewer').classList.contains('open')) renderPage(); },200); });
 
 /* ---------- 시작 ---------- */
-fetch('data/questions.json', {cache:'no-cache'})
+fetch('questions.json', {cache:'no-cache'})
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
   .then(d=>{ BANK = d.questions; renderHome(); })
   .catch(()=>{ $('#bankinfo').textContent = '문제를 불러오지 못했어요. 사이트 주소(https://…github.io/…)로 접속했는지 확인해 주세요.'; renderHome(); });
