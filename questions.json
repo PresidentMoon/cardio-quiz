@@ -9235,6 +9235,6519 @@
    "id": "v-gen-0148",
    "origin": "claude",
    "unit": "v2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "16쪽 심장근육조직 그림에서 이온이 세포 사이를 이동하는 통로로 표시된 구조는?",
+   "options": [
+    "부착반점(desmosomes)",
+    "틈새이음(gap junctions)",
+    "근육원섬유마디(sarcomere)",
+    "T세관"
+   ],
+   "answer": 1,
+   "explain": "그림의 사이원반 확대부에 이온(Ions)이 틈새이음(gap junctions)을 통과하는 모습이 그려져 있다.",
+   "detail": {
+    "why": "그림의 사이원반 확대부에 이온(Ions)이 틈새이음(gap junctions)을 통과하는 모습이 그려져 있다.",
+    "wrong": "부착반점은 기계적 연결이다.",
+    "page_note": "16쪽 그림 17.10"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 16
+   },
+   "id": "h-gen-0096",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "16쪽 심장근육세포 그림에 표시되지 않은 구조는?",
+   "options": [
+    "사이원반",
+    "T세관",
+    "근육세포질그물",
+    "정맥판막"
+   ],
+   "answer": 3,
+   "explain": "그림에는 사이원반, T세관, 근육세포질그물, 근육세포막, 사립체, 근육원섬유마디 등이 표시된다. 정맥판막은 혈관 구조.",
+   "detail": {
+    "why": "그림에는 사이원반, T세관, 근육세포질그물, 근육세포막, 사립체, 근육원섬유마디 등이 표시된다. 정맥판막은 혈관 구조.",
+    "page_note": "16쪽 그림"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 16
+   },
+   "id": "h-gen-0097",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심장근육조직은 사이원반으로 세포끼리 이어져 있다.",
+   "answer": true,
+   "explain": "그림과 17쪽 설명 모두 사이원반으로 연결.",
+   "detail": {
+    "why": "그림과 17쪽 설명 모두 사이원반으로 연결.",
+    "page_note": "16~17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 16
+   },
+   "id": "h-gen-0098",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "26쪽 그림 (a) 수축된 왼심실에서 판막 상태로 옳은 것은?",
+   "options": [
+    "대동맥판막 열림, 승모판막 닫힘",
+    "대동맥판막 닫힘, 승모판막 열림",
+    "둘 다 열림",
+    "둘 다 닫힘"
+   ],
+   "answer": 0,
+   "explain": "심실의 높은 압력이 대동맥판막을 밀어 열고, 동시에 승모판막을 닫는다.",
+   "detail": {
+    "why": "심실의 높은 압력이 대동맥판막을 밀어 열고, 동시에 승모판막을 닫는다.",
+    "wrong": "(b) 이완된 왼심실이 그 반대.",
+    "page_note": "26쪽 그림 (a)",
+    "tip": "수축 = 나가는 문 열림, 들어오는 문 닫힘."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 26
+   },
+   "id": "h-gen-0099",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "26쪽 그림 (b) 이완된 왼심실에서 대동맥판막을 닫는 것은?",
+   "options": [
+    "심실의 높은 압력",
+    "대동맥 안에서 역류하는 혈류의 압력",
+    "꼭지근 수축",
+    "심방 수축"
+   ],
+   "answer": 1,
+   "explain": "대동맥 안으로 역류하는 혈류의 압력이 대동맥판막을 닫고, 왼심방의 압력이 승모판막을 밀어 연다.",
+   "detail": {
+    "why": "대동맥 안으로 역류하는 혈류의 압력이 대동맥판막을 닫고, 왼심방의 압력이 승모판막을 밀어 연다.",
+    "page_note": "26쪽 그림 (b)"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 26
+   },
+   "id": "h-gen-0100",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심실이 이완하면 왼심방 혈액의 압력이 승모판막을 밀어 열어 혈액이 심실로 들어간다.",
+   "answer": true,
+   "explain": "26쪽 그림 (b) 설명.",
+   "detail": {
+    "why": "26쪽 그림 (b) 설명.",
+    "page_note": "26쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 26
+   },
+   "id": "h-gen-0101",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "35쪽 심장주기 그림에서 심실 용적이 가장 클 때는?",
+   "options": [
+    "심실박출기 끝",
+    "등용적성수축기(EDV 상태)",
+    "등용적성이완기",
+    "심실박출기 중간"
+   ],
+   "answer": 1,
+   "explain": "심방수축기 끝~등용적성수축기 동안 용적은 EDV(약 120mL)로 최대, 박출기 후 ESV로 최소가 된다.",
+   "detail": {
+    "why": "심방수축기 끝~등용적성수축기 동안 용적은 EDV(약 120mL)로 최대, 박출기 후 ESV로 최소가 된다.",
+    "page_note": "35쪽 그림 아래 용적 곡선"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 35
+   },
+   "id": "h-gen-0102",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "35쪽 그림에서 심실박출기 동안 줄어든 용적이 의미하는 것은?",
+   "options": [
+    "EDV",
+    "ESV",
+    "일회박출량(stroke volume)",
+    "심장박출량"
+   ],
+   "answer": 2,
+   "explain": "그림에 EDV에서 ESV로 떨어진 폭이 stroke volume(일회박출량)으로 표시된다.",
+   "detail": {
+    "why": "그림에 EDV에서 ESV로 떨어진 폭이 stroke volume(일회박출량)으로 표시된다.",
+    "page_note": "35쪽 그림 용적 곡선"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 35
+   },
+   "id": "h-gen-0103",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "35쪽 그림에서 S1은 등용적성수축기 시작, S2는 등용적성이완기 시작 무렵에 표시된다.",
+   "answer": true,
+   "explain": "S1 = 방실판막 닫힘, S2 = 반달판막 닫힘.",
+   "detail": {
+    "why": "S1 = 방실판막 닫힘, S2 = 반달판막 닫힘.",
+    "page_note": "35쪽 그림 심음 줄"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 35
+   },
+   "id": "h-gen-0104",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "34쪽 그래프에서 왼심실 압력이 대동맥 압력보다 높아질 때 일어나는 일은?",
+   "options": [
+    "승모판막이 열린다",
+    "혈액이 대동맥판막을 밀어 연다",
+    "S2가 들린다",
+    "심방이 수축한다"
+   ],
+   "answer": 1,
+   "explain": "왼심실 압력 > 대동맥 압력이 되면 혈액이 대동맥판막을 밀어 연다(필기 '최대 압력').",
+   "detail": {
+    "why": "왼심실 압력 > 대동맥 압력이 되면 혈액이 대동맥판막을 밀어 연다(필기 '최대 압력').",
+    "page_note": "34쪽 그래프 (b) 위 설명"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 34
+   },
+   "id": "h-gen-0105",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "34쪽 그래프에서 오른심실 압력이 허파동맥줄기보다 높아지면?",
+   "options": [
+    "허파동맥판막이 열린다",
+    "삼첨판막이 열린다",
+    "대동맥판막이 열린다",
+    "방실판막이 뒤집힌다"
+   ],
+   "answer": 0,
+   "explain": "오른심실 압력 > 허파동맥줄기 압력 → 혈액이 허파동맥판막을 밀어 연다.",
+   "detail": {
+    "why": "오른심실 압력 > 허파동맥줄기 압력 → 혈액이 허파동맥판막을 밀어 연다.",
+    "page_note": "34쪽 그래프 (a)"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 34
+   },
+   "id": "h-gen-0106",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "EDV가 그대로인데 수축력이 증가해 ESV가 50mL에서 40mL로 줄었다. EDV 120mL라면 일회박출량 변화는?",
+   "options": [
+    "70→80mL",
+    "70→60mL",
+    "변화 없음",
+    "50→40mL"
+   ],
+   "answer": 0,
+   "explain": "SV = EDV − ESV: 120−50 = 70 → 120−40 = 80mL.",
+   "detail": {
+    "why": "SV = EDV − ESV: 120−50 = 70 → 120−40 = 80mL.",
+    "page_note": "36쪽 공식 + 39쪽 수축력"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "id": "h-gen-0107",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심박수가 72에서 100회/분으로 늘고 SV가 70mL로 같다면 심장박출량은?",
+   "options": [
+    "5,040 → 7,000mL/분",
+    "5,040 → 4,000mL/분",
+    "변화 없음",
+    "7,000 → 5,040mL/분"
+   ],
+   "answer": 0,
+   "explain": "CO = HR × SV: 72×70 = 5,040, 100×70 = 7,000mL/분.",
+   "detail": {
+    "why": "CO = HR × SV: 72×70 = 5,040, 100×70 = 7,000mL/분.",
+    "page_note": "36쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "id": "h-gen-0108",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "고혈압 환자에서 일회박출량이 줄어드는 이유로 가장 알맞은 것은?",
+   "options": [
+    "전부하 증가",
+    "후부하 증가",
+    "수축력 증가",
+    "심박수 감소"
+   ],
+   "answer": 1,
+   "explain": "고혈압은 후부하를 높여 반달판막을 열기 어렵게 하므로 SV↓.",
+   "detail": {
+    "why": "고혈압은 후부하를 높여 반달판막을 열기 어렵게 하므로 SV↓.",
+    "page_note": "37쪽 그림, 39쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 37
+   },
+   "id": "h-gen-0109",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "정맥혈 귀환이 늘어 EDV가 커졌다. 프랭크-스탈링 법칙에 따른 결과는?",
+   "options": [
+    "일회박출량 감소",
+    "어느 시점까지 수축력과 일회박출량 증가",
+    "심박수 감소",
+    "후부하 증가"
+   ],
+   "answer": 1,
+   "explain": "EDV↑ = 전부하↑ → 어느 시점까지 수축력↑ → SV↑.",
+   "detail": {
+    "why": "EDV↑ = 전부하↑ → 어느 시점까지 수축력↑ → SV↑.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "id": "h-gen-0110",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "운동을 시작해 교감신경이 활성화될 때 심장에 나타나는 변화가 아닌 것은?",
+   "options": [
+    "SA node 흥분 속도 증가",
+    "Ca2+ 유입 증가",
+    "수축력 증가",
+    "방실결절 전도 느려짐"
+   ],
+   "answer": 3,
+   "explain": "방실결절 전도를 느리게 하는 건 부교감(아세틸콜린).",
+   "detail": {
+    "why": "방실결절 전도를 느리게 하는 건 부교감(아세틸콜린).",
+    "page_note": "41쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 41
+   },
+   "id": "h-gen-0111",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "출혈로 혈액량이 줄었을 때 혈액량을 늘려 전부하를 높이는 호르몬은?",
+   "options": [
+    "ANP",
+    "알도스테론과 ADH",
+    "아세틸콜린",
+    "갑상선호르몬"
+   ],
+   "answer": 1,
+   "explain": "알도스테론·ADH는 혈액량 → 전부하 → CO를 늘린다. ANP는 반대.",
+   "detail": {
+    "why": "알도스테론·ADH는 혈액량 → 전부하 → CO를 늘린다. ANP는 반대.",
+    "page_note": "42쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 42
+   },
+   "id": "h-gen-0112",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "ECG에서 P파 다음 QRS가 오지 않는 P파가 여러 개 보인다. 가장 가능성 있는 것은?",
+   "options": [
+    "방실결절의 심장차단",
+    "심실세동",
+    "굴빠른맥",
+    "정상"
+   ],
+   "answer": 0,
+   "explain": "여분의 P파 = 굴심방결절 신호 일부가 방실결절을 통해 전도되지 않음(심장차단).",
+   "detail": {
+    "why": "여분의 P파 = 굴심방결절 신호 일부가 방실결절을 통해 전도되지 않음(심장차단).",
+    "page_note": "25쪽 박스 2번"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0113",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심박수 52회/분의 규칙적 리듬을 강의자료 용어로 분류하면?",
+   "options": [
+    "빠른맥",
+    "느린맥(bradycardia)",
+    "심방세동",
+    "정상"
+   ],
+   "answer": 1,
+   "explain": "분당 60회 이하 = 느린맥.",
+   "detail": {
+    "why": "분당 60회 이하 = 느린맥.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0114",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심박수 120회/분의 규칙적이고 빠른 굴리듬은?",
+   "options": [
+    "굴빠른맥(sinus tachycardia)",
+    "느린맥",
+    "심실세동",
+    "방실차단"
+   ],
+   "answer": 0,
+   "explain": "분당 100회 이상, 규칙적이고 빠른 리듬 = 굴빠른맥.",
+   "detail": {
+    "why": "분당 100회 이상, 규칙적이고 빠른 리듬 = 굴빠른맥.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "id": "h-gen-0115",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "굴심방결절이 손상되면 다음으로 박동을 이끌 수 있는 곳과 그 속도는?",
+   "options": [
+    "방실결절, 약 40~60회/분",
+    "푸르키네섬유, 약 60~100회/분",
+    "방실결절, 약 180회/분",
+    "심방근육, 약 100회/분"
+   ],
+   "answer": 0,
+   "explain": "방실결절 고유 속도는 약 40~60회/분(19쪽). 그다음 푸르키네 20~40회/분(20쪽).",
+   "detail": {
+    "why": "방실결절 고유 속도는 약 40~60회/분(19쪽). 그다음 푸르키네 20~40회/분(20쪽).",
+    "page_note": "19~20쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "id": "h-gen-0116",
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "오른심실에서 나간 혈액이 다음으로 도착하는 곳은?",
+   "options": [
+    "대동맥",
+    "허파(폐)",
+    "왼심방",
+    "온몸 모세혈관"
+   ],
+   "answer": 1,
+   "explain": "오른심실 → 허파동맥판막 → 허파동맥줄기 → 폐.",
+   "detail": {
+    "why": "오른심실 → 허파동맥판막 → 허파동맥줄기 → 폐.",
+    "page_note": "12쪽 그림"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0117",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "폐에서 돌아온 혈액이 거치는 순서로 옳은 것은?",
+   "options": [
+    "허파정맥 → 왼심방 → 승모판막 → 왼심실",
+    "허파정맥 → 오른심방 → 삼첨판막 → 오른심실",
+    "허파동맥 → 왼심방 → 대동맥판막",
+    "허파정맥 → 왼심실 → 왼심방"
+   ],
+   "answer": 0,
+   "explain": "정답은 '허파정맥 → 왼심방 → 승모판막 → 왼심실'이다. (12쪽 그림 참고)",
+   "detail": {
+    "page_note": "12쪽 그림",
+    "why": "정답은 '허파정맥 → 왼심방 → 승모판막 → 왼심실'이다. (12쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0118",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "대정맥의 혈액은 삼첨판막을 지나기 전에 오른심방으로 들어온다.",
+   "answer": true,
+   "explain": "대정맥 → 오른심방 → 삼첨판막 → 오른심실.",
+   "detail": {
+    "why": "대정맥 → 오른심방 → 삼첨판막 → 오른심실.",
+    "page_note": "12쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 12
+   },
+   "id": "h-gen-0119",
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "반달판막은 심실이 수축할 때 닫힌다.",
+   "answer": false,
+   "explain": "반달판막은 심실 수축 시 열리고, 이완 시 역류를 막으려고 닫힌다(S2).",
+   "detail": {
+    "why": "반달판막은 심실 수축 시 열리고, 이완 시 역류를 막으려고 닫힌다(S2).",
+    "page_note": "10쪽, 33쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "id": "h-gen-0120",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "삼첨판막, 승모판막의 공통점은?",
+   "options": [
+    "둘 다 반달판막",
+    "둘 다 방실판막이며 힘줄끈·꼭지근과 연결",
+    "둘 다 동맥 입구에 있다",
+    "둘 다 오른쪽에 있다"
+   ],
+   "answer": 1,
+   "explain": "정답은 '둘 다 방실판막이며 힘줄끈·꼭지근과 연결'이다. (10쪽 참고)",
+   "detail": {
+    "page_note": "10쪽",
+    "why": "정답은 '둘 다 방실판막이며 힘줄끈·꼭지근과 연결'이다. (10쪽 참고)"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "id": "h-gen-0121",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "꼭지근(유두근)이 위치하는 곳은?",
+   "options": [
+    "심방벽",
+    "심실벽",
+    "대동맥벽",
+    "심장막"
+   ],
+   "answer": 1,
+   "explain": "9쪽 그림에서 꼭지근은 심실 안쪽 벽에서 솟아 힘줄끈을 통해 방실판막과 연결된다.",
+   "detail": {
+    "why": "9쪽 그림에서 꼭지근은 심실 안쪽 벽에서 솟아 힘줄끈을 통해 방실판막과 연결된다.",
+    "page_note": "9쪽 그림"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 9
+   },
+   "id": "h-gen-0122",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장벽 층을 바깥에서 안쪽 순서로 바르게 나열한 것은?",
+   "options": [
+    "심장바깥막 → 심장근육층 → 심장속막",
+    "심장속막 → 심장근육층 → 심장바깥막",
+    "심장근육층 → 심장바깥막 → 심장속막",
+    "섬유심장막 → 심장속막 → 심장근육층"
+   ],
+   "answer": 0,
+   "explain": "심장바깥막(=내장쪽심장막) → 심장근육층 → 심장속막.",
+   "detail": {
+    "why": "심장바깥막(=내장쪽심장막) → 심장근육층 → 심장속막.",
+    "page_note": "5쪽",
+    "tip": "바깥(epi) - 근육(myo) - 안(endo)."
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "id": "h-gen-0123",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "short",
+   "q": "심장벽의 가운데 층으로 심장근육세포로 이루어진 층은?",
+   "accept": [
+    "심장근육층",
+    "심근층",
+    "myocardium",
+    "심근"
+   ],
+   "answer_text": "심장근육층(myocardium)",
+   "detail": {
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "id": "h-gen-0124",
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "ECG가 기록하는 것으로 옳은 것은?",
+   "options": [
+    "판막 소리",
+    "결절세포와 심장근육세포가 만든 모든 활동전위",
+    "관상동맥 혈류",
+    "심실 용적"
+   ],
+   "answer": 1,
+   "explain": "정답은 '결절세포와 심장근육세포가 만든 모든 활동전위'이다. (23쪽 참고)",
+   "detail": {
+    "page_note": "23쪽",
+    "why": "정답은 '결절세포와 심장근육세포가 만든 모든 활동전위'이다. (23쪽 참고)"
+   },
+   "highlight": [
+    "결절세포와심장근육세포에의해생성되는모든활동전위"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 23
+   },
+   "id": "h-gen-0125",
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "S1과 S2를 각각 'lub', 'dub'로 표현할 때 'dub'를 만드는 판막은?",
+   "options": [
+    "방실판막",
+    "반달판막",
+    "승모판막",
+    "삼첨판막"
+   ],
+   "answer": 1,
+   "explain": "S2('dub') = 반달판막이 닫힐 때.",
+   "detail": {
+    "why": "S2('dub') = 반달판막이 닫힐 때.",
+    "page_note": "27쪽"
+   },
+   "highlight": [
+    "S2(‘dub’):semilunarvalve"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 27
+   },
+   "id": "h-gen-0126",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장잡음이 판막 외에 발생할 수 있는 원인으로 강의자료에 제시된 것은?",
+   "options": [
+    "심방사이막이나 심실사이막의 결함",
+    "관상동맥 수축",
+    "심장막액 증가",
+    "빈혈"
+   ],
+   "answer": 0,
+   "explain": "심장잡음은 심방사이막·심실사이막 안의 힘줄끈이나 구멍 결함으로도 생긴다.",
+   "detail": {
+    "why": "심장잡음은 심방사이막·심실사이막 안의 힘줄끈이나 구멍 결함으로도 생긴다.",
+    "page_note": "28쪽 박스"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 28
+   },
+   "id": "h-gen-0127",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심실충만기 동안 심방에서 심실로 수동적으로 빠져나가는 혈액은 약 몇 %이고, 나머지는 어떻게 들어가는가?",
+   "options": [
+    "80%, 심방수축으로",
+    "20%, 심실수축으로",
+    "50%, 정맥 압력으로",
+    "100%, 수동적으로"
+   ],
+   "answer": 0,
+   "explain": "정답은 '80%, 심방수축으로'이다. (30쪽 참고)",
+   "detail": {
+    "page_note": "30쪽",
+    "why": "정답은 '80%, 심방수축으로'이다. (30쪽 참고)"
+   },
+   "highlight": [
+    "약80%가수동적으로심실로빠져나간다"
+   ],
+   "source": {
+    "doc": "heart",
+    "page": 30
+   },
+   "id": "h-gen-0128",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "ox",
+   "q": "심실박출기에 각 심실은 약 70mL의 혈액을 펌프한다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (32쪽 참고)",
+   "detail": {
+    "page_note": "32쪽",
+    "why": "정답은 'O'이다. (32쪽 참고)"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "id": "h-gen-0129",
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "topic": "heart",
+   "type": "mc",
+   "q": "심장박동수에 영향을 주는 요인 중 '체온'에 대한 설명으로 43쪽 그림과 맞는 것은?",
+   "options": [
+    "체온이 오르면 심장박동수가 늘어난다",
+    "체온은 심장과 무관하다",
+    "체온이 오르면 심장박동수가 줄어든다",
+    "체온은 전부하만 바꾼다"
+   ],
+   "answer": 0,
+   "explain": "그림 17.19: 체온↑ → 심장박동수↑, 체온↓ → 심장박동수↓.",
+   "detail": {
+    "why": "그림 17.19: 체온↑ → 심장박동수↑, 체온↓ → 심장박동수↓.",
+    "page_note": "40쪽, 43쪽 그림"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 40
+   },
+   "id": "h-gen-0130",
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "24쪽 그림에서 교감신경계통이 혈압을 높이는 방법이 아닌 것은?",
+   "options": [
+    "심장박동수 증가",
+    "수축력 증가",
+    "혈관 수축",
+    "미주신경 활성화"
+   ],
+   "answer": 3,
+   "explain": "미주신경은 부교감신경 경로로 혈압을 낮춘다.",
+   "detail": {
+    "why": "미주신경은 부교감신경 경로로 혈압을 낮춘다.",
+    "page_note": "24쪽 그림 18.7"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 24
+   },
+   "id": "v-gen-0149",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "24쪽 그림에서 부교감신경계통은 혈압을 낮추는 단기적 기전으로 표시된다.",
+   "answer": true,
+   "explain": "부교감 → 미주신경 → 심박수·심박출량 감소 → 혈압↓.",
+   "detail": {
+    "why": "부교감 → 미주신경 → 심박수·심박출량 감소 → 혈압↓.",
+    "page_note": "24쪽 그림 (b)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 24
+   },
+   "id": "v-gen-0150",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "27쪽 그림에서 압력수용기 반사의 조절중추는?",
+   "options": [
+    "대뇌겉질",
+    "숨뇌(연수)",
+    "시상하부",
+    "소뇌"
+   ],
+   "answer": 1,
+   "explain": "수용기(목동맥 압력수용기) → 혀인두신경 → 숨뇌(조절중추) → 효과기(심장·혈관).",
+   "detail": {
+    "why": "수용기(목동맥 압력수용기) → 혀인두신경 → 숨뇌(조절중추) → 효과기(심장·혈관).",
+    "page_note": "27쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 27
+   },
+   "id": "v-gen-0151",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "압력수용기 반사의 순서로 옳은 것은?",
+   "options": [
+    "자극 → 수용기 → 조절중추 → 효과기 → 항상성 회복",
+    "수용기 → 자극 → 효과기 → 조절중추",
+    "조절중추 → 자극 → 수용기",
+    "효과기 → 수용기 → 자극"
+   ],
+   "answer": 0,
+   "explain": "그림: 자극(혈압 변화) → 수용기(압력수용기) → 조절중추(숨뇌) → 효과기/반응(심장·혈관) → 항상성 범위로 복귀.",
+   "detail": {
+    "why": "그림: 자극(혈압 변화) → 수용기(압력수용기) → 조절중추(숨뇌) → 효과기/반응(심장·혈관) → 항상성 범위로 복귀.",
+    "page_note": "27~28쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 27
+   },
+   "id": "v-gen-0152",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "40쪽 그림에서 바깥목동맥의 가지로 표시된 것이 아닌 것은?",
+   "options": [
+    "얼굴동맥",
+    "혀동맥",
+    "위갑상샘동맥",
+    "척추동맥"
+   ],
+   "answer": 3,
+   "explain": "척추동맥은 빗장밑동맥의 가지다(48쪽 표).",
+   "detail": {
+    "why": "척추동맥은 빗장밑동맥의 가지다(48쪽 표).",
+    "page_note": "40쪽 그림 18.16"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 40
+   },
+   "id": "v-gen-0153",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "40쪽 그림에서 팔머리동맥이 가장 먼저 연결되는 두 동맥은?",
+   "options": [
+    "오른온목동맥과 오른빗장밑동맥",
+    "왼온목동맥과 왼빗장밑동맥",
+    "속목동맥과 바깥목동맥",
+    "척추동맥과 겨드랑동맥"
+   ],
+   "answer": 0,
+   "explain": "팔머리동맥은 오른쪽에만 있고 오른온목동맥과 오른빗장밑동맥으로 갈라진다(48쪽 표).",
+   "detail": {
+    "why": "팔머리동맥은 오른쪽에만 있고 오른온목동맥과 오른빗장밑동맥으로 갈라진다(48쪽 표).",
+    "page_note": "40쪽 그림, 48쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 40
+   },
+   "id": "v-gen-0154",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "뇌바닥동맥에서 갈라져 뇌줄기·소뇌·뒤통수엽으로 가는 동맥은?",
+   "options": [
+    "앞대뇌동맥",
+    "중간대뇌동맥",
+    "뒤대뇌동맥",
+    "속목동맥"
+   ],
+   "answer": 2,
+   "explain": "정답은 '뒤대뇌동맥'이다. (42쪽 참고)",
+   "detail": {
+    "page_note": "42쪽",
+    "why": "정답은 '뒤대뇌동맥'이다. (42쪽 참고)"
+   },
+   "highlight": [
+    "posteriorcerebralartery(뒤대뇌동맥)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 42
+   },
+   "id": "v-gen-0155",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "대뇌동맥고리 덕분에 주요 동맥 하나가 막혀도 혈액이 뇌로 계속 흐를 수 있다.",
+   "answer": true,
+   "explain": "곁순환을 제공하기 때문.",
+   "detail": {
+    "why": "곁순환을 제공하기 때문.",
+    "page_note": "42쪽"
+   },
+   "highlight": [
+    "곁순환을제공"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 42
+   },
+   "id": "v-gen-0156",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "대뇌동맥고리(윌리스고리)의 기능 두 가지는?",
+   "options": [
+    "뇌 동맥압을 동일하게 유지, 곁순환 제공",
+    "뇌척수액 생성, 정맥 배액",
+    "뇌 체온 조절, 호르몬 분비",
+    "혈액-뇌 장벽 형성, 면역"
+   ],
+   "answer": 0,
+   "explain": "정답은 '뇌 동맥압을 동일하게 유지, 곁순환 제공'이다. (42쪽 참고)",
+   "detail": {
+    "page_note": "42쪽",
+    "why": "정답은 '뇌 동맥압을 동일하게 유지, 곁순환 제공'이다. (42쪽 참고)"
+   },
+   "highlight": [
+    "뇌의arterypressure(동맥압)를동일하게유지"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 42
+   },
+   "id": "v-gen-0157",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "아래창자간막동맥에 대한 설명으로 옳은 것은?",
+   "options": [
+    "내림배대동맥의 마지막 가지, 큰창자 나머지 공급",
+    "대동맥활의 가지",
+    "작은창자 대부분 공급",
+    "복강동맥의 가지"
+   ],
+   "answer": 0,
+   "explain": "정답은 '내림배대동맥의 마지막 가지, 큰창자 나머지 공급'이다. (45쪽 참고)",
+   "detail": {
+    "page_note": "45쪽",
+    "why": "정답은 '내림배대동맥의 마지막 가지, 큰창자 나머지 공급'이다. (45쪽 참고)"
+   },
+   "highlight": [
+    "내림배대동맥의마지막가지로큰창자의나머지부분에혈액을공급"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 45
+   },
+   "id": "v-gen-0158",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "46쪽 팔 동맥 그림에서 위팔동맥에서 갈라져 위팔 깊은 곳으로 가는 동맥은?",
+   "options": [
+    "깊은위팔동맥(deep brachial artery)",
+    "노동맥",
+    "자동맥",
+    "겨드랑동맥"
+   ],
+   "answer": 0,
+   "explain": "그림에 deep brachial artery(깊은위팔동맥)가 표시되어 있다.",
+   "detail": {
+    "why": "그림에 deep brachial artery(깊은위팔동맥)가 표시되어 있다.",
+    "page_note": "46쪽 그림 18.20"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 46
+   },
+   "id": "v-gen-0159",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "46쪽 그림에서 손바닥에서 노동맥과 자동맥을 잇는 구조는?",
+   "options": [
+    "손바닥동맥활(깊은·얕은손바닥동맥활)",
+    "발등동맥",
+    "팔오금중간정맥",
+    "대뇌동맥고리"
+   ],
+   "answer": 0,
+   "explain": "deep/superficial palmar arch.",
+   "detail": {
+    "why": "deep/superficial palmar arch.",
+    "page_note": "46쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 46
+   },
+   "id": "v-gen-0160",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "넙다리동맥이 넙다리근육 아래로 내려가며 뻗어내는 가지는?",
+   "options": [
+    "깊은넙다리동맥",
+    "오금동맥",
+    "앞정강동맥",
+    "속엉덩동맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '깊은넙다리동맥'이다. (47쪽 참고)",
+   "detail": {
+    "page_note": "47쪽",
+    "why": "정답은 '깊은넙다리동맥'이다. (47쪽 참고)"
+   },
+   "highlight": [
+    "deepfemoralartery(깊은넙다리동맥)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 47
+   },
+   "id": "v-gen-0161",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "앞정강동맥이 따라 이동하는 뼈는?",
+   "options": [
+    "넙다리뼈",
+    "앞정강뼈(정강뼈)",
+    "종아리뼈만",
+    "무릎뼈"
+   ],
+   "answer": 1,
+   "explain": "정답은 '앞정강뼈(정강뼈)'이다. (47쪽 참고)",
+   "detail": {
+    "page_note": "47쪽",
+    "why": "정답은 '앞정강뼈(정강뼈)'이다. (47쪽 참고)"
+   },
+   "highlight": [
+    "앞정강뼈를따라이동하면서"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 47
+   },
+   "id": "v-gen-0162",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "강의자료 표 18.4에서 '목뼈의 가로구멍을 통과해 큰구멍으로 들어가는' 동맥은?",
+   "options": [
+    "속목동맥",
+    "척추동맥",
+    "바깥목동맥",
+    "온목동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '척추동맥'이다. (48쪽 표 18.4 (시험에 나옴) 참고)",
+   "detail": {
+    "page_note": "48쪽 표 18.4 (시험에 나옴)",
+    "why": "정답은 '척추동맥'이다. (48쪽 표 18.4 (시험에 나옴) 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0163",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 '목동맥관을 통해 뇌를 거쳐 지나가는' 동맥은?",
+   "options": [
+    "속목동맥",
+    "척추동맥",
+    "바깥목동맥",
+    "빗장밑동맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '속목동맥'이다. (48쪽 표 18.4 참고)",
+   "detail": {
+    "page_note": "48쪽 표 18.4",
+    "why": "정답은 '속목동맥'이다. (48쪽 표 18.4 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0164",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 빗장밑동맥이 혈액을 공급하는 조직은?",
+   "options": [
+    "머리, 목, 뇌",
+    "가슴, 팔",
+    "배안",
+    "골반, 다리"
+   ],
+   "answer": 1,
+   "explain": "정답은 '가슴, 팔'이다. (48쪽 표 18.4 참고)",
+   "detail": {
+    "page_note": "48쪽 표 18.4",
+    "why": "정답은 '가슴, 팔'이다. (48쪽 표 18.4 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0165",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 '위의 안쪽을 따라' 위치하며 위에 혈액을 공급하는 동맥은?",
+   "options": [
+    "지라동맥",
+    "왼위동맥",
+    "온간동맥",
+    "위창자간막동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '왼위동맥'이다. (48쪽 표 참고)",
+   "detail": {
+    "page_note": "48쪽 표",
+    "why": "정답은 '왼위동맥'이다. (48쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0166",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 자동맥의 위치는?",
+   "options": [
+    "바깥쪽 아래팔",
+    "안쪽 아래팔",
+    "겨드랑",
+    "위팔"
+   ],
+   "answer": 1,
+   "explain": "정답은 '안쪽 아래팔'이다. (49쪽 표 참고)",
+   "detail": {
+    "page_note": "49쪽 표",
+    "tip": "새끼손가락 쪽 = 자.",
+    "why": "정답은 '안쪽 아래팔'이다. (49쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0167",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 '내측복사 주위 표면에 보이는 뒷다리'에 있는 동맥은?",
+   "options": [
+    "발등동맥",
+    "뒤정강동맥",
+    "오금동맥",
+    "앞정강동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '뒤정강동맥'이다. (49쪽 표 참고)",
+   "detail": {
+    "page_note": "49쪽 표",
+    "why": "정답은 '뒤정강동맥'이다. (49쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0168",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 속엉덩동맥이 공급하는 조직은?",
+   "options": [
+    "앞배벽",
+    "골반 조직",
+    "넙다리",
+    "무릎관절"
+   ],
+   "answer": 1,
+   "explain": "정답은 '골반 조직'이다. (49쪽 표 참고)",
+   "detail": {
+    "page_note": "49쪽 표",
+    "why": "정답은 '골반 조직'이다. (49쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0169",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 '가지들이 큰창자 마지막 부분에 펼쳐져 있는' 동맥은?",
+   "options": [
+    "위창자간막동맥",
+    "아래창자간막동맥",
+    "콩팥동맥",
+    "복강동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '아래창자간막동맥'이다. (49쪽 표 참고)",
+   "detail": {
+    "page_note": "49쪽 표",
+    "why": "정답은 '아래창자간막동맥'이다. (49쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0170",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.4에서 앞정강동맥이 공급하는 조직은?",
+   "options": [
+    "뒷다리, 발바닥",
+    "앞다리, 발 앞쪽",
+    "무릎관절",
+    "넙다리"
+   ],
+   "answer": 1,
+   "explain": "정답은 '앞다리, 발 앞쪽'이다. (49쪽 표 참고)",
+   "detail": {
+    "page_note": "49쪽 표",
+    "why": "정답은 '앞다리, 발 앞쪽'이다. (49쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "id": "v-gen-0171",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "대동맥활의 세 가지 가지와 각각의 다음 가지를 쓰시오.",
+   "answer_text": "① 팔머리동맥(오른쪽, 상반신 오른쪽) → 오른온목동맥 + 오른빗장밑동맥\n② 왼온목동맥 → 속목동맥(뇌·눈확) + 바깥목동맥(목·얼굴·머리 표면)\n③ 왼빗장밑동맥(가슴·팔) → 척추동맥(뇌바닥동맥 형성), 겨드랑동맥 → 위팔동맥",
+   "detail": {
+    "page_note": "48쪽 표 18.4 (시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "id": "v-gen-0172",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "위팔동맥 맥박을 촉지하는 위치로 50쪽 그림과 맞는 것은?",
+   "options": [
+    "팔오금(팔꿈치 안쪽)",
+    "손목 엄지쪽",
+    "목 옆",
+    "무릎 뒤"
+   ],
+   "answer": 0,
+   "explain": "정답은 '팔오금(팔꿈치 안쪽)'이다. (50쪽 그림 참고)",
+   "detail": {
+    "page_note": "50쪽 그림",
+    "why": "정답은 '팔오금(팔꿈치 안쪽)'이다. (50쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 50
+   },
+   "id": "v-gen-0173",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "50쪽 맥박지점 그림에서 목 옆에서 촉지하는 맥박은?",
+   "options": [
+    "관자동맥 맥박",
+    "목동맥 맥박",
+    "위팔동맥 맥박",
+    "노동맥 맥박"
+   ],
+   "answer": 1,
+   "explain": "정답은 '목동맥 맥박'이다. (50쪽 그림 참고)",
+   "detail": {
+    "page_note": "50쪽 그림",
+    "why": "정답은 '목동맥 맥박'이다. (50쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 50
+   },
+   "id": "v-gen-0174",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "50쪽 맥박지점 그림에서 관자놀이(귀 앞)에서 촉지하는 맥박은?",
+   "options": [
+    "관자동맥(temporal) 맥박",
+    "목동맥 맥박",
+    "얼굴동맥 맥박",
+    "척추동맥 맥박"
+   ],
+   "answer": 0,
+   "explain": "정답은 '관자동맥(temporal) 맥박'이다. (50쪽 그림 참고)",
+   "detail": {
+    "page_note": "50쪽 그림",
+    "why": "정답은 '관자동맥(temporal) 맥박'이다. (50쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 50
+   },
+   "id": "v-gen-0175",
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "52쪽 그림에서 경막정맥굴에 해당하지 않는 것은?",
+   "options": [
+    "위시상정맥굴",
+    "가로정맥굴",
+    "해면정맥굴",
+    "바깥목정맥"
+   ],
+   "answer": 3,
+   "explain": "바깥목정맥은 목의 얕은 정맥이다.",
+   "detail": {
+    "why": "바깥목정맥은 목의 얕은 정맥이다.",
+    "page_note": "52쪽 그림 18.24"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 52
+   },
+   "id": "v-gen-0176",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "52쪽 그림에서 경막정맥굴이 최종적으로 이어지는 목의 정맥은?",
+   "options": [
+    "바깥목정맥",
+    "속목정맥",
+    "척추정맥",
+    "얼굴정맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '속목정맥'이다. (52쪽 그림 참고)",
+   "detail": {
+    "page_note": "52쪽 그림",
+    "why": "정답은 '속목정맥'이다. (52쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 52
+   },
+   "id": "v-gen-0177",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "가로정맥굴의 다른 이름은?",
+   "options": [
+    "횡정맥동(transverse sinus)",
+    "해면정맥동",
+    "시상정맥동",
+    "구불정맥동"
+   ],
+   "answer": 0,
+   "explain": "정답은 '횡정맥동(transverse sinus)'이다. (53쪽 참고)",
+   "detail": {
+    "page_note": "53쪽",
+    "why": "정답은 '횡정맥동(transverse sinus)'이다. (53쪽 참고)"
+   },
+   "highlight": [
+    "가로정맥굴(횡정맥동,transversesinus)"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 53
+   },
+   "id": "v-gen-0178",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "홀정맥계(azygos system)의 역할은?",
+   "options": [
+    "가슴벽과 가슴 내장의 혈액을 심장으로 돌려보냄",
+    "뇌의 혈액을 배액",
+    "간으로 혈액을 보냄",
+    "다리 혈액을 배액"
+   ],
+   "answer": 0,
+   "explain": "정답은 '가슴벽과 가슴 내장의 혈액을 심장으로 돌려보냄'이다. (54쪽 참고)",
+   "detail": {
+    "page_note": "54쪽",
+    "why": "정답은 '가슴벽과 가슴 내장의 혈액을 심장으로 돌려보냄'이다. (54쪽 참고)"
+   },
+   "highlight": [
+    "가슴벽과가슴내장의혈액을심장으로돌려보낸다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 54
+   },
+   "id": "v-gen-0179",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "55쪽 배 정맥 그림에서 간에서 나와 아래대정맥으로 들어가는 정맥은?",
+   "options": [
+    "간문맥",
+    "간정맥",
+    "지라정맥",
+    "위창자간막정맥"
+   ],
+   "answer": 1,
+   "explain": "간정맥(hepatic veins)은 간에서 나와 아래대정맥으로 간다. 간문맥은 간으로 들어간다.",
+   "detail": {
+    "why": "간정맥(hepatic veins)은 간에서 나와 아래대정맥으로 간다. 간문맥은 간으로 들어간다.",
+    "page_note": "55쪽 그림, 60쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 55
+   },
+   "id": "v-gen-0180",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "55쪽 그림에서 간문맥으로 모이는 정맥이 아닌 것은?",
+   "options": [
+    "지라정맥",
+    "위창자간막정맥",
+    "아래창자간막정맥",
+    "콩팥정맥"
+   ],
+   "answer": 3,
+   "explain": "콩팥정맥은 아래대정맥으로 직접 간다(60쪽 표).",
+   "detail": {
+    "why": "콩팥정맥은 아래대정맥으로 직접 간다(60쪽 표).",
+    "page_note": "55쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 55
+   },
+   "id": "v-gen-0181",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "간문맥은 간 안에서 무엇을 형성하는가?",
+   "options": [
+    "다시 모세혈관",
+    "동맥",
+    "림프절",
+    "정맥판막"
+   ],
+   "answer": 0,
+   "explain": "정답은 '다시 모세혈관'이다. (56쪽 참고)",
+   "detail": {
+    "page_note": "56쪽",
+    "why": "정답은 '다시 모세혈관'이다. (56쪽 참고)"
+   },
+   "highlight": [
+    "간문맥은간안에서또다시모세혈관을형성한다"
+   ],
+   "source": {
+    "doc": "vessel",
+    "page": 56
+   },
+   "id": "v-gen-0182",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "57쪽 팔 정맥 그림에서 깊은 정맥에 해당하는 것은?",
+   "options": [
+    "노쪽피부정맥",
+    "자쪽피부정맥",
+    "겨드랑정맥과 위팔정맥",
+    "팔오금중간정맥"
+   ],
+   "answer": 2,
+   "explain": "그림에서 Deep veins: 겨드랑정맥, 위팔정맥. Superficial veins: 노쪽피부정맥, 자쪽피부정맥, 팔오금중간정맥 등.",
+   "detail": {
+    "why": "그림에서 Deep veins: 겨드랑정맥, 위팔정맥. Superficial veins: 노쪽피부정맥, 자쪽피부정맥, 팔오금중간정맥 등.",
+    "page_note": "57쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 57
+   },
+   "id": "v-gen-0183",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "57쪽 그림에서 팔오금에서 노쪽피부정맥과 자쪽피부정맥을 잇는 얕은 정맥은?",
+   "options": [
+    "팔오금중간정맥(median cubital vein)",
+    "위팔정맥",
+    "겨드랑정맥",
+    "노정맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '팔오금중간정맥(median cubital vein)'이다. (57쪽 그림 참고)",
+   "detail": {
+    "page_note": "57쪽 그림",
+    "why": "정답은 '팔오금중간정맥(median cubital vein)'이다. (57쪽 그림 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 57
+   },
+   "id": "v-gen-0184",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "58쪽 다리 정맥 그림에서 다리 안쪽을 따라 길게 올라가는 얕은 정맥은?",
+   "options": [
+    "작은두렁정맥",
+    "큰두렁정맥",
+    "넙다리정맥",
+    "오금정맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '큰두렁정맥'이다. (58쪽 그림 18.29, 60쪽 표 참고)",
+   "detail": {
+    "page_note": "58쪽 그림 18.29, 60쪽 표",
+    "why": "정답은 '큰두렁정맥'이다. (58쪽 그림 18.29, 60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 58
+   },
+   "id": "v-gen-0185",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "58쪽 그림에서 오금정맥이 위로 이어져 되는 정맥은?",
+   "options": [
+    "넙다리정맥",
+    "바깥엉덩정맥",
+    "큰두렁정맥",
+    "앞정강정맥"
+   ],
+   "answer": 0,
+   "explain": "표 18.5: 넙다리정맥 = 오금정맥의 연속.",
+   "detail": {
+    "why": "표 18.5: 넙다리정맥 = 오금정맥의 연속.",
+    "page_note": "58쪽 그림, 60쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 58
+   },
+   "id": "v-gen-0186",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 속목정맥이 배액하는 조직은?",
+   "options": [
+    "뇌, 머리 표면, 목",
+    "얼굴 표면만",
+    "뒤쪽 목",
+    "가슴 위쪽"
+   ],
+   "answer": 0,
+   "explain": "정답은 '뇌, 머리 표면, 목'이다. (59쪽 표 18.5 참고)",
+   "detail": {
+    "page_note": "59쪽 표 18.5",
+    "why": "정답은 '뇌, 머리 표면, 목'이다. (59쪽 표 18.5 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0187",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 '빗장뼈정맥으로 나가며 목뼈의 척추구멍을 통해 지나가는' 정맥은?",
+   "options": [
+    "바깥목정맥",
+    "척추정맥",
+    "속목정맥",
+    "홀정맥"
+   ],
+   "answer": 1,
+   "explain": "척추정맥: 뒤쪽 목 배액.",
+   "detail": {
+    "why": "척추정맥: 뒤쪽 목 배액.",
+    "page_note": "59쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0188",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 팔머리정맥이 배액하는 조직은?",
+   "options": [
+    "가로막 위쪽의 대부분 구조물",
+    "골반",
+    "다리",
+    "콩팥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '가로막 위쪽의 대부분 구조물'이다. (59쪽 표 참고)",
+   "detail": {
+    "page_note": "59쪽 표",
+    "why": "정답은 '가로막 위쪽의 대부분 구조물'이다. (59쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0189",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 위정맥(gastric veins)이 나가는 곳은?",
+   "options": [
+    "아래대정맥",
+    "간문맥",
+    "홀정맥",
+    "콩팥정맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '간문맥'이다. (59쪽 표 참고)",
+   "detail": {
+    "page_note": "59쪽 표",
+    "why": "정답은 '간문맥'이다. (59쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "id": "v-gen-0190",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 콩팥정맥이 나가는 곳은?",
+   "options": [
+    "간문맥",
+    "아래대정맥",
+    "위대정맥",
+    "홀정맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '아래대정맥'이다. (60쪽 표 참고)",
+   "detail": {
+    "page_note": "60쪽 표",
+    "why": "정답은 '아래대정맥'이다. (60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0191",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 겨드랑정맥은 무엇의 연속인가?",
+   "options": [
+    "노쪽피부정맥",
+    "위팔정맥",
+    "빗장밑정맥",
+    "자정맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '위팔정맥'이다. (60쪽 표 참고)",
+   "detail": {
+    "page_note": "60쪽 표",
+    "why": "정답은 '위팔정맥'이다. (60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0192",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.5에서 앞·뒤정강정맥이 합쳐져 만드는 정맥은?",
+   "options": [
+    "넙다리정맥",
+    "오금정맥",
+    "큰두렁정맥",
+    "온엉덩정맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '오금정맥'이다. (60쪽 표 참고)",
+   "detail": {
+    "page_note": "60쪽 표",
+    "why": "정답은 '오금정맥'이다. (60쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "id": "v-gen-0193",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "간문맥계로 혈액이 모이는 정맥들과 간을 나가는 경로를 쓰시오.",
+   "answer_text": "지라정맥, 위정맥, 위창자간막정맥(작은창자·큰창자 많은 부분), 아래창자간막정맥(큰창자 나머지) → 간문맥 → 간 안에서 다시 모세혈관(문맥계) → 간정맥 → 아래대정맥\n콩팥정맥은 간문맥이 아니라 아래대정맥으로 직접.",
+   "detail": {
+    "page_note": "55~56쪽, 59~60쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 55
+   },
+   "id": "v-gen-0194",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "card",
+   "q": "발에서 아래대정맥까지 다리의 깊은 정맥 경로를 쓰시오.",
+   "answer_text": "앞·뒤정강정맥 → 오금정맥(무릎 뒤) → 넙다리정맥 → 바깥엉덩정맥 + 속엉덩정맥 → 온엉덩정맥 → 아래대정맥\n얕은 정맥: 큰두렁정맥(다리 안쪽), 작은두렁정맥",
+   "detail": {
+    "page_note": "58쪽 그림, 59~60쪽 표"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 58
+   },
+   "id": "v-gen-0195",
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈관이 수축해 반지름이 2배에서 1배로 줄면 그 혈관의 혈류는?",
+   "options": [
+    "1/2",
+    "1/4",
+    "1/8",
+    "1/16"
+   ],
+   "answer": 3,
+   "explain": "반지름 1/2 → 혈류 (1/2)^4 = 1/16.",
+   "detail": {
+    "why": "반지름 1/2 → 혈류 (1/2)^4 = 1/16.",
+    "page_note": "18쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "id": "v-gen-0196",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "탈수로 혈액 점도가 높아지면 말초저항은?",
+   "options": [
+    "감소",
+    "증가",
+    "변화 없음",
+    "0이 된다"
+   ],
+   "answer": 1,
+   "explain": "점도↑ → 저항↑.",
+   "detail": {
+    "why": "점도↑ → 저항↑.",
+    "page_note": "18쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "id": "v-gen-0197",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 120/80mmHg인 사람의 맥박압과 MAP를 바르게 짝지은 것은?",
+   "options": [
+    "40, 약 93",
+    "40, 100",
+    "80, 약 93",
+    "200, 100"
+   ],
+   "answer": 0,
+   "explain": "맥압 40, MAP = 80 + 40/3 ≈ 93.",
+   "detail": {
+    "why": "맥압 40, MAP = 80 + 40/3 ≈ 93.",
+    "page_note": "20쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0198",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "혈압 160/100mmHg일 때 평균동맥압은?",
+   "options": [
+    "110",
+    "120",
+    "130",
+    "140"
+   ],
+   "answer": 1,
+   "explain": "100 + 60/3 = 120.",
+   "detail": {
+    "why": "100 + 60/3 = 120.",
+    "page_note": "20쪽 공식"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "id": "v-gen-0199",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "서 있다가 갑자기 혈압이 떨어졌을 때 압력수용기 반사로 나타나는 반응은?",
+   "options": [
+    "교감신경↑, 심박수↑, 혈관수축",
+    "부교감↑, 심박수↓",
+    "혈관확장",
+    "ANP 분비↑"
+   ],
+   "answer": 0,
+   "explain": "정답은 '교감신경↑, 심박수↑, 혈관수축'이다. (26~28쪽 참고)",
+   "detail": {
+    "page_note": "26~28쪽",
+    "why": "정답은 '교감신경↑, 심박수↑, 혈관수축'이다. (26~28쪽 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "id": "v-gen-0200",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "출혈로 혈압이 떨어졌을 때 RAAS가 혈압을 올리는 두 가지 방법은?",
+   "options": [
+    "혈관수축 + 콩팥에서 NaCl·물 재흡수",
+    "혈관확장 + 이뇨",
+    "심박수 감소 + 혈관확장",
+    "ANP 분비 + 소변 증가"
+   ],
+   "answer": 0,
+   "explain": "안지오텐신 II → 혈관수축, 알도스테론 → 재흡수 → 혈액량↑.",
+   "detail": {
+    "why": "안지오텐신 II → 혈관수축, 알도스테론 → 재흡수 → 혈액량↑.",
+    "page_note": "30쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "id": "v-gen-0201",
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관 동맥끝에서 정수압이 40mmHg, 교질삼투압이 22mmHg라면 순여과압은?",
+   "options": [
+    "18mmHg 밖으로",
+    "18mmHg 안으로",
+    "62mmHg 밖으로",
+    "13mmHg 밖으로"
+   ],
+   "answer": 0,
+   "explain": "40 − 22 = 18 → 사이질액 쪽으로(밖으로).",
+   "detail": {
+    "why": "40 − 22 = 18 → 사이질액 쪽으로(밖으로).",
+    "page_note": "38쪽 원리 응용"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 38
+   },
+   "id": "v-gen-0202",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "모세혈관 정맥끝 정수압 15mmHg, 교질삼투압 22mmHg일 때 물의 이동 방향은?",
+   "options": [
+    "혈관 밖으로",
+    "혈관 안으로",
+    "이동 없음",
+    "림프관으로만"
+   ],
+   "answer": 1,
+   "explain": "15 − 22 = −7 → 안으로 재흡수.",
+   "detail": {
+    "why": "15 − 22 = −7 → 안으로 재흡수.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 38
+   },
+   "id": "v-gen-0203",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "ox",
+   "q": "모세혈관에서 여과되고 재흡수되지 못한 평균 약 6mmHg 분량의 체액은 림프모세관이 회수한다.",
+   "answer": true,
+   "explain": "정답은 'O'이다. (38쪽 참고)",
+   "detail": {
+    "page_note": "38쪽",
+    "why": "정답은 'O'이다. (38쪽 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 38
+   },
+   "id": "v-gen-0204",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "큰 물질이나 세포까지 모세혈관 벽을 통과해야 하는 골수에 있는 모세혈관은?",
+   "options": [
+    "연속모세혈관",
+    "창모세혈관",
+    "굴모세혈관",
+    "모든 유형 동일"
+   ],
+   "answer": 2,
+   "explain": "정답은 '굴모세혈관'이다. (32쪽 표 18.3 참고)",
+   "detail": {
+    "page_note": "32쪽 표 18.3",
+    "why": "정답은 '굴모세혈관'이다. (32쪽 표 18.3 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0205",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "물질 통과를 최소화해야 하는 근육조직에 있는 모세혈관은?",
+   "options": [
+    "연속모세혈관",
+    "창모세혈관",
+    "굴모세혈관",
+    "동정맥문합"
+   ],
+   "answer": 0,
+   "explain": "정답은 '연속모세혈관'이다. (32쪽 표 참고)",
+   "detail": {
+    "page_note": "32쪽 표",
+    "why": "정답은 '연속모세혈관'이다. (32쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "id": "v-gen-0206",
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "정맥이 '혈액 저장소' 역할을 할 수 있는 이유로 강의자료와 맞는 것은?",
+   "options": [
+    "몸 전체 혈액의 최대 70%를 담기 때문",
+    "탄력층이 두꺼워서",
+    "압력이 가장 높아서",
+    "판막이 없어서"
+   ],
+   "answer": 0,
+   "explain": "정답은 '몸 전체 혈액의 최대 70%를 담기 때문'이다. (12쪽, 13쪽 그림(64%) 참고)",
+   "detail": {
+    "page_note": "12쪽, 13쪽 그림(64%)",
+    "why": "정답은 '몸 전체 혈액의 최대 70%를 담기 때문'이다. (12쪽, 13쪽 그림(64%) 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "id": "v-gen-0207",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "오래 서 있을 때 다리 정맥혈이 심장으로 잘 돌아오게 하려면 강의자료의 어떤 기전을 활용하면 좋은가?",
+   "options": [
+    "뼈대근육 펌프(다리 근육 움직이기)",
+    "모세혈관앞조임근 수축",
+    "레닌 분비",
+    "ANP 분비"
+   ],
+   "answer": 0,
+   "explain": "뼈대근육이 수축하며 정맥을 짜내 혈액을 위로 보낸다(정맥판막이 역류 방지).",
+   "detail": {
+    "why": "뼈대근육이 수축하며 정맥을 짜내 혈액을 위로 보낸다(정맥판막이 역류 방지).",
+    "page_note": "21쪽 ③"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 21
+   },
+   "id": "v-gen-0208",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "정맥류가 생기는 기전으로 22쪽 그림과 맞는 것은?",
+   "options": [
+    "판막이 망가져 혈액이 역류·정체되고 정맥이 늘어남",
+    "동맥벽이 두꺼워짐",
+    "모세혈관이 막힘",
+    "림프관이 막힘"
+   ],
+   "answer": 0,
+   "explain": "그림: 정상 판막 vs 손상된 판막(deformed valve) → 정맥 팽창(dilated vein).",
+   "detail": {
+    "why": "그림: 정상 판막 vs 손상된 판막(deformed valve) → 정맥 팽창(dilated vein).",
+    "page_note": "22쪽 그림"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 22
+   },
+   "id": "v-gen-0209",
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "죽상동맥경화증 치료 방법으로 강의자료에 제시된 것이 아닌 것은?",
+   "options": [
+    "식이조절",
+    "신체적 활동",
+    "콜레스테롤 저하제와 금연",
+    "항생제 장기 복용"
+   ],
+   "answer": 3,
+   "explain": "치료: 식이조절, 신체활동, 콜레스테롤 저하제, 혈당조절, 금연, 혈압관리, 심하면 침습적 시술.",
+   "detail": {
+    "why": "치료: 식이조절, 신체활동, 콜레스테롤 저하제, 혈당조절, 금연, 혈압관리, 심하면 침습적 시술.",
+    "page_note": "8쪽 박스"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 8
+   },
+   "id": "v-gen-0210",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.1에서 '광범위한 탄력층'을 가진 큰 동맥은?",
+   "options": [
+    "탄력형 동맥",
+    "근육형 동맥",
+    "세동맥",
+    "세정맥"
+   ],
+   "answer": 0,
+   "explain": "정답은 '탄력형 동맥'이다. (14쪽 표 18.1 참고)",
+   "detail": {
+    "page_note": "14쪽 표 18.1",
+    "why": "정답은 '탄력형 동맥'이다. (14쪽 표 18.1 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0211",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.1에서 근육형 동맥의 기능은?",
+   "options": [
+    "모세혈관계 배출",
+    "기관으로 흐르는 혈류 조절, 혈압 조절",
+    "혈액을 심장으로 돌려보냄",
+    "높은 혈압으로 기관에 공급"
+   ],
+   "answer": 1,
+   "explain": "정답은 '기관으로 흐르는 혈류 조절, 혈압 조절'이다. (14쪽 표 참고)",
+   "detail": {
+    "page_note": "14쪽 표",
+    "why": "정답은 '기관으로 흐르는 혈류 조절, 혈압 조절'이다. (14쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0212",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.1에서 정맥의 기능은?",
+   "options": [
+    "혈액을 심장으로 되돌려 보냄",
+    "모세혈관계 공급",
+    "높은 혈압으로 공급",
+    "혈압 조절"
+   ],
+   "answer": 0,
+   "explain": "정답은 '혈액을 심장으로 되돌려 보냄'이다. (14쪽 표 참고)",
+   "detail": {
+    "page_note": "14쪽 표",
+    "why": "정답은 '혈액을 심장으로 되돌려 보냄'이다. (14쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0213",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표 18.1에서 '작은 세정맥에는 혈관속막만 있고, 큰 세정맥은 세 가지 혈관막을 모두 가진' 혈관은?",
+   "options": [
+    "세동맥",
+    "세정맥",
+    "정맥",
+    "근육형 동맥"
+   ],
+   "answer": 1,
+   "explain": "정답은 '세정맥'이다. (14쪽 표 참고)",
+   "detail": {
+    "page_note": "14쪽 표",
+    "why": "정답은 '세정맥'이다. (14쪽 표 참고)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 14
+   },
+   "id": "v-gen-0214",
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "h-gen-0131",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 두 폐 사이, 심장이 위치하는 공간",
+   "accept": [
+    "가슴세로칸",
+    "종격"
+   ],
+   "answer_text": "가슴세로칸(종격)",
+   "detail": {
+    "why": "가슴세로칸(종격): 두 폐 사이, 심장이 위치하는 공간.",
+    "page_note": "2쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0132",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 기체 교환을 위해 혈액을 폐로 보냈다가 심장으로 되돌리는 순환",
+   "accept": [
+    "폐순환"
+   ],
+   "answer_text": "폐순환",
+   "detail": {
+    "why": "폐순환: 기체 교환을 위해 혈액을 폐로 보냈다가 심장으로 되돌리는 순환.",
+    "page_note": "3쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 3
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0133",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 섬유심장막의 안쪽면에 융합된 장막층",
+   "accept": [
+    "벽측심장막"
+   ],
+   "answer_text": "벽측심장막",
+   "detail": {
+    "why": "벽측심장막: 섬유심장막의 안쪽면에 융합된 장막층.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0134",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간",
+   "accept": [
+    "심장막안",
+    "심낭강"
+   ],
+   "answer_text": "심장막안(심낭강)",
+   "detail": {
+    "why": "심장막안(심낭강): 장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0135",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 태아 심방사이막에 있던 타원구멍의 흔적",
+   "accept": [
+    "타원오목",
+    "fossa ovalis"
+   ],
+   "answer_text": "타원오목(fossa ovalis)",
+   "detail": {
+    "why": "타원오목(fossa ovalis): 태아 심방사이막에 있던 타원구멍의 흔적.",
+    "page_note": "7쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 7
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0136",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심실이 수축할 때 혈액이 심방으로 역류하지 않도록 하는 판막",
+   "accept": [
+    "방실판막"
+   ],
+   "answer_text": "방실판막",
+   "detail": {
+    "why": "방실판막: 심실이 수축할 때 혈액이 심방으로 역류하지 않도록 하는 판막.",
+    "page_note": "10쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0137",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 오른심방과 오른심실 사이의 판막",
+   "accept": [
+    "삼첨판막"
+   ],
+   "answer_text": "삼첨판막",
+   "detail": {
+    "why": "삼첨판막: 오른심방과 오른심실 사이의 판막.",
+    "page_note": "9쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 9
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0138",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 왼심장동맥에서 갈라져 심장 앞면 심실사이로 내려가는 가지",
+   "accept": [
+    "앞심실사이동맥",
+    "LAD"
+   ],
+   "answer_text": "앞심실사이동맥(LAD)",
+   "detail": {
+    "why": "앞심실사이동맥(LAD): 왼심장동맥에서 갈라져 심장 앞면 심실사이로 내려가는 가지.",
+    "page_note": "13쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0139",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 오른심장동맥의 가지로 심장 뒷면 심실사이를 지나는 동맥",
+   "accept": [
+    "뒤심실사이동맥"
+   ],
+   "answer_text": "뒤심실사이동맥",
+   "detail": {
+    "why": "뒤심실사이동맥: 오른심장동맥의 가지로 심장 뒷면 심실사이를 지나는 동맥.",
+    "page_note": "13쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0140",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조",
+   "accept": [
+    "사이원반"
+   ],
+   "answer_text": "사이원반",
+   "detail": {
+    "why": "사이원반: 심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조.",
+    "page_note": "17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0141",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관",
+   "accept": [
+    "사립체"
+   ],
+   "answer_text": "사립체",
+   "detail": {
+    "why": "사립체: 심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관.",
+    "page_note": "17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0142",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 삼첨판막 바로 위쪽 중앙에 있는 심실로 가는 전기신호의 관문",
+   "accept": [
+    "방실결절"
+   ],
+   "answer_text": "방실결절",
+   "detail": {
+    "why": "방실결절: 삼첨판막 바로 위쪽 중앙에 있는 심실로 가는 전기신호의 관문.",
+    "page_note": "19쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0143",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기",
+   "accept": [
+    "정점지속기",
+    "plateau"
+   ],
+   "answer_text": "정점지속기(plateau)",
+   "detail": {
+    "why": "정점지속기(plateau): Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기.",
+    "page_note": "21쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 21
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0144",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심실의 탈분극",
+   "accept": [
+    "QRS군"
+   ],
+   "answer_text": "QRS군",
+   "detail": {
+    "why": "QRS군: 심실의 탈분극.",
+    "page_note": "24쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 24
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0145",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 분당 100회 이상의 심장박동수",
+   "accept": [
+    "빠른맥",
+    "tachycardia"
+   ],
+   "answer_text": "빠른맥(tachycardia)",
+   "detail": {
+    "why": "빠른맥(tachycardia): 분당 100회 이상의 심장박동수.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0146",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 방실판막이 닫힐 때 들리는 심음(lub)",
+   "accept": [
+    "S1"
+   ],
+   "answer_text": "S1",
+   "detail": {
+    "why": "S1: 방실판막이 닫힐 때 들리는 심음(lub).",
+    "page_note": "27쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 27
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0147",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음",
+   "accept": [
+    "S4"
+   ],
+   "answer_text": "S4",
+   "detail": {
+    "why": "S4: S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음.",
+    "page_note": "29쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 29
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0148",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기",
+   "accept": [
+    "심실박출기"
+   ],
+   "answer_text": "심실박출기",
+   "detail": {
+    "why": "심실박출기: 반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0149",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심실박출 후 심실에 남은 혈액량",
+   "accept": [
+    "ESV",
+    "수축기말용적"
+   ],
+   "answer_text": "ESV(수축기말용적)",
+   "detail": {
+    "why": "ESV(수축기말용적): 심실박출 후 심실에 남은 혈액량.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0150",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심장근육세포의 폄 정도",
+   "accept": [
+    "전부하",
+    "preload"
+   ],
+   "answer_text": "전부하(preload)",
+   "detail": {
+    "why": "전부하(preload): 심장근육세포의 폄 정도.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0151",
+   "topic": "heart",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 일회박출량이 확장기말용적에 비례한다는 법칙",
+   "accept": [
+    "프랭크-스탈링 법칙"
+   ],
+   "answer_text": "프랭크-스탈링 법칙",
+   "detail": {
+    "why": "프랭크-스탈링 법칙: 일회박출량이 확장기말용적에 비례한다는 법칙.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "v-gen-0215",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 내피(단층편평상피)로 이루어져 마찰·난류를 최소화하는 혈관벽 층",
+   "accept": [
+    "속막",
+    "내막"
+   ],
+   "answer_text": "속막(내막)",
+   "detail": {
+    "why": "속막(내막): 내피(단층편평상피)로 이루어져 마찰·난류를 최소화하는 혈관벽 층.",
+    "page_note": "3쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 3
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0216",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 광범위한 탄력층으로 수축기에 늘어나고 이완기에 되돌아오는 큰 동맥",
+   "accept": [
+    "전도동맥"
+   ],
+   "answer_text": "전도동맥",
+   "detail": {
+    "why": "전도동맥: 광범위한 탄력층으로 수축기에 늘어나고 이완기에 되돌아오는 큰 동맥.",
+    "page_note": "6쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 6
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0217",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근",
+   "accept": [
+    "모세혈관앞조임근"
+   ],
+   "answer_text": "모세혈관앞조임근",
+   "detail": {
+    "why": "모세혈관앞조임근: 모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근.",
+    "page_note": "9쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 9
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0218",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 지름 최대 10mm로 정맥판막이 있는 정맥",
+   "accept": [
+    "중간정맥"
+   ],
+   "answer_text": "중간정맥",
+   "detail": {
+    "why": "중간정맥: 지름 최대 10mm로 정맥판막이 있는 정맥.",
+    "page_note": "12쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0219",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 일정한 질량의 조직당 흐르는 혈류(mL/min/g)",
+   "accept": [
+    "관류",
+    "perfusion"
+   ],
+   "answer_text": "관류(perfusion)",
+   "detail": {
+    "why": "관류(perfusion): 일정한 질량의 조직당 흐르는 혈류(mL/min/g).",
+    "page_note": "16쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0220",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심실확장기 동안 동맥혈압의 최소치",
+   "accept": [
+    "확장기혈압"
+   ],
+   "answer_text": "확장기혈압",
+   "detail": {
+    "why": "확장기혈압: 심실확장기 동안 동맥혈압의 최소치.",
+    "page_note": "16쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0221",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘",
+   "accept": [
+    "말초저항"
+   ],
+   "answer_text": "말초저항",
+   "detail": {
+    "why": "말초저항: 심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘.",
+    "page_note": "18쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0222",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 근육이 수축하며 정맥을 짜내 혈액을 심장 쪽으로 보내는 기전",
+   "accept": [
+    "뼈대근육 펌프"
+   ],
+   "answer_text": "뼈대근육 펌프",
+   "detail": {
+    "why": "뼈대근육 펌프: 근육이 수축하며 정맥을 짜내 혈액을 심장 쪽으로 보내는 기전.",
+    "page_note": "21쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 21
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0223",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기",
+   "accept": [
+    "화학수용기"
+   ],
+   "answer_text": "화학수용기",
+   "detail": {
+    "why": "화학수용기: 대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기.",
+    "page_note": "26쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0224",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬",
+   "accept": [
+    "알도스테론"
+   ],
+   "answer_text": "알도스테론",
+   "detail": {
+    "why": "알도스테론: 콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬.",
+    "page_note": "30쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0225",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관",
+   "accept": [
+    "굴모세혈관"
+   ],
+   "answer_text": "굴모세혈관",
+   "detail": {
+    "why": "굴모세혈관: 내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0226",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 정수압과 교질삼투압의 차이로 모세혈관 체액 이동 방향을 결정하는 압력",
+   "accept": [
+    "순여과압"
+   ],
+   "answer_text": "순여과압",
+   "detail": {
+    "why": "순여과압: 정수압과 교질삼투압의 차이로 모세혈관 체액 이동 방향을 결정하는 압력.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 38
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0227",
+   "topic": "vessel",
+   "type": "short",
+   "q": "다음 설명에 해당하는 용어는? — 가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계",
+   "accept": [
+    "홀정맥계"
+   ],
+   "answer_text": "홀정맥계",
+   "detail": {
+    "why": "홀정맥계: 가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계.",
+    "page_note": "54쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 54
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "h-gen-0152",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 두 폐 사이, 심장이 위치하는 공간",
+   "options": [
+    "가슴세로칸(종격)",
+    "ANP",
+    "자율박동",
+    "휘돌이동맥(LCX)"
+   ],
+   "answer": 0,
+   "explain": "가슴세로칸(종격): 두 폐 사이, 심장이 위치하는 공간.",
+   "detail": {
+    "why": "가슴세로칸(종격): 두 폐 사이, 심장이 위치하는 공간.",
+    "page_note": "2쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0153",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'심장바닥(base)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "S2 직후 심실로 혈액이 유입될 때 심실벽 진동으로 나는 심음",
+    "큰 혈관이 부착되는 심장의 넓은 윗부분",
+    "S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음",
+    "반달판막이 닫히고(S2) 방실판막도 닫혀 용적이 잠시 그대로인 시기"
+   ],
+   "answer": 1,
+   "explain": "심장바닥(base): 큰 혈관이 부착되는 심장의 넓은 윗부분.",
+   "detail": {
+    "why": "심장바닥(base): 큰 혈관이 부착되는 심장의 넓은 윗부분.",
+    "page_note": "2쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0154",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 횡격막 바로 위에 있는 심장의 뾰족한 아랫부분",
+   "options": [
+    "느린맥(bradycardia)",
+    "심장꼭대기(apex)",
+    "위대정맥(SVC)",
+    "S2"
+   ],
+   "answer": 1,
+   "explain": "심장꼭대기(apex): 횡격막 바로 위에 있는 심장의 뾰족한 아랫부분.",
+   "detail": {
+    "why": "심장꼭대기(apex): 횡격막 바로 위에 있는 심장의 뾰족한 아랫부분.",
+    "page_note": "2쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 2
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0155",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'폐순환'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "분당 60회 이하의 심장박동수",
+    "기체 교환을 위해 혈액을 폐로 보냈다가 심장으로 되돌리는 순환",
+    "Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기",
+    "반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기"
+   ],
+   "answer": 1,
+   "explain": "폐순환: 기체 교환을 위해 혈액을 폐로 보냈다가 심장으로 되돌리는 순환.",
+   "detail": {
+    "why": "폐순환: 기체 교환을 위해 혈액을 폐로 보냈다가 심장으로 되돌리는 순환.",
+    "page_note": "3쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 3
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0156",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 폐의 나머지 부분과 심장벽을 포함한 모든 신체기관에 혈액을 공급하는 순환",
+   "options": [
+    "판막 협착(stenosis)",
+    "QRS군",
+    "ANP",
+    "온몸순환"
+   ],
+   "answer": 3,
+   "explain": "온몸순환: 폐의 나머지 부분과 심장벽을 포함한 모든 신체기관에 혈액을 공급하는 순환.",
+   "detail": {
+    "why": "온몸순환: 폐의 나머지 부분과 심장벽을 포함한 모든 신체기관에 혈액을 공급하는 순환.",
+    "page_note": "3쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 3
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0157",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'섬유심장막'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장 내벽을 이루고 판막 표면을 덮으며 혈관 내피와 연속되는 층",
+    "장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간",
+    "심장을 주변 구조물에 부착시키는 바깥 심장막",
+    "섬유심장막의 안쪽면에 융합된 장막층"
+   ],
+   "answer": 2,
+   "explain": "섬유심장막: 심장을 주변 구조물에 부착시키는 바깥 심장막.",
+   "detail": {
+    "why": "섬유심장막: 심장을 주변 구조물에 부착시키는 바깥 심장막.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0158",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 섬유심장막의 안쪽면에 융합된 장막층",
+   "options": [
+    "심장속막",
+    "내장쪽심장막",
+    "벽측심장막",
+    "섬유심장막"
+   ],
+   "answer": 2,
+   "explain": "벽측심장막: 섬유심장막의 안쪽면에 융합된 장막층.",
+   "detail": {
+    "why": "벽측심장막: 섬유심장막의 안쪽면에 융합된 장막층.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0159",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'내장쪽심장막'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장바깥막(epicardium)과 같은 장막층",
+    "심장 내벽을 이루고 판막 표면을 덮으며 혈관 내피와 연속되는 층",
+    "장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간",
+    "심장을 주변 구조물에 부착시키는 바깥 심장막"
+   ],
+   "answer": 0,
+   "explain": "내장쪽심장막: 심장바깥막(epicardium)과 같은 장막층.",
+   "detail": {
+    "why": "내장쪽심장막: 심장바깥막(epicardium)과 같은 장막층.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0160",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심장 내벽을 이루고 판막 표면을 덮으며 혈관 내피와 연속되는 층",
+   "options": [
+    "심장속막",
+    "심장막안(심낭강)",
+    "섬유심장막",
+    "내장쪽심장막"
+   ],
+   "answer": 0,
+   "explain": "심장속막: 심장 내벽을 이루고 판막 표면을 덮으며 혈관 내피와 연속되는 층.",
+   "detail": {
+    "why": "심장속막: 심장 내벽을 이루고 판막 표면을 덮으며 혈관 내피와 연속되는 층.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0161",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'심장막안(심낭강)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장바깥막(epicardium)과 같은 장막층",
+    "장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간",
+    "섬유심장막의 안쪽면에 융합된 장막층",
+    "심장 내벽을 이루고 판막 표면을 덮으며 혈관 내피와 연속되는 층"
+   ],
+   "answer": 1,
+   "explain": "심장막안(심낭강): 장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간.",
+   "detail": {
+    "why": "심장막안(심낭강): 장막층에서 삼출된 소량(5~30mL)의 심장막액이 있는 공간.",
+    "page_note": "5쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 5
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0162",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 가로막 위쪽 대부분의 정맥혈을 오른심방으로 보내는 혈관",
+   "options": [
+    "관상정맥동",
+    "위대정맥(SVC)",
+    "푸르키네섬유",
+    "후부하(afterload)"
+   ],
+   "answer": 1,
+   "explain": "위대정맥(SVC): 가로막 위쪽 대부분의 정맥혈을 오른심방으로 보내는 혈관.",
+   "detail": {
+    "why": "위대정맥(SVC): 가로막 위쪽 대부분의 정맥혈을 오른심방으로 보내는 혈관.",
+    "page_note": "7쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 7
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0163",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'아래대정맥(IVC)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "방실판막이 닫히고(S1) 반달판막도 닫혀 용적이 변하지 않는 시기",
+    "오른심장동맥의 가지 중 하나(marginal artery)",
+    "횡격막 바로 위에 있는 심장의 뾰족한 아랫부분",
+    "가로막 아래쪽 대부분의 정맥혈을 오른심방으로 보내는 혈관"
+   ],
+   "answer": 3,
+   "explain": "아래대정맥(IVC): 가로막 아래쪽 대부분의 정맥혈을 오른심방으로 보내는 혈관.",
+   "detail": {
+    "why": "아래대정맥(IVC): 가로막 아래쪽 대부분의 정맥혈을 오른심방으로 보내는 혈관.",
+    "page_note": "7쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 7
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0164",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 태아 심방사이막에 있던 타원구멍의 흔적",
+   "options": [
+    "심장꼭대기(apex)",
+    "타원오목(fossa ovalis)",
+    "심장차단(heart block)",
+    "힘줄끈(건삭)"
+   ],
+   "answer": 1,
+   "explain": "타원오목(fossa ovalis): 태아 심방사이막에 있던 타원구멍의 흔적.",
+   "detail": {
+    "why": "타원오목(fossa ovalis): 태아 심방사이막에 있던 타원구멍의 흔적.",
+    "page_note": "7쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 7
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0165",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'꼭지근(유두근)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심실의 재분극",
+    "심실 수축 시 힘줄끈을 잡아당기는 심실의 근육",
+    "반달판막이 닫힐 때 들리는 심음(dub)",
+    "심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조"
+   ],
+   "answer": 1,
+   "explain": "꼭지근(유두근): 심실 수축 시 힘줄끈을 잡아당기는 심실의 근육.",
+   "detail": {
+    "why": "꼭지근(유두근): 심실 수축 시 힘줄끈을 잡아당기는 심실의 근육.",
+    "page_note": "10쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0166",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 꼭지근과 방실판막을 잇는 끈",
+   "options": [
+    "심실세동",
+    "힘줄끈(건삭)",
+    "휘돌이동맥(LCX)",
+    "자율박동"
+   ],
+   "answer": 1,
+   "explain": "힘줄끈(건삭): 꼭지근과 방실판막을 잇는 끈.",
+   "detail": {
+    "why": "힘줄끈(건삭): 꼭지근과 방실판막을 잇는 끈.",
+    "page_note": "10쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0167",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'방실판막'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심실이 수축할 때 혈액이 심방으로 역류하지 않도록 하는 판막",
+    "오른심방과 오른심실 사이의 판막",
+    "왼심방과 왼심실 사이의 판막",
+    "심실 이완 시 동맥의 혈액이 심실로 역류하지 않도록 하는 판막"
+   ],
+   "answer": 0,
+   "explain": "방실판막: 심실이 수축할 때 혈액이 심방으로 역류하지 않도록 하는 판막.",
+   "detail": {
+    "why": "방실판막: 심실이 수축할 때 혈액이 심방으로 역류하지 않도록 하는 판막.",
+    "page_note": "10쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0168",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심실 이완 시 동맥의 혈액이 심실로 역류하지 않도록 하는 판막",
+   "options": [
+    "삼첨판막",
+    "방실판막",
+    "반달판막",
+    "승모판막(이첨판막)"
+   ],
+   "answer": 2,
+   "explain": "반달판막: 심실 이완 시 동맥의 혈액이 심실로 역류하지 않도록 하는 판막.",
+   "detail": {
+    "why": "반달판막: 심실 이완 시 동맥의 혈액이 심실로 역류하지 않도록 하는 판막.",
+    "page_note": "10쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 10
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0169",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'승모판막(이첨판막)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심실이 수축할 때 혈액이 심방으로 역류하지 않도록 하는 판막",
+    "오른심방과 오른심실 사이의 판막",
+    "왼심방과 왼심실 사이의 판막",
+    "심실 이완 시 동맥의 혈액이 심실로 역류하지 않도록 하는 판막"
+   ],
+   "answer": 2,
+   "explain": "승모판막(이첨판막): 왼심방과 왼심실 사이의 판막.",
+   "detail": {
+    "why": "승모판막(이첨판막): 왼심방과 왼심실 사이의 판막.",
+    "page_note": "9쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 9
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0170",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 오른심방과 오른심실 사이의 판막",
+   "options": [
+    "반달판막",
+    "방실판막",
+    "승모판막(이첨판막)",
+    "삼첨판막"
+   ],
+   "answer": 3,
+   "explain": "삼첨판막: 오른심방과 오른심실 사이의 판막.",
+   "detail": {
+    "why": "삼첨판막: 오른심방과 오른심실 사이의 판막.",
+    "page_note": "9쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 9
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0171",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'판막 기능부전(insufficiency)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "오른심장동맥의 가지 중 하나(marginal artery)",
+    "판막이 완전히 닫히지 않아 혈액이 역류할 수 있는 상태",
+    "오른심방과 오른심실 사이의 판막",
+    "심장바깥막(epicardium)과 같은 장막층"
+   ],
+   "answer": 1,
+   "explain": "판막 기능부전(insufficiency): 판막이 완전히 닫히지 않아 혈액이 역류할 수 있는 상태.",
+   "detail": {
+    "why": "판막 기능부전(insufficiency): 판막이 완전히 닫히지 않아 혈액이 역류할 수 있는 상태.",
+    "page_note": "11쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 11
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0172",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — Ca2+ 침착물로 첨판이 딱딱해져 판막이 좁아진 상태",
+   "options": [
+    "등용적성이완기",
+    "모서리동맥",
+    "판막 협착(stenosis)",
+    "정점지속기(plateau)"
+   ],
+   "answer": 2,
+   "explain": "판막 협착(stenosis): Ca2+ 침착물로 첨판이 딱딱해져 판막이 좁아진 상태.",
+   "detail": {
+    "why": "판막 협착(stenosis): Ca2+ 침착물로 첨판이 딱딱해져 판막이 좁아진 상태.",
+    "page_note": "11쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 11
+   },
+   "origin": "claude",
+   "unit": "h1"
+  },
+  {
+   "id": "h-gen-0173",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'앞심실사이동맥(LAD)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "오른심장동맥의 가지 중 하나(marginal artery)",
+    "왼심장동맥에서 갈라져 심장 앞면 심실사이로 내려가는 가지",
+    "왼심장동맥에서 갈라져 심장을 휘돌아 가는 가지",
+    "심장 뒷면 오른심방에 있는, 심장정맥 대부분이 모이는 곳"
+   ],
+   "answer": 1,
+   "explain": "앞심실사이동맥(LAD): 왼심장동맥에서 갈라져 심장 앞면 심실사이로 내려가는 가지.",
+   "detail": {
+    "why": "앞심실사이동맥(LAD): 왼심장동맥에서 갈라져 심장 앞면 심실사이로 내려가는 가지.",
+    "page_note": "13쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0174",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 왼심장동맥에서 갈라져 심장을 휘돌아 가는 가지",
+   "options": [
+    "뒤심실사이동맥",
+    "앞심실사이동맥(LAD)",
+    "휘돌이동맥(LCX)",
+    "관상정맥동"
+   ],
+   "answer": 2,
+   "explain": "휘돌이동맥(LCX): 왼심장동맥에서 갈라져 심장을 휘돌아 가는 가지.",
+   "detail": {
+    "why": "휘돌이동맥(LCX): 왼심장동맥에서 갈라져 심장을 휘돌아 가는 가지.",
+    "page_note": "13쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0175",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'모서리동맥'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장 뒷면 오른심방에 있는, 심장정맥 대부분이 모이는 곳",
+    "오른심장동맥의 가지 중 하나(marginal artery)",
+    "왼심장동맥에서 갈라져 심장을 휘돌아 가는 가지",
+    "왼심방과 양쪽 심실 많은 부분의 혈액을 받는 정맥"
+   ],
+   "answer": 1,
+   "explain": "모서리동맥: 오른심장동맥의 가지 중 하나(marginal artery).",
+   "detail": {
+    "why": "모서리동맥: 오른심장동맥의 가지 중 하나(marginal artery).",
+    "page_note": "13쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0176",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 오른심장동맥의 가지로 심장 뒷면 심실사이를 지나는 동맥",
+   "options": [
+    "관상정맥동",
+    "모서리동맥",
+    "휘돌이동맥(LCX)",
+    "뒤심실사이동맥"
+   ],
+   "answer": 3,
+   "explain": "뒤심실사이동맥: 오른심장동맥의 가지로 심장 뒷면 심실사이를 지나는 동맥.",
+   "detail": {
+    "why": "뒤심실사이동맥: 오른심장동맥의 가지로 심장 뒷면 심실사이를 지나는 동맥.",
+    "page_note": "13쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 13
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0177",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'큰심장정맥'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "오른심장동맥의 가지로 심장 뒷면 심실사이를 지나는 동맥",
+    "심장 뒷면 오른심방에 있는, 심장정맥 대부분이 모이는 곳",
+    "오른심장동맥의 가지 중 하나(marginal artery)",
+    "왼심방과 양쪽 심실 많은 부분의 혈액을 받는 정맥"
+   ],
+   "answer": 3,
+   "explain": "큰심장정맥: 왼심방과 양쪽 심실 많은 부분의 혈액을 받는 정맥.",
+   "detail": {
+    "why": "큰심장정맥: 왼심방과 양쪽 심실 많은 부분의 혈액을 받는 정맥.",
+    "page_note": "14쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 14
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0178",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심장 뒷면 오른심방에 있는, 심장정맥 대부분이 모이는 곳",
+   "options": [
+    "관상정맥동",
+    "뒤심실사이동맥",
+    "휘돌이동맥(LCX)",
+    "큰심장정맥"
+   ],
+   "answer": 0,
+   "explain": "관상정맥동: 심장 뒷면 오른심방에 있는, 심장정맥 대부분이 모이는 곳.",
+   "detail": {
+    "why": "관상정맥동: 심장 뒷면 오른심방에 있는, 심장정맥 대부분이 모이는 곳.",
+    "page_note": "14쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 14
+   },
+   "origin": "claude",
+   "unit": "h2"
+  },
+  {
+   "id": "h-gen-0179",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'사이원반'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조",
+    "심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관",
+    "수축 시 세포가 떨어지지 않게 하는 기계적 연결",
+    "이온이 세포 사이를 흘러 전기 흥분을 빠르게 전파하는 연결"
+   ],
+   "answer": 0,
+   "explain": "사이원반: 심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조.",
+   "detail": {
+    "why": "사이원반: 심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조.",
+    "page_note": "17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0180",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 수축 시 세포가 떨어지지 않게 하는 기계적 연결",
+   "options": [
+    "틈새이음(gap junction)",
+    "사립체",
+    "사이원반",
+    "부착반점(desmosome)"
+   ],
+   "answer": 3,
+   "explain": "부착반점(desmosome): 수축 시 세포가 떨어지지 않게 하는 기계적 연결.",
+   "detail": {
+    "why": "부착반점(desmosome): 수축 시 세포가 떨어지지 않게 하는 기계적 연결.",
+    "page_note": "17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0181",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'틈새이음(gap junction)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장근육세포를 연결하며 부착반점과 틈새이음을 가진 구조",
+    "이온이 세포 사이를 흘러 전기 흥분을 빠르게 전파하는 연결",
+    "심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관",
+    "수축 시 세포가 떨어지지 않게 하는 기계적 연결"
+   ],
+   "answer": 1,
+   "explain": "틈새이음(gap junction): 이온이 세포 사이를 흘러 전기 흥분을 빠르게 전파하는 연결.",
+   "detail": {
+    "why": "틈새이음(gap junction): 이온이 세포 사이를 흘러 전기 흥분을 빠르게 전파하는 연결.",
+    "page_note": "17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0182",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관",
+   "options": [
+    "사이원반",
+    "틈새이음(gap junction)",
+    "부착반점(desmosome)",
+    "사립체"
+   ],
+   "answer": 3,
+   "explain": "사립체: 심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관.",
+   "detail": {
+    "why": "사립체: 심장근육세포의 약 25%를 차지하며 ATP를 만드는 세포소기관.",
+    "page_note": "17쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 17
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0183",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'자율박동'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기",
+    "심실사이벽을 지나는 전기 신호를 전달하는 끈",
+    "신경계의 자극 없이 자신만의 율동으로 박동하는 성질",
+    "방실다발의 갈래에서 시작해 심실 근육 전체로 갈라지는 큰 세포 무리"
+   ],
+   "answer": 2,
+   "explain": "자율박동: 신경계의 자극 없이 자신만의 율동으로 박동하는 성질.",
+   "detail": {
+    "why": "자율박동: 신경계의 자극 없이 자신만의 율동으로 박동하는 성질.",
+    "page_note": "19쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0184",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — SVC 개구부 옆 오른심방에 있는 심방의 박동조율기",
+   "options": [
+    "정점지속기(plateau)",
+    "푸르키네섬유",
+    "방실결절",
+    "굴심방결절"
+   ],
+   "answer": 3,
+   "explain": "굴심방결절: SVC 개구부 옆 오른심방에 있는 심방의 박동조율기.",
+   "detail": {
+    "why": "굴심방결절: SVC 개구부 옆 오른심방에 있는 심방의 박동조율기.",
+    "page_note": "19쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0185",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'방실결절'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기",
+    "삼첨판막 바로 위쪽 중앙에 있는 심실로 가는 전기신호의 관문",
+    "신경계의 자극 없이 자신만의 율동으로 박동하는 성질",
+    "SVC 개구부 옆 오른심방에 있는 심방의 박동조율기"
+   ],
+   "answer": 1,
+   "explain": "방실결절: 삼첨판막 바로 위쪽 중앙에 있는 심실로 가는 전기신호의 관문.",
+   "detail": {
+    "why": "방실결절: 삼첨판막 바로 위쪽 중앙에 있는 심실로 가는 전기신호의 관문.",
+    "page_note": "19쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 19
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0186",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심실사이벽을 지나는 전기 신호를 전달하는 끈",
+   "options": [
+    "푸르키네섬유",
+    "자율박동",
+    "굴심방결절",
+    "방실다발"
+   ],
+   "answer": 3,
+   "explain": "방실다발: 심실사이벽을 지나는 전기 신호를 전달하는 끈.",
+   "detail": {
+    "why": "방실다발: 심실사이벽을 지나는 전기 신호를 전달하는 끈.",
+    "page_note": "20쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 20
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0187",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'푸르키네섬유'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "방실다발의 갈래에서 시작해 심실 근육 전체로 갈라지는 큰 세포 무리",
+    "SVC 개구부 옆 오른심방에 있는 심방의 박동조율기",
+    "심실사이벽을 지나는 전기 신호를 전달하는 끈",
+    "Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기"
+   ],
+   "answer": 0,
+   "explain": "푸르키네섬유: 방실다발의 갈래에서 시작해 심실 근육 전체로 갈라지는 큰 세포 무리.",
+   "detail": {
+    "why": "푸르키네섬유: 방실다발의 갈래에서 시작해 심실 근육 전체로 갈라지는 큰 세포 무리.",
+    "page_note": "20쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 20
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0188",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기",
+   "options": [
+    "방실다발",
+    "굴심방결절",
+    "자율박동",
+    "정점지속기(plateau)"
+   ],
+   "answer": 3,
+   "explain": "정점지속기(plateau): Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기.",
+   "detail": {
+    "why": "정점지속기(plateau): Ca2+ 유입과 K+ 유출이 맞물려 막전위가 평평하게 유지되는 시기.",
+    "page_note": "21쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 21
+   },
+   "origin": "claude",
+   "unit": "h3"
+  },
+  {
+   "id": "h-gen-0189",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'심전도(ECG)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심방의 탈분극",
+    "심실의 재분극",
+    "결절세포와 심장근육세포가 만드는 모든 활동전위를 간략히 기록한 것",
+    "심실의 탈분극"
+   ],
+   "answer": 2,
+   "explain": "심전도(ECG): 결절세포와 심장근육세포가 만드는 모든 활동전위를 간략히 기록한 것.",
+   "detail": {
+    "why": "심전도(ECG): 결절세포와 심장근육세포가 만드는 모든 활동전위를 간략히 기록한 것.",
+    "page_note": "23쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 23
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0190",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심방의 탈분극",
+   "options": [
+    "심전도(ECG)",
+    "QRS군",
+    "T파",
+    "P파"
+   ],
+   "answer": 3,
+   "explain": "P파: 심방의 탈분극.",
+   "detail": {
+    "why": "P파: 심방의 탈분극.",
+    "page_note": "24쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 24
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0191",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'QRS군'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심실의 재분극",
+    "결절세포와 심장근육세포가 만드는 모든 활동전위를 간략히 기록한 것",
+    "심실의 탈분극",
+    "심방의 탈분극"
+   ],
+   "answer": 2,
+   "explain": "QRS군: 심실의 탈분극.",
+   "detail": {
+    "why": "QRS군: 심실의 탈분극.",
+    "page_note": "24쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 24
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0192",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심실의 재분극",
+   "options": [
+    "T파",
+    "QRS군",
+    "심전도(ECG)",
+    "P파"
+   ],
+   "answer": 0,
+   "explain": "T파: 심실의 재분극.",
+   "detail": {
+    "why": "T파: 심실의 재분극.",
+    "page_note": "24쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 24
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0193",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'느린맥(bradycardia)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장전도계통이 차단되어 P-R 간격이 길어지는 전도경로장애",
+    "분당 100회 이상의 심장박동수",
+    "ECG에서 무질서한 파형으로 나타나며 즉각 제세동이 필요한 잔떨림",
+    "분당 60회 이하의 심장박동수"
+   ],
+   "answer": 3,
+   "explain": "느린맥(bradycardia): 분당 60회 이하의 심장박동수.",
+   "detail": {
+    "why": "느린맥(bradycardia): 분당 60회 이하의 심장박동수.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0194",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 분당 100회 이상의 심장박동수",
+   "options": [
+    "심실세동",
+    "느린맥(bradycardia)",
+    "빠른맥(tachycardia)",
+    "심장차단(heart block)"
+   ],
+   "answer": 2,
+   "explain": "빠른맥(tachycardia): 분당 100회 이상의 심장박동수.",
+   "detail": {
+    "why": "빠른맥(tachycardia): 분당 100회 이상의 심장박동수.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0195",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'심장차단(heart block)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "ECG에서 무질서한 파형으로 나타나며 즉각 제세동이 필요한 잔떨림",
+    "분당 60회 이하의 심장박동수",
+    "심장전도계통이 차단되어 P-R 간격이 길어지는 전도경로장애",
+    "분당 100회 이상의 심장박동수"
+   ],
+   "answer": 2,
+   "explain": "심장차단(heart block): 심장전도계통이 차단되어 P-R 간격이 길어지는 전도경로장애.",
+   "detail": {
+    "why": "심장차단(heart block): 심장전도계통이 차단되어 P-R 간격이 길어지는 전도경로장애.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0196",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — ECG에서 무질서한 파형으로 나타나며 즉각 제세동이 필요한 잔떨림",
+   "options": [
+    "빠른맥(tachycardia)",
+    "심실세동",
+    "느린맥(bradycardia)",
+    "심장차단(heart block)"
+   ],
+   "answer": 1,
+   "explain": "심실세동: ECG에서 무질서한 파형으로 나타나며 즉각 제세동이 필요한 잔떨림.",
+   "detail": {
+    "why": "심실세동: ECG에서 무질서한 파형으로 나타나며 즉각 제세동이 필요한 잔떨림.",
+    "page_note": "25쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 25
+   },
+   "origin": "claude",
+   "unit": "h4"
+  },
+  {
+   "id": "h-gen-0197",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'S1'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "방실판막이 닫힐 때 들리는 심음(lub)",
+    "S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음",
+    "반달판막이 닫힐 때 들리는 심음(dub)",
+    "S2 직후 심실로 혈액이 유입될 때 심실벽 진동으로 나는 심음"
+   ],
+   "answer": 0,
+   "explain": "S1: 방실판막이 닫힐 때 들리는 심음(lub).",
+   "detail": {
+    "why": "S1: 방실판막이 닫힐 때 들리는 심음(lub).",
+    "page_note": "27쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 27
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0198",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 반달판막이 닫힐 때 들리는 심음(dub)",
+   "options": [
+    "S1",
+    "S4",
+    "S3",
+    "S2"
+   ],
+   "answer": 3,
+   "explain": "S2: 반달판막이 닫힐 때 들리는 심음(dub).",
+   "detail": {
+    "why": "S2: 반달판막이 닫힐 때 들리는 심음(dub).",
+    "page_note": "27쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 27
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0199",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'S3'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "S2 직후 심실로 혈액이 유입될 때 심실벽 진동으로 나는 심음",
+    "S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음",
+    "방실판막이 닫힐 때 들리는 심음(lub)",
+    "반달판막이 닫힐 때 들리는 심음(dub)"
+   ],
+   "answer": 0,
+   "explain": "S3: S2 직후 심실로 혈액이 유입될 때 심실벽 진동으로 나는 심음.",
+   "detail": {
+    "why": "S3: S2 직후 심실로 혈액이 유입될 때 심실벽 진동으로 나는 심음.",
+    "page_note": "29쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 29
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0200",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음",
+   "options": [
+    "S2",
+    "S3",
+    "S1",
+    "S4"
+   ],
+   "answer": 3,
+   "explain": "S4: S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음.",
+   "detail": {
+    "why": "S4: S1 직전 심방에서 혈액이 심실로 빠져나갈 때 나는 낮고 약한 심방음.",
+    "page_note": "29쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 29
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0201",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'심실충만기'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "반달판막이 닫히고(S2) 방실판막도 닫혀 용적이 잠시 그대로인 시기",
+    "반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기",
+    "방실판막이 닫히고(S1) 반달판막도 닫혀 용적이 변하지 않는 시기",
+    "방실판막이 열리고 혈액의 약 80%가 수동적으로 심실로 들어가는 시기"
+   ],
+   "answer": 3,
+   "explain": "심실충만기: 방실판막이 열리고 혈액의 약 80%가 수동적으로 심실로 들어가는 시기.",
+   "detail": {
+    "why": "심실충만기: 방실판막이 열리고 혈액의 약 80%가 수동적으로 심실로 들어가는 시기.",
+    "page_note": "30쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 30
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0202",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 방실판막이 닫히고(S1) 반달판막도 닫혀 용적이 변하지 않는 시기",
+   "options": [
+    "심실박출기",
+    "등용적성이완기",
+    "심실충만기",
+    "등용적성수축기"
+   ],
+   "answer": 3,
+   "explain": "등용적성수축기: 방실판막이 닫히고(S1) 반달판막도 닫혀 용적이 변하지 않는 시기.",
+   "detail": {
+    "why": "등용적성수축기: 방실판막이 닫히고(S1) 반달판막도 닫혀 용적이 변하지 않는 시기.",
+    "page_note": "31쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 31
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0203",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'심실박출기'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "방실판막이 닫히고(S1) 반달판막도 닫혀 용적이 변하지 않는 시기",
+    "반달판막이 닫히고(S2) 방실판막도 닫혀 용적이 잠시 그대로인 시기",
+    "반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기",
+    "방실판막이 열리고 혈액의 약 80%가 수동적으로 심실로 들어가는 시기"
+   ],
+   "answer": 2,
+   "explain": "심실박출기: 반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기.",
+   "detail": {
+    "why": "심실박출기: 반달판막이 열려 각 심실이 약 70mL를 펌프하는 시기.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0204",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 반달판막이 닫히고(S2) 방실판막도 닫혀 용적이 잠시 그대로인 시기",
+   "options": [
+    "심실박출기",
+    "등용적성이완기",
+    "심실충만기",
+    "등용적성수축기"
+   ],
+   "answer": 1,
+   "explain": "등용적성이완기: 반달판막이 닫히고(S2) 방실판막도 닫혀 용적이 잠시 그대로인 시기.",
+   "detail": {
+    "why": "등용적성이완기: 반달판막이 닫히고(S2) 방실판막도 닫혀 용적이 잠시 그대로인 시기.",
+    "page_note": "33쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 33
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0205",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'EDV(확장기말용적)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "EDV에서 ESV를 뺀 값",
+    "심방수축기 끝 각 심실의 혈액량(약 120mL)",
+    "심장박동수 × 일회박출량",
+    "심실박출 후 심실에 남은 혈액량"
+   ],
+   "answer": 1,
+   "explain": "EDV(확장기말용적): 심방수축기 끝 각 심실의 혈액량(약 120mL).",
+   "detail": {
+    "why": "EDV(확장기말용적): 심방수축기 끝 각 심실의 혈액량(약 120mL).",
+    "page_note": "30쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 30
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0206",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심실박출 후 심실에 남은 혈액량",
+   "options": [
+    "EDV(확장기말용적)",
+    "심장박출량(CO)",
+    "ESV(수축기말용적)",
+    "일회박출량(SV)"
+   ],
+   "answer": 2,
+   "explain": "ESV(수축기말용적): 심실박출 후 심실에 남은 혈액량.",
+   "detail": {
+    "why": "ESV(수축기말용적): 심실박출 후 심실에 남은 혈액량.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "h5"
+  },
+  {
+   "id": "h-gen-0207",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'일회박출량(SV)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장박동수 × 일회박출량",
+    "심실박출 후 심실에 남은 혈액량",
+    "EDV에서 ESV를 뺀 값",
+    "심방수축기 끝 각 심실의 혈액량(약 120mL)"
+   ],
+   "answer": 2,
+   "explain": "일회박출량(SV): EDV에서 ESV를 뺀 값.",
+   "detail": {
+    "why": "일회박출량(SV): EDV에서 ESV를 뺀 값.",
+    "page_note": "36쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0208",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심장박동수 × 일회박출량",
+   "options": [
+    "EDV(확장기말용적)",
+    "일회박출량(SV)",
+    "ESV(수축기말용적)",
+    "심장박출량(CO)"
+   ],
+   "answer": 3,
+   "explain": "심장박출량(CO): 심장박동수 × 일회박출량.",
+   "detail": {
+    "why": "심장박출량(CO): 심장박동수 × 일회박출량.",
+    "page_note": "36쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 36
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0209",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'전부하(preload)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장근육세포의 폄 정도",
+    "혈액량을 감소시켜 심장박출량을 줄이는 호르몬",
+    "내부적인 펌프 능력 또는 장력을 조절하는 능력",
+    "일회박출량이 확장기말용적에 비례한다는 법칙"
+   ],
+   "answer": 0,
+   "explain": "전부하(preload): 심장근육세포의 폄 정도.",
+   "detail": {
+    "why": "전부하(preload): 심장근육세포의 폄 정도.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0210",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 내부적인 펌프 능력 또는 장력을 조절하는 능력",
+   "options": [
+    "후부하(afterload)",
+    "수축력(contractility)",
+    "전부하(preload)",
+    "ANP"
+   ],
+   "answer": 1,
+   "explain": "수축력(contractility): 내부적인 펌프 능력 또는 장력을 조절하는 능력.",
+   "detail": {
+    "why": "수축력(contractility): 내부적인 펌프 능력 또는 장력을 조절하는 능력.",
+    "page_note": "39쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 39
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0211",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'후부하(afterload)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "내부적인 펌프 능력 또는 장력을 조절하는 능력",
+    "혈액량을 감소시켜 심장박출량을 줄이는 호르몬",
+    "심실이 동맥으로 혈액을 박출하기 위해 극복해야 하는 힘",
+    "심장근육세포의 폄 정도"
+   ],
+   "answer": 2,
+   "explain": "후부하(afterload): 심실이 동맥으로 혈액을 박출하기 위해 극복해야 하는 힘.",
+   "detail": {
+    "why": "후부하(afterload): 심실이 동맥으로 혈액을 박출하기 위해 극복해야 하는 힘.",
+    "page_note": "39쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 39
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0212",
+   "topic": "heart",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 일회박출량이 확장기말용적에 비례한다는 법칙",
+   "options": [
+    "ANP",
+    "프랭크-스탈링 법칙",
+    "후부하(afterload)",
+    "수축력(contractility)"
+   ],
+   "answer": 1,
+   "explain": "프랭크-스탈링 법칙: 일회박출량이 확장기말용적에 비례한다는 법칙.",
+   "detail": {
+    "why": "프랭크-스탈링 법칙: 일회박출량이 확장기말용적에 비례한다는 법칙.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 38
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "h-gen-0213",
+   "topic": "heart",
+   "type": "mc",
+   "q": "'ANP'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "내부적인 펌프 능력 또는 장력을 조절하는 능력",
+    "심장근육세포의 폄 정도",
+    "일회박출량이 확장기말용적에 비례한다는 법칙",
+    "혈액량을 감소시켜 심장박출량을 줄이는 호르몬"
+   ],
+   "answer": 3,
+   "explain": "ANP: 혈액량을 감소시켜 심장박출량을 줄이는 호르몬.",
+   "detail": {
+    "why": "ANP: 혈액량을 감소시켜 심장박출량을 줄이는 호르몬.",
+    "page_note": "42쪽"
+   },
+   "source": {
+    "doc": "heart",
+    "page": 42
+   },
+   "origin": "claude",
+   "unit": "h6"
+  },
+  {
+   "id": "v-gen-0228",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 내피(단층편평상피)로 이루어져 마찰·난류를 최소화하는 혈관벽 층",
+   "options": [
+    "속막(내막)",
+    "점도",
+    "혈류(flow)",
+    "관류(perfusion)"
+   ],
+   "answer": 0,
+   "explain": "속막(내막): 내피(단층편평상피)로 이루어져 마찰·난류를 최소화하는 혈관벽 층.",
+   "detail": {
+    "why": "속막(내막): 내피(단층편평상피)로 이루어져 마찰·난류를 최소화하는 혈관벽 층.",
+    "page_note": "3쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 3
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0229",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'중간막(중막)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "민무늬근·아교질·탄력조직으로 이루어진 대체로 가장 두꺼운 혈관벽 층",
+    "치밀이음부로 결합된 내피를 가져 누출이 가장 적은 모세혈관",
+    "지름 최대 10mm로 정맥판막이 있는 정맥",
+    "정수압과 교질삼투압의 차이로 모세혈관 체액 이동 방향을 결정하는 압력"
+   ],
+   "answer": 0,
+   "explain": "중간막(중막): 민무늬근·아교질·탄력조직으로 이루어진 대체로 가장 두꺼운 혈관벽 층.",
+   "detail": {
+    "why": "중간막(중막): 민무늬근·아교질·탄력조직으로 이루어진 대체로 가장 두꺼운 혈관벽 층.",
+    "page_note": "4쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 4
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0230",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 혈관을 주변 조직에 고정하는 성긴 결합조직 층",
+   "options": [
+    "안지오텐신 II",
+    "바깥막(외막)",
+    "점도",
+    "호흡펌프"
+   ],
+   "answer": 1,
+   "explain": "바깥막(외막): 혈관을 주변 조직에 고정하는 성긴 결합조직 층.",
+   "detail": {
+    "why": "바깥막(외막): 혈관을 주변 조직에 고정하는 성긴 결합조직 층.",
+    "page_note": "4쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 4
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0231",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'전도동맥'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "중간막에 민무늬근이 많고 국소혈류를 조절하는 근육동맥",
+    "모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근",
+    "뇌 동맥압을 동일하게 유지하고 곁순환을 제공하는 동맥 연결",
+    "광범위한 탄력층으로 수축기에 늘어나고 이완기에 되돌아오는 큰 동맥"
+   ],
+   "answer": 3,
+   "explain": "전도동맥: 광범위한 탄력층으로 수축기에 늘어나고 이완기에 되돌아오는 큰 동맥.",
+   "detail": {
+    "why": "전도동맥: 광범위한 탄력층으로 수축기에 늘어나고 이완기에 되돌아오는 큰 동맥.",
+    "page_note": "6쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 6
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0232",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 중간막에 민무늬근이 많고 국소혈류를 조절하는 근육동맥",
+   "options": [
+    "대뇌동맥고리(윌리스고리)",
+    "분배동맥",
+    "저항동맥",
+    "모세혈관앞조임근"
+   ],
+   "answer": 1,
+   "explain": "분배동맥: 중간막에 민무늬근이 많고 국소혈류를 조절하는 근육동맥.",
+   "detail": {
+    "why": "분배동맥: 중간막에 민무늬근이 많고 국소혈류를 조절하는 근육동맥.",
+    "page_note": "7쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 7
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0233",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'저항동맥'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "뇌 동맥압을 동일하게 유지하고 곁순환을 제공하는 동맥 연결",
+    "중간막에 민무늬근이 많고 국소혈류를 조절하는 근육동맥",
+    "얇은 바깥막과 1~3개의 민무늬근층으로 된 이름 없는 작은 동맥",
+    "모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근"
+   ],
+   "answer": 2,
+   "explain": "저항동맥: 얇은 바깥막과 1~3개의 민무늬근층으로 된 이름 없는 작은 동맥.",
+   "detail": {
+    "why": "저항동맥: 얇은 바깥막과 1~3개의 민무늬근층으로 된 이름 없는 작은 동맥.",
+    "page_note": "9쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 9
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0234",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근",
+   "options": [
+    "전도동맥",
+    "대뇌동맥고리(윌리스고리)",
+    "모세혈관앞조임근",
+    "저항동맥"
+   ],
+   "answer": 2,
+   "explain": "모세혈관앞조임근: 모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근.",
+   "detail": {
+    "why": "모세혈관앞조임근: 모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근.",
+    "page_note": "9쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 9
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0235",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'모세혈관바탕'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "하나의 세동맥에서 시작되는 10~100개 혈관의 그물",
+    "치밀이음부로 결합된 내피를 가져 누출이 가장 적은 모세혈관",
+    "내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관",
+    "내피에 창(여과구멍)이 있어 적당히 누출되는 모세혈관"
+   ],
+   "answer": 0,
+   "explain": "모세혈관바탕: 하나의 세동맥에서 시작되는 10~100개 혈관의 그물.",
+   "detail": {
+    "why": "모세혈관바탕: 하나의 세동맥에서 시작되는 10~100개 혈관의 그물.",
+    "page_note": "10쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 10
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0236",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 지름 최대 1mm로 백혈구가 빠져나가는 정맥",
+   "options": [
+    "간문맥계",
+    "세정맥",
+    "경막정맥굴",
+    "홀정맥계"
+   ],
+   "answer": 1,
+   "explain": "세정맥: 지름 최대 1mm로 백혈구가 빠져나가는 정맥.",
+   "detail": {
+    "why": "세정맥: 지름 최대 1mm로 백혈구가 빠져나가는 정맥.",
+    "page_note": "12쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0237",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'중간정맥'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "경막층 사이의 혈액으로 찬 정맥 통로",
+    "가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계",
+    "간문맥이 간 안에서 다시 모세혈관을 형성하는 순환",
+    "지름 최대 10mm로 정맥판막이 있는 정맥"
+   ],
+   "answer": 3,
+   "explain": "중간정맥: 지름 최대 10mm로 정맥판막이 있는 정맥.",
+   "detail": {
+    "why": "중간정맥: 지름 최대 10mm로 정맥판막이 있는 정맥.",
+    "page_note": "12쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 12
+   },
+   "origin": "claude",
+   "unit": "v1"
+  },
+  {
+   "id": "v-gen-0238",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 모세혈관바탕 두 개가 연속으로 이어진 순환",
+   "options": [
+    "저항동맥",
+    "순여과압",
+    "문맥계",
+    "점도"
+   ],
+   "answer": 2,
+   "explain": "문맥계: 모세혈관바탕 두 개가 연속으로 이어진 순환.",
+   "detail": {
+    "why": "문맥계: 모세혈관바탕 두 개가 연속으로 이어진 순환.",
+    "page_note": "15쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 15
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0239",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'문합(anastomosis)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "혈관끼리 서로 연결되는 것",
+    "간문맥이 간 안에서 다시 모세혈관을 형성하는 순환",
+    "수축기혈압과 확장기혈압의 차이",
+    "모세혈관바탕 두 개가 연속으로 이어진 순환"
+   ],
+   "answer": 0,
+   "explain": "문합(anastomosis): 혈관끼리 서로 연결되는 것.",
+   "detail": {
+    "why": "문합(anastomosis): 혈관끼리 서로 연결되는 것.",
+    "page_note": "15쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 15
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0240",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 일정한 질량의 조직당 흐르는 혈류(mL/min/g)",
+   "options": [
+    "혈류(flow)",
+    "관류(perfusion)",
+    "말초저항",
+    "맥박압"
+   ],
+   "answer": 1,
+   "explain": "관류(perfusion): 일정한 질량의 조직당 흐르는 혈류(mL/min/g).",
+   "detail": {
+    "why": "관류(perfusion): 일정한 질량의 조직당 흐르는 혈류(mL/min/g).",
+    "page_note": "16쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0241",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'혈류(flow)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심실확장기 동안 동맥혈압의 최소치",
+    "단위시간당 흐르는 혈액의 양(mL/min)",
+    "심실수축기 동안 이른 동맥혈압의 최고치",
+    "확장기압 + 1/3(수축기압 − 확장기압)"
+   ],
+   "answer": 1,
+   "explain": "혈류(flow): 단위시간당 흐르는 혈액의 양(mL/min).",
+   "detail": {
+    "why": "혈류(flow): 단위시간당 흐르는 혈액의 양(mL/min).",
+    "page_note": "16쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0242",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심실수축기 동안 이른 동맥혈압의 최고치",
+   "options": [
+    "수축기혈압",
+    "말초저항",
+    "확장기혈압",
+    "혈류(flow)"
+   ],
+   "answer": 0,
+   "explain": "수축기혈압: 심실수축기 동안 이른 동맥혈압의 최고치.",
+   "detail": {
+    "why": "수축기혈압: 심실수축기 동안 이른 동맥혈압의 최고치.",
+    "page_note": "16쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0243",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'확장기혈압'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "동맥에서 낮아서 동맥 혈액량이 증가하면 혈압이 높아지게 되는 성질",
+    "일정한 질량의 조직당 흐르는 혈류(mL/min/g)",
+    "혈액의 진한 정도로 적혈구와 알부민 농도가 중요",
+    "심실확장기 동안 동맥혈압의 최소치"
+   ],
+   "answer": 3,
+   "explain": "확장기혈압: 심실확장기 동안 동맥혈압의 최소치.",
+   "detail": {
+    "why": "확장기혈압: 심실확장기 동안 동맥혈압의 최소치.",
+    "page_note": "16쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 16
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0244",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 수축기혈압과 확장기혈압의 차이",
+   "options": [
+    "맥박압",
+    "점도",
+    "순응도(compliance)",
+    "확장기혈압"
+   ],
+   "answer": 0,
+   "explain": "맥박압: 수축기혈압과 확장기혈압의 차이.",
+   "detail": {
+    "why": "맥박압: 수축기혈압과 확장기혈압의 차이.",
+    "page_note": "20쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0245",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'평균동맥압(MAP)'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "수축기혈압과 확장기혈압의 차이",
+    "동맥에서 낮아서 동맥 혈액량이 증가하면 혈압이 높아지게 되는 성질",
+    "확장기압 + 1/3(수축기압 − 확장기압)",
+    "심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘"
+   ],
+   "answer": 2,
+   "explain": "평균동맥압(MAP): 확장기압 + 1/3(수축기압 − 확장기압).",
+   "detail": {
+    "why": "평균동맥압(MAP): 확장기압 + 1/3(수축기압 − 확장기압).",
+    "page_note": "20쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 20
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0246",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘",
+   "options": [
+    "점도",
+    "혈류(flow)",
+    "말초저항",
+    "수축기혈압"
+   ],
+   "answer": 2,
+   "explain": "말초저항: 심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘.",
+   "detail": {
+    "why": "말초저항: 심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘.",
+    "page_note": "18쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0247",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'점도'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "심장을 나와 온몸 혈관으로 들어가는 혈류의 흐름을 거스르는 힘",
+    "단위시간당 흐르는 혈액의 양(mL/min)",
+    "확장기압 + 1/3(수축기압 − 확장기압)",
+    "혈액의 진한 정도로 적혈구와 알부민 농도가 중요"
+   ],
+   "answer": 3,
+   "explain": "점도: 혈액의 진한 정도로 적혈구와 알부민 농도가 중요.",
+   "detail": {
+    "why": "점도: 혈액의 진한 정도로 적혈구와 알부민 농도가 중요.",
+    "page_note": "18쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 18
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0248",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 동맥에서 낮아서 동맥 혈액량이 증가하면 혈압이 높아지게 되는 성질",
+   "options": [
+    "혈류(flow)",
+    "평균동맥압(MAP)",
+    "수축기혈압",
+    "순응도(compliance)"
+   ],
+   "answer": 3,
+   "explain": "순응도(compliance): 동맥에서 낮아서 동맥 혈액량이 증가하면 혈압이 높아지게 되는 성질.",
+   "detail": {
+    "why": "순응도(compliance): 동맥에서 낮아서 동맥 혈액량이 증가하면 혈압이 높아지게 되는 성질.",
+    "page_note": "19쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 19
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0249",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'뼈대근육 펌프'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "혈관끼리 서로 연결되는 것",
+    "모세혈관계 시작부에서 조직으로 가는 혈류를 조절하는 민무늬근",
+    "근육이 수축하며 정맥을 짜내 혈액을 심장 쪽으로 보내는 기전",
+    "가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계"
+   ],
+   "answer": 2,
+   "explain": "뼈대근육 펌프: 근육이 수축하며 정맥을 짜내 혈액을 심장 쪽으로 보내는 기전.",
+   "detail": {
+    "why": "뼈대근육 펌프: 근육이 수축하며 정맥을 짜내 혈액을 심장 쪽으로 보내는 기전.",
+    "page_note": "21쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 21
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0250",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 흡기·호기 시 가슴과 배의 압력 변화로 정맥혈 귀환을 돕는 기전",
+   "options": [
+    "호흡펌프",
+    "알도스테론",
+    "문합(anastomosis)",
+    "정수압"
+   ],
+   "answer": 0,
+   "explain": "호흡펌프: 흡기·호기 시 가슴과 배의 압력 변화로 정맥혈 귀환을 돕는 기전.",
+   "detail": {
+    "why": "호흡펌프: 흡기·호기 시 가슴과 배의 압력 변화로 정맥혈 귀환을 돕는 기전.",
+    "page_note": "21쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 21
+   },
+   "origin": "claude",
+   "unit": "v2"
+  },
+  {
+   "id": "v-gen-0251",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'압력수용기'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "숨뇌에 있으며 혈관으로 신호를 보내는 신경세포 무리",
+    "대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기",
+    "강력한 혈관수축제이며 알도스테론 분비를 자극하는 물질",
+    "대동맥활과 목동맥팽대에서 혈압 변화를 감지하는 수용기"
+   ],
+   "answer": 3,
+   "explain": "압력수용기: 대동맥활과 목동맥팽대에서 혈압 변화를 감지하는 수용기.",
+   "detail": {
+    "why": "압력수용기: 대동맥활과 목동맥팽대에서 혈압 변화를 감지하는 수용기.",
+    "page_note": "26쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0252",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기",
+   "options": [
+    "화학수용기",
+    "혈관운동중추",
+    "알도스테론",
+    "압력수용기"
+   ],
+   "answer": 0,
+   "explain": "화학수용기: 대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기.",
+   "detail": {
+    "why": "화학수용기: 대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기.",
+    "page_note": "26쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0253",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'혈관운동중추'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "강력한 혈관수축제이며 알도스테론 분비를 자극하는 물질",
+    "숨뇌에 있으며 혈관으로 신호를 보내는 신경세포 무리",
+    "대동맥활과 목동맥팽대에서 혈압 변화를 감지하는 수용기",
+    "콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬"
+   ],
+   "answer": 1,
+   "explain": "혈관운동중추: 숨뇌에 있으며 혈관으로 신호를 보내는 신경세포 무리.",
+   "detail": {
+    "why": "혈관운동중추: 숨뇌에 있으며 혈관으로 신호를 보내는 신경세포 무리.",
+    "page_note": "26쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 26
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0254",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 강력한 혈관수축제이며 알도스테론 분비를 자극하는 물질",
+   "options": [
+    "혈관운동중추",
+    "압력수용기",
+    "화학수용기",
+    "안지오텐신 II"
+   ],
+   "answer": 3,
+   "explain": "안지오텐신 II: 강력한 혈관수축제이며 알도스테론 분비를 자극하는 물질.",
+   "detail": {
+    "why": "안지오텐신 II: 강력한 혈관수축제이며 알도스테론 분비를 자극하는 물질.",
+    "page_note": "30쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0255",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'알도스테론'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬",
+    "숨뇌에 있으며 혈관으로 신호를 보내는 신경세포 무리",
+    "대동맥토리와 목동맥토리에서 pH·O2·CO2 변화를 감지하는 수용기",
+    "대동맥활과 목동맥팽대에서 혈압 변화를 감지하는 수용기"
+   ],
+   "answer": 0,
+   "explain": "알도스테론: 콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬.",
+   "detail": {
+    "why": "알도스테론: 콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬.",
+    "page_note": "30쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 30
+   },
+   "origin": "claude",
+   "unit": "v3"
+  },
+  {
+   "id": "v-gen-0256",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 치밀이음부로 결합된 내피를 가져 누출이 가장 적은 모세혈관",
+   "options": [
+    "모세혈관바탕",
+    "창모세혈관",
+    "굴모세혈관",
+    "연속모세혈관"
+   ],
+   "answer": 3,
+   "explain": "연속모세혈관: 치밀이음부로 결합된 내피를 가져 누출이 가장 적은 모세혈관.",
+   "detail": {
+    "why": "연속모세혈관: 치밀이음부로 결합된 내피를 가져 누출이 가장 적은 모세혈관.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0257",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'창모세혈관'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "하나의 세동맥에서 시작되는 10~100개 혈관의 그물",
+    "내피에 창(여과구멍)이 있어 적당히 누출되는 모세혈관",
+    "내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관",
+    "치밀이음부로 결합된 내피를 가져 누출이 가장 적은 모세혈관"
+   ],
+   "answer": 1,
+   "explain": "창모세혈관: 내피에 창(여과구멍)이 있어 적당히 누출되는 모세혈관.",
+   "detail": {
+    "why": "창모세혈관: 내피에 창(여과구멍)이 있어 적당히 누출되는 모세혈관.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0258",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관",
+   "options": [
+    "굴모세혈관",
+    "창모세혈관",
+    "연속모세혈관",
+    "모세혈관바탕"
+   ],
+   "answer": 0,
+   "explain": "굴모세혈관: 내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관.",
+   "detail": {
+    "why": "굴모세혈관: 내피·바닥막이 불규칙하고 구멍이 매우 커 누출이 가장 많은 모세혈관.",
+    "page_note": "32쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 32
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0259",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'정수압'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "액체가 용기의 벽을 밀어내는 힘",
+    "동맥에서 낮아서 동맥 혈액량이 증가하면 혈압이 높아지게 되는 성질",
+    "내피(단층편평상피)로 이루어져 마찰·난류를 최소화하는 혈관벽 층",
+    "혈액의 진한 정도로 적혈구와 알부민 농도가 중요"
+   ],
+   "answer": 0,
+   "explain": "정수압: 액체가 용기의 벽을 밀어내는 힘.",
+   "detail": {
+    "why": "정수압: 액체가 용기의 벽을 밀어내는 힘.",
+    "page_note": "36쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 36
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0260",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 낮은 용질 농도에서 높은 용질 농도 쪽으로 용매가 이동하는 힘",
+   "options": [
+    "전도동맥",
+    "문맥계",
+    "속막(내막)",
+    "삼투압"
+   ],
+   "answer": 3,
+   "explain": "삼투압: 낮은 용질 농도에서 높은 용질 농도 쪽으로 용매가 이동하는 힘.",
+   "detail": {
+    "why": "삼투압: 낮은 용질 농도에서 높은 용질 농도 쪽으로 용매가 이동하는 힘.",
+    "page_note": "36쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 36
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0261",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'순여과압'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "콩팥에서 NaCl과 물의 재흡수를 증가시키는 호르몬",
+    "민무늬근·아교질·탄력조직으로 이루어진 대체로 가장 두꺼운 혈관벽 층",
+    "정수압과 교질삼투압의 차이로 모세혈관 체액 이동 방향을 결정하는 압력",
+    "단위시간당 흐르는 혈액의 양(mL/min)"
+   ],
+   "answer": 2,
+   "explain": "순여과압: 정수압과 교질삼투압의 차이로 모세혈관 체액 이동 방향을 결정하는 압력.",
+   "detail": {
+    "why": "순여과압: 정수압과 교질삼투압의 차이로 모세혈관 체액 이동 방향을 결정하는 압력.",
+    "page_note": "38쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 38
+   },
+   "origin": "claude",
+   "unit": "v4"
+  },
+  {
+   "id": "v-gen-0262",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 뇌 동맥압을 동일하게 유지하고 곁순환을 제공하는 동맥 연결",
+   "options": [
+    "모세혈관앞조임근",
+    "대뇌동맥고리(윌리스고리)",
+    "분배동맥",
+    "전도동맥"
+   ],
+   "answer": 1,
+   "explain": "대뇌동맥고리(윌리스고리): 뇌 동맥압을 동일하게 유지하고 곁순환을 제공하는 동맥 연결.",
+   "detail": {
+    "why": "대뇌동맥고리(윌리스고리): 뇌 동맥압을 동일하게 유지하고 곁순환을 제공하는 동맥 연결.",
+    "page_note": "42쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 42
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0263",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'경막정맥굴'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "지름 최대 10mm로 정맥판막이 있는 정맥",
+    "경막층 사이의 혈액으로 찬 정맥 통로",
+    "지름 최대 1mm로 백혈구가 빠져나가는 정맥",
+    "간문맥이 간 안에서 다시 모세혈관을 형성하는 순환"
+   ],
+   "answer": 1,
+   "explain": "경막정맥굴: 경막층 사이의 혈액으로 찬 정맥 통로.",
+   "detail": {
+    "why": "경막정맥굴: 경막층 사이의 혈액으로 찬 정맥 통로.",
+    "page_note": "53쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 53
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0264",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "다음 설명에 해당하는 것은? — 가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계",
+   "options": [
+    "간문맥계",
+    "경막정맥굴",
+    "세정맥",
+    "홀정맥계"
+   ],
+   "answer": 3,
+   "explain": "홀정맥계: 가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계.",
+   "detail": {
+    "why": "홀정맥계: 가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계.",
+    "page_note": "54쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 54
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0265",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "'간문맥계'에 대한 설명으로 옳은 것은?",
+   "options": [
+    "가슴벽과 가슴 내장의 혈액을 심장으로 돌려보내는 정맥계",
+    "경막층 사이의 혈액으로 찬 정맥 통로",
+    "지름 최대 1mm로 백혈구가 빠져나가는 정맥",
+    "간문맥이 간 안에서 다시 모세혈관을 형성하는 순환"
+   ],
+   "answer": 3,
+   "explain": "간문맥계: 간문맥이 간 안에서 다시 모세혈관을 형성하는 순환.",
+   "detail": {
+    "why": "간문맥계: 간문맥이 간 안에서 다시 모세혈관을 형성하는 순환.",
+    "page_note": "56쪽"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 56
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0266",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "지라정맥은 지라 부위를 배액한다.",
+   "answer": true,
+   "explain": "표 그대로: 지라정맥 → 지라.",
+   "detail": {
+    "why": "표 그대로: 지라정맥 → 지라.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0267",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "노쪽피부정맥은 다리, 발 부위를 배액한다.",
+   "answer": false,
+   "explain": "노쪽피부정맥은 팔의 얕은 구조물. '다리, 발'은 앞뒤정강정맥.",
+   "detail": {
+    "why": "노쪽피부정맥은 팔의 얕은 구조물. '다리, 발'은 앞뒤정강정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0268",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "속엉덩정맥은 지라와 소화기관에서 온 혈액을 가공함 부위를 배액한다.",
+   "answer": false,
+   "explain": "속엉덩정맥은 골반. '지라와 소화기관에서 온 혈액을 가공함'은 간문맥.",
+   "detail": {
+    "why": "속엉덩정맥은 골반. '지라와 소화기관에서 온 혈액을 가공함'은 간문맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0269",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "속목정맥은 다리의 얕은 구조물 부위를 배액한다.",
+   "answer": false,
+   "explain": "속목정맥은 뇌, 머리 표면, 목. '다리의 얕은 구조물'은 큰두렁정맥.",
+   "detail": {
+    "why": "속목정맥은 뇌, 머리 표면, 목. '다리의 얕은 구조물'은 큰두렁정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0270",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "척추동맥은 뇌에 혈액을 공급한다.",
+   "answer": true,
+   "explain": "표 그대로: 척추동맥 → 뇌.",
+   "detail": {
+    "why": "표 그대로: 척추동맥 → 뇌.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0271",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "넙다리정맥은 가로막 위쪽의 대부분 구조물 부위를 배액한다.",
+   "answer": false,
+   "explain": "넙다리정맥은 넙다리. '가로막 위쪽의 대부분 구조물'은 팔머리정맥.",
+   "detail": {
+    "why": "넙다리정맥은 넙다리. '가로막 위쪽의 대부분 구조물'은 팔머리정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0272",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "속목동맥은 나머지 큰창자에 혈액을 공급한다.",
+   "answer": false,
+   "explain": "속목동맥은 뇌, 눈확. '나머지 큰창자'는 아래창자간막동맥.",
+   "detail": {
+    "why": "속목동맥은 뇌, 눈확. '나머지 큰창자'는 아래창자간막동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0273",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "겨드랑정맥은 무릎관절, 다리, 넙다리 부위를 배액한다.",
+   "answer": false,
+   "explain": "겨드랑정맥은 팔, 겨드랑. '무릎관절, 다리, 넙다리'는 오금정맥.",
+   "detail": {
+    "why": "겨드랑정맥은 팔, 겨드랑. '무릎관절, 다리, 넙다리'는 오금정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0274",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "복강동맥은 뒷다리, 발바닥에 혈액을 공급한다.",
+   "answer": false,
+   "explain": "복강동맥은 배안의 조직. '뒷다리, 발바닥'은 뒤정강동맥.",
+   "detail": {
+    "why": "복강동맥은 배안의 조직. '뒷다리, 발바닥'은 뒤정강동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0275",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "속엉덩동맥은 앞다리, 발 앞쪽에 혈액을 공급한다.",
+   "answer": false,
+   "explain": "속엉덩동맥은 골반 조직. '앞다리, 발 앞쪽'은 앞정강동맥.",
+   "detail": {
+    "why": "속엉덩동맥은 골반 조직. '앞다리, 발 앞쪽'은 앞정강동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0276",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "왼위동맥은 발목관절, 발에 혈액을 공급한다.",
+   "answer": false,
+   "explain": "왼위동맥은 위. '발목관절, 발'은 발등동맥.",
+   "detail": {
+    "why": "왼위동맥은 위. '발목관절, 발'은 발등동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0277",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "콩팥동맥은 콩팥에 혈액을 공급한다.",
+   "answer": true,
+   "explain": "표 그대로: 콩팥동맥 → 콩팥.",
+   "detail": {
+    "why": "표 그대로: 콩팥동맥 → 콩팥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0278",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "간문맥은 지라와 소화기관에서 온 혈액을 가공함 부위를 배액한다.",
+   "answer": true,
+   "explain": "표 그대로: 간문맥 → 지라와 소화기관에서 온 혈액을 가공함.",
+   "detail": {
+    "why": "표 그대로: 간문맥 → 지라와 소화기관에서 온 혈액을 가공함.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0279",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "바깥엉덩동맥은 앞배벽에 혈액을 공급한다.",
+   "answer": true,
+   "explain": "표 그대로: 바깥엉덩동맥 → 앞배벽.",
+   "detail": {
+    "why": "표 그대로: 바깥엉덩동맥 → 앞배벽.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0280",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "발등동맥은 발목관절, 발에 혈액을 공급한다.",
+   "answer": true,
+   "explain": "표 그대로: 발등동맥 → 발목관절, 발.",
+   "detail": {
+    "why": "표 그대로: 발등동맥 → 발목관절, 발.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0281",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "온엉덩정맥은 작은창자, 큰창자의 많은 부분 부위를 배액한다.",
+   "answer": false,
+   "explain": "온엉덩정맥은 골반, 다리. '작은창자, 큰창자의 많은 부분'은 위창자간막정맥.",
+   "detail": {
+    "why": "온엉덩정맥은 골반, 다리. '작은창자, 큰창자의 많은 부분'은 위창자간막정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0282",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "위정맥은 다리, 발 부위를 배액한다.",
+   "answer": false,
+   "explain": "위정맥은 위. '다리, 발'은 앞뒤정강정맥.",
+   "detail": {
+    "why": "위정맥은 위. '다리, 발'은 앞뒤정강정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0283",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "콩팥정맥은 콩팥 부위를 배액한다.",
+   "answer": true,
+   "explain": "표 그대로: 콩팥정맥 → 콩팥.",
+   "detail": {
+    "why": "표 그대로: 콩팥정맥 → 콩팥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0284",
+   "topic": "vessel",
+   "type": "ox",
+   "q": "뒤정강동맥은 아래팔과 손에 혈액을 공급한다.",
+   "answer": false,
+   "explain": "뒤정강동맥은 뒷다리, 발바닥. '아래팔과 손'은 노동맥.",
+   "detail": {
+    "why": "뒤정강동맥은 뒷다리, 발바닥. '아래팔과 손'은 노동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0285",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 복강동맥의 위치로 옳은 것은?",
+   "options": [
+    "다리오금",
+    "배안, 가로막 바로 아래",
+    "가쪽목",
+    "앞쪽 골반"
+   ],
+   "answer": 1,
+   "explain": "복강동맥의 위치: 배안, 가로막 바로 아래.",
+   "detail": {
+    "why": "복강동맥의 위치: 배안, 가로막 바로 아래.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0286",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 노동맥의 위치로 옳은 것은?",
+   "options": [
+    "안쪽 아래팔",
+    "바깥쪽 아래팔",
+    "배안, 가로막 바로 아래",
+    "가슴세로칸과 뒤배벽"
+   ],
+   "answer": 1,
+   "explain": "노동맥의 위치: 바깥쪽 아래팔.",
+   "detail": {
+    "why": "노동맥의 위치: 바깥쪽 아래팔.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0287",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '위'에 혈액을 공급하는 동맥은?",
+   "options": [
+    "온엉덩동맥",
+    "콩팥동맥",
+    "왼위동맥",
+    "온간동맥"
+   ],
+   "answer": 2,
+   "explain": "'위' → 왼위동맥.",
+   "detail": {
+    "why": "'위' → 왼위동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0288",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 온간동맥의 위치로 옳은 것은?",
+   "options": [
+    "복강동맥 오른편",
+    "가쪽목",
+    "안쪽 아래팔",
+    "앞쪽 골반"
+   ],
+   "answer": 0,
+   "explain": "온간동맥의 위치: 복강동맥 오른편.",
+   "detail": {
+    "why": "온간동맥의 위치: 복강동맥 오른편.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0289",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '골반, 다리'를 배액하는 정맥은?",
+   "options": [
+    "바깥목정맥",
+    "위팔정맥",
+    "위창자간막정맥",
+    "온엉덩정맥"
+   ],
+   "answer": 3,
+   "explain": "'골반, 다리' → 온엉덩정맥.",
+   "detail": {
+    "why": "'골반, 다리' → 온엉덩정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0290",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 지라정맥의 위치로 옳은 것은?",
+   "options": [
+    "얕은 목",
+    "안쪽팔",
+    "위 뒤쪽",
+    "뒤 가슴벽의 오른쪽"
+   ],
+   "answer": 2,
+   "explain": "지라정맥의 위치: 위 뒤쪽.",
+   "detail": {
+    "why": "지라정맥의 위치: 위 뒤쪽.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0291",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 속엉덩동맥이 혈액을 공급하는 조직으로 옳은 것은?",
+   "options": [
+    "넙다리",
+    "상반신 오른쪽",
+    "골반 조직",
+    "골반과 다리 조직"
+   ],
+   "answer": 2,
+   "explain": "속엉덩동맥: 골반 조직.",
+   "detail": {
+    "why": "속엉덩동맥: 골반 조직.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0292",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 뒤정강동맥의 위치로 옳은 것은?",
+   "options": [
+    "깊은 목, 목동맥관을 통해서 뇌를 거쳐 지나감",
+    "내측복사 주위 표면에 보이는 뒷다리",
+    "가쪽목",
+    "가지들이 작은창자와 큰창자 주변에 펼쳐져 있음"
+   ],
+   "answer": 1,
+   "explain": "뒤정강동맥의 위치: 내측복사 주위 표면에 보이는 뒷다리.",
+   "detail": {
+    "why": "뒤정강동맥의 위치: 내측복사 주위 표면에 보이는 뒷다리.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0293",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '노정맥과 자정맥이 합쳐져서 형성됨'에 해당하는 정맥은?",
+   "options": [
+    "홀정맥",
+    "위팔정맥",
+    "경막동",
+    "팔머리정맥"
+   ],
+   "answer": 1,
+   "explain": "위팔정맥: 노정맥과 자정맥이 합쳐져서 형성됨.",
+   "detail": {
+    "why": "위팔정맥: 노정맥과 자정맥이 합쳐져서 형성됨.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0294",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 앞뒤정강정맥의 위치로 옳은 것은?",
+   "options": [
+    "뒤쪽 골반",
+    "얕은 목",
+    "안쪽팔",
+    "앞뒤다리"
+   ],
+   "answer": 3,
+   "explain": "앞뒤정강정맥의 위치: 앞뒤다리.",
+   "detail": {
+    "why": "앞뒤정강정맥의 위치: 앞뒤다리.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0295",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 콩팥동맥이 혈액을 공급하는 조직으로 옳은 것은?",
+   "options": [
+    "무릎관절, 뒷다리, 뒷넙다리",
+    "지라, 위, 이자",
+    "콩팥",
+    "배안의 조직"
+   ],
+   "answer": 2,
+   "explain": "콩팥동맥: 콩팥.",
+   "detail": {
+    "why": "콩팥동맥: 콩팥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0296",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 자동맥이 혈액을 공급하는 조직으로 옳은 것은?",
+   "options": [
+    "뒷다리, 발바닥",
+    "나머지 큰창자",
+    "아래팔과 손",
+    "작은창자의 대부분, 큰창자의 일부"
+   ],
+   "answer": 2,
+   "explain": "자동맥: 아래팔과 손.",
+   "detail": {
+    "why": "자동맥: 아래팔과 손.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0297",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 앞정강동맥이 혈액을 공급하는 조직으로 옳은 것은?",
+   "options": [
+    "앞다리, 발 앞쪽",
+    "아래팔과 손",
+    "골반 조직",
+    "뇌"
+   ],
+   "answer": 0,
+   "explain": "앞정강동맥: 앞다리, 발 앞쪽.",
+   "detail": {
+    "why": "앞정강동맥: 앞다리, 발 앞쪽.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0298",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 위팔정맥이 배액하는 조직으로 옳은 것은?",
+   "options": [
+    "팔의 얕은 구조물",
+    "팔",
+    "오른 뒤 가슴과 배벽, 식도, 허파",
+    "팔, 겨드랑"
+   ],
+   "answer": 1,
+   "explain": "위팔정맥: 팔.",
+   "detail": {
+    "why": "위팔정맥: 팔.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0299",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '다리의 얕은 정맥'에 해당하는 정맥은?",
+   "options": [
+    "큰두렁정맥",
+    "척추정맥",
+    "오금정맥",
+    "바깥엉덩정맥"
+   ],
+   "answer": 0,
+   "explain": "큰두렁정맥: 다리의 얕은 정맥.",
+   "detail": {
+    "why": "큰두렁정맥: 다리의 얕은 정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0300",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '발목관절, 발'에 혈액을 공급하는 동맥은?",
+   "options": [
+    "온간동맥",
+    "온엉덩동맥",
+    "척추동맥",
+    "발등동맥"
+   ],
+   "answer": 3,
+   "explain": "'발목관절, 발' → 발등동맥.",
+   "detail": {
+    "why": "'발목관절, 발' → 발등동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0301",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 노정맥과 자정맥이 배액하는 조직으로 옳은 것은?",
+   "options": [
+    "큰창자 나머지 부분",
+    "다리의 얕은 구조물",
+    "아래팔",
+    "콩팥"
+   ],
+   "answer": 2,
+   "explain": "노정맥과 자정맥: 아래팔.",
+   "detail": {
+    "why": "노정맥과 자정맥: 아래팔.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0302",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 뒤정강동맥이 혈액을 공급하는 조직으로 옳은 것은?",
+   "options": [
+    "배안의 조직",
+    "콩팥",
+    "무릎관절, 뒷다리, 뒷넙다리",
+    "뒷다리, 발바닥"
+   ],
+   "answer": 3,
+   "explain": "뒤정강동맥: 뒷다리, 발바닥.",
+   "detail": {
+    "why": "뒤정강동맥: 뒷다리, 발바닥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0303",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '나머지 큰창자'에 혈액을 공급하는 동맥은?",
+   "options": [
+    "아래창자간막동맥",
+    "빗장밑동맥",
+    "앞정강동맥",
+    "넙다리동맥"
+   ],
+   "answer": 0,
+   "explain": "'나머지 큰창자' → 아래창자간막동맥.",
+   "detail": {
+    "why": "'나머지 큰창자' → 아래창자간막동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0304",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '온엉덩정맥 형성을 위해 속엉덩정맥과 합침'에 해당하는 정맥은?",
+   "options": [
+    "콩팥정맥",
+    "바깥엉덩정맥",
+    "홀정맥",
+    "팔머리정맥"
+   ],
+   "answer": 1,
+   "explain": "바깥엉덩정맥: 온엉덩정맥 형성을 위해 속엉덩정맥과 합침.",
+   "detail": {
+    "why": "바깥엉덩정맥: 온엉덩정맥 형성을 위해 속엉덩정맥과 합침.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0305",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '복강동맥에서 나와 오른위동맥, 위샘창자동맥, 고유간동맥으로 나누어짐'에 해당하는 동맥은?",
+   "options": [
+    "콩팥동맥",
+    "온엉덩동맥",
+    "온간동맥",
+    "복강동맥"
+   ],
+   "answer": 2,
+   "explain": "온간동맥: 복강동맥에서 나와 오른위동맥, 위샘창자동맥, 고유간동맥으로 나누어짐.",
+   "detail": {
+    "why": "온간동맥: 복강동맥에서 나와 오른위동맥, 위샘창자동맥, 고유간동맥으로 나누어짐.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0306",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 팔머리정맥이 배액하는 조직으로 옳은 것은?",
+   "options": [
+    "뒤쪽 목",
+    "지라",
+    "가로막 위쪽의 대부분 구조물",
+    "팔, 겨드랑"
+   ],
+   "answer": 2,
+   "explain": "팔머리정맥: 가로막 위쪽의 대부분 구조물.",
+   "detail": {
+    "why": "팔머리정맥: 가로막 위쪽의 대부분 구조물.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0307",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '골반과 다리 조직'에 혈액을 공급하는 동맥은?",
+   "options": [
+    "바깥엉덩동맥",
+    "척추동맥",
+    "복강동맥",
+    "온엉덩동맥"
+   ],
+   "answer": 3,
+   "explain": "'골반과 다리 조직' → 온엉덩동맥.",
+   "detail": {
+    "why": "'골반과 다리 조직' → 온엉덩동맥.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 49
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0308",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '다리, 발'을 배액하는 정맥은?",
+   "options": [
+    "팔머리정맥",
+    "앞뒤정강정맥",
+    "노정맥과 자정맥",
+    "큰두렁정맥"
+   ],
+   "answer": 1,
+   "explain": "'다리, 발' → 앞뒤정강정맥.",
+   "detail": {
+    "why": "'다리, 발' → 앞뒤정강정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 60
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0309",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 속엉덩정맥의 위치로 옳은 것은?",
+   "options": [
+    "뒤쪽 간",
+    "뒤쪽 골반",
+    "다리오금",
+    "위 주변"
+   ],
+   "answer": 1,
+   "explain": "속엉덩정맥의 위치: 뒤쪽 골반.",
+   "detail": {
+    "why": "속엉덩정맥의 위치: 뒤쪽 골반.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0310",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '가로막 위쪽의 대부분 구조물'을 배액하는 정맥은?",
+   "options": [
+    "위창자간막정맥",
+    "위정맥",
+    "팔머리정맥",
+    "속엉덩정맥"
+   ],
+   "answer": 2,
+   "explain": "'가로막 위쪽의 대부분 구조물' → 팔머리정맥.",
+   "detail": {
+    "why": "'가로막 위쪽의 대부분 구조물' → 팔머리정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0311",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 속목동맥의 위치로 옳은 것은?",
+   "options": [
+    "뒤쪽 골반",
+    "안쪽 아래팔",
+    "겨드랑",
+    "깊은 목, 목동맥관을 통해서 뇌를 거쳐 지나감"
+   ],
+   "answer": 3,
+   "explain": "속목동맥의 위치: 깊은 목, 목동맥관을 통해서 뇌를 거쳐 지나감.",
+   "detail": {
+    "why": "속목동맥의 위치: 깊은 목, 목동맥관을 통해서 뇌를 거쳐 지나감.",
+    "page_note": "48~49쪽 표 18.4 주요 온몸동맥 (교수님 필기: 시험에 나옴)"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 48
+   },
+   "origin": "claude",
+   "unit": "v5"
+  },
+  {
+   "id": "v-gen-0312",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 '다리'를 배액하는 정맥은?",
+   "options": [
+    "바깥엉덩정맥",
+    "척추정맥",
+    "오금정맥",
+    "온엉덩정맥"
+   ],
+   "answer": 0,
+   "explain": "'다리' → 바깥엉덩정맥.",
+   "detail": {
+    "why": "'다리' → 바깥엉덩정맥.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
+  },
+  {
+   "id": "v-gen-0313",
+   "topic": "vessel",
+   "type": "mc",
+   "q": "표에서 속엉덩정맥이 배액하는 조직으로 옳은 것은?",
+   "options": [
+    "작은창자, 큰창자의 많은 부분",
+    "다리의 얕은 구조물",
+    "골반",
+    "다리, 발"
+   ],
+   "answer": 2,
+   "explain": "속엉덩정맥: 골반.",
+   "detail": {
+    "why": "속엉덩정맥: 골반.",
+    "page_note": "59~60쪽 표 18.5 주요 온몸정맥"
+   },
+   "source": {
+    "doc": "vessel",
+    "page": 59
+   },
+   "origin": "claude",
+   "unit": "v6"
   }
  ]
 }

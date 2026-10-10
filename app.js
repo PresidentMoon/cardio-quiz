@@ -83,8 +83,11 @@ function renderHome(){
   $('#albumbtn').textContent = `${(save.album||[]).filter(m=>ALL_MEDIA.includes(m)).length} / ${ALL_MEDIA.length}`;
   $('#wrongcount').textContent = `틀린 문제 ${wrongIds().length}개`;
   const c = t => BANK.filter(q=>q.type===t).length;
-  $('#bankinfo').textContent = BANK.length ? `문제은행 ${BANK.length}문제 (객관식 ${c('mc')} · OX ${c('ox')} · 단답 ${c('short')} · 서술 ${c('card')})` : '';
+  const fresh = BANK.filter(q=>!save.stats[q.id]).length;
+  $('#bankinfo').textContent = BANK.length ? `문제은행 ${BANK.length}문제 (객관식 ${c('mc')} · OX ${c('ox')} · 단답 ${c('short')} · 서술 ${c('card')}) · 아직 안 본 문제 ${fresh}개` : '';
   renderUnits();
+  renderGame();
+  $('#wrongtotal').textContent = `${wrongIds().length}개`;
   const ex = (save.exams||[])[0];
   $('#examlast').textContent = ex ? `최근 ${ex.score}/${ex.n} (${Math.round(ex.score/ex.n*100)}%)` : '아직 응시 기록 없음';
   pdfStatus();
@@ -109,25 +112,68 @@ function renderUnits(){
 function wrongIds(){ return Object.entries(save.stats).filter(([id,s])=>s.wrong>0 && s.lastWrong && BANK.some(q=>q.id===id)).map(([id])=>id); }
 
 /* ---------- 문제 고르기: 안 본 문제·틀린 문제 우선 ---------- */
-function weight(q){
-  const s = save.stats[q.id];
-  if (!s) return 3;
-  if (s.lastWrong) return 4;
-  return 1 / (1 + s.right);
+/* 같은 문제 반복 줄이기:
+   - 최근에 본 문제(최근 RECENT문제 안)는 웬만하면 다시 안 냄
+   - 안 푼 문제를 가장 먼저, 틀린 문제는 조금 뒤에 다시(복습), 맞힌 문제는 맞힌 횟수만큼 점점 늦게 다시 냄 */
+const RECENT = 120;
+function bump(id, ok){
+  save.seq = (save.seq||0) + 1;
+  const s = save.stats[id] || (save.stats[id] = {right:0, wrong:0, lastWrong:false});
+  if (ok){ s.right++; s.lastWrong=false; } else { s.wrong++; s.lastWrong=true; }
+  s.at = save.seq;
 }
+function since(q){ const s = save.stats[q.id]; return s && s.at ? (save.seq||0) - s.at : Infinity; }
 function pick(pool, n){
-  const arr = pool.map(q=>({q, k: Math.random() ** (1/weight(q))})).sort((a,b)=>b.k-a.k).map(x=>x.q);
-  return n ? arr.slice(0,n) : arr;
+  const sh = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+  const st = q => save.stats[q.id];
+  const unseen = sh(pool.filter(q=>!st(q)));
+  const wrongDue = sh(pool.filter(q=>st(q) && st(q).lastWrong && since(q) >= 8));
+  const rightDue = pool.filter(q=>st(q) && !st(q).lastWrong && since(q) >= Math.min(RECENT, 40 * 2 ** (st(q).right-1)))
+                       .sort((a,b)=>since(b)-since(a));
+  const rest = pool.filter(q=>!unseen.includes(q) && !wrongDue.includes(q) && !rightDue.includes(q)).sort((a,b)=>since(b)-since(a));
+  if (!n){ return [...wrongDue, ...unseen, ...rightDue, ...rest]; }
+  // 우선순위: 틀린 문제 복습(3) > 안 본 문제(2) > 오래전에 맞힌 문제(1) > 나머지(0)
+  const pr = new Map();
+  rest.forEach(q=>pr.set(q,0)); rightDue.forEach(q=>pr.set(q,1)); unseen.forEach(q=>pr.set(q,2)); wrongDue.forEach(q=>pr.set(q,3));
+  // 비슷한 유형끼리 묶기: 안 본 문제가 많은 단원을 골라 그 단원에서 연달아 출제
+  const unitsIn = [...new Set(pool.map(q=>q.unit))];
+  const score = u => pool.filter(q=>q.unit===u).reduce((a,q)=>a + (pr.get(q)>=2 ? 2 : pr.get(q)), 0) + Math.random()*3;
+  const order = unitsIn.map(u=>[u, score(u)]).sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
+  const per = unitsIn.length===1 ? n : Math.ceil(n/2);
+  const out = []; let wrongTaken = 0;
+  for (const u of order){
+    if (out.length>=n) break;
+    const inU = pool.filter(q=>q.unit===u).sort((a,b)=> (pr.get(b)-pr.get(a)) || (since(b)-since(a)) || (Math.random()-0.5));
+    let k = 0;
+    for (const q of inU){
+      if (out.length>=n || k>=per) break;
+      if (pr.get(q)===3){ if (wrongTaken >= Math.ceil(n*0.4)) continue; wrongTaken++; }
+      out.push(q); k++;
+    }
+  }
+  // 같은 단원 안에서는 쪽 순서대로 → 비슷한 내용이 이어서 나옴
+  const uo = new Map(order.map((u,i)=>[u,i]));
+  return out.sort((a,b)=> (uo.get(a.unit)-uo.get(b.unit)) || ((a.source||{}).page - (b.source||{}).page));
+}
+/* 객관식 보기 순서 섞기 (해설이 보기 번호를 직접 말하는 문제는 그대로 둠) */
+function withShuffledOptions(q){
+  if (q.type!=='mc') return q;
+  const txt = JSON.stringify([q.explain||'', q.detail||{}]);
+  if (/[1-4]번|①|②|③|④/.test(txt)) return q;
+  const order = q.options.map((_,i)=>i);
+  for (let i=order.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [order[i],order[j]]=[order[j],order[i]]; }
+  return Object.assign({}, q, {options: order.map(i=>q.options[i]), answer: order.indexOf(q.answer)});
 }
 function startMode(mode){
   let pool = BANK.filter(q=>q.type!=='card'), n = 10, lives = null, timer = null;
   if (mode==='heart' || mode==='vessel') pool = pool.filter(q=>q.topic===mode);
   if (mode.startsWith('unit:')){ const u = mode.slice(5); pool = pool.filter(q=>q.unit===u); }
+  if (mode.startsWith('wrongunit:')){ const u = mode.slice(10); pool = BANK.filter(q=>q.unit===u && (save.stats[q.id]||{}).lastWrong); n = 0; if(!pool.length){ alert('이 단원에 틀려 있는 문제가 없어요.'); return; } }
   if (mode==='time'){ pool = pool.filter(q=>q.type==='mc'||q.type==='ox'); n = 0; timer = 60; }
   if (mode==='survive'){ n = 0; lives = 3; }
   if (mode==='wrong'){ const w = new Set(wrongIds()); pool = BANK.filter(q=>w.has(q.id)); n = 0; if(!pool.length){ alert('아직 틀린 문제가 없어요. 문제를 먼저 풀어보세요.'); return; } }
   if (mode==='cards'){ pool = BANK.filter(q=>q.type==='card'); n = 0; }
-  const queue = mode==='wrong' || mode==='cards' ? pick(pool).slice(0,20) : pick(pool, n||undefined);
+  const queue = mode==='wrong' || mode==='cards' || mode.startsWith('wrongunit:') ? pick(pool).slice(0,20).sort((a,b)=>(a.unit>b.unit)-(a.unit<b.unit) || a.source.page-b.source.page) : pick(pool, n||undefined);
   run = {mode, queue, i:0, score:0, answered:0, combo:0, best:0, xp:0, lives, timer, wrong:[], ended:false};
   show('play');
   if (timer){ run.tick = setInterval(()=>{ if ($('#pop').classList.contains('open') || $('#viewer').classList.contains('open')) return; run.timer--; hud(); if (run.timer<=0) endRun(); }, 1000); }
@@ -146,7 +192,7 @@ function nextQ(){
   if (run.i >= run.queue.length){
     if (run.timer!=null || run.lives!=null){ run.queue.push(...pick(run.queue.slice())); } else return endRun();
   }
-  current = run.queue[run.i];
+  current = withShuffledOptions(run.queue[run.i]);
   hud();
   $('#feedback').classList.remove('show');
   const card = $('#qcard');
@@ -212,7 +258,7 @@ function answerShort(v){
 
 function finish(ok, head, gaveUp){
   const s = save.stats[current.id] || (save.stats[current.id] = {right:0, wrong:0, lastWrong:false});
-  if (ok){ s.right++; s.lastWrong=false; } else { s.wrong++; s.lastWrong=true; }
+  bump(current.id, ok);
   touchDay(); save.today++;
   run.answered++;
   run.wrongStreak = ok ? 0 : (run.wrongStreak||0) + 1;
@@ -220,7 +266,8 @@ function finish(ok, head, gaveUp){
     run.score++; run.combo++; run.best=Math.max(run.best,run.combo);
     const gain = 10 + Math.min(run.combo-1, 5)*2; run.xp += gain;
     const before = level(save.xp); save.xp += gain;
-    if (level(save.xp) > before) run.levelUp = level(save.xp);
+    if (level(save.xp) > before){ run.levelUp = level(save.xp); run.levelFrom = before; }
+    eggTick(1);
     if (run.combo>=2){ const c=$('#combo'); c.textContent=`${run.combo}연속 정답 · +${gain}XP`; c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); }
     else $('#combo').textContent = `+${gain}XP`;
     buzz(30);
@@ -251,6 +298,7 @@ function finish(ok, head, gaveUp){
   hud();
   if (run.lives===0){ $('#next').textContent='결과 보기'; } else $('#next').textContent='다음';
   maybePhoto(ok, gaveUp);
+  checkAch({best: run.best});
   setTimeout(()=>$('#feedback').scrollIntoView({behavior:'smooth', block:'nearest'}), 60);
   if (!ok && gaveUp && p) openViewer(current);   // 모르겠으면 자료부터 바로 보여주기
 }
@@ -259,8 +307,8 @@ function pickMedia(list){
   const m = pickOne(pool); run.lastMedia = m; return m;
 }
 function maybePhoto(ok, gaveUp){
-  if (run.levelUp){ const lv = run.levelUp; run.levelUp = null; run.lastPhoto = run.answered;
-    setTimeout(()=>showMedia(MEDIA.levelup, `레벨 ${lv} 달성!`, '레벨업 보상 영상 도착 · 추억 앨범에도 저장됐어', '계속 달리기'), 650); return; }
+  if (run.levelUp){ const lv = run.levelUp, from = run.levelFrom; run.levelUp = null; run.lastPhoto = run.answered;
+    setTimeout(()=>{ if (!evoCheck(from)) showMedia(MEDIA.levelup, `레벨 ${lv} 달성!`, '레벨업 보상 영상 도착 · 추억 앨범에도 저장됐어', '계속 달리기', 'legend'); }, 650); return; }
   const since = run.answered - (run.lastPhoto ?? -99);
   if (since < CHEER.gap) return;
   let kind = null;
@@ -293,14 +341,17 @@ function putMedia(box, src){
 }
 function stopMedia(box){ box.querySelectorAll('video').forEach(v=>v.pause()); }
 function collect(src){ save.album = save.album || []; if (!save.album.includes(src)){ save.album.push(src); persist(); } }
-function showMedia(src, msg, sub, btn){
+const POPQ = [];
+function showMedia(src, msg, sub, btn, rarity){
+  if ($('#pop').classList.contains('open')){ POPQ.push([src,msg,sub,btn,rarity]); return; }
   putMedia($('#popmedia'), src);
   $('#popmsg').textContent = msg; $('#popsub').textContent = sub;
   $('#popclose').textContent = btn || '계속하기';
+  const bd = $('#popbadge'); bd.className = 'badge ' + (rarity||''); bd.textContent = rarity ? RARITY_NAME[rarity] : '';
   $('#pop').classList.add('open');
   buzz([30,60,30]);
 }
-function closePop(){ stopMedia($('#popmedia')); $('#pop').classList.remove('open'); }
+function closePop(){ stopMedia($('#popmedia')); $('#pop').classList.remove('open'); if (POPQ.length) setTimeout(()=>showMedia(...POPQ.shift()), 250); }
 const DETAIL_LABEL = [['concept','핵심 개념'],['why','왜 이게 정답일까'],['wrong','헷갈리는 포인트'],['page_note','강의자료 이 쪽에서 볼 것'],['tip','외우는 팁']];
 function detailNode(q){
   const d = q.detail; if (!d) return null;
@@ -322,6 +373,7 @@ function endRun(){
   const src = kind==='best' ? MEDIA.best : kind==='worst' ? MEDIA.worst : pickMedia(MEDIA[kind]);
   putMedia($('#rmedia'), src);
   $('#rcap').textContent = !run.answered ? '다음엔 같이 풀어보자' : pickOne(caps);
+  checkAch({best: run.best, perfect: run.queue.length===10 && run.answered===10 && run.score===10, mode: run.mode, score: run.score});
   $('#rscore').textContent = run.score;
   $('#rtotal').textContent = ` / ${run.answered}`;
   $('#rxp').textContent = `+${run.xp} XP · 최고 ${run.best}연속 정답`;
@@ -554,10 +606,11 @@ function gradeExam(){
   EX.items.forEach(x=>{
     x.ok = isRight(x); if (x.ok) score++;
     const s = save.stats[x.q.id] || (save.stats[x.q.id] = {right:0, wrong:0, lastWrong:false});
-    if (x.ok){ s.right++; s.lastWrong=false; } else { s.wrong++; s.lastWrong=true; }
+    bump(x.q.id, x.ok);
     save.today++;
   });
-  const gain = score*10; save.xp += gain;
+  const gain = score*10; const lvBefore = level(save.xp); save.xp += gain;
+  eggTick(score);
   save.exams = [{date: new Date().toLocaleDateString('ko-KR',{month:'numeric',day:'numeric'}), n: EX.items.length, score, range: exOpt.range}, ...(save.exams||[])].slice(0,20);
   persist();
   show('examresult');
@@ -576,6 +629,7 @@ function gradeExam(){
     r.appendChild(el('b',null,`${ok}/${xs.length}`)); ub.appendChild(r);
   });
   EX.wrongOnly = false; $('#erfilter').textContent = '틀린 것만 보기';
+  evoCheck(lvBefore); checkAch({});
   renderReview();
 }
 function ansText(x, v){
@@ -618,6 +672,208 @@ $('#exquit').onclick = ()=>{ if (confirm('실전 테스트를 그만둘까요? �
 $('#erfilter').onclick = ()=>{ EX.wrongOnly = !EX.wrongOnly; $('#erfilter').textContent = EX.wrongOnly ? '전체 보기' : '틀린 것만 보기'; renderReview(); };
 $('#erhome').onclick = ()=>{ stopMedia($('#ermedia')); show('home'); renderHome(); };
 $('#eragain').onclick = ()=>{ stopMedia($('#ermedia')); openExamSetup(); };
+
+/* =========================================================
+   게임 요소: 알 깨기 · 성호 진화 · 업적
+   ========================================================= */
+const EGG_N = 25;   // 정답 25개마다 알 하나 부화
+const EVOLVE = [    // 레벨에 따라 성호가 진화 (사진·이름은 자유롭게 바꿔도 돼요)
+  {lv:1,  name:'성호 알',      img:null},
+  {lv:2,  name:'아기 성호',     img:'bad1.jpg'},
+  {lv:3,  name:'째려보는 성호', img:'bad4.jpg'},
+  {lv:5,  name:'고양이 성호',   img:'good7.jpg'},
+  {lv:7,  name:'금발 성호',     img:'good8.jpg'},
+  {lv:9,  name:'훈남 성호',     img:'good3.jpg'},
+  {lv:12, name:'전설의 성호',   img:'good10.jpg'}
+];
+const RARITY = { legend:[MEDIA.best, MEDIA.worst], rare: MEDIA.good, common: [...MEDIA.normal, ...MEDIA.bad] };
+const RARITY_NAME = { legend:'전설', rare:'레어', common:'일반' };
+function rarityOf(src){ return RARITY.legend.includes(src) ? 'legend' : RARITY.rare.includes(src) ? 'rare' : 'common'; }
+function G(){ return save.game || (save.game = {egg:0, hatched:0, ach:{}, evo:0, dup:0}); }
+function stageFor(lv){ let k=0; EVOLVE.forEach((e,i)=>{ if (lv>=e.lv) k=i; }); return k; }
+
+const EGG_SVG = crack => `<svg viewBox="0 0 100 120" class="eggsvg" aria-hidden="true">
+  <ellipse cx="50" cy="66" rx="38" ry="48" fill="#FFF6E6" stroke="#E2C58F" stroke-width="3"/>
+  <circle cx="34" cy="52" r="6" fill="#F4D9A8"/><circle cx="62" cy="80" r="8" fill="#F4D9A8"/><circle cx="66" cy="44" r="4" fill="#F4D9A8"/>
+  ${crack>=1?'<path d="M30 40 l8 8 l-6 6 l9 7" fill="none" stroke="#8A6A3A" stroke-width="2.5"/>':''}
+  ${crack>=2?'<path d="M70 58 l-7 6 l6 7 l-8 6" fill="none" stroke="#8A6A3A" stroke-width="2.5"/>':''}
+  ${crack>=3?'<path d="M44 96 l6 -8 l6 7 l6 -9" fill="none" stroke="#8A6A3A" stroke-width="2.5"/>':''}
+  ${crack>=4?'<path d="M14 66 l14 -4 l10 6 l12 -6 l12 6 l12 -5 l12 3" fill="none" stroke="#8A6A3A" stroke-width="3"/>':''}
+</svg>`;
+
+/* 정답 하나마다 알이 조금씩 깨짐 */
+function eggTick(nCorrect){
+  const g = G(); g.egg += nCorrect;
+  while (g.egg >= EGG_N){ g.egg -= EGG_N; queueHatch(); }
+  persist();
+}
+function queueHatch(){
+  const g = G(); g.hatched++;
+  const r = Math.random();
+  const tier = r < 0.08 ? 'legend' : r < 0.45 ? 'rare' : 'common';
+  const have = new Set(save.album||[]);
+  const fresh = RARITY[tier].filter(m=>!have.has(m));
+  const src = (fresh.length && Math.random() < 0.75) ? pickOne(fresh) : pickOne(RARITY[tier]);
+  const dup = have.has(src);
+  if (dup){ save.xp += 30; g.dup = (g.dup||0)+1; }
+  if (tier==='legend') g.legend = true;
+  showMedia(src, `알이 깨졌다! ${RARITY_NAME[tier]} 성호 등장`, dup ? '이미 있는 카드라 +30XP로 바꿔줬어' : '추억 앨범에 새 카드가 들어갔어', '좋아!', tier);
+  persist();
+}
+function evoCheck(beforeLv){
+  const now = level(save.xp), a = stageFor(beforeLv), b = stageFor(now);
+  if (b > a){
+    G().evo = b;
+    const e = EVOLVE[b];
+    if (e.img) showMedia(e.img, `성호가 진화했다!`, `${EVOLVE[a].name} → ${e.name} (Lv ${now})`, '멋지다!', 'rare');
+    return true;
+  }
+  return false;
+}
+
+/* ---------- 업적 ---------- */
+const ACH = [
+  ['first','🌱','첫 걸음','첫 문제 풀기'],
+  ['s50','📗','50문제 돌파','문제 50개 풀기'],
+  ['s150','📘','150문제 돌파','문제 150개 풀기'],
+  ['s300','📙','300문제 돌파','문제 300개 풀기'],
+  ['all','🏆','문제은행 정복','모든 문제를 한 번 이상 보기'],
+  ['c5','🔥','5연속 정답','한 판에서 5개 연속 정답'],
+  ['c10','💥','10연속 정답','한 판에서 10개 연속 정답'],
+  ['c20','⚡','20연속 정답','한 판에서 20개 연속 정답'],
+  ['perfect','💯','퍼펙트','10문제 판을 전부 맞히기'],
+  ['ex1','📝','첫 실전','실전 테스트 처음 응시'],
+  ['ex80','🎯','실전 80점','실전 테스트 80% 이상'],
+  ['ex100','👑','실전 만점','실전 테스트 100%'],
+  ['ex5','🧠','실전 5회','실전 테스트 5번 응시'],
+  ['units','🗺️','전 단원 탐험','12개 단원 모두 한 문제 이상 풀기'],
+  ['master','🎓','단원 마스터','한 단원의 문제를 전부 한 번 이상 맞히기'],
+  ['fix10','🩹','오답 10개 정복','틀렸던 문제 10개를 다시 맞히기'],
+  ['fix50','🩺','오답 50개 정복','틀렸던 문제 50개를 다시 맞히기'],
+  ['d3','📅','3일 연속','3일 연속 공부'],
+  ['d7','🗓️','7일 연속','7일 연속 공부'],
+  ['night','🌙','올빼미','밤 12시~새벽 4시에 공부'],
+  ['morning','🌅','아침형 인간','새벽 5시~8시에 공부'],
+  ['egg1','🥚','첫 부화','알을 처음 깨기'],
+  ['egg5','🐣','알 부화 장인','알 5개 깨기'],
+  ['legend','🌟','전설 획득','알에서 전설 카드 뽑기'],
+  ['alb10','🖼️','수집가','추억 앨범 10장 모으기'],
+  ['alball','💖','완벽한 앨범','추억 앨범 전부 모으기'],
+  ['lv5','⭐','레벨 5','레벨 5 달성'],
+  ['lv10','🌠','레벨 10','레벨 10 달성'],
+  ['evo','🦋','진화','성호를 한 번 진화시키기'],
+  ['evomax','🐉','최종 진화','전설의 성호까지 진화'],
+  ['time15','⏱️','번개 손','60초 타임어택에서 15개 이상 맞히기'],
+  ['heart15','❤️','하트 지킴이','하트 챌린지에서 15개 이상 맞히기']
+];
+function checkAch(ctx={}){
+  const g = G(), got = [];
+  const seen = BANK.filter(q=>q.type!=='card' && save.stats[q.id]);
+  const total = Object.values(save.stats).reduce((a,s)=>a+s.right+s.wrong,0);
+  const fixed = Object.values(save.stats).filter(s=>s.wrong>0 && !s.lastWrong).length;
+  const units = new Set(BANK.filter(q=>save.stats[q.id]).map(q=>q.unit));
+  const master = UNITS.some(u=>{ const qs=BANK.filter(q=>q.unit===u.id && q.type!=='card'); return qs.length && qs.every(q=>(save.stats[q.id]||{}).right>0); });
+  const album = (save.album||[]).filter(m=>ALL_MEDIA.includes(m)).length;
+  const h = new Date().getHours();
+  const ex = save.exams||[];
+  const cond = {
+    first: total>=1, s50: total>=50, s150: total>=150, s300: total>=300,
+    all: seen.length >= BANK.filter(q=>q.type!=='card').length,
+    c5: ctx.best>=5, c10: ctx.best>=10, c20: ctx.best>=20,
+    perfect: ctx.perfect,
+    ex1: ex.length>=1, ex80: ex.some(e=>e.score/e.n>=0.8), ex100: ex.some(e=>e.score===e.n), ex5: ex.length>=5,
+    units: UNITS.length && units.size>=UNITS.length, master,
+    fix10: fixed>=10, fix50: fixed>=50,
+    d3: save.streak>=3, d7: save.streak>=7,
+    night: total>0 && h<4, morning: total>0 && h>=5 && h<8,
+    egg1: g.hatched>=1, egg5: g.hatched>=5, legend: !!g.legend,
+    alb10: album>=10, alball: album>=ALL_MEDIA.length,
+    lv5: level(save.xp)>=5, lv10: level(save.xp)>=10,
+    evo: stageFor(level(save.xp))>=1, evomax: stageFor(level(save.xp))>=EVOLVE.length-1,
+    time15: ctx.mode==='time' && ctx.score>=15, heart15: ctx.mode==='survive' && ctx.score>=15
+  };
+  ACH.forEach(([id,icon,name])=>{ if (cond[id] && !g.ach[id]){ g.ach[id] = new Date().toLocaleDateString('ko-KR'); save.xp += 20; got.push([icon,name]); } });
+  if (got.length){ persist(); got.forEach(([icon,name],i)=>setTimeout(()=>toast(`${icon} 업적 달성: ${name}  +20XP`), 400 + i*1800)); }
+}
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
+  buzz([20,40,20]);
+  clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove('show'), 2600);
+}
+function renderGame(){
+  const g = G(), lv = level(save.xp), st = stageFor(lv), e = EVOLVE[st], nx = EVOLVE[st+1];
+  const pet = $('#petimg');
+  pet.innerHTML = e.img ? `<img src="${e.img}" alt="">` : EGG_SVG(0);
+  $('#petname').textContent = e.name;
+  $('#petnext').textContent = nx ? `다음 진화: Lv ${nx.lv} ${'?'.repeat(3)}` : '최종 진화 완료!';
+  const crack = Math.floor(g.egg / EGG_N * 5);
+  $('#eggimg').innerHTML = EGG_SVG(crack);
+  $('#eggtext').textContent = `알이 깨지기까지 정답 ${EGG_N - g.egg}개`;
+  $('#eggbar').style.width = (g.egg/EGG_N*100)+'%';
+  $('#eggcount').textContent = `지금까지 ${g.hatched}개 부화`;
+  $('#achcount').textContent = `${Object.keys(g.ach).length}/${ACH.length}`;
+}
+function openAch(){
+  const g = G(), box = $('#achgrid'); box.innerHTML='';
+  ACH.forEach(([id,icon,name,desc])=>{
+    const on = !!g.ach[id];
+    const d = el('div','ach'+(on?' on':''));
+    d.appendChild(el('span','aicon', on?icon:'🔒'));
+    const t = el('span','atext'); t.appendChild(el('b',null,name)); t.appendChild(el('small',null, on ? `${desc} · ${g.ach[id]}` : desc)); d.appendChild(t);
+    box.appendChild(d);
+  });
+  $('#achsum').textContent = `${Object.keys(g.ach).length} / ${ACH.length} 달성`;
+  $('#achsheet').classList.add('open');
+}
+
+/* ---------- 틀린 문제 총정리 ---------- */
+function openReview(){
+  show('reviewscreen');
+  const wrongQs = BANK.filter(q=>(save.stats[q.id]||{}).lastWrong);
+  const fixed = BANK.filter(q=>{ const s=save.stats[q.id]; return s && s.wrong>0 && !s.lastWrong; }).length;
+  $('#rvsum').textContent = wrongQs.length ? `지금 틀려 있는 문제 ${wrongQs.length}개 · 다시 맞혀서 고친 문제 ${fixed}개` : `틀려 있는 문제가 없어요! 고친 문제 ${fixed}개`;
+  // 약점 단원
+  const wb = $('#rvweak'); wb.innerHTML='';
+  const byUnit = UNITS.map(u=>({u, n: wrongQs.filter(q=>q.unit===u.id).length})).filter(x=>x.n).sort((a,b)=>b.n-a.n);
+  const max = byUnit.length ? byUnit[0].n : 1;
+  byUnit.forEach(({u,n})=>{
+    const r = el('div','urow'); r.appendChild(el('span',null,u.name));
+    const bar = el('span','ubar'); const f = el('i'); f.style.width=(n/max*100)+'%'; f.style.background='var(--art)'; bar.appendChild(f); r.appendChild(bar);
+    r.appendChild(el('b',null,`${n}개`));
+    const go = el('button','linkbtn','풀기'); go.style.padding='0 0 0 8px'; go.onclick=()=>startMode('wrongunit:'+u.id); r.appendChild(go);
+    wb.appendChild(r);
+  });
+  // 자주 틀린 TOP 5
+  const top = BANK.filter(q=>(save.stats[q.id]||{}).wrong>=2).sort((a,b)=>save.stats[b.id].wrong-save.stats[a.id].wrong).slice(0,5);
+  const tb = $('#rvtop'); tb.innerHTML='';
+  $('#rvtophead').style.display = top.length ? '' : 'none';
+  top.forEach(q=>tb.appendChild(reviewItem(q, `${save.stats[q.id].wrong}번 틀림`)));
+  // 단원별 목록
+  const lb = $('#rvlist'); lb.innerHTML='';
+  byUnit.forEach(({u})=>{
+    lb.appendChild(el('h3','sec', u.name));
+    wrongQs.filter(q=>q.unit===u.id).sort((a,b)=>a.source.page-b.source.page).forEach(q=>lb.appendChild(reviewItem(q)));
+  });
+  if (!wrongQs.length) lb.appendChild(el('p','muted','틀린 문제가 생기면 여기에 단원별로 모여요.'));
+  $('#rvall').style.display = wrongQs.length ? '' : 'none';
+}
+function reviewItem(q, tag){
+  const d = el('div','review no');
+  d.appendChild(el('p','rq', (tag?`[${tag}] `:'') + q.q));
+  const ans = q.type==='mc' ? q.options[q.answer] : q.type==='ox' ? (q.answer?'O':'X') : q.answer_text;
+  const c = el('p','ra'); c.appendChild(el('b',null,'정답: ')); c.appendChild(document.createTextNode(ans)); d.appendChild(c);
+  if (q.explain) d.appendChild(el('p','rexp', q.explain));
+  const dn = detailNode(q);
+  if (dn){ const t = el('button','linkbtn','자세한 해설'); t.style.padding='6px 12px 0 0'; dn.style.display='none'; t.onclick=()=>{ dn.style.display = dn.style.display==='none'?'block':'none'; }; d.appendChild(t); d.appendChild(dn); }
+  if (q.source && q.source.page){ const b = el('button','linkbtn',`강의자료 ${q.source.page}쪽`); b.style.padding='6px 0 0'; b.onclick=()=>openViewer(q); d.appendChild(b); }
+  return d;
+}
+
+$('#openAch').onclick = openAch;
+$('#achclose').onclick = ()=>$('#achsheet').classList.remove('open');
+$('#openReview').onclick = openReview;
+$('#rvback').onclick = ()=>{ show('home'); renderHome(); };
+$('#rvall').onclick = ()=>startMode('wrong');
 
 /* ---------- 시작 ---------- */
 fetch('questions.json', {cache:'no-cache'})
