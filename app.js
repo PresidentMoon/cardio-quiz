@@ -295,6 +295,7 @@ function finish(ok, head, gaveUp){
   $('#showPdf').textContent = p ? `강의자료 ${p}쪽 보기` : '강의자료 보기';
   $('#showPdf').style.display = p ? '' : 'none';
   $('#feedback').classList.add('show');
+  inlinePdf(current, $('#inlinepdf'), !ok);
   hud();
   if (run.lives===0){ $('#next').textContent='결과 보기'; } else $('#next').textContent='다음';
   maybePhoto(ok, gaveUp);
@@ -396,10 +397,20 @@ async function idbGet(k){ try{ const db=await idb(); return await new Promise(re
 async function idbSet(k,v){ const db=await idb(); return new Promise((res,rej)=>{ const t=db.transaction('pdf','readwrite'); t.objectStore('pdf').put(v,k); t.oncomplete=res; t.onerror=()=>rej(t.error); }); }
 async function idbClear(){ const db=await idb(); return new Promise(res=>{ const t=db.transaction('pdf','readwrite'); t.objectStore('pdf').clear(); t.oncomplete=res; }); }
 const pdfCache = {};
+/* 깃허브 저장소에 올린 PDF 파일 이름 (저장소 맨 위에 이 이름으로 올리기) */
+const PDF_FILES = { heart: 'heart.pdf', vessel: 'vessel.pdf' };
 async function getPdf(doc){
   if (pdfCache[doc]) return pdfCache[doc];
-  const rec = await idbGet(doc);
-  if (!rec) return null;
+  let rec = await idbGet(doc);
+  if (!rec){
+    // 기기에 저장된 게 없으면 사이트에 올라간 PDF를 자동으로 받아서 기기에 저장
+    try {
+      const r = await fetch(PDF_FILES[doc]);
+      if (!r.ok) return null;
+      rec = {name: PDF_FILES[doc], data: await r.arrayBuffer()};
+      idbSet(doc, rec).catch(()=>{});
+    } catch(e){ return null; }
+  }
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
   pdfCache[doc] = await pdfjsLib.getDocument({data: new Uint8Array(rec.data)}).promise;
   return pdfCache[doc];
@@ -408,7 +419,7 @@ async function pdfStatus(){
   const h = await idbGet('heart'), v = await idbGet('vessel');
   $('#st-heart').textContent = h ? `저장됨 · ${h.name}` : '없음';
   $('#st-vessel').textContent = v ? `저장됨 · ${v.name}` : '없음';
-  $('#pdfstatus').textContent = (h&&v) ? '강의자료 2개 모두 불러와져 있어요.' : (h||v) ? '강의자료 1개만 불러와져 있어요.' : '강의자료를 불러오면 틀린 문제의 해당 페이지를 바로 볼 수 있어요.';
+  $('#pdfstatus').textContent = (h&&v) ? '강의자료 2개 모두 준비돼 있어요.' : '강의자료는 문제를 풀 때 자동으로 불러와요.';
 }
 
 /* ---------- PDF 뷰어 ---------- */
@@ -458,7 +469,8 @@ async function renderPage(){
   $('#vpage').textContent = `${view.page} / ${pdf.numPages}쪽` + (view.page===view.src ? ' ★' : '');
 }
 /* 문제와 관련된 문구를 PDF 위에 형광펜처럼 칠하기 */
-async function drawHighlights(page, vp, ctx){
+async function drawHighlights(page, vp, ctx, hl){
+  hl = hl || view.hl || [];
   const tc = await page.getTextContent();
   ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = 'rgba(255, 214, 10, 0.55)';
   // 한글 PDF는 글자가 잘게 쪼개져 있어서, 쪽 전체 문자열에서 위치를 찾은 뒤 해당 조각들을 칠함
@@ -466,7 +478,7 @@ async function drawHighlights(page, vp, ctx){
   let full = '', map = [];
   items.forEach((it,i)=>{ for (const ch of it.str.replace(/\s+/g,'')){ full += ch; map.push(i); } });
   const hit = new Set(); let first = null;
-  view.hl.forEach(h=>{ let from = 0, at; while ((at = full.indexOf(h, from)) !== -1){ for (let k=at; k<at+h.length; k++) hit.add(map[k]); from = at + h.length; } });
+  hl.forEach(h=>{ let from = 0, at; while ((at = full.indexOf(h, from)) !== -1){ for (let k=at; k<at+h.length; k++) hit.add(map[k]); from = at + h.length; } });
   hit.forEach(i=>{
     const it = items[i], t = it.transform, hgt = Math.hypot(t[2], t[3]) || it.height || 10;
     const r = vp.convertToViewportRectangle([t[4], t[5]-hgt*0.2, t[4]+it.width, t[5]+hgt*0.95]);
@@ -874,6 +886,41 @@ $('#achclose').onclick = ()=>$('#achsheet').classList.remove('open');
 $('#openReview').onclick = openReview;
 $('#rvback').onclick = ()=>{ show('home'); renderHome(); };
 $('#rvall').onclick = ()=>startMode('wrong');
+
+/* ---------- 문제 아래에 강의자료 쪽을 바로 보여주기 ---------- */
+async function inlinePdf(q, box, open){
+  box.innerHTML = '';
+  const p = q.source && q.source.page; if (!p) return;
+  const head = el('button','inlinehead', `📄 강의자료 ${p}쪽 ${open ? '접기' : '펼치기'}`);
+  const body = el('div','inlinebody'); body.style.display = open ? 'block' : 'none';
+  head.onclick = ()=>{ const o = body.style.display==='none'; body.style.display = o?'block':'none'; head.textContent = `📄 강의자료 ${p}쪽 ${o?'접기':'펼치기'}`; if (o && !body.dataset.done) draw(); };
+  box.appendChild(head); box.appendChild(body);
+  async function draw(){
+    body.dataset.done = '1';
+    if (typeof pdfjsLib === 'undefined'){ body.appendChild(el('p','muted small','PDF 뷰어를 불러오지 못했어요. 인터넷 연결을 확인해 주세요.')); return; }
+    const pdf = await getPdf(q.source.doc).catch(()=>null);
+    if (!pdf){
+      const m = el('p','muted small', `${DOC_NAME[q.source.doc]} PDF를 한 번만 불러오면 여기 바로 보여요. `);
+      const b = el('button','linkbtn','지금 불러오기'); b.style.padding='0'; b.onclick=()=>$('#pdfsetup').classList.add('open');
+      m.appendChild(b); body.appendChild(m); return;
+    }
+    const page = await pdf.getPage(Math.min(p, pdf.numPages));
+    const w = Math.max(box.clientWidth, 280);
+    const base = page.getViewport({scale:1});
+    const dpr = Math.min(window.devicePixelRatio||1, 3);
+    const vp = page.getViewport({scale: (w/base.width)*dpr});
+    const c = document.createElement('canvas'); c.width = vp.width; c.height = vp.height;
+    c.style.width = '100%'; c.style.borderRadius = '8px'; c.style.display = 'block';
+    body.appendChild(c);
+    await page.render({canvasContext:c.getContext('2d'), viewport:vp}).promise;
+    const hl = (q.highlight||[]).map(h=>h.replace(/\s+/g,'')).filter(h=>h.length>=2);
+    if (hl.length) await drawHighlights(page, vp, c.getContext('2d'), hl);
+    const zoom = el('button','linkbtn','크게 보기'); zoom.style.padding='6px 0 0'; zoom.onclick=()=>openViewer(q); body.appendChild(zoom);
+  }
+  if (open) draw();
+}
+// PDF를 새로 불러오면 열려 있는 미리보기도 다시 그리기
+document.querySelectorAll('#pdfsetup input[type=file]').forEach(inp=>inp.addEventListener('change', ()=>setTimeout(()=>{ if ($('#feedback').classList.contains('show') && current) inlinePdf(current, $('#inlinepdf'), true); }, 800)));
 
 /* ---------- 시작 ---------- */
 fetch('questions.json', {cache:'no-cache'})

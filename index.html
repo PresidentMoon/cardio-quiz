@@ -51,6 +51,7 @@
     <button class="mode" data-mode="survive">하트 챌린지<small>하트 3개로 어디까지 갈 수 있을까</small></button>
     <button class="mode" data-mode="wrong">오답 복습<small id="wrongcount">틀린 문제 0개</small></button>
     <button class="mode review" id="openReview">틀린 문제 총정리<small>약점 단원·자주 틀린 문제 <span id="wrongtotal"></span></small></button>
+    <button class="mode play" id="openPlayground">고양이 놀이터<small>고양이랑 성호랑 같이 놀기</small></button>
     <button class="mode achbtn" id="openAch">업적<small>달성 <span id="achcount">0</span></small></button>
     <button class="mode" data-mode="cards">서술형 카드<small>모범답안 넘겨보기</small></button>
     <button class="mode album" id="openAlbum">추억 앨범<small>모은 사진 <span id="albumbtn">0</span></small></button>
@@ -60,6 +61,7 @@
   <p class="muted small">단원을 누르면 그 단원에서만 10문제가 나와요. 막대는 그 단원에서 맞혀본 문제 비율이에요.</p>
   <div class="units" id="units"></div>
 
+  <button class="linkbtn" id="catToggle">고양이 잠깐 숨기기</button><br>
   <button class="linkbtn" id="openPdfSetup">강의자료 PDF 불러오기</button>
   <p class="muted small" id="pdfstatus"></p>
   <p class="muted small" id="bankinfo"></p>
@@ -82,6 +84,7 @@
     <p class="verdict" id="verdict"></p>
     <p class="explain" id="explain"></p>
     <div id="detailwrap"></div>
+    <div id="inlinepdf" class="inlinepdf"></div>
     <div class="fb-actions">
       <button class="btn ghost" id="showPdf">강의자료 보기</button>
       <button class="btn" id="next">다음</button>
@@ -167,6 +170,24 @@
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<!-- 고양이 놀이터 -->
+<section id="playground" class="screen">
+  <div class="hud"><button class="iconbtn" id="pgback" aria-label="홈으로">✕</button><b>고양이 놀이터</b><span></span></div>
+  <div class="pgstat">
+    <span>친밀도 <b id="pglove">0</b> · <span id="pglevel"></span></span>
+    <span>간식 🐟 <b id="pgtreat">0</b></span>
+  </div>
+  <div class="xpbar" style="margin-bottom:8px"><div id="pgbar" style="height:100%;background:var(--art);width:0"></div></div>
+  <div class="pgfield" id="pgfield" aria-label="놀이터. 빈 곳을 누르면 고양이가 그쪽으로 가요"></div>
+  <div class="pgbtns">
+    <button class="btn ghost" id="pgballbtn">🧶 공 던지기</button>
+    <button class="btn ghost" id="pgtreatbtn">🐟 간식 주기</button>
+    <button class="btn ghost" id="pglaserbtn">🔴 레이저</button>
+    <button class="btn ghost" id="pgcallbtn">🙋 성호한테 와</button>
+  </div>
+  <p class="muted small">고양이·성호를 누르면 쓰다듬기, 끌면 옮기기. 빈 곳을 누르면 고양이가 그쪽으로 가요. 간식은 퀴즈를 10문제 맞힐 때마다 하나씩 생겨요.</p>
+</section>
+
 <!-- 결과 -->
 <section id="result" class="screen">
   <h2 id="rtitle">끝!</h2>
@@ -219,5 +240,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="app.js"></script>
+<script src="cat.js"></script>
 </body>
 </html>

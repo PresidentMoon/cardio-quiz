@@ -151,6 +151,46 @@ h3.sec{font-size:18px;margin-top:20px}
 .history{margin-top:18px}
 .history .urow b{font-weight:600}
 
+.inlinepdf{margin:0 0 12px}
+.inlinehead{width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-weight:600;font-size:14.5px;cursor:pointer;color:var(--ink)}
+.inlinebody{margin-top:8px}
+
+/* 돌아다니는 고양이 */
+.wcat{position:fixed;left:0;top:0;width:52px;height:52px;z-index:15;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.wcat-img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:2.5px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.25);display:block;pointer-events:none}
+.wcat.walk .wcat-img{animation:catwalk .45s ease-in-out infinite}
+.wcat.flip .wcat-img{transform:scaleX(-1)}
+.wcat.flip.walk .wcat-img{animation:catwalkf .45s ease-in-out infinite}
+@keyframes catwalk{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-4px) rotate(4deg)}}
+@keyframes catwalkf{0%,100%{transform:scaleX(-1) translateY(0) rotate(-4deg)}50%{transform:scaleX(-1) translateY(-4px) rotate(4deg)}}
+.wcat.ghost{pointer-events:none;opacity:.35}
+.wcat.sleep .wcat-img{opacity:.75;filter:saturate(.7)}
+.wcat.grab{cursor:grabbing}
+.wcat.grab .wcat-img{transform:scale(1.15);box-shadow:0 8px 18px rgba(0,0,0,.3)}
+.wcat-bubble,.pg-say{position:absolute;bottom:100%;left:50%;transform:translate(-50%,-4px) scale(.8);background:#fff;color:#16233A;font-size:12.5px;font-weight:600;padding:4px 9px;border-radius:12px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.18);opacity:0;transition:.2s;pointer-events:none}
+.wcat-bubble.show,.pg-say.show{opacity:1;transform:translate(-50%,-6px) scale(1)}
+.fheart{position:fixed;z-index:45;font-size:20px;pointer-events:none;animation:floatup 1.3s ease-out forwards}
+@keyframes floatup{from{opacity:1;transform:translateY(0) scale(.8)}to{opacity:0;transform:translateY(-60px) scale(1.3)}}
+/* 놀이터 */
+.mode.play{border-left:5px solid #7FB3D5}
+.pgstat{display:flex;justify-content:space-between;font-size:14px;margin:4px 0 6px}
+.pgfield{position:relative;height:min(58vh,470px);border-radius:16px;overflow:hidden;touch-action:none;
+  background:linear-gradient(180deg,#DDEFFC 0%,#EEF7FF 55%,#CFE8C4 55%,#BFE0B1 100%);border:1px solid var(--line)}
+.pg-actor{position:absolute;left:0;top:0;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.pg-cat{width:64px;height:64px}.pg-sh{width:74px;height:74px}
+.pg-actor img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.22);pointer-events:none;display:block}
+.pg-actor.walk img{animation:catwalk .4s ease-in-out infinite}
+.pg-actor.flip img{transform:scaleX(-1)}
+.pg-actor.flip.walk img{animation:catwalkf .4s ease-in-out infinite}
+.pg-actor.grab img{transform:scale(1.12)}
+.pg-actor.purr img{animation:purr .12s linear 5}
+@keyframes purr{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+.pg-ball,.pg-treat{position:absolute;left:0;top:0;font-size:26px;display:none;pointer-events:none}
+.pg-laser{position:absolute;left:0;top:0;width:14px;height:14px;border-radius:50%;background:#FF2D2D;box-shadow:0 0 10px 4px rgba(255,45,45,.6);pointer-events:none}
+.pgbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 6px}
+.pgbtns .btn{min-height:44px;font-size:14.5px}
+.pgbtns .btn.on{background:#FFE3E3;border-color:#E05252}
+
 /* 게임 */
 .gamerow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}
 .gcard{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}
