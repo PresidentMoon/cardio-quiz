@@ -1,223 +1,1052 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#16233A">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<title>필체 노트</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>심혈관 퀴즈</title>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="필체 노트">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#1D2856">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFMUlEQVR4nO3cXWhbZRzH8bSdbVJf1pe11S1ukQ1ZnRRUGOr0YuiFKyKM4YSh6E0FFXUqWG9EvBneuIvhy8UGsgvdlVARnKI3dSo4ELaxuSmbdnlr07dkTdqepCcn3hQcW35tmpc+OaffD70oSU7yp/3ynJPT0zTcvX2/Dyim0fQAqF/EAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJDNxnAzFT4biRl4apWPlgEQckIgDEnFAIg5IxAGJOCARByTigEQckIgDEnFAIg5IxAGJOCCtMz2Axx149gl/oGXpx3w9NHxtZnZ15lkR4qitd97Y37WhbenHDJ86U59xsFuBRByQiAOSu485Hujb1trqNz2F7/QflxYWbNNTVJ+74zj04cCO7SHTU/gefOzlyalrpqeoPnYrkIgDEnFAIg5IxAGJOCARByTigOTuk2B79g7ecMuWzT2nfjiy9FYvDBwa/uVs0bv+Of/VuqamJbb97OjQR4dPrGhI92LlgEQckIgDEnFAIg5IxAGJOCARByTigEQckIgDEnFAIg5IxAHJ3X+yN6ipqbGzY31Pd/t1Xx3Hv/z+z0tXTY9WNcSxqKmpMeBvafA1LP2wZ/p3Pf5oX093+4bOtsbGGx/8869nicO8gZee7uy4/ebb199x27Lbvvf2gTdf2RcItAQCLQF/c2urP+Bvbm6+pZTXDW7qCm7qUve2txUZyb3cGseTux96ZOd95W27ozdU1Vn+57E43HpAGotPmB6hiPa25dctF3FrHJFYfcbBylEHWDlWgVvjiNblytHGylEPovFJ0yPcKDM7Pz09Y3qKanLru5X46KTjFG4+07AK8nlndGwqHElcjY5HouPhSCIcHQ9HEtPJ9OoPU1NujcO284nx6bvu7KzFk2cy88lUOpnKJFPpZCqdTKaTqczEVCocGQ9HE7H4pG3na/G69catcfh8vmhsoqe7wyk4BafgOAWn4OTzTj7v2Au2nXds27ZtJ5tbsKyclc1ZVm7eylrWdd9kc5a1MG9l5+as1GIHmWQqnUpl7Pya+N0vy8Vx7Hv+A9MjeJyL43CFY8e/u3W5zztMpur0YIU4auvzY9+YHqF8bn0ri1VAHJA8u1vZ9fD9J7543/QUJdnd/9aVf+OmpyiClQMScUAiDkjEAYk4IBEHJOKARByQPHsS7My5y0/tfdf0FL5PDx/ces9G01OUybNxzM5Z9fDPZ1Y2Z3qE8rFbgUQckIgDkmePOe7dFvzp249NT+FurByQiAMScUAiDkjEAYk4IBEHJM+e5yjFWGL6t98vmJ7Cl87Mmx6huDUdx4WLIwcHPzE9Rf1itwKJOCARB6RKjzl6+3aWs9nMUPnblmZLcPkP/QmFgq+9+mLtZliRv66MxUaT1X3Oi+dOV7L5mj4g3RrqHny93/QUi44c/bHqcVSo0jjKbDNUwbalyc8Fa/fktTAaG6npD6QMHHNAIg5IxAGJOCARByTigEQckDx7Euzvy9HNvc+ZnsLdWDkgEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oDk2avP4av4Kl1WDkievfoclWPlgEQckIgDEnFAIg5IxAGJOCARByTigEQckIgDEnFAIg5IxAGJOCARByTigEQckLjA2Mu4wBi1wgXGkFg5IBEHJDOfJrhnZKOR18WKsHJAIg5IxAGJOCARByTigEQckIgDEnFAIg5IxAGJOCARByTigEQckIgDEnFAIg5IxAGJOCD9B5myUmFDDHBSAAAAAElFTkSuQmCC">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --chrome:#EEF1F5; --bar:#FFFFFF; --ink:#1D2856; --soft:#5B6690; --muted:#8892A6; --line:#DDE3EA; --accent:#D4483C;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --chrome:#12151C; --bar:#1A1F29; --ink:#E4E9F5; --soft:#A3AECA; --muted:#6F7A90; --line:#2A3140; --accent:#E2665A;
+}}
+:root[data-theme="dark"]{ --chrome:#12151C; --bar:#1A1F29; --ink:#E4E9F5; --soft:#A3AECA; --muted:#6F7A90; --line:#2A3140; --accent:#E2665A; }
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--chrome);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:15px;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;overscroll-behavior:none;display:flex;flex-direction:column}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--soft);outline-offset:2px}
+
+.toolbar{display:flex;align-items:center;gap:6px;padding:8px 14px;background:var(--bar);border-bottom:1px solid var(--line);flex-wrap:wrap;flex:0 0 auto}
+.brand{font-weight:600;margin-right:8px}
+.grp{display:flex;align-items:center;gap:4px;padding:0 6px;border-right:1px solid var(--line)}
+.grp:last-of-type{border-right:none}
+.tb{border:1px solid transparent;background:none;border-radius:8px;min-width:40px;height:40px;padding:0 10px;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.tb[aria-pressed="true"]{background:var(--chrome);border-color:var(--line);font-weight:600}
+.tb:disabled{opacity:.35;cursor:default}
+.tb.sw{width:22px;height:22px;border-radius:50%;border:2px solid transparent;padding:0;min-width:0}
+.sw[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:2px}
+.wd{min-width:34px}
+.wd i{display:block;border-radius:4px;background:var(--ink);width:18px}
+.sp{flex:1}
+#saveState{font-size:12px;color:var(--muted);margin-right:6px}
+.dev-galaxy .tb{height:46px;min-width:46px}
+.dev-galaxy .tb.sw{width:26px;height:26px;min-width:0}
+#penHint{font-size:12px;color:var(--muted)}
+.dev-ipad #penHint{display:none}
+
+#scroller{flex:1 1 auto;overflow:auto;-webkit-overflow-scrolling:touch;touch-action:none}
+#pages{display:flex;flex-direction:column;align-items:center;gap:22px;padding:22px 16px 120px;min-width:100%;width:max-content;box-sizing:border-box;transform-origin:0 0}
+#zoomVal{min-width:52px;font-variant-numeric:tabular-nums}
+.page{position:relative;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12);touch-action:none}
+.page canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+.pagebar{position:absolute;left:0;right:0;top:-20px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.pagebar button,.pagebar select{background:none;border:none;font-size:12px;color:var(--muted);padding:0 4px}
+
+#quick{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:none;flex-direction:column;gap:6px;z-index:6}
+.dev-ipad #quick{display:flex}
+#quick button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--bar);font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+#quick button[aria-pressed="true"]{background:var(--ink);color:var(--bar);border-color:var(--ink)}
+
+#status{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bar);padding:10px 16px;border-radius:8px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:20;max-width:90vw}
+#status.show{opacity:1;pointer-events:auto}
+#status button{background:none;border:1px solid currentColor;color:inherit;border-radius:6px;padding:4px 10px;margin-left:8px;font-size:13px}
+
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--bar);color:var(--ink);padding:22px;width:min(460px,92vw)}
+dialog::backdrop{background:rgba(10,15,30,.4)}
+dialog h3{margin:0 0 14px;font-size:17px}
+dialog p{margin:0 0 12px;color:var(--soft);line-height:1.55}
+.field{margin:0 0 16px}
+.field>span{display:block;font-size:13px;color:var(--soft);margin-bottom:6px}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{border:1px solid var(--line);background:var(--chrome);border-radius:8px;padding:9px 14px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bar);border-color:var(--ink)}
+.check{display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--chrome);border-radius:8px;padding:9px 14px}
+.primary{background:var(--ink);color:var(--bar);border-color:var(--ink);font-weight:600}
+.danger{border-color:var(--accent);color:var(--accent);background:none}
+.actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px;flex-wrap:wrap}
+#exportBox{display:none;width:100%;height:100px;margin-top:10px;font-family:ui-monospace,monospace;font-size:11px}
+.papers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+#selBar[hidden],#selHint[hidden]{display:none!important}
+@media (max-width:560px){.papers{grid-template-columns:repeat(2,1fr)}}
+#dlgPaper{width:min(620px,94vw)}
+.papers button{border:1px solid var(--line);background:var(--chrome);border-radius:10px;padding:12px;text-align:left}
+.papers small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+</style>
 </head>
-<body>
-
-<!-- 홈 -->
-<section id="home" class="screen active">
-  <div class="home-top">
-    <h1>심혈관 퀴즈</h1>
-    <p class="muted">기초간호과학I · 심장, 혈관 강의자료</p>
+<body class="dev-galaxy">
+<div class="toolbar" role="toolbar" aria-label="필기 도구">
+  <span class="brand">필체 노트</span>
+  <button class="tb" id="tBooks" style="font-weight:600;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">📒 내 노트</button>
+  <div class="grp">
+    <button class="tb" id="tPen" aria-pressed="true">펜</button>
+    <button class="tb" id="tEraser" aria-pressed="false">지우개</button>
+    <button class="tb" id="tEraseMode" hidden>획 단위</button>
+    <button class="tb" id="tEraseSize" hidden>작게</button>
+    <button class="tb" id="tHl" aria-pressed="false">형광펜</button>
+    <button class="tb" id="tLasso" aria-pressed="false">올가미</button>
+    <button class="tb" id="tGhost" aria-pressed="false" style="font-weight:600">대필</button>
   </div>
-  <svg class="pulse" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 36 H120 l8 8 l12 -40 l12 50 l8 -18 H210 q16 -16 32 0 H400"/></svg>
-  <div class="stats">
-    <div><span id="lvl">1</span><small>레벨</small></div>
-    <div><span id="streak">0</span><small>연속 학습일</small></div>
-    <div><span id="today">0</span><small>오늘 푼 문제</small></div>
+  <div class="grp" id="colors"></div>
+  <div class="grp" id="widths"></div>
+  <div class="grp">
+    <button class="tb" id="tUndo" aria-label="실행취소" disabled>↶</button>
+    <button class="tb" id="tRedo" aria-label="다시실행" disabled>↷</button>
   </div>
-  <div class="xpbar" aria-label="경험치"><div id="xpfill"></div></div>
-  <p class="muted small" id="xptext"></p>
-
-  <div class="gamerow">
-    <div class="gcard pet">
-      <div class="gimg" id="petimg"></div>
-      <div><small class="muted">내 성호</small><b id="petname">성호 알</b><small id="petnext" class="muted"></small></div>
-    </div>
-    <div class="gcard egg">
-      <div class="gimg" id="eggimg"></div>
-      <div style="flex:1"><small class="muted">알 깨기</small><b id="eggtext"></b>
-        <div class="xpbar" style="margin-top:4px"><div id="eggbar" style="height:100%;background:var(--gold);width:0"></div></div>
-        <small id="eggcount" class="muted"></small></div>
-    </div>
-  </div>
-
-  <div class="modes">
-    <button class="mode big" data-mode="quick">빠른 10문제<small>심장 + 혈관 섞어서</small></button>
-    <button class="mode exam" id="openExam">실전 테스트<small>시험처럼 끝까지 풀고 마지막에 채점 · <span id="examlast">아직 응시 기록 없음</span></small></button>
-    <button class="mode heart" data-mode="heart">심장만 10문제</button>
-    <button class="mode vessel" data-mode="vessel">혈관만 10문제</button>
-    <button class="mode" data-mode="time">60초 타임어택<small>객관식·OX만, 최대한 많이</small></button>
-    <button class="mode" data-mode="survive">하트 챌린지<small>하트 3개로 어디까지 갈 수 있을까</small></button>
-    <button class="mode" data-mode="wrong">오답 복습<small id="wrongcount">틀린 문제 0개</small></button>
-    <button class="mode review" id="openReview">틀린 문제 총정리<small>약점 단원·자주 틀린 문제 <span id="wrongtotal"></span></small></button>
-    <button class="mode achbtn" id="openAch">업적<small>달성 <span id="achcount">0</span></small></button>
-    <button class="mode" data-mode="cards">서술형 카드<small>모범답안 넘겨보기</small></button>
-    <button class="mode album" id="openAlbum">추억 앨범<small>모은 사진 <span id="albumbtn">0</span></small></button>
-  </div>
-
-  <h2 class="sec">단원별 학습</h2>
-  <p class="muted small">단원을 누르면 그 단원에서만 10문제가 나와요. 막대는 그 단원에서 맞혀본 문제 비율이에요.</p>
-  <div class="units" id="units"></div>
-
-  <button class="linkbtn" id="openPdfSetup">강의자료 PDF 불러오기</button>
-  <p class="muted small" id="pdfstatus"></p>
-  <p class="muted small" id="bankinfo"></p>
-</section>
-
-<!-- 문제 풀기 -->
-<section id="play" class="screen">
-  <div class="hud">
-    <button class="iconbtn" id="quit" aria-label="그만하기">✕</button>
-    <div class="prog"><div id="progfill"></div></div>
-    <div id="hudright"></div>
-  </div>
-  <div id="combo" class="combo" aria-live="polite"></div>
-  <div class="qcard" id="qcard">
-    <div class="qmeta" id="qmeta"></div>
-    <p class="qtext" id="qtext"></p>
-    <div id="qbody"></div>
-  </div>
-  <div class="feedback" id="feedback">
-    <p class="verdict" id="verdict"></p>
-    <p class="explain" id="explain"></p>
-    <div id="detailwrap"></div>
-    <div class="fb-actions">
-      <button class="btn ghost" id="showPdf">강의자료 보기</button>
-      <button class="btn" id="next">다음</button>
-    </div>
-  </div>
-</section>
-
-<!-- 사진 팝업 -->
-<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popmsg">
-  <div class="popcard">
-    <div class="media" id="popmedia"></div>
-    <span class="badge" id="popbadge"></span>
-    <p class="popmsg" id="popmsg"></p>
-    <p class="popsub" id="popsub"></p>
-    <button class="btn" id="popclose">계속하기</button>
-  </div>
+  <div class="grp"><button class="tb" id="tZoomOut" aria-label="축소">−</button><button class="tb" id="zoomVal" aria-label="화면 폭에 맞추기">100%</button><button class="tb" id="tZoomIn" aria-label="확대">+</button></div>
+  <div class="grp"><button class="tb" id="tAddPage">+ 페이지</button><button class="tb" id="tForm" style="font-weight:600">PDF 불러오기</button></div>
+  <span id="penHint">S펜 버튼 = 지우개</span>
+  <span class="sp"></span>
+  <span id="saveState"></span>
+  <button class="tb" id="tDevice"></button>
+  <button class="tb" id="tExport" style="font-weight:600">저장</button>
+  <button class="tb" id="tMore">설정</button>
 </div>
 
-<!-- 실전 테스트 설정 -->
-<section id="examsetup" class="screen">
-  <div class="hud"><button class="iconbtn" id="esback" aria-label="뒤로">✕</button><b>실전 테스트</b><span></span></div>
-  <p class="muted">실제 퀴즈처럼 중간에 정답을 보여주지 않고, 다 풀고 제출하면 한꺼번에 채점해요. 단원이 고르게 섞여서 나와요.</p>
-  <div class="opt-group"><b>범위</b><div class="chips" data-key="range"><button data-v="all" class="on">전체</button><button data-v="heart">심장</button><button data-v="vessel">혈관</button></div></div>
-  <div class="opt-group"><b>문항 수</b><div class="chips" data-key="n"><button data-v="20" class="on">20문제</button><button data-v="30">30문제</button><button data-v="40">40문제</button></div></div>
-  <div class="opt-group"><b>시간 제한</b><div class="chips" data-key="time"><button data-v="0" class="on">없음</button><button data-v="1">문제당 1분</button></div></div>
-  <button class="btn" id="esstart" style="width:100%;margin-top:8px">시작하기</button>
-  <div id="eshistory"></div>
-</section>
+<div id="scroller"><div id="pages"></div></div>
 
-<!-- 실전 테스트 풀기 -->
-<section id="exam" class="screen">
-  <div class="hud">
-    <button class="iconbtn" id="exquit" aria-label="그만두기">✕</button>
-    <div class="prog"><div id="exprog"></div></div>
-    <div id="exinfo"></div>
-  </div>
-  <div class="exgrid" id="exgrid" aria-label="문제 번호"></div>
-  <div class="qcard" id="excard">
-    <div class="qmeta" id="exmeta"></div>
-    <p class="qtext" id="extext"></p>
-    <div id="exbody"></div>
-  </div>
-  <div class="fb-actions" style="margin-top:12px">
-    <button class="btn ghost" id="exprev">이전</button>
-    <button class="btn" id="exnext">다음</button>
-  </div>
-  <button class="btn submit" id="exsubmit">제출하고 채점하기</button>
-</section>
-
-<!-- 실전 테스트 결과 -->
-<section id="examresult" class="screen">
-  <h2 id="ertitle">채점 결과</h2>
-  <p class="bignum"><span id="erscore">0</span><small id="ertotal"></small></p>
-  <p class="muted" id="ersub"></p>
-  <figure class="rphoto"><div class="media" id="ermedia"></div><figcaption id="ercap"></figcaption></figure>
-  <h3 class="sec">단원별 결과</h3>
-  <div id="erunits"></div>
-  <div class="row" style="align-items:center;margin:18px 0 8px"><h3 class="sec" style="margin:0;flex:1">문제 다시 보기</h3><button class="linkbtn" id="erfilter" style="padding:0">틀린 것만 보기</button></div>
-  <div id="erlist"></div>
-  <div class="fb-actions" style="margin-top:14px">
-    <button class="btn ghost" id="erhome">홈으로</button>
-    <button class="btn" id="eragain">다시 응시</button>
-  </div>
-</section>
-
-<!-- 틀린 문제 총정리 -->
-<section id="reviewscreen" class="screen">
-  <div class="hud"><button class="iconbtn" id="rvback" aria-label="뒤로">✕</button><b>틀린 문제 총정리</b><span></span></div>
-  <p class="muted" id="rvsum"></p>
-  <button class="btn" id="rvall" style="width:100%">틀린 문제 다시 풀기 (단원별로 묶어서)</button>
-  <h3 class="sec">약점 단원</h3>
-  <p class="muted small">틀려 있는 문제가 많은 단원부터 보여줘요. '풀기'를 누르면 그 단원 틀린 문제만 다시 나와요.</p>
-  <div id="rvweak"></div>
-  <h3 class="sec" id="rvtophead">자주 틀린 문제 TOP 5</h3>
-  <div id="rvtop"></div>
-  <div id="rvlist"></div>
-</section>
-
-<!-- 업적 -->
-<div class="sheet" id="achsheet" role="dialog" aria-modal="true" aria-label="업적">
-  <div class="sheet-top"><button class="iconbtn" id="achclose" aria-label="닫기">✕</button><span>업적</span><span id="achsum" class="muted small"></span></div>
-  <div class="setup-body"><p class="muted small">업적을 달성할 때마다 +20XP. 알은 정답 25개마다 깨지고, 레벨이 오르면 성호가 진화해요.</p><div id="achgrid" class="achgrid"></div></div>
+<div id="quick" aria-label="빠른 전환">
+  <button id="qPen" aria-pressed="true">펜</button>
+  <button id="qEraser" aria-pressed="false">지우개</button>
 </div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<!-- 결과 -->
-<section id="result" class="screen">
-  <h2 id="rtitle">끝!</h2>
-  <p class="bignum"><span id="rscore">0</span><small id="rtotal"></small></p>
-  <p class="muted" id="rxp"></p>
-  <figure class="rphoto" id="rphoto"><div class="media" id="rmedia"></div><figcaption id="rcap"></figcaption></figure>
-  <div id="rwrong"></div>
-  <div class="fb-actions">
-    <button class="btn ghost" id="rhome">홈으로</button>
-    <button class="btn" id="ragain">한 번 더</button>
-  </div>
-</section>
-
-<!-- PDF 뷰어 -->
-<div class="sheet" id="viewer" role="dialog" aria-modal="true" aria-label="강의자료 보기">
-  <div class="sheet-top">
-    <button class="iconbtn" id="vclose" aria-label="닫기">✕</button>
-    <span id="vtitle"></span>
-    <span class="vzoom"><button class="iconbtn" id="zout" aria-label="축소">−</button><button class="iconbtn" id="zin" aria-label="확대">+</button></span>
-  </div>
-  <details class="vexplain" id="vexplain"><summary>해설 보기 · 노란색 = 이 문제 관련 부분, ★ = 출처 쪽</summary><p id="vexptext"></p><div id="vdetail"></div></details>
-  <div class="canvaswrap" id="canvaswrap"><canvas id="pdfcanvas"></canvas><p class="muted center" id="vmsg"></p></div>
-  <div class="sheet-bottom">
-    <button class="btn ghost" id="vprev">◀ 이전 쪽</button>
-    <span id="vpage"></span>
-    <button class="btn ghost" id="vnext">다음 쪽 ▶</button>
-  </div>
+<div id="status" role="status"></div>
+<div id="selBar" hidden style="position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;gap:6px;background:var(--bar);border:1px solid var(--line);border-radius:12px;padding:6px;box-shadow:0 2px 10px rgba(0,0,0,.15)">
+  <button class="tb" id="sDel">삭제</button><button class="tb" id="sCopy">복사</button><button class="tb" id="sPaste">붙여넣기</button><button class="tb" id="sDup">복제</button><button class="tb" id="sThin">얇게</button><button class="tb" id="sThick">굵게</button><button class="tb" id="sNone">선택 해제</button>
 </div>
+<p id="selHint" hidden style="position:fixed;left:50%;transform:translateX(-50%);bottom:calc(128px + env(safe-area-inset-bottom,0px));z-index:15;margin:0;font-size:12px;color:var(--muted);background:var(--bar);padding:3px 8px;border-radius:6px">안쪽을 끌면 이동 · 파란 모서리를 끌면 크기 조절 · 색을 누르면 색 바꾸기</p>
 
-<!-- 추억 앨범 -->
-<div class="sheet" id="album" role="dialog" aria-modal="true" aria-label="추억 앨범">
-  <div class="sheet-top"><button class="iconbtn" id="aclose" aria-label="닫기">✕</button><span>추억 앨범</span><span id="albumcount" class="muted small"></span></div>
-  <div class="setup-body">
-    <p class="muted small">퀴즈를 풀면서 만난 사진과 영상이 여기 모여요. 잘 풀 때, 막힐 때, 레벨업할 때 나오는 게 다 달라요.</p>
-    <div class="agrid" id="albumgrid"></div>
+<dialog id="dlgPaper">
+  <h3 id="paperTitle">새 페이지</h3>
+  <div class="papers">
+    <button data-paper="ruled">줄<small>줄 간격 8.4mm</small></button>
+    <button data-paper="wide">넓은 줄<small>줄 간격 11mm</small></button>
+    <button data-paper="blank">무지<small>줄 없음</small></button>
+    <button data-paper="grid">모눈<small>8.4mm 칸</small></button>
+    <button data-paper="narrow">좁은 줄<small>줄 간격 6.7mm</small></button>
+    <button data-paper="dot">점 모눈<small>8.4mm 점</small></button>
+    <button data-paper="cornell">코넬 노트<small>제목·단서·필기·요약</small></button>
+    <button data-paper="todo">할 일 목록<small>체크 칸 + 줄</small></button>
+    <button data-paper="wrong">오답 노트<small>문제 / 풀이 나눔</small></button>
+    <button data-paper="manuscript">원고지<small>20칸</small></button>
+    <button data-paper="music">오선지<small>악보</small></button>
+    <button data-paper="weekly">주간 계획<small>월~일</small></button>
+    <button id="btnImportForm" style="grid-column:1/-1">PDF·사진 양식 불러오기<small>학교 서류 같은 양식을 배경으로 깔고 그 위에 써요. PDF는 쪽마다 페이지가 생겨요</small></button>
   </div>
-</div>
+  <input type="file" id="fileForm" accept="application/pdf,image/*" hidden>
+  <p id="formStatus" style="font-size:13px;margin:10px 0 0"></p>
+  <div class="actions"><button class="btn" data-close>취소</button></div>
+</dialog>
 
-<!-- PDF 불러오기 -->
-<div class="sheet" id="pdfsetup" role="dialog" aria-modal="true" aria-label="강의자료 불러오기">
-  <div class="sheet-top"><button class="iconbtn" id="sclose" aria-label="닫기">✕</button><span>강의자료 PDF 불러오기</span><span></span></div>
-  <div class="setup-body">
-    <p>수업 PDF를 이 기기에 한 번만 불러오면, 문제를 풀다가 해당 페이지를 바로 볼 수 있어요. 파일은 이 브라우저 안에만 저장되고 어디에도 업로드되지 않아요.</p>
-    <label class="filebox"><span>3주차 심장 PDF</span><input type="file" accept="application/pdf" data-doc="heart"><em id="st-heart">없음</em></label>
-    <label class="filebox"><span>5–6주차 혈관 PDF</span><input type="file" accept="application/pdf" data-doc="vessel"><em id="st-vessel">없음</em></label>
-    <p class="muted small">페이지 번호는 교수님이 런어스에 올린 원본 파일 기준이에요. 다른 버전의 파일이면 페이지가 어긋날 수 있어요.</p>
-    <button class="linkbtn" id="clearPdf">저장된 PDF 지우기</button>
+<dialog id="dlgSettings">
+  <h3>설정</h3>
+  <div class="field"><span>기기</span>
+    <div class="seg" id="devSeg"><button data-dev="galaxy">갤럭시 탭 (S펜)</button><button data-dev="ipad">아이패드 (애플 펜슬)</button></div>
   </div>
-</div>
+  <div class="field"><span>필압 반응 <b id="gammaVal"></b></span>
+    <input type="range" id="gamma" min="0.5" max="1.6" step="0.05" style="width:100%">
+    <p style="font-size:12px;margin:4px 0 0">왼쪽일수록 살짝 눌러도 굵어져요. 저장되는 필압 원본 값은 바뀌지 않아요.</p>
+  </div>
+  <div class="field"><label class="check"><input type="checkbox" id="allowTouch"><span>손가락·마우스로도 쓰기<br><small style="color:var(--muted)">테스트용. 끄면 펜으로만 쓰고 손가락은 스크롤해요.</small></span></label></div>
+  <div class="field"><span>노트 데이터</span>
+    <div class="row" style="margin-bottom:6px"><button class="btn primary" id="btnHandData">필체 데이터 다운로드 (전체 노트의 손글씨)</button></div>
+    <p style="font-size:12px;margin:0 0 12px" id="handInfo"></p>
+    <p style="font-size:12px;margin:-6px 0 12px"><a href="label.html" target="_blank" rel="noopener">라벨링 도구 열기</a> (GitHub 사이트에 같이 올렸을 때)</p>
+    <div class="row" style="margin-bottom:8px"><button class="btn" id="btnPack">필체 팩 불러오기</button><input type="file" id="filePack" accept=".json,application/json" hidden></div>
+    <p style="font-size:12px;margin:0 0 10px" id="packInfo"></p>
+    <div class="row" style="margin-bottom:10px"><input id="packUrl" placeholder="비워 두면 기본 주소(GitHub hw_note) 사용" style="flex:1;min-width:220px;border:1px solid var(--line);border-radius:8px;padding:9px;background:var(--chrome);color:var(--ink);-webkit-user-select:text;user-select:text"><button class="btn" id="packCheck">새 팩 확인</button></div>
+    <div class="row"><button class="btn" id="btnExport">하나씩 골라 저장</button><button class="btn" id="btnImport">가져오기 (PDF·사진·노트 JSON)</button><input type="file" id="fileImport" accept=".json,application/json,application/pdf,.pdf,image/*" hidden></div>
+    <p style="font-size:12px;margin:6px 0 0" id="lastExport"></p>
+  </div>
+  <div class="actions"><button class="btn danger" id="btnWipe">모든 페이지 삭제</button><button class="btn primary" data-close>닫기</button></div>
+</dialog>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="app.js"></script>
+<dialog id="dlgBooks">
+  <h3>노트북</h3>
+  <div id="bookList" style="display:flex;flex-direction:column;gap:6px;max-height:50vh;overflow:auto"></div>
+  <div class="row" style="margin-top:14px"><input id="newBookName" placeholder="새 노트북 이름" style="flex:1;border:1px solid var(--line);border-radius:8px;padding:9px;background:var(--chrome);color:var(--ink);-webkit-user-select:text;user-select:text"><button class="btn primary" id="newBookGo">만들기</button></div>
+  <div class="actions"><button class="btn" data-close>닫기</button></div>
+</dialog>
+
+<dialog id="dlgGhost" style="width:min(660px,95vw)">
+  <h3>대필</h3>
+  <p id="ghostInfo" style="font-size:13px"></p>
+  <div class="row" style="margin-bottom:6px"><button class="btn" id="ghostImport">PDF·사진에서 글 가져오기</button><input type="file" id="fileSrc" accept="application/pdf,.pdf,image/*" hidden><small id="srcStatus" style="color:var(--muted)"></small></div>
+  <textarea id="ghostText" rows="4" style="width:100%;font-size:16px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--chrome);color:var(--ink);-webkit-user-select:text;user-select:text" placeholder="이 칸에 쓸 내용 (줄바꿈 = 다음 줄)"></textarea>
+  <div class="field" style="margin-top:12px"><span>글씨 크기 <b id="ghostSizeVal">100%</b></span><input type="range" id="ghostSize" min="50" max="180" value="100" style="width:100%"></div>
+  <div class="field"><span>글씨 굵기 <b id="ghostWVal">100%</b></span><input type="range" id="ghostW" min="40" max="250" value="100" style="width:100%"></div>
+  <div style="border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:42vh;background:#fff"><canvas id="ghostPrev" style="display:block"></canvas></div>
+  <p id="ghostWarn" style="font-size:13px;color:var(--accent);min-height:18px;margin:6px 0 0"></p>
+  <div class="actions"><button class="btn" id="ghostShuffle">다른 모양으로</button><span style="flex:1"></span><button class="btn" data-close>취소</button><button class="btn primary" id="ghostGo">이대로 쓰기</button></div>
+</dialog>
+
+<dialog id="dlgSrc" style="width:min(700px,95vw)">
+  <h3>가져온 글</h3>
+  <p style="font-size:13px">옮겨 쓸 부분을 드래그로 선택하고 <b>선택한 부분 넣기</b>, 또는 <b>전체 넣기</b>. 여기서 바로 고쳐도 돼요.</p>
+  <textarea id="srcText" style="width:100%;height:42vh;font-size:15px;line-height:1.6;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--chrome);color:var(--ink);-webkit-user-select:text;user-select:text"></textarea>
+  <div class="actions"><button class="btn" data-close>닫기</button><button class="btn" id="srcAll">전체 넣기</button><button class="btn primary" id="srcSel">선택한 부분 넣기</button></div>
+</dialog>
+
+<dialog id="dlgConfirm">
+  <h3 id="cfTitle"></h3><p id="cfText"></p>
+  <div class="actions"><button class="btn" data-close>취소</button><button class="btn danger" id="cfOk"></button></div>
+</dialog>
+
+<dialog id="dlgExport">
+  <h3>내보내기</h3>
+  <p id="exInfo"></p>
+  <div class="papers">
+    <button id="exPdf">PDF로 저장<small>공부·공유용. 필기가 선명한 벡터로 들어가요</small></button>
+    <button id="exJson">JSON으로 저장<small>학습용 원본. 필압·속도·기울기 포함</small></button>
+    <button id="exBoth" style="grid-column:1/-1">PDF와 JSON 둘 다 저장<small>공부하고 나서 이걸 누르면 한 번에 끝나요</small></button>
+  </div>
+  <textarea id="exportBox" readonly></textarea>
+  <div class="actions"><button class="btn" id="btnCopy">JSON 복사</button><button class="btn" data-close>닫기</button></div>
+</dialog>
+
+<script>
+(() => {
+"use strict";
+const $=id=>document.getElementById(id);
+const PW=1000, PH=1414;
+const PAPER={ ruled:{gap:40,name:"줄"}, wide:{gap:52,name:"넓은 줄"}, narrow:{gap:32,name:"좁은 줄"}, blank:{gap:40,name:"무지"}, grid:{gap:40,name:"모눈"}, dot:{gap:40,name:"점 모눈"},
+  cornell:{gap:40,name:"코넬 노트"}, todo:{gap:56,name:"할 일 목록"}, manuscript:{gap:40,name:"원고지"}, music:{gap:40,name:"오선지"}, weekly:{gap:40,name:"주간 계획"}, wrong:{gap:40,name:"오답 노트"} };
+// 속지 그리기 (화면·PDF 공통). c: 캔버스, s: 1단위당 픽셀
+function paintPaper(c, type, gap, s){
+  const L=(x1,y1,x2,y2)=>{ c.moveTo(x1*s,y1*s); c.lineTo(x2*s,y2*s); };
+  c.lineWidth=1; c.beginPath();
+  if (type==="ruled"||type==="wide"||type==="narrow"){ c.strokeStyle="#B9D3E6"; for (let y=140;y<PH-50;y+=gap) L(0,y,PW,y); c.stroke(); c.beginPath(); c.strokeStyle="#E8A39C"; L(80,0,80,PH); }
+  else if (type==="grid"){ c.strokeStyle="#DCE7F0"; for (let y=60;y<PH;y+=gap) L(0,y,PW,y); for (let x=20;x<PW;x+=gap) L(x,0,x,PH); }
+  else if (type==="dot"){ c.fillStyle="#AFC3D6"; for (let y=60;y<PH;y+=gap) for (let x=20;x<PW;x+=gap){ c.moveTo(x*s+1.6,y*s); c.arc(x*s,y*s,1.6,0,7); } c.fill(); }
+  else if (type==="cornell"){ c.strokeStyle="#B9D3E6"; for (let y=180;y<=PH-280;y+=40) L(250,y,PW-40,y); c.stroke(); c.beginPath(); c.strokeStyle="#7FA9CC"; L(40,140,PW-40,140); L(250,140,250,PH-260); L(40,PH-260,PW-40,PH-260); }
+  else if (type==="todo"){ c.strokeStyle="#B9D3E6"; for (let y=180;y<PH-60;y+=56){ L(110,y,PW-50,y); c.rect(64*s,(y-34)*s,26*s,26*s); } c.stroke(); c.beginPath(); c.strokeStyle="#7FA9CC"; L(50,120,PW-50,120); }
+  else if (type==="manuscript"){ c.strokeStyle="#E3A98F"; const cw=45, x0=50; for (let y=100;y+cw<PH-50;y+=cw+14){ c.rect(x0*s,y*s,20*cw*s,cw*s); for (let i=1;i<20;i++) L(x0+i*cw,y,x0+i*cw,y+cw); } }
+  else if (type==="music"){ c.strokeStyle="#9AA5B5"; for (let y=130;y+48<PH-50;y+=110) for (let i=0;i<5;i++) L(50,y+i*12,PW-50,y+i*12); }
+  else if (type==="weekly"){ c.strokeStyle="#B9D3E6"; const h=(PH-160)/7; for (let i=0;i<=7;i++) L(40,120+i*h,PW-40,120+i*h); L(150,120,150,PH-40); c.stroke();
+    c.fillStyle="#7FA9CC"; c.font=`${Math.round(26*s)}px sans-serif`; "월화수목금토일".split("").forEach((d,i)=>c.fillText(d,(80)*s,(120+i*h+40)*s)); c.beginPath(); }
+  else if (type==="wrong"){ c.strokeStyle="#B9D3E6"; for (let y=200;y<PH-50;y+=40) L(PW/2+20,y,PW-40,y); c.stroke(); c.beginPath(); c.strokeStyle="#E8A39C"; L(PW/2,80,PW/2,PH-40); c.stroke();
+    c.fillStyle="#C58B85"; c.font=`${Math.round(24*s)}px sans-serif`; c.fillText("문제", 60*s, 120*s); c.fillText("풀이 · 오답 이유", (PW/2+30)*s, 120*s); c.beginPath(); }
+  c.stroke();
+}
+// 대필이 맞춰 쓸 수 있는 속지의 줄
+function paperLines(p){
+  if (!p || p.bg) return null; const t=p.paper.type, g=p.paper.gap;
+  if (t==="ruled"||t==="wide"||t==="narrow"){ const ys=[]; for (let y=140;y<PH-50;y+=g) ys.push(y); return {ys, gap:g}; }
+  if (t==="cornell"){ const ys=[]; for (let y=180;y<=PH-280;y+=40) ys.push(y); return {ys, gap:40}; }
+  if (t==="todo"){ const ys=[]; for (let y=180;y<PH-60;y+=56) ys.push(y); return {ys, gap:56}; }
+  if (t==="wrong"){ const ys=[]; for (let y=200;y<PH-50;y+=40) ys.push(y); return {ys, gap:40}; }
+  return null;
+}
+const COLORS=["#1c1c1c","#1f3fae","#c62828","#2e7d32","#ef6c00","#6a1b9a"];
+const COLOR_NAMES=["검정","파랑","빨강","초록","주황","보라"];
+const HLCOLORS=["#ffe066","#b2f2bb","#ffc9e3","#a5d8ff"], HL_NAMES=["노랑","연두","분홍","하늘"];
+const WIDTHS=[1.6,2.4,3.6];
+const uid=()=>Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);
+function toast(m, actions, ms){ const el=$("status"); el.textContent=m;
+  for (const a of (actions||[])){ const b=document.createElement("button"); b.textContent=a.label; b.onclick=()=>{ el.classList.remove("show"); a.fn(); }; el.appendChild(b); }
+  el.classList.add("show"); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove("show"), ms||(actions?10000:2300)); }
+document.querySelectorAll("dialog [data-close]").forEach(b=>b.onclick=()=>b.closest("dialog").close());
+
+// ---------- 상태 ----------
+function detectDevice(){ const ua=navigator.userAgent; if (/iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints>1)) return "ipad"; return "galaxy"; }
+const set={ device:detectDevice(), gamma:null, allowTouch:false, color:0, width:1, lastExport:null, zoom:1 };
+let pages=[], tool="pen", eraseMode="stroke";
+let BOOKS=[], curBook=null;
+const undoStack=[], redoStack=[];
+
+// ---------- 저장소 (IndexedDB) ----------
+const store={ db:null,
+  open(){ return new Promise((res,rej)=>{ try{ const r=indexedDB.open("hwnote",1);
+    r.onupgradeneeded=()=>{ const d=r.result; if(!d.objectStoreNames.contains("pages")) d.createObjectStore("pages",{keyPath:"id"}); if(!d.objectStoreNames.contains("meta")) d.createObjectStore("meta"); };
+    r.onsuccess=()=>{ this.db=r.result; res(); }; r.onerror=()=>rej(r.error); }catch(e){ rej(e); } }); },
+  tx(name,mode,fn){ return new Promise((res,rej)=>{ if(!this.db) return res(null); const t=this.db.transaction(name,mode); const s=t.objectStore(name); const out=fn(s); t.oncomplete=()=>res(out&&out.result); t.onerror=()=>rej(t.error); }); },
+  all(name){ return this.tx(name,"readonly",s=>s.getAll()); },
+  get(name,k){ return this.tx(name,"readonly",s=>s.get(k)); },
+  put(name,v,k){ return this.tx(name,"readwrite",s=>k===undefined?s.put(v):s.put(v,k)); },
+  del(name,k){ return this.tx(name,"readwrite",s=>s.delete(k)); },
+  clear(name){ return this.tx(name,"readwrite",s=>s.clear()); },
+};
+const dirty=new Set(); let saveTimer=null, metaDirty=false;
+function markDirty(p){ if(p) dirty.add(p.id); else metaDirty=true; $("saveState").textContent="저장 중…"; clearTimeout(saveTimer);
+  saveTimer=setTimeout(()=>{ if (window.requestIdleCallback) requestIdleCallback(()=>flush(), {timeout:1500}); else flush(); }, 700); }
+async function flush(){
+  try{
+    for (const id of [...dirty]){ const p=pages.find(x=>x.id===id); dirty.delete(id); if (p){ await saveBg(p); await store.put("pages", serializePage(p)); } }
+    if (curBook){ curBook.order=pages.map(p=>p.id); curBook.updated=Date.now(); }
+    await store.put("meta", { books:BOOKS, current:curBook&&curBook.id }, "library");
+    await store.put("meta", set, "settings"); metaDirty=false;
+    $("saveState").textContent = store.db ? "저장됨" : "저장 안 됨";
+  }catch(e){ $("saveState").textContent="저장 실패"; toast("기기에 저장하지 못했어요. 노트 내보내기로 백업해 주세요."); }
+}
+const serializePage=p=>({ id:p.id, nb:(curBook&&curBook.id), paper:p.paper, strokes:p.strokes, ...(p.guideLines?{guideLines:p.guideLines}:{}), ...(p.bg?{bgRef:p.id, bgw:p.bg.w, bgh:p.bg.h}:{}) });
+async function saveBg(p){ if (p.bg && !p._bgSaved){ await store.put("meta", p.bg, "bg:"+p.id); p._bgSaved=true; } }
+async function loadBgs(list){ for (const q of list){ if (q.bg){ q._bgSaved=false; continue; } if (q.bgRef){ try{ const b=await store.get("meta","bg:"+q.bgRef); if (b) q.bg=b; q._bgSaved=true; }catch(e){} } } }
+
+// ---------- 페이지 DOM & 렌더링 ----------
+let pageW=800, S=0.8;
+function pressureFactor(p){ const g=set.gamma ?? (set.device==="ipad"?1.0:0.8); return 0.35+1.1*Math.pow(Math.max(0,Math.min(1,p)),g); }
+function drawStroke(ctx, st, s){
+  const pts=st.pts; if(!pts.length) return;
+  if (st.hl){ ctx.save(); ctx.globalAlpha=0.42; ctx.strokeStyle=st.color; ctx.lineWidth=st.w*s; ctx.lineCap="round"; ctx.lineJoin="round"; ctx.beginPath();
+    pts.forEach((q,i)=>i?ctx.lineTo(q[0]*s,q[1]*s):ctx.moveTo(q[0]*s,q[1]*s)); if (pts.length===1) ctx.lineTo(pts[0][0]*s+0.1,pts[0][1]*s); ctx.stroke(); ctx.restore(); return; }
+  ctx.strokeStyle=st.color; ctx.fillStyle=st.color; ctx.lineCap="round"; ctx.lineJoin="round";
+  if (pts.length===1){ ctx.beginPath(); ctx.arc(pts[0][0]*s, pts[0][1]*s, st.w*pressureFactor(pts[0][3])*s/2, 0, Math.PI*2); ctx.fill(); return; }
+  let cw=-1;
+  for (let i=1;i<pts.length;i++){ const a=pts[i-1], b=pts[i];
+    const v=Math.hypot(b[0]-a[0], b[1]-a[1])/Math.max(1, b[2]-a[2]);
+    const w=Math.round(Math.max(0.6, st.w*pressureFactor((a[3]+b[3])/2)*Math.max(0.6, 1.1-0.25*v)*s)*4)/4;
+    if (w!==cw){ if (cw>0) ctx.stroke(); ctx.beginPath(); ctx.lineWidth=w; ctx.moveTo(a[0]*s, a[1]*s); cw=w; }
+    ctx.lineTo(b[0]*s, b[1]*s); }
+  if (cw>0) ctx.stroke();
+}
+function seg(ctx, st, a, b, s){
+  const v=Math.hypot(b[0]-a[0], b[1]-a[1])/Math.max(1, b[2]-a[2]);
+  ctx.lineWidth=Math.max(0.6, st.w*pressureFactor((a[3]+b[3])/2)*Math.max(0.6, 1.1-0.25*v)*s);
+  ctx.beginPath(); ctx.moveTo(a[0]*s, a[1]*s); ctx.lineTo(b[0]*s, b[1]*s); ctx.stroke();
+}
+function bgRect(p){ const b=p.bg, ar=b.h/b.w; let w=PW, h=PW*ar; if (h>PH){ h=PH; w=PH/ar; } return [(PW-w)/2, (PH-h)/2, w, h]; }
+function drawPaper(p){
+  if (p._S!==S) return;
+  const c=p.el.bg.getContext("2d"), s=S; c.clearRect(0,0,PW*s,PH*s); c.fillStyle="#fff"; c.fillRect(0,0,PW*s,PH*s);
+  if (p.bg){
+    if (!p._img){ p._img=new Image(); p._img.onload=()=>drawPaper(p); p._img.src=p.bg.src; }
+    if (p._img.complete && p._img.naturalWidth){ const [x,y,w,h]=bgRect(p); c.drawImage(p._img, x*s, y*s, w*s, h*s); }
+    return;
+  }
+  paintPaper(c, p.paper.type, p.paper.gap, s);
+}
+function drawInk(p, skip){ if (p._S!==S) return; const c=p.el.ink.getContext("2d"); c.clearRect(0,0,PW*S,PH*S); for (const st of p.strokes) if (st.hl && !(skip&&skip.has(st.id))) drawStroke(c, st, S); for (const st of p.strokes) if (!st.hl && !(skip&&skip.has(st.id))) drawStroke(c, st, S); if (sel && sel.p===p && !skip) drawSel(p); }
+function sizeCanvas(cv){ const d=Math.min(window.devicePixelRatio||1, 2, 2600/(PW*S)); cv.width=Math.round(PW*S*d); cv.height=Math.round(PH*S*d); cv.getContext("2d").setTransform(d,0,0,d,0,0); }
+function layout(){
+  const avail=$("scroller").clientWidth-32; pageW=Math.min(900, Math.max(280, avail))*(set.zoom||1); S=pageW/PW;
+  $("zoomVal").textContent=Math.round((set.zoom||1)*100)+"%";
+  pages.forEach((p,i)=>{ p.el.root.style.width=pageW+"px"; p.el.root.style.height=(PH*S)+"px"; p.el.num.textContent=`${i+1} / ${pages.length}`;
+    if (p._vis) paintPage(p); else releasePage(p); });
+}
+// 보이는(곧 보일) 페이지만 캔버스를 만들어 그리고, 멀어지면 메모리를 비움
+function paintPage(p){ if (!p.el) return; [p.el.bg,p.el.ink,p.el.live].forEach(sizeCanvas); p._S=S; drawPaper(p); drawInk(p); }
+function ensurePage(p){ if (p._S!==S) paintPage(p); }
+function releasePage(p){ if (!p.el || p._S==null) return; for (const c of [p.el.bg,p.el.ink,p.el.live]){ c.width=0; c.height=0; } p._S=null; }
+const pageObserver = ("IntersectionObserver" in window) ? new IntersectionObserver(ents=>{
+  for (const en of ents){ const p=pages.find(x=>x.el && x.el.root===en.target); if (!p) continue;
+    p._vis=en.isIntersecting; if (p._vis) ensurePage(p); else if (!(sel&&sel.p===p)) releasePage(p); }
+}, { root: document.getElementById("scroller"), rootMargin: "1400px 0px" }) : null;
+function buildPage(p){
+  const root=document.createElement("div"); root.className="page";
+  const bg=document.createElement("canvas"), ink=document.createElement("canvas"), live=document.createElement("canvas");
+  const bar=document.createElement("div"); bar.className="pagebar";
+  const num=document.createElement("span");
+  const right=document.createElement("span");
+  const sel=document.createElement("select"); sel.setAttribute("aria-label","속지");
+  for (const [k,v] of Object.entries(PAPER)){ const o=document.createElement("option"); o.value=k; o.textContent=v.name; sel.appendChild(o); }
+  sel.value=p.paper.type; sel.onchange=()=>{ p.paper={type:sel.value, gap:PAPER[sel.value].gap}; drawPaper(p); markDirty(p); };
+  const del=document.createElement("button"); del.textContent="삭제"; del.onclick=()=>confirmBox("이 페이지를 삭제할까요?","페이지의 필기도 함께 지워지고 되돌릴 수 없어요.","삭제",()=>deletePage(p));
+  if (p.bg){ sel.style.display="none"; const lab=document.createElement("span"); lab.textContent="양식"; right.append(lab); }
+  const mk=(t,l,f)=>{ const b=document.createElement("button"); b.textContent=t; b.setAttribute("aria-label",l); b.onclick=f; return b; };
+  right.append(mk("↑","위로",()=>movePage(p,-1)), mk("↓","아래로",()=>movePage(p,1)), mk("복제","페이지 복제",()=>dupPage(p)), mk("+뒤에","뒤에 페이지 추가",()=>{ paperTarget=pages.indexOf(p)+1; $("paperTitle").textContent="여기 뒤에 새 페이지"; $("dlgPaper").showModal(); }));
+  right.append(sel,del); bar.append(num,right);
+  root.append(bg,ink,live,bar);
+  try{ live.getContext("2d",{desynchronized:true}); }catch(e){}          // 저지연 펜: 획이 펜 끝에 바로 붙어 나오게
+  p.el={root,bg,ink,live,num};
+  if (pageObserver) pageObserver.observe(root); else p._vis=true;
+  attachInput(p);
+  return root;
+}
+function renderAll(){ const box=$("pages"); box.innerHTML=""; pages.forEach(p=>box.appendChild(p.el?.root || buildPage(p))); layout();
+  requestAnimationFrame(()=>{ const sc=$("scroller").getBoundingClientRect(); pages.forEach(p=>{ const r=p.el.root.getBoundingClientRect(); if (r.bottom>sc.top-1400 && r.top<sc.bottom+1400){ p._vis=true; ensurePage(p); } }); }); }
+function newPage(type){ return { id:uid(), paper:{type, gap:PAPER[type].gap}, strokes:[] }; }
+
+// ---------- 입력 ----------
+let panning=null; const touches=new Map(); let pinch=null; const cancelers=[];
+function attachInput(p){
+  const cv=p.el.live; let cur=null, t0=0, erasing=false, gest=null;
+  const toPage=e=>{ const r=cv.getBoundingClientRect(); return [(e.clientX-r.left)/S, (e.clientY-r.top)/S]; };
+  const point=e=>{ const [x,y]=toPage(e); let pr=e.pressure; if (e.pointerType!=="pen") pr=0.5;
+    return [Math.round(x*10)/10, Math.round(y*10)/10, Math.round(e.timeStamp-t0), Math.round(pr*1000)/1000, e.tiltX||0, e.tiltY||0]; };
+  const isEraserBtn=e=>(e.buttons&32) || (set.device==="galaxy" && e.pointerType==="pen" && (e.buttons&2));
+  cv.addEventListener("pointerdown", e=>{
+    const draws = e.pointerType==="pen" || set.allowTouch;
+    if (!draws || (e.pointerType==="touch" && touches.size>1)) return;
+    e.preventDefault(); cv.setPointerCapture(e.pointerId); ensurePage(p);
+    if (tool==="ghost"){ const [x,y]=toPage(e); ghostDrag={p, x0:x, y0:y, x1:x, y1:y}; return; }
+    if (tool==="lasso"){ lassoDown(p, toPage(e)); return; }
+    erasing = tool==="eraser" || isEraserBtn(e);
+    if (erasing){ gest={removed:new Map(), added:new Set()}; eraseAt(p, toPage(e), gest); showCursor(p, toPage(e)); return; }
+    t0=e.timeStamp;
+    cur = tool==="hl" ? { id:uid(), pts:[point(e)], color:HLCOLORS[set.hlColor||0], w:14, hl:true, src:"hl", dev:set.device, t0:Date.now() }
+                      : { id:uid(), pts:[point(e)], color:COLORS[set.color], w:WIDTHS[set.width], src:"hand", dev:set.device, t0:Date.now() };
+    drawStroke(p.el.live.getContext("2d"), cur, S);
+  });
+  cv.addEventListener("pointermove", e=>{
+    if (e.pointerType==="touch" && pinch){ return; }
+    if (ghostDrag && ghostDrag.p===p){ e.preventDefault(); const [x,y]=toPage(e); ghostDrag.x1=x; ghostDrag.y1=y; drawGhostRect(p, ghostDrag); return; }
+    if (tool==="lasso" && (lassoPath||selDrag)){ e.preventDefault(); lassoMove(p, toPage(e)); return; }
+    if (erasing && gest){ e.preventDefault(); const evs=(e.getCoalescedEvents&&e.getCoalescedEvents())||[]; for (const ev of (evs.length?evs:[e])) eraseAt(p, toPage(ev), gest); drawInk(p); showCursor(p, toPage(e)); return; }
+    if (!cur) return; e.preventDefault();
+    const evs=(e.getCoalescedEvents&&e.getCoalescedEvents())||[]; const lc=p.el.live.getContext("2d");
+    lc.strokeStyle=cur.color; lc.lineCap="round";
+    for (const ev of (evs.length?evs:[e])){ const q=point(ev), a=cur.pts[cur.pts.length-1]; if (q[0]===a[0]&&q[1]===a[1]) continue; if (q[2]<a[2]) q[2]=a[2]; cur.pts.push(q); if (!cur.hl) seg(lc, cur, a, q, S); }
+    if (cur.hl){ clearLive(p); drawStroke(lc, cur, S); }
+  });
+  const end=e=>{
+    if (ghostDrag && ghostDrag.p===p){ const g=ghostDrag; ghostDrag=null; openGhost(g); return; }
+    if (tool==="lasso" && (lassoPath||selDrag)){ lassoUp(p); return; }
+    if (erasing){ erasing=false; clearLive(p);
+      if (gest && (gest.removed.size || gest.added.size)){ const added=p.strokes.filter(s=>gest.added.has(s.id)); pushUndo({pid:p.id, removed:[...gest.removed.values()], added}); markDirty(p); }
+      gest=null; return; }
+    if (!cur) return;
+    if (e.type==="pointercancel" || (cur.pts.length<2 && pinch)){ cur=null; clearLive(p); return; }
+    p.strokes.push(cur); if (cur.hl) drawInk(p); else drawStroke(p.el.ink.getContext("2d"), cur, S); clearLive(p);
+    pushUndo({pid:p.id, removed:[], added:[cur]}); markDirty(p); cur=null;
+  };
+  cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
+  cancelers.push(()=>{ if (cur){ cur=null; clearLive(p); } if (erasing){ erasing=false; clearLive(p);
+    if (gest && (gest.removed.size || gest.added.size)){ const added=p.strokes.filter(s=>gest.added.has(s.id)); pushUndo({pid:p.id, removed:[...gest.removed.values()], added}); markDirty(p); } gest=null; } });
+  cv.addEventListener("touchstart", e=>{ if (set.allowTouch || e.touches.length===1) e.preventDefault(); }, {passive:false});
+  cv.addEventListener("touchmove", e=>e.preventDefault(), {passive:false});
+  cv.addEventListener("contextmenu", e=>e.preventDefault());
+}
+function clearLive(p){ p.el.live.getContext("2d").clearRect(0,0,PW*S,PH*S); }
+function showCursor(p, [x,y]){ const c=p.el.live.getContext("2d"); clearLive(p); c.strokeStyle="#888"; c.lineWidth=1; c.beginPath(); c.arc(x*S,y*S,eraseR()*S,0,Math.PI*2); c.stroke(); }
+const eraseR=()=>(eraseMode==="stroke"?8:11)*(set.eraserBig?2.5:1);
+
+// ---------- 지우개 ----------
+function bbox(st){ if (!st._bb){ let a=1e9,b=1e9,c=-1e9,d=-1e9; for (const q of st.pts){ a=Math.min(a,q[0]); b=Math.min(b,q[1]); c=Math.max(c,q[0]); d=Math.max(d,q[1]); } st._bb=[a,b,c,d]; } return st._bb; }
+function distSeg(px,py,a,b){ const dx=b[0]-a[0], dy=b[1]-a[1], L=dx*dx+dy*dy; let t=L?((px-a[0])*dx+(py-a[1])*dy)/L:0; t=Math.max(0,Math.min(1,t)); return Math.hypot(px-(a[0]+t*dx), py-(a[1]+t*dy)); }
+function hits(st, x, y, r){ const [a,b,c,d]=bbox(st), m=r+st.w; if (x<a-m||x>c+m||y<b-m||y>d+m) return false;
+  const P=st.pts; if (P.length===1) return Math.hypot(x-P[0][0], y-P[0][1])<=m; for (let i=1;i<P.length;i++) if (distSeg(x,y,P[i-1],P[i])<=r+st.w/2) return true; return false; }
+function densify(P, step){ const out=[P[0]];
+  for (let i=1;i<P.length;i++){ const a=P[i-1], b=P[i], n=Math.floor(Math.hypot(b[0]-a[0],b[1]-a[1])/step);
+    for (let k=1;k<=n;k++){ const t=k/(n+1); out.push(a.map((v,j)=>j<4? Math.round((v+(b[j]-v)*t)*(j<2?10:j===3?1000:1))/(j<2?10:j===3?1000:1) : b[j])); }
+    out.push(b); } return out; }
+function forget(gest, st){ if (gest.added.has(st.id)) gest.added.delete(st.id); else gest.removed.set(st.id, st); }
+function eraseAt(p, [x,y], gest){
+  const r=eraseR(); const out=[];
+  for (const st of p.strokes){
+    if (!hits(st,x,y,r)){ out.push(st); continue; }
+    forget(gest, st);
+    if (eraseMode==="partial"){
+      let run=[]; const pieces=[];
+      for (const q of densify(st.pts, 2)){ if (Math.hypot(q[0]-x,q[1]-y) <= r+st.w/2){ if (run.length) pieces.push(run); run=[]; } else run.push(q); }
+      if (run.length) pieces.push(run);
+      for (const pc of pieces){ if (pc.length<2) continue; const ns={...st, id:uid(), pts:pc}; delete ns._bb; out.push(ns); gest.added.add(ns.id); }
+    }
+  }
+  p.strokes=out;
+}
+
+
+// ---------- 확대·축소 ----------
+const ZMIN=0.6, ZMAX=3;
+function setZoom(z, cx, cy){
+  const sc=$("scroller"); z=Math.max(ZMIN, Math.min(ZMAX, z)); const old=set.zoom||1; if (Math.abs(z-old)<0.001) return;
+  const r=sc.getBoundingClientRect(); const mx=(cx??(r.left+r.width/2))-r.left, my=(cy??(r.top+r.height/2))-r.top;
+  const ax=sc.scrollLeft+mx, ay=sc.scrollTop+my, k=z/old;
+  set.zoom=z; layout(); sc.scrollLeft=ax*k-mx; sc.scrollTop=ay*k-my; markDirty(null);
+}
+$("tZoomIn").onclick=()=>setZoom((set.zoom||1)*1.25);
+$("tZoomOut").onclick=()=>setZoom((set.zoom||1)/1.25);
+$("zoomVal").onclick=()=>setZoom(1);
+(()=>{
+  const sc=$("scroller"), box=$("pages");
+  const mid=()=>{ const v=[...touches.values()]; return {x:(v[0].x+v[1].x)/2, y:(v[0].y+v[1].y)/2, d:Math.hypot(v[0].x-v[1].x, v[0].y-v[1].y)}; };
+  sc.addEventListener("pointerdown", e=>{
+    if (e.pointerType!=="touch") return;
+    touches.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    if (touches.size===2){ cancelers.forEach(f=>f()); panning=null; const m=mid(); pinch={d0:m.d, x0:m.x, y0:m.y, z0:set.zoom||1, r:1}; }
+    else if (touches.size===1 && !set.allowTouch){ panning={x:e.clientX, y:e.clientY, l:sc.scrollLeft, t:sc.scrollTop}; }
+  }, true);
+  sc.addEventListener("pointermove", e=>{
+    if (e.pointerType!=="touch" || !touches.has(e.pointerId)) return;
+    touches.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    if (pinch && touches.size>=2){
+      const m=mid(); const z=Math.max(ZMIN, Math.min(ZMAX, pinch.z0*m.d/pinch.d0)); pinch.r=z/pinch.z0; pinch.x=m.x; pinch.y=m.y;
+      const r=sc.getBoundingClientRect(); const ox=sc.scrollLeft+pinch.x0-r.left, oy=sc.scrollTop+pinch.y0-r.top;
+      box.style.transformOrigin=`${ox}px ${oy}px`; box.style.transform=`translate(${m.x-pinch.x0}px, ${m.y-pinch.y0}px) scale(${pinch.r})`;
+    } else if (panning){ sc.scrollLeft=panning.l-(e.clientX-panning.x); sc.scrollTop=panning.t-(e.clientY-panning.y); }
+  }, true);
+  const up=e=>{
+    if (e.pointerType!=="touch") return; touches.delete(e.pointerId);
+    if (pinch && touches.size<2){
+      const pz=pinch; pinch=null; box.style.transform=""; box.style.transformOrigin="0 0";
+      if (Math.abs(pz.r-1)>0.01) setZoom(pz.z0*pz.r, pz.x0, pz.y0);
+      if (pz.x!=null){ sc.scrollLeft-=pz.x-pz.x0; sc.scrollTop-=pz.y-pz.y0; }
+    }
+    if (!touches.size) panning=null;
+  };
+  sc.addEventListener("pointerup", up, true); sc.addEventListener("pointercancel", up, true);
+  sc.addEventListener("wheel", e=>{ if (e.ctrlKey){ e.preventDefault(); setZoom((set.zoom||1)*Math.exp(-e.deltaY*0.01), e.clientX, e.clientY); } }, {passive:false});
+})();
+
+// ---------- 실행취소 ----------
+function pushUndo(op){ undoStack.push(op); if (undoStack.length>100) undoStack.shift(); redoStack.length=0; syncUndo(); }
+function apply(op, reverse){
+  const p=pages.find(x=>x.id===op.pid); if (!p) return;
+  const rm = reverse? op.added : op.removed, add = reverse? op.removed : op.added;
+  const ids=new Set(rm.map(s=>s.id)); p.strokes=p.strokes.filter(s=>!ids.has(s.id)).concat(add);
+  drawInk(p); markDirty(p);
+  if (sel && sel.p===p){ const ids=new Set([...sel.ids].filter(id=>p.strokes.some(s=>s.id===id))); setSel(ids.size?p:null, ids); }
+}
+function undo(){ const op=undoStack.pop(); if (!op) return; apply(op,true); redoStack.push(op); syncUndo(); }
+function redo(){ const op=redoStack.pop(); if (!op) return; apply(op,false); undoStack.push(op); syncUndo(); }
+function syncUndo(){ $("tUndo").disabled=!undoStack.length; $("tRedo").disabled=!redoStack.length; }
+$("tUndo").onclick=undo; $("tRedo").onclick=redo;
+document.addEventListener("keydown", e=>{ if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="z"){ e.preventDefault(); e.shiftKey?redo():undo(); } });
+
+// ---------- 올가미 (선택·이동·크기·삭제·복사) ----------
+let sel=null, lassoPath=null, selDrag=null, CLIP=null, rafPending=false;
+const cloneStroke=s=>{ const {_bb,...r}=s; return {...r, pts:s.pts.map(q=>q.slice())}; };
+const strokesOf=(p,ids)=>p.strokes.filter(s=>ids.has(s.id));
+function selBBox(p){ let a=1e9,b=1e9,c=-1e9,d=-1e9; for (const s of strokesOf(p,sel.ids)){ delete s._bb; const q=bbox(s), m=(s.w||2)/2; a=Math.min(a,q[0]-m); b=Math.min(b,q[1]-m); c=Math.max(c,q[2]+m); d=Math.max(d,q[3]+m); } return [a-6,b-6,c+6,d+6]; }
+function drawSel(p){ const c=p.el.live.getContext("2d"); clearLive(p); if (!sel||sel.p!==p) return; const [a,b,cc,d]=sel.bb;
+  c.save(); c.setLineDash([5,4]); c.strokeStyle="#1f6feb"; c.lineWidth=1.3; c.strokeRect(a*S,b*S,(cc-a)*S,(d-b)*S); c.setLineDash([]); c.fillStyle="#1f6feb"; c.beginPath(); c.arc(cc*S,d*S,8,0,Math.PI*2); c.fill(); c.restore(); }
+function setSel(p, ids){
+  if (sel && (!p || sel.p!==p)) clearLive(sel.p);
+  if (!p || !ids || !ids.size){ sel=null; $("selBar").hidden=true; $("selHint").hidden=true; return; }
+  sel={p, ids}; sel.bb=selBBox(p); drawSel(p); $("selBar").hidden=false; $("selHint").hidden=false;
+}
+function inPoly(x,y,P){ let c=false; for (let i=0,j=P.length-1;i<P.length;j=i++){ const [xi,yi]=P[i],[xj,yj]=P[j]; if (((yi>y)!==(yj>y)) && (x<(xj-xi)*(y-yi)/(yj-yi)+xi)) c=!c; } return c; }
+function lassoDown(p, [x,y]){
+  if (sel && sel.p===p){ const [a,b,c,d]=sel.bb, r=14/S;
+    if (Math.hypot(x-c,y-d)<r*1.5){ selDrag={mode:"scale", x, y, ax:a+6, ay:b+6, orig:strokesOf(p,sel.ids).map(cloneStroke)}; startDragCache(p); return; }
+    if (x>=a && x<=c && y>=b && y<=d){ selDrag={mode:"move", x, y, orig:strokesOf(p,sel.ids).map(cloneStroke)}; startDragCache(p); return; } }
+  setSel(null); lassoPath={p, pts:[[x,y]]};
+}
+function lassoMove(p, [x,y]){
+  if (lassoPath && lassoPath.p===p){ lassoPath.pts.push([x,y]); const c=p.el.live.getContext("2d"); clearLive(p); c.save(); c.setLineDash([4,4]); c.strokeStyle="#1f6feb"; c.lineWidth=1.3; c.fillStyle="rgba(31,111,235,.06)";
+    c.beginPath(); lassoPath.pts.forEach((q,i)=>i?c.lineTo(q[0]*S,q[1]*S):c.moveTo(q[0]*S,q[1]*S)); c.closePath(); c.fill(); c.stroke(); c.restore(); return; }
+  if (!selDrag || !sel || sel.p!==p) return;
+  const d=selDrag;
+  if (d.mode==="move"){ d.dx=x-d.x; d.dy=y-d.y; }
+  else { const d0=Math.hypot(d.x-d.ax,d.y-d.ay)||1; d.f=Math.max(0.15, Math.hypot(x-d.ax,y-d.ay)/d0); }
+  if (!rafPending){ rafPending=true; requestAnimationFrame(()=>{ rafPending=false; paintDragCache(p); }); }
+}
+// 끄는 동안: 선택한 글씨를 그림 한 장으로 만들어 그것만 옮겨 그림 (글이 많아도 매끄럽게)
+function startDragCache(p){
+  const live=p.el.live, cv=document.createElement("canvas"); cv.width=live.width; cv.height=live.height;
+  const c=cv.getContext("2d"), dpr=live.width/(PW*S); c.setTransform(dpr,0,0,dpr,0,0);
+  for (const st of strokesOf(p,sel.ids)) if (st.hl) drawStroke(c, st, S); for (const st of strokesOf(p,sel.ids)) if (!st.hl) drawStroke(c, st, S);
+  selDrag.cache=cv; selDrag.dx=0; selDrag.dy=0; selDrag.f=1; drawInk(p, sel.ids); paintDragCache(p);
+}
+function paintDragCache(p){
+  const d=selDrag; if (!d||!d.cache) return; const c=p.el.live.getContext("2d"); clearLive(p); c.save();
+  if (d.mode==="move") c.translate(d.dx*S, d.dy*S); else { c.translate(d.ax*S, d.ay*S); c.scale(d.f, d.f); c.translate(-d.ax*S, -d.ay*S); }
+  c.drawImage(d.cache, 0, 0, PW*S, PH*S);
+  const [a,b,cc,dd]=sel.bb; c.setLineDash([5/(d.f||1),4/(d.f||1)]); c.strokeStyle="#1f6feb"; c.lineWidth=1.3/(d.f||1); c.strokeRect(a*S,b*S,(cc-a)*S,(dd-b)*S); c.restore();
+}
+function applyDrag(p){
+  const d=selDrag, byId=new Map(p.strokes.map(s=>[s.id,s])), f=d.f||1, dx=d.dx||0, dy=d.dy||0;
+  for (const o of d.orig){ const s=byId.get(o.id); if (!s) continue;
+    s.pts=o.pts.map(q=>{ const r=q.slice(); if (d.mode==="move"){ r[0]=q[0]+dx; r[1]=q[1]+dy; } else { r[0]=d.ax+(q[0]-d.ax)*f; r[1]=d.ay+(q[1]-d.ay)*f; } return r; });
+    if (d.mode==="scale") s.w=o.w*Math.max(0.4,Math.min(2.5,f)); delete s._bb; }
+}
+function lassoUp(p){
+  if (lassoPath && lassoPath.p===p){ const P=lassoPath.pts; lassoPath=null; clearLive(p); if (P.length<3){ setSel(null); return; }
+    const ids=new Set(p.strokes.filter(s=>{ let n=0; for (const q of s.pts) if (inPoly(q[0],q[1],P)) n++; return n/s.pts.length>=0.5; }).map(s=>s.id));
+    setSel(p, ids); if (!ids.size) toast("선택된 글씨가 없어요. 글씨를 둘러서 그려 보세요."); return; }
+  if (selDrag && sel && sel.p===p){ applyDrag(p); const d=selDrag; selDrag=null; const now=strokesOf(p,sel.ids).map(cloneStroke);
+    pushUndo({pid:p.id, removed:d.orig, added:now}); markDirty(p); sel.bb=selBBox(p); drawInk(p); }
+}
+function deleteSel(){ if (!sel) return; const p=sel.p, rm=strokesOf(p,sel.ids).map(cloneStroke); p.strokes=p.strokes.filter(s=>!sel.ids.has(s.id)); pushUndo({pid:p.id, removed:rm, added:[]}); setSel(null); drawInk(p); markDirty(p); }
+function copySel(){ if (!sel) return; CLIP=strokesOf(sel.p,sel.ids).map(cloneStroke); toast(`${CLIP.length}획을 복사했어요.`); }
+function pageInView(){ const top=$("scroller").getBoundingClientRect().top; let best=pages[0], bd=1e9; for (const p of pages){ const r=p.el.root.getBoundingClientRect(); const d=Math.abs(r.top-top-40); if (r.bottom>top && d<bd){ bd=d; best=p; } } return best; }
+function pasteClip(){ if (!CLIP||!CLIP.length){ toast("복사한 글씨가 없어요."); return; } const p=sel?sel.p:pageInView(); const t=Date.now();
+  const add=CLIP.map((s,i)=>({...cloneStroke(s), id:uid(), t0:t+i, pts:s.pts.map(q=>{ const r=q.slice(); r[0]+=20; r[1]+=20; return r; })}));
+  p.strokes.push(...add); pushUndo({pid:p.id, removed:[], added:add}); drawInk(p); markDirty(p); setTool("lasso"); setSel(p, new Set(add.map(s=>s.id))); }
+function recolorSel(c){ const p=sel.p, rm=strokesOf(p,sel.ids).map(cloneStroke); for (const s of strokesOf(p,sel.ids)) if (!s.hl) s.color=c; pushUndo({pid:p.id, removed:rm, added:strokesOf(p,sel.ids).map(cloneStroke)}); drawInk(p); markDirty(p); }
+$("sDel").onclick=deleteSel;
+function widthSel(f){ if (!sel) return; const p=sel.p, rm=strokesOf(p,sel.ids).map(cloneStroke); for (const s of strokesOf(p,sel.ids)) if (!s.hl) s.w=Math.max(0.4, Math.min(20, s.w*f)); pushUndo({pid:p.id, removed:rm, added:strokesOf(p,sel.ids).map(cloneStroke)}); sel.bb=selBBox(p); drawInk(p); markDirty(p); }
+$("sThin").onclick=()=>widthSel(0.8); $("sThick").onclick=()=>widthSel(1.25); $("sCopy").onclick=copySel; $("sPaste").onclick=pasteClip; $("sDup").onclick=()=>{ copySel(); pasteClip(); }; $("sNone").onclick=()=>setSel(null);
+document.addEventListener("keydown", e=>{ if (/INPUT|TEXTAREA/.test(e.target.tagName)) return;
+  if ((e.key==="Delete"||e.key==="Backspace") && sel){ e.preventDefault(); deleteSel(); }
+  if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="c" && sel){ e.preventDefault(); copySel(); }
+  if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="v"){ e.preventDefault(); pasteClip(); } });
+
+// ---------- 노트북 ----------
+async function prunePages(){ try{ const keep=new Set(pages.map(p=>p.id)); for (const q of (await store.all("pages")||[])) if (q.nb===curBook.id && !keep.has(q.id)) await store.del("pages", q.id); }catch(e){} }
+function bookLabel(){ $("tBooks").textContent="📒 "+(curBook?curBook.name:"노트"); }
+async function openBook(id){
+  await flush(); setSel && setSel(null);
+  curBook=BOOKS.find(b=>b.id===id)||BOOKS[0];
+  const all=await store.all("pages")||[]; const byId=new Map(all.map(p=>[p.id,p]));
+  pages=(curBook.order||[]).map(i=>byId.get(i)).filter(Boolean); await loadBgs(pages);
+  if (!pages.length){ pages=[newPage("ruled")]; markDirty(pages[0]); }
+  undoStack.length=redoStack.length=0; syncUndo(); renderAll(); bookLabel(); markDirty(null);
+  $("scroller").scrollTop=0;
+}
+function renderBooks(){
+  const box=$("bookList"); box.innerHTML="";
+  BOOKS.slice().sort((a,b)=>(b.updated||0)-(a.updated||0)).forEach(b=>{
+    const row=document.createElement("div"); row.style.cssText="display:flex;gap:6px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:8px";
+    const name=document.createElement("input"); name.value=b.name; name.style.cssText="flex:1;border:none;background:none;font-size:15px;color:var(--ink);-webkit-user-select:text;user-select:text"+(b===curBook?";font-weight:600":"");
+    name.onchange=()=>{ b.name=name.value.trim()||b.name; bookLabel(); markDirty(null); };
+    const info=document.createElement("small"); info.style.color="var(--muted)"; info.textContent=`${(b.order||[]).length}쪽`;
+    const open=document.createElement("button"); open.className="btn"; open.textContent=b===curBook?"열려 있음":"열기"; open.disabled=b===curBook;
+    open.onclick=async()=>{ $("dlgBooks").close(); await openBook(b.id); toast(`'${b.name}' 노트북을 열었어요.`); };
+    const del=document.createElement("button"); del.className="btn danger"; del.textContent="삭제";
+    del.onclick=()=>{ $("dlgBooks").close(); confirmBox(`'${b.name}' 노트북을 삭제할까요?`, "안의 페이지와 필기가 모두 지워지고 되돌릴 수 없어요. 필요하면 먼저 필체 데이터를 다운로드하세요.", "삭제", async()=>{
+      try{ for (const q of (await store.all("pages")||[])) if (q.nb===b.id || (b.order||[]).includes(q.id)){ await store.del("pages", q.id); try{ await store.del("meta","bg:"+q.id); }catch(e){} } }catch(e){}
+      BOOKS=BOOKS.filter(x=>x!==b); if (!BOOKS.length) BOOKS=[{id:uid(), name:"내 노트", order:[], updated:Date.now()}];
+      if (b===curBook){ curBook=null; await openBook(BOOKS[0].id); } else markDirty(null); toast("노트북을 삭제했어요."); }); };
+    row.append(name,info,open,del); box.appendChild(row);
+  });
+}
+$("tBooks").onclick=()=>{ renderBooks(); $("newBookName").value=""; $("dlgBooks").showModal(); };
+$("newBookGo").onclick=async()=>{ const n=$("newBookName").value.trim()||`노트 ${BOOKS.length+1}`; const b={id:uid(), name:n, order:[], updated:Date.now()}; BOOKS.push(b); $("dlgBooks").close(); await openBook(b.id); toast(`'${n}' 노트북을 만들었어요.`); };
+
+// ---------- 필체 데이터 다운로드 (손글씨만, 전체 노트) ----------
+function handInfo(){ $("handInfo").textContent = set.lastDataExport ? `마지막 다운로드: ${new Date(set.lastDataExport).toLocaleString("ko-KR")} · 라벨링 도구의 '노트 파일 열기'에 넣으면 학습 데이터가 돼요.` : "아직 다운로드한 적이 없어요. 쓴 만큼 필체 데이터가 쌓여 있어요."; }
+async function exportHandData(){
+  await flush(); const all=await store.all("pages")||[]; const byId=new Map(all.map(p=>[p.id,p])); const out=[]; let n=0;
+  for (const b of BOOKS) for (const id of (b.order||[])){ const pg=b===curBook?pages.find(x=>x.id===id):byId.get(id); if (!pg) continue;
+    const strokes=pg.strokes.filter(s=>(!s.src||s.src==="hand") && !s.hl).map(({_bb,...s})=>s); if (!strokes.length) continue; n+=strokes.length;
+    out.push({ id:pg.id, book:b.name, paper: pg.bg?{type:"blank",gap:40}:pg.paper, strokes, ...(pg.guideLines?{guideLines:pg.guideLines}:{}) }); }
+  if (!n){ toast("아직 손으로 쓴 필기가 없어요."); return; }
+  const data=JSON.stringify({ format:"hw-notebook-v1", kind:"hand-only", exportedAt:new Date().toISOString(), units:{pageW:PW,pageH:PH,mmPerUnit:0.21}, point:["x","y","t","p","tx","ty"],
+    paperSpec:{ruledTop:140, margin:80, gridOrigin:[20,60]}, settings:{device:set.device, gamma:set.gamma}, device:{ua:navigator.userAgent}, pages:out });
+  try{ await saveFile(`필체데이터_${stamp()}.json`, data); set.lastDataExport=Date.now(); markDirty(null); handInfo(); toast(`손글씨 ${out.length}쪽 · ${n}획을 저장했어요.`); }
+  catch(e){ if (!(e&&e.code==="declined")) toast("파일을 저장하지 못했어요."); }
+}
+$("btnHandData").onclick=exportHandData;
+
+// ---------- 페이지 관리 ----------
+let paperTarget=null;
+$("tAddPage").onclick=()=>{ paperTarget=null; $("paperTitle").textContent="새 페이지"; $("dlgPaper").showModal(); };
+function movePage(p,dir){ const i=pages.indexOf(p), j=i+dir; if (j<0||j>=pages.length) return; pages.splice(i,1); pages.splice(j,0,p); renderAll(); markDirty(null); requestAnimationFrame(()=>p.el.root.scrollIntoView({block:"start"})); }
+function dupPage(p){ const t=Date.now(); const q={ id:uid(), paper:{...p.paper}, strokes:p.strokes.map((s,i)=>({...cloneStroke(s), id:uid(), t0:t+i})), ...(p.bg?{bg:p.bg}:{}), ...(p.guideLines?{guideLines:p.guideLines}:{}) };
+  pages.splice(pages.indexOf(p)+1,0,q); renderAll(); markDirty(q); toast("페이지를 복제했어요."); }
+document.querySelectorAll("#dlgPaper [data-paper]").forEach(b=>b.onclick=()=>{
+  const p=newPage(b.dataset.paper); if (paperTarget!=null){ pages.splice(paperTarget,0,p); paperTarget=null; } else pages.push(p); renderAll(); markDirty(p); $("dlgPaper").close();
+  requestAnimationFrame(()=>p.el.root.scrollIntoView({behavior:"smooth", block:"start"}));
+});
+// ---------- 대필 (필체 팩) ----------
+let PACK=null, ghostDrag=null, ghostRect=null;
+function packInfo(){ $("packInfo").textContent = PACK ? `불러온 필체 팩: ${PACK.writer||"이름 없음"} · ${Object.keys(PACK.glyphs).length}자 (${PACK.createdAt||""})` : "필체 팩이 없어요. 컴퓨터에서 hw_pack_v3.py로 만든 필체팩 파일을 불러오세요."; }
+// 필체 팩 자동 업데이트: 설정의 주소(또는 사이트의 pack.json)에서 새 버전이 있으면 교체
+const REMOTE_PACKS=["https://presidentmoon.github.io/hw_note/pack.json","https://raw.githubusercontent.com/PresidentMoon/hw_note/main/pack.json"];
+async function tryPack(url){ const r=await fetch(url,{cache:"no-cache"}); if (!r.ok) throw 0; const j=await r.json(); if (!j || j.format!=="hw-pack-v1") throw 0; return j; }
+async function usePack(j, quiet){ PACK=j; await store.put("meta", j, "pack"); packInfo(); if (!quiet) toast(`새 필체 팩을 받았어요 (${Object.keys(j.glyphs).length}자 · ${j.createdAt||""}).`); }
+// 필체 팩 자동 업데이트: 설정의 주소 → (앱이면) GitHub → (사이트면) 같은 폴더의 pack.json
+async function updatePack(manual){
+  const app=!!window.Android;
+  if (app && !PACK){ try{ await usePack(await tryPack("pack.json"), true); }catch(e){} }      // 앱에 들어 있는 팩으로 먼저 시작
+  const urls=(set.packUrl||"").trim() ? [set.packUrl.trim()] : (app ? REMOTE_PACKS : (location.protocol.startsWith("http") ? ["pack.json"] : []));
+  if (!urls.length){ if (manual) toast("필체 팩 주소를 먼저 넣어 주세요."); return; }
+  for (const u of urls){
+    try{ const j=await tryPack(u);
+      if (!PACK || PACK.createdAt!==j.createdAt) await usePack(j, false); else if (manual) toast("이미 최신 필체 팩이에요.");
+      return; }catch(e){}
+  }
+  if (manual) toast("필체 팩을 받지 못했어요. 주소와 인터넷 연결을 확인해 주세요.");
+}
+$("packUrl").onchange=()=>{ set.packUrl=$("packUrl").value.trim(); markDirty(null); };
+$("packCheck").onclick=()=>{ set.packUrl=$("packUrl").value.trim(); markDirty(null); updatePack(true); };
+$("btnPack").onclick=()=>$("filePack").click();
+$("filePack").onchange=async e=>{ const f=e.target.files[0]; e.target.value=""; if (!f) return;
+  try{ const j=JSON.parse(await f.text()); if (j.format!=="hw-pack-v1") throw 0; PACK=j; await store.put("meta", j, "pack"); packInfo(); toast(`필체 팩을 불러왔어요 (${Object.keys(j.glyphs).length}자).`); }
+  catch(err){ toast("필체 팩(hw-pack-v1) 파일이 아니에요."); } };
+$("tGhost").onclick=()=>{ if (!PACK){ toast("먼저 설정에서 필체 팩을 불러와 주세요."); $("tMore").click(); return; } setTool("ghost"); toast("대필할 칸을 펜으로 드래그하세요."); };
+function drawGhostRect(p, g){ const c=p.el.live.getContext("2d"); clearLive(p); c.setLineDash([6,4]); c.strokeStyle="#D4483C"; c.lineWidth=1.5;
+  c.strokeRect(Math.min(g.x0,g.x1)*S, Math.min(g.y0,g.y1)*S, Math.abs(g.x1-g.x0)*S, Math.abs(g.y1-g.y0)*S); c.setLineDash([]); }
+function openGhost(g){
+  let x0=Math.min(g.x0,g.x1), x1=Math.max(g.x0,g.x1), y0=Math.min(g.y0,g.y1), y1=Math.max(g.y0,g.y1);
+  if (x1-x0<30){ x1=PW-50; }                              // 콕 찍으면 그 줄 끝까지
+  if (y1-y0<20){ y0-=20; y1=y0+50; }
+  ghostRect={p:g.p, x0, y0, x1, y1}; drawGhostRect(g.p, {x0,y0,x1,y1});
+  $("ghostInfo").textContent = "내용을 입력하면 아래에 미리 보여요. 마음에 들 때 '이대로 쓰기'. 넣은 뒤에도 지우개·올가미로 고칠 수 있어요.";
+  $("ghostWarn").textContent="";
+  $("ghostSize").value=set.ghostSize||100; $("ghostSizeVal").textContent=(set.ghostSize||100)+"%"; $("ghostW").value=set.ghostW||100; $("ghostWVal").textContent=(set.ghostW||100)+"%";
+  ghostSeed=Math.floor(Math.random()*1e9); $("dlgGhost").showModal(); setTimeout(()=>{ renderPreview(); $("ghostText").focus(); },60);
+}
+$("dlgGhost").addEventListener("close", ()=>{ if (!ghostRect) return; if (sel && sel.p===ghostRect.p) drawSel(sel.p); else clearLive(ghostRect.p); });
+$("ghostSize").oninput=e=>{ $("ghostSizeVal").textContent=e.target.value+"%"; };
+$("ghostW").oninput=e=>{ $("ghostWVal").textContent=e.target.value+"%"; };
+let RNG=Math.random, ghostSeed=1;
+function mulberry(a){ return ()=>{ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+function nrand(){ let u=0,v=0; while(!u) u=RNG(); while(!v) v=RNG(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+const median=a=>{ const s=a.slice().sort((x,y)=>x-y); return s.length?s[Math.floor(s.length/2)]:0; };
+// 양식 배경에서 드래그한 영역 안의 가로줄 찾기 (진한 픽셀이 가로로 60% 이상 이어진 행)
+function detectLines(p, R){
+  if (!p.bg || !p.el) return [];
+  const cv=p.el.bg, k=cv.width/PW;
+  const x0=Math.max(0,Math.floor(R.x0*k)), x1=Math.min(cv.width,Math.ceil(R.x1*k)), y0=Math.max(0,Math.floor((R.y0-8)*k)), y1=Math.min(cv.height,Math.ceil((R.y1+8)*k));
+  const w=x1-x0, h=y1-y0; if (w<10||h<4) return [];
+  let img; try{ img=cv.getContext("2d").getImageData(x0,y0,w,h).data; }catch(e){ return []; }
+  const rows=[];
+  for (let y=0;y<h;y++){ let n=0; for (let x=0;x<w;x+=2){ const i=(y*w+x)*4; if (img[i]*0.3+img[i+1]*0.59+img[i+2]*0.11<170) n++; } if (n>w/2*0.38) rows.push(y); }
+  const out=[]; let st=null, pv=null;
+  for (const y of rows){ if (pv===null||y>pv+2){ if (st!==null) out.push((st+pv)/2); st=y; } pv=y; }
+  if (st!==null) out.push((st+pv)/2);
+  return out.map(y=>(y+y0)/k);
+}
+function ghostCompose(R, text, adj, wadj=1, seed=ghostSeed){
+  RNG=mulberry(seed);
+  const p=R.p, L=PACK.layoutProfile||{}, G=PACK.glyphs;
+  const sj=L.sizeJitter||0.08, bj=L.baselineJitter||0.03, cg=Math.max(0.04, L.charGap||0.04), wg=L.wordGap||0.2, off=L.baselineOffset||0.24;
+  let H, rows=[], mode="box";                          // rows: {base: 글자 바닥선, limit: 이보다 아래로 내려가면 안 되는 선}
+  const lineRows=(ys,gap)=>{ H=gap*adj; const lift=Math.max(0.12*gap, off*H);   // 줄에서 띄우는 높이는 글씨 크기에 비례(최소 줄 간격의 12%)
+    for (const y of ys) if (y>=R.y0+0.45*gap && y<=R.y1+0.4*gap) rows.push({base:y-lift, limit:y-0.07*gap, top:y-gap}); };
+  const PL=paperLines(p);
+  if (PL){ mode="ruled"; lineRows(PL.ys, PL.gap); if (!rows.length) lineRows([PL.ys.find(y=>y>R.y0)||R.y1], PL.gap); }
+  else {
+    const lines=detectLines(p,R);
+    if (lines.length>=2){ const gap=median(lines.slice(1).map((y,i)=>y-lines[i]));
+      if (gap>=16 && gap<=130){ lineRows(lines, gap); if (rows.length) mode="lines"; } }
+    if (mode==="box"){
+      const h=R.y1-R.y0, hr=L.heightRatio||0.41, nch=[...text.replace(/\s/g,"")].length;
+      const H1=Math.max(18, Math.min(100, h*0.5/hr))*adj;
+      if (!text.includes("\n") && nch*0.62*H1 <= (R.x1-R.x0)*0.95){ H=H1; rows=[{base:(R.y0+R.y1)/2+0.2*H, limit:R.y1-2, top:R.y0}]; }
+      else { H=Math.min(40*adj, h/1.6); const lh=1.45*H; for (let y=R.y0+0.95*H; y<=R.y1-0.1*H; y+=lh) rows.push({base:y, limit:Math.min(R.y1-2, y+0.45*H), top:y-H}); if (!rows.length) rows=[{base:(R.y0+R.y1)/2+0.2*H, limit:R.y1-2, top:R.y0}]; }
+    }
+  }
+  const out=[], rowOf=[], missing=new Set(); let li=0, x=R.x0+0.15*H, over=0, t0=Date.now();
+  const pick=ch=>{ const e=G[ch]; if (!e) return null; const pool=(e.real&&e.real.length)?e.real:e.gen; return pool&&pool.length?pool[Math.floor(RNG()*pool.length)]:null; };
+  const paras=text.split("\n");
+  for (let pi=0; pi<paras.length; pi++){
+    if (pi>0){ li++; x=R.x0+0.15*H; }
+    const words=paras[pi].split(" ");
+    for (let wi=0; wi<words.length; wi++){
+      const gl=[];
+      for (const ch of words[wi]){ const S=pick(ch); if (!S){ missing.add(ch); continue; }
+        const xs=S.flatMap(st=>st.filter((_,i)=>i%4===0)); if (!xs.length) continue;
+        gl.push({S, a:Math.min(...xs), b:Math.max(...xs), k:1+nrand()*sj*0.6, dy:nrand()*bj*0.6}); }
+      const ww=gl.reduce((s,g)=>s+(g.b-g.a)*H*g.k+cg*H,0);
+      if (wi>0) x+=wg*H*(0.85+0.3*RNG());
+      if (x+ww>R.x1 && x>R.x0+0.2*H){ li++; x=R.x0+0.15*H; }
+      if (li>=rows.length){ over+=words[wi].length; continue; }
+      for (const g of gl){ const base=rows[li].base;
+        for (const st of g.S){ if (st.length<4) continue; const ts=st[2], pts=[];
+          for (let i=0;i<st.length;i+=4) pts.push([x+(st[i]-g.a)*H*g.k, base+((st[i+1]-0.72)*g.k+g.dy)*H, Math.max(0,st[i+2]-ts), st[i+3], 0, 0]);
+          out.push({id:uid(), pts, color:COLORS[set.color], w:WIDTHS[set.width]*Math.min(2.2,Math.max(0.6,H/40))*wadj, src:"gen", dev:set.device, t0:t0++}); rowOf.push(li); }
+        x+=(g.b-g.a)*H*g.k+cg*H; }
+    }
+  }
+  // 줄마다 실제 글씨의 아래끝을 재서, 줄(또는 칸 아래)과 겹치면 그 줄 글씨 전체를 위로 올림
+  rows.forEach((r,i)=>{ let mx=-1e9, mn=1e9; out.forEach((st,j)=>{ if (rowOf[j]!==i) return; for (const q of st.pts){ if (q[1]>mx) mx=q[1]; if (q[1]<mn) mn=q[1]; } });
+    if (mx<-1e8) return; let shift=Math.min(0, r.limit-mx); if (mn+shift<r.top) shift=Math.max(shift, r.top-mn);
+    if (shift) out.forEach((st,j)=>{ if (rowOf[j]===i) for (const q of st.pts) q[1]+=shift; }); });
+  out.forEach(st=>{ for (const q of st.pts){ q[0]=Math.round(q[0]*10)/10; q[1]=Math.round(q[1]*10)/10; } });
+  RNG=Math.random;
+  return {strokes:out, missing, over, mode, lines:rows.length};
+}
+function ghostMsg(r){ const m=[]; if (r.mode==="lines") m.push(`양식의 줄 ${r.lines}개에 맞춰 써요`);
+  if ((r.mode==="lines"||r.mode==="ruled") && (+$("ghostSize").value)>125) m.push("글씨가 줄 간격보다 커서 줄과 겹칠 수 있어요"); if (r.missing.size) m.push(`팩에 없는 글자: ${[...r.missing].join(" ")}`); if (r.over) m.push(`칸이 좁아 ${r.over}자를 못 써요`); return m.join(" · "); }
+// ---- 미리보기 ----
+let prevTimer=null;
+function renderPreview(){
+  const cv=$("ghostPrev"), text=$("ghostText").value.replace(/\r/g,""), R=ghostRect; if (!R) return;
+  const r=text.trim()? ghostCompose(R, text, (+$("ghostSize").value)/100, (+$("ghostW").value)/100, ghostSeed) : {strokes:[],missing:new Set(),over:0,mode:"box",lines:0};
+  let x0=R.x0-12, y0=R.y0-12, x1=R.x1+12, y1=R.y1+12;
+  for (const st of r.strokes){ delete st._bb; const b=bbox(st); x0=Math.min(x0,b[0]-6); y0=Math.min(y0,b[1]-6); x1=Math.max(x1,b[2]+6); y1=Math.max(y1,b[3]+6); }
+  x0=Math.max(0,x0); y0=Math.max(0,y0); x1=Math.min(PW,x1); y1=Math.min(PH,y1);
+  const W=Math.min(600, cv.parentElement.clientWidth||560), sp=W/(x1-x0), Hh=(y1-y0)*sp, d=window.devicePixelRatio||1;
+  cv.width=W*d; cv.height=Hh*d; cv.style.width=W+"px"; cv.style.height=Hh+"px";
+  const c=cv.getContext("2d"); c.setTransform(d,0,0,d,0,0); c.fillStyle="#fff"; c.fillRect(0,0,W,Hh);
+  const bg=R.p.el.bg, k=bg.width/PW; try{ c.drawImage(bg, x0*k, y0*k, (x1-x0)*k, (y1-y0)*k, 0, 0, W, Hh); }catch(e){}
+  c.save(); c.translate(-x0*sp, -y0*sp);
+  for (const st of R.p.strokes) drawStroke(c, st, sp);
+  c.globalAlpha=0.95; for (const st of r.strokes) drawStroke(c, st, sp); c.globalAlpha=1;
+  c.setLineDash([5,4]); c.strokeStyle="#D4483C"; c.lineWidth=1; c.strokeRect(R.x0*sp, R.y0*sp, (R.x1-R.x0)*sp, (R.y1-R.y0)*sp); c.restore();
+  $("ghostWarn").textContent=ghostMsg(r);
+}
+function schedulePreview(){ clearTimeout(prevTimer); prevTimer=setTimeout(renderPreview, 160); }
+$("ghostText").addEventListener("input", schedulePreview);
+$("ghostSize").addEventListener("input", schedulePreview);
+$("ghostW").addEventListener("input", schedulePreview);
+$("ghostShuffle").onclick=()=>{ ghostSeed=Math.floor(Math.random()*1e9); renderPreview(); };
+$("ghostGo").onclick=()=>{
+  const text=$("ghostText").value.replace(/\r/g,""); if (!text.trim()){ $("ghostWarn").textContent="쓸 내용을 입력해 주세요."; return; }
+  set.ghostSize=+$("ghostSize").value; set.ghostW=+$("ghostW").value; markDirty(null);
+  const r=ghostCompose(ghostRect, text, set.ghostSize/100, set.ghostW/100, ghostSeed);
+  if (!r.strokes.length){ $("ghostWarn").textContent="쓸 수 있는 글자가 없어요."; return; }
+  const p=ghostRect.p; p.strokes.push(...r.strokes); drawInk(p); clearLive(p); pushUndo({pid:p.id, removed:[], added:r.strokes}); markDirty(p);
+  $("dlgGhost").close(); setTool("lasso"); setSel(p, new Set(r.strokes.map(s=>s.id)));
+  const m=ghostMsg(r); toast(m || "대필했어요. 지금 선택돼 있어서 바로 끌어서 옮기거나 크기를 바꿀 수 있어요.");
+};
+
+// ---------- 다른 PDF·사진에서 글 가져오기 (글자 PDF는 바로, 스캔·사진은 글자 인식) ----------
+let tessReady=null;
+function loadTesseract(){ if (window.Tesseract) return Promise.resolve(); if (!tessReady) tessReady=loadScriptFrom(["lib/tesseract.min.js","https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js"]).catch(e=>{ tessReady=null; throw e; }); return tessReady; }
+async function ocrCanvases(cvs){
+  await loadTesseract(); const st=$("srcStatus"); const out=[];
+  const worker=await Tesseract.createWorker("kor+eng", 1, { logger:m=>{ if (m.status==="recognizing text") st.textContent=`글자 인식 중… ${Math.round(m.progress*100)}%`; else if (m.status) st.textContent="글자 인식 준비 중…"; } });
+  for (let i=0;i<cvs.length;i++){ st.textContent=`글자 인식 ${i+1}/${cvs.length}쪽…`; const r=await worker.recognize(cvs[i]); out.push((cvs.length>1?`[${i+1}쪽]\n`:"")+r.data.text.replace(/[ \t]+\n/g,"\n").trim()); }
+  await worker.terminate(); return out.join("\n\n");
+}
+function pdfTextOf(tc){ const rows=new Map(); for (const it of tc.items){ if (!it.str) continue; const y=Math.round(it.transform[5]/3); (rows.get(y)||rows.set(y,[]).get(y)).push(it); }
+  return [...rows.keys()].sort((a,b)=>b-a).map(y=>{ const its=rows.get(y).sort((a,b)=>a.transform[4]-b.transform[4]); let t="", end=null;
+    for (const it of its){ const x=it.transform[4], fs=Math.abs(it.transform[0])||10; if (end!==null && x-end>fs*0.25 && !/\s$/.test(t)) t+=" "; t+=it.str; end=x+(it.width||0); }
+    return t.replace(/\s+/g," ").trim(); }).filter(Boolean).join("\n"); }
+async function extractText(file){
+  const st=$("srcStatus");
+  if (file.type==="application/pdf" || /\.pdf$/i.test(file.name)){
+    st.textContent="PDF 읽는 중…"; await loadPdfJs(); const pdf=await window.pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer())}).promise;
+    const texts=[]; for (let n=1;n<=pdf.numPages;n++){ const pg=await pdf.getPage(n); texts.push(pdfTextOf(await pg.getTextContent())); }
+    const total=texts.join("").replace(/\s/g,"").length;
+    if (total>=10) return texts.map((t,i)=>(pdf.numPages>1?`[${i+1}쪽]\n`:"")+t).join("\n\n");
+    st.textContent="글자가 그림으로 된 PDF예요. 글자 인식을 시작해요…"; const cvs=[];
+    for (let n=1;n<=pdf.numPages;n++){ const pg=await pdf.getPage(n), v0=pg.getViewport({scale:1}), vp=pg.getViewport({scale:2000/v0.width}); const cv=document.createElement("canvas"); cv.width=vp.width; cv.height=vp.height; const cx=cv.getContext("2d"); cx.fillStyle="#fff"; cx.fillRect(0,0,cv.width,cv.height); await pg.render({canvasContext:cx, viewport:vp}).promise; cvs.push(cv); }
+    return await ocrCanvases(cvs);
+  }
+  const url=URL.createObjectURL(file); const img=new Image(); await new Promise((r,j)=>{ img.onload=r; img.onerror=j; img.src=url; });
+  const cv=document.createElement("canvas"); const sc=Math.min(1, 2400/Math.max(img.naturalWidth,img.naturalHeight)); cv.width=img.naturalWidth*sc; cv.height=img.naturalHeight*sc; cv.getContext("2d").drawImage(img,0,0,cv.width,cv.height); URL.revokeObjectURL(url);
+  return await ocrCanvases([cv]);
+}
+$("ghostImport").onclick=()=>$("fileSrc").click();
+$("fileSrc").onchange=async e=>{ const f=e.target.files[0]; e.target.value=""; if (!f) return;
+  try{ const t=await extractText(f); $("srcStatus").textContent=""; if (!t.trim()){ toast("가져올 글을 찾지 못했어요."); return; } $("srcText").value=t; $("dlgSrc").showModal(); }
+  catch(err){ $("srcStatus").textContent=""; toast("글을 가져오지 못했어요. 스캔본·사진의 글자 인식은 인터넷 연결이 필요해요."); } };
+function insertGhostText(t){ const ta=$("ghostText"), a=ta.selectionStart??ta.value.length, b=ta.selectionEnd??a; ta.value=ta.value.slice(0,a)+t.replace(/\[\d+쪽\]\n?/g,"").trim()+ta.value.slice(b); $("dlgSrc").close(); schedulePreview(); ta.focus(); }
+$("srcAll").onclick=()=>insertGhostText($("srcText").value);
+$("srcSel").onclick=()=>{ const ta=$("srcText"); const t=ta.value.slice(ta.selectionStart, ta.selectionEnd); if (!t.trim()){ toast("넣을 부분을 먼저 드래그로 선택해 주세요."); return; } insertGhostText(t); };
+
+// ---------- PDF·사진 양식 불러오기 ----------
+let pdfReady=null;
+function loadPdfJs(){
+  if (window.pdfjsLib) return Promise.resolve();
+  if (!pdfReady) pdfReady=loadScriptFrom(["lib/pdf.min.js","pdf.min.js","https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"]).then(()=>{
+      const sc=[...document.scripts].find(x=>/pdf\.min\.js$/.test(x.src)); const src=sc?sc.src:"";
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc= src.startsWith("https://cdnjs") || !src ? "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js" : src.replace(/pdf\.min\.js$/,"pdf.worker.min.js"); }).catch(e=>{ pdfReady=null; throw e; });
+  return pdfReady;
+}
+function canvasToBg(cv){ return { src:cv.toDataURL("image/jpeg",0.85), w:cv.width, h:cv.height }; }
+async function importForm(file){
+  const st=$("formStatus"), added=[];
+  try{
+    if (file.type==="application/pdf" || /\.pdf$/i.test(file.name)){
+      st.textContent="PDF 읽는 중…"; await loadPdfJs();
+      const pdf=await window.pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer())}).promise;
+      for (let n=1;n<=pdf.numPages;n++){
+        st.textContent=`PDF ${n}/${pdf.numPages}쪽 불러오는 중…`;
+        const pg=await pdf.getPage(n), v0=pg.getViewport({scale:1}), vp=pg.getViewport({scale:1600/v0.width});
+        const cv=document.createElement("canvas"); cv.width=Math.round(vp.width); cv.height=Math.round(vp.height);
+        const cx=cv.getContext("2d"); cx.fillStyle="#fff"; cx.fillRect(0,0,cv.width,cv.height);
+        await pg.render({canvasContext:cx, viewport:vp}).promise;
+        added.push({ id:uid(), paper:{type:"blank",gap:40}, strokes:[], bg:canvasToBg(cv) });
+      }
+    } else {
+      st.textContent="사진 읽는 중…";
+      const url=URL.createObjectURL(file); const img=new Image(); await new Promise((r,j)=>{ img.onload=r; img.onerror=j; img.src=url; });
+      const sc=Math.min(1, 1800/Math.max(img.naturalWidth,img.naturalHeight)); const cv=document.createElement("canvas");
+      cv.width=Math.round(img.naturalWidth*sc); cv.height=Math.round(img.naturalHeight*sc); const cx=cv.getContext("2d"); cx.fillStyle="#fff"; cx.fillRect(0,0,cv.width,cv.height); cx.drawImage(img,0,0,cv.width,cv.height);
+      URL.revokeObjectURL(url); added.push({ id:uid(), paper:{type:"blank",gap:40}, strokes:[], bg:canvasToBg(cv) });
+    }
+  }catch(e){ st.textContent="불러오지 못했어요. PDF는 처음 한 번 인터넷 연결이 필요해요."; return; }
+  pages.push(...added); renderAll(); added.forEach(markDirty); st.textContent="";
+  $("dlgPaper").close(); toast(`양식 ${added.length}쪽을 불러왔어요.`);
+  requestAnimationFrame(()=>added[0].el.root.scrollIntoView({behavior:"smooth", block:"start"}));
+}
+$("btnImportForm").onclick=()=>$("fileForm").click();
+$("tForm").onclick=()=>$("fileForm").click();
+$("fileForm").onchange=e=>{ const f=e.target.files[0]; e.target.value=""; if (f) importForm(f); };
+
+async function deletePage(p){
+  pages=pages.filter(x=>x!==p); for (const st of [undoStack,redoStack]) for (let i=st.length-1;i>=0;i--) if (st[i].pid===p.id) st.splice(i,1);
+  try{ await store.del("pages", p.id); await store.del("meta","bg:"+p.id); }catch(e){}
+  if (!pages.length) pages.push(newPage("ruled"));
+  renderAll(); syncUndo(); markDirty(null);
+}
+function confirmBox(title, text, okLabel, fn){ $("cfTitle").textContent=title; $("cfText").textContent=text; $("cfOk").textContent=okLabel; $("cfOk").onclick=()=>{ $("dlgConfirm").close(); fn(); }; $("dlgConfirm").showModal(); }
+
+// ---------- 도구 UI ----------
+function setTool(t){ const prev=tool; tool=t; for (const [id,v] of [["tPen","pen"],["tEraser","eraser"],["qPen","pen"],["qEraser","eraser"],["tGhost","ghost"],["tHl","hl"],["tLasso","lasso"]]) $(id).setAttribute("aria-pressed", tool===v);
+  $("tEraseMode").hidden = tool!=="eraser"; $("tEraseSize").hidden = tool!=="eraser"; if (t!=="lasso") setSel(null); if ((prev==="hl")!==(t==="hl")) renderSwatches(); }
+$("tHl").onclick=()=>setTool("hl");
+$("tLasso").onclick=()=>setTool("lasso");
+$("tEraseSize").onclick=()=>{ set.eraserBig=!set.eraserBig; $("tEraseSize").textContent=set.eraserBig?"크게":"작게"; markDirty(null); };
+$("tPen").onclick=$("qPen").onclick=()=>setTool("pen");
+$("tEraser").onclick=$("qEraser").onclick=()=>setTool("eraser");
+$("tEraseMode").onclick=()=>{ eraseMode = eraseMode==="stroke"?"partial":"stroke"; $("tEraseMode").textContent = eraseMode==="stroke"?"획 단위":"부분"; };
+function renderSwatches(){
+  const box=$("colors"); box.innerHTML=""; const hl=tool==="hl", list=hl?HLCOLORS:COLORS, names=hl?HL_NAMES:COLOR_NAMES;
+  list.forEach((c,i)=>{ const b=document.createElement("button"); b.className="tb sw"; b.style.background=c; b.setAttribute("aria-label",names[i]);
+    b.onclick=()=>{ if (tool==="lasso" && sel){ recolorSel(c); return; } if (hl){ set.hlColor=i; } else { set.color=i; setTool("pen"); } syncTools(); markDirty(null); }; box.appendChild(b); });
+  syncTools();
+}
+WIDTHS.forEach((w,i)=>{ const b=document.createElement("button"); b.className="tb wd"; b.setAttribute("aria-label",["가늘게","보통","굵게"][i]); b.innerHTML=`<i style="height:${2+i*2}px"></i>`; b.onclick=()=>{ set.width=i; setTool("pen"); syncTools(); markDirty(null); }; $("widths").appendChild(b); });
+function syncTools(){ [...$("colors").children].forEach((b,i)=>b.setAttribute("aria-pressed", i===(tool==="hl"?(set.hlColor||0):set.color))); [...$("widths").children].forEach((b,i)=>b.setAttribute("aria-pressed", i===set.width)); }
+
+// ---------- 기기 모드 & 설정 ----------
+function applyDevice(){
+  document.body.classList.toggle("dev-galaxy", set.device==="galaxy"); document.body.classList.toggle("dev-ipad", set.device==="ipad");
+  $("tDevice").textContent = set.device==="galaxy" ? "갤럭시 탭" : "아이패드";
+  document.querySelectorAll("#devSeg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.dev===set.device));
+  const g=set.gamma ?? (set.device==="ipad"?1.0:0.8); $("gamma").value=g; $("gammaVal").textContent=g.toFixed(2);
+}
+$("tDevice").onclick=$("tMore").onclick=()=>{ applyDevice(); $("allowTouch").checked=set.allowTouch;
+  $("lastExport").textContent = set.lastExport ? `마지막 내보내기: ${new Date(set.lastExport).toLocaleString("ko-KR")}` : "아직 내보낸 적이 없어요. 브라우저 데이터를 지우면 노트도 사라지니 가끔 내보내 두세요.";
+  $("dlgSettings").showModal(); };
+document.querySelectorAll("#devSeg button").forEach(b=>b.onclick=()=>{ set.device=b.dataset.dev; set.gamma=null; applyDevice(); layout(); markDirty(null); });
+$("gamma").oninput=e=>{ set.gamma=+e.target.value; $("gammaVal").textContent=set.gamma.toFixed(2); pages.forEach(drawInk); markDirty(null); };
+$("allowTouch").onchange=e=>{ set.allowTouch=e.target.checked; markDirty(null); };
+$("btnWipe").onclick=()=>{ $("dlgSettings").close(); confirmBox("모든 페이지를 삭제할까요?","노트 전체가 지워지고 되돌릴 수 없어요. 필요하면 먼저 내보내 두세요.","모두 삭제", async()=>{
+  pages=[newPage("ruled")]; undoStack.length=redoStack.length=0; syncUndo(); await prunePages(); renderAll(); markDirty(pages[0]); toast("노트를 비웠어요."); }); };
+
+// ---------- 내보내기 / 가져오기 ----------
+function exportJson(){
+  return JSON.stringify({ format:"hw-notebook-v1", exportedAt:new Date().toISOString(),
+    units:{pageW:PW, pageH:PH, mmPerUnit:0.21}, point:["x","y","t","p","tx","ty"],
+    paperSpec:{ruledTop:140, margin:80, gridOrigin:[20,60]},
+    settings:{device:set.device, gamma:set.gamma}, device:{ua:navigator.userAgent},
+    pages:pages.map(p=>({id:p.id, paper:p.paper, strokes:p.strokes.map(({_bb,...s})=>s), ...(p.guideLines?{guideLines:p.guideLines}:{}), ...(p.bg?{bg:p.bg}:{})})) });
+}
+let downloads=null;
+const stamp=()=>{ const d=new Date(), z=n=>String(n).padStart(2,"0"); return `${d.getFullYear()}${z(d.getMonth()+1)}${z(d.getDate())}_${z(d.getHours())}${z(d.getMinutes())}`; };
+function androidSave(name, data){
+  const blob = data instanceof Blob ? data : new Blob([data], {type: /\.pdf$/i.test(name)?"application/pdf":"application/json"});
+  return new Promise((res,rej)=>{ const fr=new FileReader(); fr.onload=()=>{ window.__androidSaved=ok=>{ window.__androidSaved=null; ok?res():rej({code:"declined"}); };
+    window.Android.saveFile(name, blob.type||"application/octet-stream", String(fr.result).split(",")[1]); }; fr.onerror=()=>rej({code:"read"}); fr.readAsDataURL(blob); });
+}
+async function saveFile(name, data){
+  if (window.Android && window.Android.saveFile) return androidSave(name, data);
+  if (downloads){
+    for (let i=0;;i++){ try{ await downloads.save({filename:name, data}); return; }
+      catch(e){ if (e && e.code==="rate_limited" && i<4){ await new Promise(r=>setTimeout(r, 1200)); continue; } throw e; } } }
+  if (window.claude && window.claude.use) throw {code:"unavailable"};
+  const blob = data instanceof Blob ? data : new Blob([data], {type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+}
+// ---- PDF (벡터) ----
+function loadScriptFrom(urls){ return new Promise((res,rej)=>{ let i=0; const next=()=>{ if (i>=urls.length) return rej(); const sc=document.createElement("script"); sc.src=urls[i++]; sc.onload=res; sc.onerror=()=>{ sc.remove(); next(); }; document.head.appendChild(sc); }; next(); }); }
+let jsPDFReady=null;
+function loadJsPDF(){
+  if (window.jspdf) return Promise.resolve();
+  if (!jsPDFReady) jsPDFReady=loadScriptFrom(["lib/jspdf.umd.min.js","jspdf.umd.min.js","https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"]).catch(e=>{ jsPDFReady=null; throw e; });
+  return jsPDFReady;
+}
+const hexRgb=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+function buildPdf(){
+  const doc=new window.jspdf.jsPDF({unit:"mm", format:"a4", compress:true}); const k=0.21;
+  pages.forEach((p,i)=>{
+    if (i) doc.addPage();
+    const {type,gap}=p.paper; doc.setLineWidth(0.15);
+    if (p.bg){ const [x,y,w,h]=bgRect(p); try{ doc.addImage(p.bg.src, "JPEG", x*k, y*k, w*k, h*k); }catch(e){} }
+    else if (type!=="blank"){ const cv=document.createElement("canvas"), sc=1.6; cv.width=PW*sc; cv.height=PH*sc; const cx=cv.getContext("2d"); cx.fillStyle="#fff"; cx.fillRect(0,0,cv.width,cv.height); paintPaper(cx,type,gap,sc);
+      try{ doc.addImage(cv.toDataURL("image/jpeg",0.9), "JPEG", 0, 0, PW*k, PH*k); }catch(e){} }
+    doc.setLineCap("round"); doc.setLineJoin("round");
+    for (const st of p.strokes.filter(s=>s.hl)){ const P=st.pts; if (P.length<2) continue; const [r,g,b]=hexRgb(st.color);
+      try{ doc.setGState(new doc.GState({opacity:0.42})); }catch(e){} doc.setDrawColor(r,g,b); doc.setLineWidth(st.w*k);
+      const d=[]; for (let j=1;j<P.length;j++) d.push([(P[j][0]-P[j-1][0])*k,(P[j][1]-P[j-1][1])*k]); doc.lines(d, P[0][0]*k, P[0][1]*k, [1,1], "S", false);
+      try{ doc.setGState(new doc.GState({opacity:1})); }catch(e){} }
+    for (const st of p.strokes.filter(s=>!s.hl)){
+      const P=st.pts; if (!P.length) continue; const [r,g,b]=hexRgb(st.color); doc.setDrawColor(r,g,b); doc.setFillColor(r,g,b);
+      if (P.length===1){ doc.circle(P[0][0]*k, P[0][1]*k, Math.max(0.1, st.w*pressureFactor(P[0][3])*k/2), "F"); continue; }
+      let run=null, rw=0;
+      const flush=()=>{ if (run && run.length>1){ doc.setLineWidth(rw); const d=[]; for (let j=1;j<run.length;j++) d.push([(run[j][0]-run[j-1][0])*k,(run[j][1]-run[j-1][1])*k]); doc.lines(d, run[0][0]*k, run[0][1]*k, [1,1], "S", false); } };
+      for (let j=1;j<P.length;j++){
+        const a=P[j-1], c=P[j], v=Math.hypot(c[0]-a[0],c[1]-a[1])/Math.max(1,c[2]-a[2]);
+        const w=Math.max(0.12, Math.round(st.w*pressureFactor((a[3]+c[3])/2)*Math.max(0.6,1.1-0.25*v)*k*20)/20);
+        if (!run || w!==rw){ flush(); run=[a]; rw=w; }
+        run.push(c);
+      }
+      flush();
+    }
+  });
+  return doc.output("blob");
+}
+async function exportPdf(quiet){ if(!quiet) toast("PDF 만드는 중…");
+  try{ await loadJsPDF(); }catch(e){ toast("PDF 도구를 불러오지 못했어요. 인터넷 연결을 확인해 주세요."); return false; }
+  try{ await saveFile(`필체노트_${stamp()}.pdf`, buildPdf()); if(!quiet) toast("PDF를 저장했어요."); return true; }
+  catch(e){ if (e&&e.code==="declined") return false; if(!quiet) toast("PDF를 저장하지 못했어요."); return false; } }
+async function exportJsonFile(quiet){
+  try{ await saveFile(`필체노트_${stamp()}.json`, exportJson()); exported(); if(!quiet) toast("JSON을 저장했어요."); return true; }
+  catch(e){ if (e&&e.code==="declined") return false; if(!quiet) toast("JSON을 저장하지 못했어요. 설정 → 하나씩 골라 저장 → JSON 복사를 써 주세요."); return false; } }
+function openExport(){ const n=pages.reduce((a,p)=>a+p.strokes.length,0);
+  $("exInfo").textContent=`페이지 ${pages.length}장, 획 ${n}개`; $("exportBox").style.display="none"; $("dlgExport").showModal(); }
+let saving=false;
+function downloadNow(name, blob){ const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 4000); }
+async function saveBoth(){
+  if (saving) return;
+  // 일반 브라우저(GitHub 사이트 등): 두 파일을 '누른 그 순간'에 한꺼번에 내려받아야 브라우저가 두 번째 파일을 막지 않아요
+  if (!window.Android && !downloads){
+    if (!window.jspdf){ toast("PDF 도구를 준비하는 중이에요. 잠시 후 다시 눌러 주세요."); loadJsPDF().catch(()=>toast("PDF 도구를 불러오지 못했어요. 인터넷 연결을 확인해 주세요.")); return; }
+    let pdf=null; try{ pdf=buildPdf(); }catch(e){}
+    const name=`필체노트_${stamp()}`;
+    if (pdf) downloadNow(name+".pdf", pdf);
+    downloadNow(name+".json", new Blob([exportJson()],{type:"application/json"})); exported();
+    toast(pdf? "PDF와 JSON을 저장했어요. 둘 중 하나가 없으면 아래 버튼으로 다시 받으세요." : "JSON은 저장했고 PDF는 만들지 못했어요.",
+      [{label:"PDF 다시", fn:()=>{ try{ downloadNow(name+".pdf", buildPdf()); }catch(e){ toast("PDF를 만들지 못했어요."); } }}, {label:"JSON 다시", fn:()=>downloadNow(name+".json", new Blob([exportJson()],{type:"application/json"}))}], 12000);
+    return;
+  }
+  saving=true; $("tExport").disabled=true;
+  try{
+    const j=await exportJsonFile(true);
+    await new Promise(r=>setTimeout(r, 400));
+    const pdf=await exportPdf(true);
+    const retry=[];
+    if (!j) retry.push({label:"JSON 다시 받기", fn:()=>exportJsonFile()});
+    if (!pdf) retry.push({label:"PDF 다시 받기", fn:()=>exportPdf()});
+    if (j && pdf) toast("PDF와 JSON을 저장했어요. 다운로드 목록에 없으면 다시 받으세요.", [{label:"JSON 다시", fn:()=>exportJsonFile()},{label:"PDF 다시", fn:()=>exportPdf()}], 9000);
+    else toast(j? "JSON은 저장했고 PDF는 받지 못했어요." : pdf? "PDF는 저장했고 JSON은 받지 못했어요." : "파일을 받지 못했어요.", retry, 15000);
+  }
+  finally{ saving=false; $("tExport").disabled=false; }
+}
+$("tExport").onclick=saveBoth;
+$("btnExport").onclick=()=>{ $("dlgSettings").close(); openExport(); };
+function exported(){ set.lastExport=Date.now(); markDirty(null); }
+$("exPdf").onclick=async()=>{ if (!window.Android && !downloads && window.jspdf){ try{ downloadNow(`필체노트_${stamp()}.pdf`, buildPdf()); $("dlgExport").close(); toast("PDF를 저장했어요."); }catch(e){ toast("PDF를 만들지 못했어요."); } return; } if (await exportPdf()) $("dlgExport").close(); };
+$("exJson").onclick=async()=>{ if (await exportJsonFile()) $("dlgExport").close(); };
+$("exBoth").onclick=async()=>{ $("dlgExport").close(); await saveBoth(); };
+$("btnCopy").onclick=async()=>{ const t=exportJson(); try{ await navigator.clipboard.writeText(t); exported(); toast("JSON을 복사했어요."); }
+  catch(e){ const b=$("exportBox"); b.value=t; b.style.display="block"; b.focus(); b.select(); toast("아래 내용을 전체 선택해서 복사해 주세요."); } };
+$("btnImport").onclick=()=>$("fileImport").click();
+$("fileImport").onchange=async e=>{ const f=e.target.files[0]; e.target.value=""; if (!f) return;
+  if (f.type==="application/pdf" || /\.pdf$/i.test(f.name) || (f.type||"").startsWith("image/")){ $("dlgSettings").close(); toast("양식 불러오는 중…"); importForm(f); return; }
+  try{ const j=JSON.parse(await f.text()); if (j.format!=="hw-notebook-v1" || !Array.isArray(j.pages)) throw 0;
+    $("dlgSettings").close();
+    confirmBox("노트를 가져올까요?", `페이지 ${j.pages.length}장으로 지금 노트를 바꿔요. 지금 노트는 사라져요.`, "가져오기", async()=>{
+      pages=j.pages.map(p=>({id:p.id||uid(), paper:p.paper&&PAPER[p.paper.type]?p.paper:{type:"ruled",gap:40}, strokes:Array.isArray(p.strokes)?p.strokes:[], ...(Array.isArray(p.guideLines)?{guideLines:p.guideLines}:{}), ...(p.bg&&p.bg.src?{bg:p.bg}:{})}));
+      if (!pages.length) pages=[newPage("ruled")]; undoStack.length=redoStack.length=0; syncUndo();
+      await prunePages(); renderAll(); pages.forEach(markDirty); toast("노트를 가져왔어요."); });
+  }catch(err){ toast("hw-notebook-v1 형식의 JSON 파일이 아니에요."); } };
+
+// ---------- 시작 ----------
+async function init(){
+  try{ await store.open(); }catch(e){ toast("이 브라우저에서는 저장이 안 돼요. 노트 내보내기로 백업해 주세요."); }
+  try{
+    const all=await store.all("pages")||[]; const byId=new Map(all.map(p=>[p.id,p]));
+    const lib=await store.get("meta","library");
+    if (lib && lib.books && lib.books.length){ BOOKS=lib.books; curBook=BOOKS.find(b=>b.id===lib.current)||BOOKS[0]; const st=await store.get("meta","settings"); if (st) Object.assign(set, st); }
+    else { const meta=await store.get("meta","notebook"); if (meta) Object.assign(set, meta.set||{}); curBook={id:uid(), name:"내 노트", order:meta?(meta.order||[]):[], updated:Date.now()}; BOOKS=[curBook]; }
+    pages=(curBook.order||[]).map(id=>byId.get(id)).filter(Boolean); await loadBgs(pages);
+  }catch(e){ if (!curBook){ curBook={id:uid(), name:"내 노트", order:[], updated:Date.now()}; BOOKS=[curBook]; } }
+  if (!pages.length){ pages=[newPage("ruled")]; markDirty(pages[0]); }
+  pages.forEach(markDirty); bookLabel(); handInfo();
+  try{ const pk=await store.get("meta","pack"); if (pk && pk.format==="hw-pack-v1") PACK=pk; }catch(e){}
+  $("packUrl").value=set.packUrl||""; updatePack(false);
+  packInfo();
+  if (set.lastDataExport && Date.now()-set.lastDataExport>7*864e5) setTimeout(()=>toast("필체 데이터를 다운로드한 지 일주일이 넘었어요.", [{label:"지금 다운로드", fn:exportHandData}], 12000), 1500);
+  applyDevice(); renderSwatches(); syncTools(); setTool("pen"); renderAll(); syncUndo();
+  $("tEraseSize").textContent=set.eraserBig?"크게":"작게";
+  $("saveState").textContent = store.db ? "저장됨" : "저장 안 됨";
+  new ResizeObserver(()=>layout()).observe($("scroller"));
+  setTimeout(()=>loadJsPDF().catch(()=>{}), 1200);
+  try{ if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}     // 기기가 저장 공간이 부족해도 노트를 지우지 않도록 요청
+
+  if (window.claude && window.claude.use) window.claude.use("downloads").then(d=>{ downloads=d; }).catch(()=>{});
+}
+document.addEventListener("visibilitychange", ()=>{ if (document.visibilityState==="hidden") flush(); });
+init();
+})();
+</script>
 </body>
 </html>
