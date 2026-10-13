@@ -343,6 +343,47 @@ h3.sec{font-size:18px;margin-top:20px}
 .bt-conf{position:fixed;top:-10px;width:8px;height:12px;border-radius:2px;animation:conf 1.8s ease-in forwards;pointer-events:none}
 @keyframes conf{to{transform:translateY(105vh) rotate(540deg)}}
 
+/* 언더테일 배틀 · 조이스틱 · 타이틀 */
+.ut-joy{position:relative;width:132px;height:132px;border-radius:50%;background:radial-gradient(circle,#3A2E70 0%,#2B1B54 70%);box-shadow:inset 0 0 0 3px #5B3FA0,0 6px 0 #160D30;touch-action:none;flex:none;cursor:pointer}
+.ut-knob{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#B39DDB,#7E57C2);box-shadow:0 4px 10px rgba(0,0,0,.4);pointer-events:none;transition:transform .05s}
+.stbattle{background:#000}
+.ut-top{display:flex;align-items:center;gap:12px;max-width:520px;width:100%;margin:0 auto 6px}
+.ut-enemy{width:76px;height:76px;flex:none;border-radius:12px;overflow:hidden;border:3px solid #fff;animation:idle 2.2s ease-in-out infinite;background:#2B1B54}
+.ut-enemy.boss{border-color:#FFD54F;box-shadow:0 0 22px rgba(255,213,79,.5);width:88px;height:88px}
+.ut-enemy img,.ut-enemy svg{width:100%;height:100%;object-fit:cover;display:block;image-rendering:pixelated}
+.ut-enemy.hit{animation:hit .45s}
+.ut-name{flex:1;color:#fff}.ut-name b{font-size:16px}
+.ut-say{max-width:520px;width:100%;margin:0 auto 6px;color:#fff;font-size:14px;min-height:20px;font-family:monospace}
+.ut-say.pop{animation:rise .25s}
+.ut-arena{position:relative;max-width:520px;width:100%;margin:0 auto}
+#ut-cv{width:100%;image-rendering:pixelated;display:block;transition:opacity .2s}
+#ut-cv.dim{opacity:.35}
+.ut-timer{height:4px;background:#222;margin-top:2px}.ut-timer i{display:block;height:100%;width:100%;background:#FFD54F}
+.ut-stat{display:flex;align-items:center;gap:6px;max-width:520px;width:100%;margin:8px auto;color:#fff;font-family:monospace;font-size:13px}
+.ut-hpbar{flex:1;height:12px;background:#C62828;border:1px solid #fff}.ut-hpbar i{display:block;height:100%;background:#FFEB3B;transition:width .2s}
+.ut-panel{max-width:520px;width:100%;margin:0 auto;border:3px solid #fff;padding:10px;color:#fff;background:#000;max-height:44vh;overflow:auto}
+.ut-qmeta{margin:0 0 4px;font-size:11.5px;color:#BDBDBD}
+.ut-q{margin:0 0 10px;font-size:15.5px;line-height:1.5;white-space:pre-line}
+.ut-opts{display:grid;gap:6px}.ut-opts.ox{grid-template-columns:1fr 1fr}
+.ut-opt{text-align:left;font:inherit;font-size:14.5px;background:#000;color:#fff;border:2px solid #fff;padding:8px 10px;cursor:pointer}
+.ut-opts.ox .ut-opt{text-align:center;font-size:24px;font-weight:700}
+.ut-opt:hover:not(:disabled){color:#FFEB3B;border-color:#FFEB3B}
+.ut-opt.ok{border-color:#69F0AE;color:#69F0AE}.ut-opt.no{border-color:#FF5252;color:#FF5252}.ut-opt.gone{opacity:.2;text-decoration:line-through}
+.ut-exp{margin-top:10px;font-size:13.5px}.ut-exp b.g{color:#69F0AE}.ut-exp b.r{color:#FF5252}.ut-exp p{white-space:pre-line;color:#E0E0E0;margin:6px 0 8px}
+.ut-exp .bt-pdf{color:#E8DDFF;border-color:#5B3FA0}
+.ut-dodge{text-align:center;font-weight:700;margin:6px 0;color:#FFEB3B}
+.ut-panel .bt-next{margin-top:8px;background:#FF5722}
+.stbattle .ut-joy{margin:10px auto 0}
+.st-joy{width:140px;height:140px}
+.sttitle{position:absolute;inset:0;z-index:5;display:none;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;color:#fff;
+  background:radial-gradient(ellipse at 50% 30%,#5B3FA0 0%,#2B1B54 55%,#0E0A22 100%)}
+.sttitle.open{display:flex}
+.sttitle h2{font-family:"Gowun Batang",serif;font-size:26px;line-height:1.25;margin:0 0 4px;color:#FFE9A8;text-shadow:0 3px 0 #8E1C3C,0 0 18px rgba(255,233,168,.5);animation:idle 2.6s ease-in-out infinite}
+.stt-sub{margin:0;font-size:13px;color:#E8DDFF}
+.sttitle button{font:inherit;font-weight:700;width:60%;max-width:220px;padding:9px;border-radius:10px;border:2px solid #FFE9A8;background:#FFE9A8;color:#2B1B54;cursor:pointer}
+.sttitle button.ghost{background:transparent;color:#FFE9A8;font-weight:500;padding:6px}
+.stt-stars{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 70% 20%,#fff,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff,transparent),radial-gradient(1px 1px at 85% 60%,#fff,transparent),radial-gradient(1px 1px at 10% 80%,#fff,transparent);animation:twinkle 3s ease-in-out infinite;pointer-events:none}
+
 /* 게임 */
 .gamerow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}
 .gcard{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}

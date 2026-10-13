@@ -10,7 +10,7 @@
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261013c">
 </head>
 <body>
 
@@ -194,23 +194,27 @@
 
 <!-- 스토리모드 -->
 <section id="story" class="screen">
-  <div class="hud"><button class="iconbtn" id="stback" aria-label="나가기">✕</button><b id="stbadges"></b><button class="iconbtn" id="streset" aria-label="처음부터" title="처음부터">↺</button></div>
+  <div class="hud"><button class="iconbtn" id="stback" aria-label="나가기">✕</button><b id="stbadges"></b><button class="iconbtn" id="streset" aria-label="타이틀" title="타이틀">☰</button></div>
   <div class="stwrap" id="stwrap">
     <canvas id="stcanvas" aria-label="스토리모드 게임 화면"></canvas>
     <div class="stmapname" id="stmapname"></div>
     <div class="stdlg" id="stdlg"><div class="stface" id="stface"></div><div class="stbody"><b id="stname"></b><p id="sttext"></p><span class="stnext">▼</span></div></div>
     <div class="stchoice" id="stchoice"></div>
+    <div class="sttitle" id="sttitle">
+      <div class="stt-stars"></div>
+      <p class="stt-sub">🐱 × 🐶</p>
+      <h2>혜선이의<br>형성평가 대모험</h2>
+      <p class="stt-sub">심장 마을 → 혈관 마을 → 형성평가의 탑</p>
+      <button id="sttcont">▶ 시작하기</button>
+      <button id="sttnew" class="ghost">처음부터</button>
+      <button id="sttsound" class="ghost">🔊 소리 켜짐</button>
+    </div>
   </div>
   <div class="stctrl">
-    <div class="stpad">
-      <button data-d="up" class="up" aria-label="위">▲</button>
-      <button data-d="left" class="left" aria-label="왼쪽">◀</button>
-      <button data-d="right" class="right" aria-label="오른쪽">▶</button>
-      <button data-d="down" class="down" aria-label="아래">▼</button>
-    </div>
+    <div class="ut-joy st-joy" id="st-joy" aria-label="조이스틱"><div class="ut-knob"></div></div>
     <button class="sta" id="sta" aria-label="A 버튼">A</button>
   </div>
-  <p class="muted small" style="text-align:center">방향키로 이동 · A로 말 걸기/조사/대화 넘기기 · 진행은 자동 저장</p>
+  <p class="muted small" style="text-align:center">조이스틱으로 이동 · A로 말 걸기/조사/대화 넘기기 · 배틀에서 틀리면 조이스틱으로 하트를 움직여 탄막 회피!</p>
   <div class="stbattle" id="stbattle"></div>
 </section>
 
@@ -265,8 +269,8 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="app.js"></script>
-<script src="cat.js"></script>
-<script src="story.js"></script>
+<script src="app.js?v=20261013c"></script>
+<script src="cat.js?v=20261013c"></script>
+<script src="story.js?v=20261013c"></script>
 </body>
 </html>
