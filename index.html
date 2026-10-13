@@ -44,6 +44,8 @@
 
   <div class="modes">
     <button class="mode big" data-mode="quick">빠른 10문제<small>심장 + 혈관 섞어서</small></button>
+    <button class="mode hard" data-mode="hard">🔥 중간고사 대비 · 고난도<small>함정 조합형(ㄱㄴㄷㄹ) · 계산 · 지엽 문제만 10개</small></button>
+    <button class="mode story" id="openStory">🎮 스토리모드<small>혜선이의 형성평가 대모험 · 심장 마을 → 혈관 숲 → 형성평가의 탑</small></button>
     <button class="mode exam" id="openExam">실전 테스트<small>시험처럼 끝까지 풀고 마지막에 채점 · <span id="examlast">아직 응시 기록 없음</span></small></button>
     <button class="mode heart" data-mode="heart">심장만 10문제</button>
     <button class="mode vessel" data-mode="vessel">혈관만 10문제</button>
@@ -109,6 +111,7 @@
   <p class="muted">실제 퀴즈처럼 중간에 정답을 보여주지 않고, 다 풀고 제출하면 한꺼번에 채점해요. 단원이 고르게 섞여서 나와요.</p>
   <div class="opt-group"><b>범위</b><div class="chips" data-key="range"><button data-v="all" class="on">전체</button><button data-v="heart">심장</button><button data-v="vessel">혈관</button></div></div>
   <div class="opt-group"><b>문항 수</b><div class="chips" data-key="n"><button data-v="20" class="on">20문제</button><button data-v="30">30문제</button><button data-v="40">40문제</button></div></div>
+  <div class="opt-group"><b>난이도</b><div class="chips" data-key="level"><button data-v="all" class="on">전체 섞기</button><button data-v="hard">고난도만</button></div></div>
   <div class="opt-group"><b>시간 제한</b><div class="chips" data-key="time"><button data-v="0" class="on">없음</button><button data-v="1">문제당 1분</button></div></div>
   <button class="btn" id="esstart" style="width:100%;margin-top:8px">시작하기</button>
   <div id="eshistory"></div>
@@ -189,6 +192,28 @@
   <p class="muted small">고양이·성호를 <b>누르면</b> 쓰다듬기, <b>끌면</b> 옮기기. 고양이를 성호한테 끌어다 놓으면 안아줘요. 빈 곳을 누르면 가까운 고양이가 그쪽으로 가요. 가끔 나타나는 🦋를 먼저 누르면 간식 보너스! 간식은 퀴즈 10문제 맞힐 때마다, 그리고 매일 첫 방문 때 하나씩 생겨요.</p>
 </section>
 
+<!-- 스토리모드 -->
+<section id="story" class="screen">
+  <div class="hud"><button class="iconbtn" id="stback" aria-label="나가기">✕</button><b id="stbadges"></b><button class="iconbtn" id="streset" aria-label="처음부터" title="처음부터">↺</button></div>
+  <div class="stwrap" id="stwrap">
+    <canvas id="stcanvas" aria-label="스토리모드 게임 화면"></canvas>
+    <div class="stmapname" id="stmapname"></div>
+    <div class="stdlg" id="stdlg"><div class="stface" id="stface"></div><div class="stbody"><b id="stname"></b><p id="sttext"></p><span class="stnext">▼</span></div></div>
+    <div class="stchoice" id="stchoice"></div>
+  </div>
+  <div class="stctrl">
+    <div class="stpad">
+      <button data-d="up" class="up" aria-label="위">▲</button>
+      <button data-d="left" class="left" aria-label="왼쪽">◀</button>
+      <button data-d="right" class="right" aria-label="오른쪽">▶</button>
+      <button data-d="down" class="down" aria-label="아래">▼</button>
+    </div>
+    <button class="sta" id="sta" aria-label="A 버튼">A</button>
+  </div>
+  <p class="muted small" style="text-align:center">방향키로 이동 · A로 말 걸기/조사/대화 넘기기 · 진행은 자동 저장</p>
+  <div class="stbattle" id="stbattle"></div>
+</section>
+
 <!-- 결과 -->
 <section id="result" class="screen">
   <h2 id="rtitle">끝!</h2>
@@ -242,5 +267,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="app.js"></script>
 <script src="cat.js"></script>
+<script src="story.js"></script>
 </body>
 </html>

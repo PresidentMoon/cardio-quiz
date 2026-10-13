@@ -167,6 +167,7 @@ function withShuffledOptions(q){
 function startMode(mode){
   let pool = BANK.filter(q=>q.type!=='card'), n = 10, lives = null, timer = null;
   if (mode==='heart' || mode==='vessel') pool = pool.filter(q=>q.topic===mode);
+  if (mode==='hard') pool = pool.filter(q=>q.level==='hard');
   if (mode.startsWith('unit:')){ const u = mode.slice(5); pool = pool.filter(q=>q.unit===u); }
   if (mode.startsWith('wrongunit:')){ const u = mode.slice(10); pool = BANK.filter(q=>q.unit===u && (save.stats[q.id]||{}).lastWrong); n = 0; if(!pool.length){ alert('이 단원에 틀려 있는 문제가 없어요.'); return; } }
   if (mode==='time'){ pool = pool.filter(q=>q.type==='mc'||q.type==='ox'); n = 0; timer = 60; }
@@ -534,11 +535,11 @@ document.querySelectorAll('#pdfsetup input[type=file]').forEach(inp=>inp.onchang
 let resizeT; window.addEventListener('resize', ()=>{ clearTimeout(resizeT); resizeT=setTimeout(()=>{ if($('#viewer').classList.contains('open')) renderPage(); },200); });
 
 /* ---------- 실전 테스트 ---------- */
-const exOpt = {range:'all', n:20, time:0};
+const exOpt = {range:'all', n:20, time:0, level:'all'};
 let EX = null;
 function shuffle(a){ a = a.slice(); for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 function buildExam(){
-  const pool = BANK.filter(q=>q.type!=='card' && (exOpt.range==='all' || q.topic===exOpt.range));
+  const pool = BANK.filter(q=>q.type!=='card' && (exOpt.range==='all' || q.topic===exOpt.range) && (exOpt.level==='all' || q.level==='hard'));
   const units = [...new Set(pool.map(q=>q.unit))];
   const n = Math.min(exOpt.n, pool.length);
   // 단원 크기에 비례해서 고르게 배분
@@ -668,7 +669,7 @@ function renderReview(){
 }
 document.querySelectorAll('.chips').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{
   g.querySelectorAll('button').forEach(x=>x.classList.toggle('on', x===b));
-  const k = g.dataset.key; exOpt[k] = k==='range' ? b.dataset.v : +b.dataset.v;
+  const k = g.dataset.key; exOpt[k] = (k==='range' || k==='level') ? b.dataset.v : +b.dataset.v;
 }));
 $('#openExam').onclick = openExamSetup;
 $('#esback').onclick = ()=>{ show('home'); renderHome(); };
