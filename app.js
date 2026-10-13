@@ -11,7 +11,7 @@ const MEDIA = {
   worst:  'worst.mp4',                    // 챕터를 많이 못 끝냈을 때 (30% 미만)
   levelup:'best.mp4',                     // 레벨업할 때
   normal: ['normal.jpg'],                 // 평범하게 끝냈을 때 (50~69%)
-  good:   ['good1.jpg','good2.jpg','good3.jpg','good4.jpg','good5.jpg','good6.jpg','good7.jpg','good8.jpg','good9.jpg','good10.jpg','good11.jpg','good.jpg'],                       // 잘할 때
+  good:   ['good1.jpg','good2.jpg','good3.jpg','good4.jpg','good5.jpg','good6.jpg','good7.jpg','good8.jpg','good9.jpg','good10.jpg','good11.jpg','good12.jpg','good13.jpg','good14.jpg','good15.jpg','good16.jpg','good17.jpg','good18.jpg','good19.jpg','good20.jpg','good21.jpg','good22.jpg','good23.jpg','good24.jpg','good25.jpg','good.jpg'],                       // 잘할 때
   bad:    ['bad1.jpg','bad2.jpg','bad3.jpg','bad4.jpg','bad5.jpg','bad6.jpg','bad7.jpg','bad8.jpg','cheer.jpg'] // 막힐 때
 };
 const ALL_MEDIA = [MEDIA.best, MEDIA.worst, ...MEDIA.normal, ...MEDIA.good, ...MEDIA.bad];

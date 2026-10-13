@@ -174,18 +174,19 @@
 <section id="playground" class="screen">
   <div class="hud"><button class="iconbtn" id="pgback" aria-label="홈으로">✕</button><b>고양이 놀이터</b><span></span></div>
   <div class="pgstat">
-    <span>친밀도 <b id="pglove">0</b> · <span id="pglevel"></span></span>
-    <span>간식 🐟 <b id="pgtreat">0</b></span>
+    <span>💞 친밀도 <b id="pglove">0</b> · <span id="pglevel"></span></span>
+    <span><span class="pgtreatchip">🐟 <b id="pgtreat">0</b></span> <button class="pgtreatchip pgwallet" id="pgwallet">🎟️ 쿠폰 <b id="pgcouponcount">0</b></button></span>
   </div>
-  <div class="xpbar" style="margin-bottom:8px"><div id="pgbar" style="height:100%;background:var(--art);width:0"></div></div>
-  <div class="pgfield" id="pgfield" aria-label="놀이터. 빈 곳을 누르면 고양이가 그쪽으로 가요"></div>
-  <div class="pgbtns">
-    <button class="btn ghost" id="pgballbtn">🧶 공 던지기</button>
-    <button class="btn ghost" id="pgtreatbtn">🐟 간식 주기</button>
-    <button class="btn ghost" id="pglaserbtn">🔴 레이저</button>
-    <button class="btn ghost" id="pgcallbtn">🙋 성호한테 와</button>
+  <div class="pgfield day" id="pgfield" aria-label="놀이터. 빈 곳을 누르면 고양이가 그쪽으로 가요"></div>
+  <div class="pgcards" id="pgcards"></div>
+  <div class="pgtools">
+    <button class="pgtool" id="pgballbtn"><span>🧶</span>공 던지기</button>
+    <button class="pgtool" id="pgtreatbtn"><span>🐟</span>간식</button>
+    <button class="pgtool" data-mode="laser"><span>🔴</span>레이저</button>
+    <button class="pgtool" data-mode="wand"><span>🪶</span>낚싯대</button>
+    <button class="pgtool" id="pgnapbtn"><span>💤</span>낮잠</button>
   </div>
-  <p class="muted small">고양이·성호를 누르면 쓰다듬기, 끌면 옮기기. 빈 곳을 누르면 고양이가 그쪽으로 가요. 간식은 퀴즈를 10문제 맞힐 때마다 하나씩 생겨요.</p>
+  <p class="muted small">고양이·성호를 <b>누르면</b> 쓰다듬기, <b>끌면</b> 옮기기. 고양이를 성호한테 끌어다 놓으면 안아줘요. 빈 곳을 누르면 가까운 고양이가 그쪽으로 가요. 가끔 나타나는 🦋를 먼저 누르면 간식 보너스! 간식은 퀴즈 10문제 맞힐 때마다, 그리고 매일 첫 방문 때 하나씩 생겨요.</p>
 </section>
 
 <!-- 결과 -->
