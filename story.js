@@ -182,33 +182,61 @@ function drawTile(c, x, y, sx, sy, m){
 
 /* ---------------- 그리기: 캐릭터 (도트) ---------------- */
 function px(c, x, y, w=1, h=1){ ctx.fillStyle = c; ctx.fillRect(x|0, y|0, w, h); }
-function drawGirl(x, y, dir, step){       // 혜선: 긴 흑발 + 앞머리, 흰 티, 남색 치마
+function drawGirl(x, y, dir, step){       // 혜선: 고양이상 — 쫑긋한 고양이 귀, 올라간 눈꼬리, ω 입, 살랑 꼬리
   const lg = step ? (step===1 ? 1 : -1) : 0;
+  const tw = Math.sin(frame/10) > 0 ? 1 : 0;      // 꼬리 살랑
   px('rgba(0,0,0,.22)', x+3, y+14, 10, 2);
+  // 꼬리 (뒤쪽)
+  if (dir!=='down'){ const tx = dir==='left' ? x+12 : dir==='right' ? x+1 : x+7; px('#1A1A24', tx, y+7, 2, 4); px('#1A1A24', tx+(dir==='left'?1:-1)*tw, y+4, 2, 3); }
+  else { px('#1A1A24', x+12, y+8, 2, 2); px('#1A1A24', x+13, y+6-tw, 2, 3); }
   px('#2B2B3A', x+5+(lg>0?1:0), y+11, 2, 4); px('#2B2B3A', x+9-(lg<0?1:0), y+11, 2, 4);
-  px('#3949AB', x+4, y+9, 8, 3);                 // 치마
+  px('#3949AB', x+4, y+9, 8, 3);
   px('#FAFAFA', x+4, y+5, 8, 5); px('#E0E0E0', x+4, y+9, 8, 1);
   px('#FFD9C2', x+3, y+6+(lg?1:0), 1, 3); px('#FFD9C2', x+12, y+6-(lg?1:0), 1, 3);
-  px('#1A1A24', x+3, y-6, 10, 11);               // 머리카락(긴)
-  if (dir!=='up'){ px('#FFE0CC', x+4, y-4, 8, 8); px('#1A1A24', x+4, y-5, 8, 3);  // 얼굴 + 앞머리
-    if (dir==='down'){ px('#1A1A24', x+5, y-1, 2, 2); px('#1A1A24', x+9, y-1, 2, 2); px('#FF8A80', x+5, y+1, 1, 1); px('#FF8A80', x+10, y+1, 1, 1); px('#D84343', x+7, y+2, 2, 1); }
-    if (dir==='left'){ px('#1A1A24', x+5, y-1, 2, 2); px('#1A1A24', x+9, y-4, 4, 9); px('#D84343', x+5, y+2, 1, 1); }
-    if (dir==='right'){ px('#1A1A24', x+9, y-1, 2, 2); px('#1A1A24', x+3, y-4, 4, 9); px('#D84343', x+10, y+2, 1, 1); } }
-  else { px('#26263A', x+5, y-5, 6, 1); }
+  px('#1A1A24', x+3, y-6, 10, 11);               // 긴 흑발
+  // 고양이 귀
+  px('#1A1A24', x+3, y-9, 3, 3); px('#1A1A24', x+4, y-10, 1, 1); px('#1A1A24', x+10, y-9, 3, 3); px('#1A1A24', x+11, y-10, 1, 1);
+  if (dir!=='up'){ px('#F8BBD0', x+4, y-8, 1, 2); px('#F8BBD0', x+11, y-8, 1, 2); }
+  if (dir!=='up'){
+    px('#FFE0CC', x+4, y-4, 8, 8); px('#1A1A24', x+4, y-5, 8, 3);      // 얼굴 + 앞머리
+    if (dir==='down'){
+      // 고양이 눈: 눈꼬리가 위로
+      px('#1A1A24', x+5, y-1, 2, 2); px('#1A1A24', x+4, y-2, 1, 1); px('#1A1A24', x+9, y-1, 2, 2); px('#1A1A24', x+11, y-2, 1, 1);
+      px('#FFFFFF', x+6, y-1, 1, 1); px('#FFFFFF', x+10, y-1, 1, 1);
+      px('#FF8A80', x+4, y+1, 2, 1); px('#FF8A80', x+10, y+1, 2, 1);   // 볼터치
+      px('#C2185B', x+7, y+2, 1, 1); px('#C2185B', x+8, y+2, 1, 1); px('#C2185B', x+6, y+1, 1, 1); px('#C2185B', x+9, y+1, 1, 1); // ω
+    }
+    if (dir==='left'){ px('#1A1A24', x+5, y-1, 2, 2); px('#1A1A24', x+4, y-2, 1, 1); px('#1A1A24', x+9, y-4, 4, 9); px('#C2185B', x+5, y+2, 1, 1); px('#FF8A80', x+5, y+1, 1, 1); }
+    if (dir==='right'){ px('#1A1A24', x+9, y-1, 2, 2); px('#1A1A24', x+11, y-2, 1, 1); px('#1A1A24', x+3, y-4, 4, 9); px('#C2185B', x+10, y+2, 1, 1); px('#FF8A80', x+10, y+1, 1, 1); }
+  } else { px('#26263A', x+5, y-5, 6, 1); }
   px('#B39DDB', x+11, y-5, 2, 2);                // 핀
 }
-function drawSeongho(x, y, dir, step, dark){   // 성호: 바가지 머리, 회색 티
+function drawSeongho(x, y, dir, step, dark){   // 성호: 강아지상 — 축 처진 귀, 동글 순한 눈, 강아지 코, 살랑 꼬리
   const lg = step ? (step===1 ? 1 : -1) : 0;
+  const wag = Math.sin(frame/4) > 0 ? 1 : -1;    // 꼬리 붕붕
+  const hair = dark ? '#120012' : '#1C1C1C', ear = dark ? '#3E2723' : '#8D6E63', ear2 = dark ? '#2B1B17' : '#6D4C41';
   px('rgba(0,0,0,.22)', x+3, y+14, 10, 2);
+  if (dir!=='down'){ const tx = dir==='left' ? x+12 : dir==='right' ? x+1 : x+7; px(ear, tx+wag, y+5, 2, 3); px(ear2, tx+wag*2, y+4, 2, 2); }
+  else { px(ear, x+12+wag, y+6, 2, 2); }
   px('#37474F', x+5+(lg>0?1:0), y+11, 2, 4); px('#37474F', x+9-(lg<0?1:0), y+11, 2, 4);
   px(dark?'#4A148C':'#9E9E9E', x+4, y+5, 8, 7); px(dark?'#6A1B9A':'#BDBDBD', x+5, y+6, 6, 1);
   px('#F2C6A0', x+3, y+6, 1, 3); px('#F2C6A0', x+12, y+6, 1, 3);
   px('#F2C6A0', x+4, y-3, 8, 8);
-  px(dark?'#120012':'#1C1C1C', x+3, y-5, 10, 4); px(dark?'#120012':'#1C1C1C', x+3, y-2, 1, 3); px(dark?'#120012':'#1C1C1C', x+12, y-2, 1, 3);
-  if (dir==='down'){ px(dark?'#E53935':'#1C1C1C', x+5, y, 2, 1); px(dark?'#E53935':'#1C1C1C', x+9, y, 2, 1); px('#C26A5A', x+7, y+3, 2, 1); }
-  if (dir==='left'){ px('#1C1C1C', x+5, y, 2, 1); }
-  if (dir==='right'){ px('#1C1C1C', x+9, y, 2, 1); }
-  if (dir==='up') px('#1C1C1C', x+4, y-3, 8, 5);
+  px(hair, x+3, y-5, 10, 4); px(hair, x+3, y-2, 1, 2); px(hair, x+12, y-2, 1, 2);    // 바가지 머리
+  // 축 처진 강아지 귀 (양옆으로 늘어짐)
+  if (dir!=='up' || true){ px(ear, x+1, y-4, 3, 7); px(ear2, x+1, y+1, 3, 2); px(ear, x+12, y-4, 3, 7); px(ear2, x+12, y+1, 3, 2); }
+  if (dir==='left'){ px(ear, x+10, y-4, 3, 7); }
+  if (dir==='down'){
+    // 동글하고 처진 순한 눈 + 반짝
+    px(dark?'#E53935':'#1C1C1C', x+5, y-1, 2, 3); px(dark?'#E53935':'#1C1C1C', x+9, y-1, 2, 3);
+    px('#FFFFFF', x+5, y-1, 1, 1); px('#FFFFFF', x+9, y-1, 1, 1);
+    px('#1C1C1C', x+4, y-2, 1, 1); px('#1C1C1C', x+11, y-2, 1, 1);    // 눈썹 처짐
+    px('#3E2723', x+7, y+2, 2, 1);                                     // 강아지 코
+    px('#C26A5A', x+7, y+3, 2, 1); if (!dark && frame%90<45) px('#FF8A80', x+8, y+4, 1, 1);   // 혀 빼꼼
+  }
+  if (dir==='left'){ px('#1C1C1C', x+5, y-1, 2, 3); px('#3E2723', x+4, y+2, 1, 1); }
+  if (dir==='right'){ px('#1C1C1C', x+9, y-1, 2, 3); px('#3E2723', x+11, y+2, 1, 1); }
+  if (dir==='up') px(hair, x+4, y-3, 8, 5);
   if (dark && frame%40<20){ px('rgba(156,39,176,.45)', x+1, y-7, 14, 22); }
 }
 const CAT_COL = { blue:['#ECEFF1','#90A4AE','#64B5F6'], fold:['#ECEFF1','#9E9E9E','#212121'], flower:['#F3E0C7','#D7B48E','#4E342E'], bunny:['#FFF8F0','#E8C9A8','#5D7F3B'] };
